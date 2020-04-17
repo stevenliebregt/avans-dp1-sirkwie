@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group 'com.rickensteven.sirkwie'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+application {
+    mainClassName = 'com.rickensteven.sirkwie.Main'
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
