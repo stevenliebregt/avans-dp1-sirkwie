@@ -1,6 +1,7 @@
 plugins {
     id 'java'
     id 'application'
+    id 'org.fmiw.plantuml' version '0.1'
 }
 
 group 'com.rickensteven.sirkwie'
@@ -14,6 +15,18 @@ repositories {
 
 application {
     mainClassName = 'com.rickensteven.sirkwie.Main'
+}
+
+plantuml {
+    options {
+        outputDir = project.file('dist/diagrams')
+    }
+
+    diagrams {
+        example {
+            sourceFile = project.file('docs/diagrams/example.puml')
+        }
+    }
 }
 
 dependencies {
