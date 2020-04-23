@@ -1,22 +1,24 @@
 @startuml
 ' Nodes
 abstract class Node {
-    -value: boolean
-    -previous: List<Node>
-    -next: List<Node>
+    #previous: List<Node>
+    #next: List<Node>
+
+    +{abstract} calculate()
 }
 
 class InputNode {
+    -value: boolean
 }
 Node <|-- InputNode
 
 class ProbeNode {
+    -value: boolean
 }
 Node <|-- ProbeNode
 
 ' Ports
 abstract class Port {
-    +{abstract} calculate()
 }
 Node <|-- Port
 
