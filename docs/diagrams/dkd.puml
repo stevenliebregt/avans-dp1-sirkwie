@@ -24,28 +24,31 @@ class AndPort {
 }
 Port <|-- AndPort
 
+class NAndPort {
+}
+AndPort <|-- NAndPort
+
 class OrPort {
 }
 Port <|-- OrPort
+
+class NorPort {
+}
+OrPort <|-- NorPort
 
 class NotPort {
 }
 Port <|-- NotPort
 
-class NAndPort {
-}
-Port <|-- NAndPort
-
 class XorPort {
 }
 Port <|-- XorPort
 
-class NorPort {
-}
-Port <|-- NorPort
-
 ' Circuit
 class Circuit {
-
+    -inputs: List<InputNode>
+    -probes: List<ProbeNode>
 }
+InputNode <|.. Circuit
+ProbeNode <|.. Circuit
 @enduml
