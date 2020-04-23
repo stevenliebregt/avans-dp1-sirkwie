@@ -23,8 +23,12 @@ plantuml {
     }
 
     diagrams {
-        example {
-            sourceFile = project.file('docs/diagrams/example.puml')
+        dkd {
+            sourceFile = project.file('docs/diagrams/dkd.puml')
+        }
+
+        sequence {
+            sourceFile = project.file('docs/diagrams/sequence.puml')
         }
     }
 }
