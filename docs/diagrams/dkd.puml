@@ -1,2 +1,30 @@
 @startuml
+class AbstractNode {
+    -inputs : boolean[]
+    +{abstract} calculate(): boolean
+}
+
+class AndNode {
+}
+AbstractNode <|-- AndNode
+
+class OrNode {
+}
+AbstractNode <|-- OrNode
+
+class NotNode {
+}
+AbstractNode <|-- NotNode
+
+class NAndNode {
+}
+AbstractNode <|-- NAndNode
+
+class XorNode {
+}
+AbstractNode <|-- XorNode
+
+class NorNode {
+}
+AbstractNode <|-- NorNode
 @enduml
