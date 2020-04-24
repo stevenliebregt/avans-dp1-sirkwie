@@ -1,19 +1,17 @@
 @startuml
 ' Nodes
 abstract class Node {
-    #previous: List<Node>
-    #next: List<Node>
+    +value: Observable<boolean>
+    #previous: Set<Node>
 
     +{abstract} calculate()
 }
 
 class InputNode {
-    -value: boolean
 }
 Node <|-- InputNode
 
 class ProbeNode {
-    -value: boolean
 }
 Node <|-- ProbeNode
 
@@ -53,4 +51,5 @@ class Circuit {
 }
 InputNode <|.. Circuit
 ProbeNode <|.. Circuit
+Node <|-- Circuit
 @enduml
