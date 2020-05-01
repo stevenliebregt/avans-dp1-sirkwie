@@ -1,4 +1,14 @@
 @startuml
--> Circuit: simulate()
+autonumber
 
+CircuitBuilder -> Circuit ** : new
+CircuitBuilder -> Circuit ++ : simulate()
+
+loop foreach inputs
+    Circuit -> InputNode ++ : initialize()
+    Circuit -> InputNode : calculate()
+    InputNode --
+end
+
+Circuit --
 @enduml
