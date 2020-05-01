@@ -1,2 +1,4 @@
 @startuml
+-> Circuit: simulate()
+
 @enduml

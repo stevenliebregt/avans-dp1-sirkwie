@@ -48,6 +48,8 @@ Port <|-- XorPort
 class Circuit {
     -inputs: List<InputNode>
     -probes: List<ProbeNode>
+
+    +simulate()
 }
 InputNode <|.. Circuit
 ProbeNode <|.. Circuit
