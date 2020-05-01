@@ -9,8 +9,8 @@ file                : nodeDefinitions GROUP_SEPARATOR edgeDefinitions ;
 nodeDefinitions     : nodeDefinition+ ;
 edgeDefinitions     : edgeDefinition+ ;
 
-nodeDefinition      : IDENTIFIER SEPARATOR NODE_DESCRIPTOR EOL ;
-edgeDefinition      : IDENTIFIER SEPARATOR ( IDENTIFIER | ',' IDENTIFIER )+ EOL ;
+nodeDefinition      : IDENTIFIER ID_DESC_SEPARATOR NODE_DESCRIPTOR EOL ;
+edgeDefinition      : IDENTIFIER ID_DESC_SEPARATOR ( IDENTIFIER | DESC_SEPARATOR IDENTIFIER )+ EOL ;
 
 NODE_DESCRIPTOR     : 'INPUT_HIGH'
                     | 'INPUT_LOW'
@@ -26,8 +26,11 @@ NODE_DESCRIPTOR     : 'INPUT_HIGH'
 IDENTIFIER          : [a-zA-Z]+[a-zA-Z0-9]* ;
 
 GROUP_SEPARATOR     : NEWLINE+ ;
-SEPARATOR           : ':' ;
+ID_DESC_SEPARATOR   : ':' ;
+DESC_SEPARATOR      : ',' ;
 EOL                 : ';' .*? (NEWLINE | EOF) ;
+
+COMMENT             : '#' .*? [\r\n]+ -> skip ;
 
 NEWLINE             : '\r\n' | '\r' | '\n' ;
 WS                  : [ \t]+ -> skip ;
