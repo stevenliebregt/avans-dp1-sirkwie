@@ -1,4 +1,37 @@
 @startuml
--> Circuit: simulate()
+autonumber
+
+Main ++
+Main -> CircuitBuilder ** : new
+Main -> CircuitBuilder ++ : build()
+
+CircuitBuilder -> Circuit ** : new
+Main -> Circuit ++ : simulate()
+
+group foreach inputs
+    Circuit -> InputNode ++ : calculate()
+
+    InputNode -> InputNode : notify()
+    InputNode -> Node ++ : calculate() "next"
+
+    loop until the probes are reached
+    Node -> Node : notify()
+    Node -> Node ++ : calculate() "next"
+
+    Node -> ProbeNode ++ : calculate()
+    ProbeNode -> ProbeNode : notify()
+
+    ProbeNode -> ProbeObserver ++ : probeChanged()
+    ProbeNode --
+    ProbeObserver --
+    Node --
+
+    end
+end
+
+Node --
+InputNode --
+CircuitBuilder --
+Circuit --
 
 @enduml
