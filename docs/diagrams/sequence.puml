@@ -1,8 +1,12 @@
 @startuml
 autonumber
 
+Main ++
+Main -> CircuitBuilder ** : new
+Main -> CircuitBuilder ++ : build()
+
 CircuitBuilder -> Circuit ** : new
-CircuitBuilder -> Circuit ++ : simulate()
+Main -> Circuit ++ : simulate()
 
 group foreach inputs
     Circuit -> InputNode ++ : calculate()
@@ -23,9 +27,11 @@ group foreach inputs
     Node --
 
     end
-    Node --
-    InputNode --
 end
 
+Node --
+InputNode --
+CircuitBuilder --
 Circuit --
+
 @enduml
