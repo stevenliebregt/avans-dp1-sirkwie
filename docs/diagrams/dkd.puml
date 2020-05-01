@@ -1,11 +1,12 @@
 @startuml
+
 ' Nodes
 abstract class Node {
     +value: Observable<boolean>
-    #previous: Set<Node>
-
     +{abstract} calculate()
 }
+Node --> "0..*" Node : previous >
+Node --> "0..*" Node : next >
 
 class InputNode {
 }
@@ -46,12 +47,14 @@ Port <|-- XorPort
 
 ' Circuit
 class Circuit {
-    -inputs: List<InputNode>
-    -probes: List<ProbeNode>
-
     +simulate()
 }
-InputNode <|.. Circuit
-ProbeNode <|.. Circuit
-Node <|-- Circuit
+InputNode "1..*" <--* Circuit : inputs <
+ProbeNode "1..*" <--* Circuit : probes <
+Node "1..*" <--* Circuit : nodes <
+
+' CircuitBuilder
+class CircuitBuilder {
+    +new()
+}
 @enduml
