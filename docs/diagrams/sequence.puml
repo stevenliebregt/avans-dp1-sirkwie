@@ -4,9 +4,26 @@ autonumber
 CircuitBuilder -> Circuit ** : new
 CircuitBuilder -> Circuit ++ : simulate()
 
-loop foreach inputs
-    Circuit -> InputNode ++ : initialize()
-    Circuit -> InputNode : calculate()
+group foreach inputs
+    Circuit -> InputNode ++ : calculate()
+
+    InputNode -> InputNode : notify()
+    InputNode -> Node ++ : calculate() "next"
+
+    loop until the probes are reached
+    Node -> Node : notify()
+    Node -> Node ++ : calculate() "next"
+
+    Node -> ProbeNode ++ : calculate()
+    ProbeNode -> ProbeNode : notify()
+
+    ProbeNode -> ProbeObserver ++ : probeChanged()
+    ProbeNode --
+    ProbeObserver --
+    Node --
+
+    end
+    Node --
     InputNode --
 end
 
