@@ -1,8 +1,8 @@
-package com.rickensteven.sirkwie.port;
+package com.rickensteven.sirkwie;
 
-import com.rickensteven.sirkwie.domain.AndPort;
 import com.rickensteven.sirkwie.domain.Input;
 import com.rickensteven.sirkwie.domain.Node;
+import com.rickensteven.sirkwie.domain.XorPort;
 import org.junit.jupiter.api.Test;
 
 import java.util.HashSet;
@@ -11,7 +11,7 @@ import java.util.Set;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class AndPortTest
+public class XorPortTest
 {
     /**
      *   Input A | Input B | Output
@@ -26,62 +26,62 @@ public class AndPortTest
             add(new Input(false));
         }};
 
-        AndPort andPort = new AndPort(inputs);
+        XorPort xorPort = new XorPort(inputs);
 
-        assertFalse(andPort.calculate());
+        assertFalse(xorPort.calculate());
     }
 
     /**
      *   Input A | Input B | Output
      *  ---------|---------|--------
-     *         0 |       1 |      0
+     *         0 |       1 |      1
+     */
+    @Test
+    public void shouldReturnOnA()
+    {
+        Set<Node> inputs = new HashSet<Node>() {{
+            add(new Input(false));
+            add(new Input(true));
+        }};
+
+        XorPort xorPort = new XorPort(inputs);
+
+        assertTrue(xorPort.calculate());
+    }
+
+    /**
+     *   Input A | Input B | Output
+     *  ---------|---------|--------
+     *         1 |       0 |      1
+     */
+    @Test
+    public void shouldReturnOnB()
+    {
+        Set<Node> inputs = new HashSet<Node>() {{
+            add(new Input(true));
+            add(new Input(false));
+        }};
+
+        XorPort xorPort = new XorPort(inputs);
+
+        assertTrue(xorPort.calculate());
+    }
+
+    /**
+     *   Input A | Input B | Output
+     *  ---------|---------|--------
+     *         1 |       1 |      0
      */
     @Test
     public void shouldReturnOffB()
     {
         Set<Node> inputs = new HashSet<Node>() {{
-            add(new Input(false));
-            add(new Input(true));
-        }};
-
-        AndPort andPort = new AndPort(inputs);
-
-        assertFalse(andPort.calculate());
-    }
-
-    /**
-     *   Input A | Input B | Output
-     *  ---------|---------|--------
-     *         1 |       0 |      0
-     */
-    @Test
-    public void shouldReturnOffC()
-    {
-        Set<Node> inputs = new HashSet<Node>() {{
-            add(new Input(true));
-            add(new Input(false));
-        }};
-
-        AndPort andPort = new AndPort(inputs);
-
-        assertFalse(andPort.calculate());
-    }
-
-    /**
-     *   Input A | Input B | Output
-     *  ---------|---------|--------
-     *         1 |       1 |      1
-     */
-    @Test
-    public void shouldReturnOn()
-    {
-        Set<Node> inputs = new HashSet<Node>() {{
             add(new Input(true));
             add(new Input(true));
         }};
 
-        AndPort andPort = new AndPort(inputs);
+        XorPort xorPort = new XorPort(inputs);
 
-        assertTrue(andPort.calculate());
+        assertFalse(xorPort.calculate());
     }
 }
