@@ -12,7 +12,7 @@ import java.util.List;
  *         1 |       0 |      0
  *         1 |       1 |      1
  */
-public class AndPort extends Node
+public class AndPort extends Port
 {
     public AndPort(List<Node> previous)
     {

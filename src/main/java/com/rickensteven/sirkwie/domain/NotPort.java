@@ -10,7 +10,7 @@ import java.util.List;
  *         0 |      1
  *         1 |      0
  */
-public class NotPort extends Node
+public class NotPort extends Port
 {
     public NotPort(List<Node> previous)
     {

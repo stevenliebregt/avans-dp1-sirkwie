@@ -3,18 +3,18 @@ package com.rickensteven.sirkwie.domain;
 import java.util.List;
 
 /**
- * The output of an XOR port is only '1' the number of '1' inputs is odd.
+ * The output of an OR port is '1' if one or both of the inputs are '1'.
  *
  *   Input A | Input B | Output
  *  ---------|---------|--------
  *         0 |       0 |      0
  *         0 |       1 |      1
  *         1 |       0 |      1
- *         1 |       1 |      0
+ *         1 |       1 |      1
  */
-public class XorPort extends Port
+public class OrPort extends Port
 {
-    public XorPort(List<Node> previous)
+    public OrPort(List<Node> previous)
     {
         super(previous);
     }
@@ -22,10 +22,9 @@ public class XorPort extends Port
     @Override
     public boolean calculate()
     {
-        long on = previous.stream()
+        return previous
+                .stream()
                 .filter(node -> node.value.getValue())
-                .count();
-
-        return on % 2 == 1;
+                .count() >= 1;
     }
 }
