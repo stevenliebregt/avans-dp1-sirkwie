@@ -2,7 +2,7 @@ package com.rickensteven.sirkwie;
 
 import org.junit.jupiter.api.Test;
 
-public class PortFactoryTest
+public class NodeFactoryTest
 {
     @Test
     public void shouldReturnNotPort()

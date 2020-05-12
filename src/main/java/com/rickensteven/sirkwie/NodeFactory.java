@@ -1,6 +1,6 @@
 package com.rickensteven.sirkwie;
 
-public class PortFactory
+public class NodeFactory
 {
     // TODO:
 }
