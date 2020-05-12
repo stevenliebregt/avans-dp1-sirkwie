@@ -8,11 +8,21 @@ import org.junit.jupiter.api.Test;
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.assertFalse;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class NotPortTest
 {
+    @Test
+    public void shouldThrowErrorNotOneInput()
+    {
+        List<Node> inputs = new ArrayList<Node>() {{
+            add(new Input(false));
+            add(new Input(false));
+        }};
+
+        assertThrows(IllegalArgumentException.class, () -> new NotPort(inputs));
+    }
+
     /**
      *   Input A | Output
      *  ---------|--------
