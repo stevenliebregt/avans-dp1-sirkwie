@@ -1,6 +1,6 @@
-package com.rickensteven.sirkwie;
+package com.rickensteven.sirkwie.core;
 
-import com.rickensteven.sirkwie.domain.Input;
+import com.rickensteven.sirkwie.core.domain.Input;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;

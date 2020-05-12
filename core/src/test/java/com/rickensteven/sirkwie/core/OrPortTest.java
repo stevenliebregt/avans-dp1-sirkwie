@@ -1,8 +1,8 @@
-package com.rickensteven.sirkwie;
+package com.rickensteven.sirkwie.core;
 
-import com.rickensteven.sirkwie.domain.Input;
-import com.rickensteven.sirkwie.domain.Node;
-import com.rickensteven.sirkwie.domain.OrPort;
+import com.rickensteven.sirkwie.core.domain.Input;
+import com.rickensteven.sirkwie.core.domain.Node;
+import com.rickensteven.sirkwie.core.domain.OrPort;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;

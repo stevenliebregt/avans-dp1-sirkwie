@@ -1,6 +1,6 @@
-package com.rickensteven.sirkwie;
+package com.rickensteven.sirkwie.core;
 
-import com.rickensteven.sirkwie.domain.Circuit;
+import com.rickensteven.sirkwie.core.domain.Circuit;
 
 public class CircuitBuilder
 {

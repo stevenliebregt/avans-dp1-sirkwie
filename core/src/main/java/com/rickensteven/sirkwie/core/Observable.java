@@ -1,4 +1,4 @@
-package com.rickensteven.sirkwie;
+package com.rickensteven.sirkwie.core;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.rickensteven.sirkwie;
+package com.rickensteven.sirkwie.core;
 
 import java.io.BufferedReader;
 import java.io.InputStream;

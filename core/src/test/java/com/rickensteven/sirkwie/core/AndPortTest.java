@@ -1,8 +1,8 @@
-package com.rickensteven.sirkwie;
+package com.rickensteven.sirkwie.core;
 
-import com.rickensteven.sirkwie.domain.Input;
-import com.rickensteven.sirkwie.domain.Node;
-import com.rickensteven.sirkwie.domain.NorPort;
+import com.rickensteven.sirkwie.core.domain.AndPort;
+import com.rickensteven.sirkwie.core.domain.Input;
+import com.rickensteven.sirkwie.core.domain.Node;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
@@ -11,24 +11,24 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class NorPortTest
+public class AndPortTest
 {
     /**
      *   Input A | Input B | Output
      *  ---------|---------|--------
-     *         0 |       0 |      1
+     *         0 |       0 |      0
      */
     @Test
-    public void shouldReturnOn()
+    public void shouldReturnOffA()
     {
         List<Node> inputs = new ArrayList<Node>() {{
             add(new Input(false));
             add(new Input(false));
         }};
 
-        NorPort norPort = new NorPort(inputs);
+        AndPort andPort = new AndPort(inputs);
 
-        assertTrue(norPort.calculate());
+        assertFalse(andPort.calculate());
     }
 
     /**
@@ -37,16 +37,16 @@ public class NorPortTest
      *         0 |       1 |      0
      */
     @Test
-    public void shouldReturnOffA()
+    public void shouldReturnOffB()
     {
         List<Node> inputs = new ArrayList<Node>() {{
             add(new Input(false));
             add(new Input(true));
         }};
 
-        NorPort norPort = new NorPort(inputs);
+        AndPort andPort = new AndPort(inputs);
 
-        assertFalse(norPort.calculate());
+        assertFalse(andPort.calculate());
     }
 
     /**
@@ -55,33 +55,33 @@ public class NorPortTest
      *         1 |       0 |      0
      */
     @Test
-    public void shouldReturnOffB()
+    public void shouldReturnOffC()
     {
         List<Node> inputs = new ArrayList<Node>() {{
             add(new Input(true));
             add(new Input(false));
         }};
 
-        NorPort norPort = new NorPort(inputs);
+        AndPort andPort = new AndPort(inputs);
 
-        assertFalse(norPort.calculate());
+        assertFalse(andPort.calculate());
     }
 
     /**
      *   Input A | Input B | Output
      *  ---------|---------|--------
-     *         1 |       1 |      0
+     *         1 |       1 |      1
      */
     @Test
-    public void shouldReturnOffC()
+    public void shouldReturnOn()
     {
         List<Node> inputs = new ArrayList<Node>() {{
             add(new Input(true));
             add(new Input(true));
         }};
 
-        NorPort norPort = new NorPort(inputs);
+        AndPort andPort = new AndPort(inputs);
 
-        assertFalse(norPort.calculate());
+        assertTrue(andPort.calculate());
     }
 }

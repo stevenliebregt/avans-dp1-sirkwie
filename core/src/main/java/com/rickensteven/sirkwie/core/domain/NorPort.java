@@ -1,4 +1,4 @@
-package com.rickensteven.sirkwie.domain;
+package com.rickensteven.sirkwie.core.domain;
 
 import java.util.List;
 

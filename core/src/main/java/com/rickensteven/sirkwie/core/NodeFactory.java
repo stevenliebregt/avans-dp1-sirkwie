@@ -1,4 +1,4 @@
-package com.rickensteven.sirkwie;
+package com.rickensteven.sirkwie.core;
 
 public class NodeFactory
 {

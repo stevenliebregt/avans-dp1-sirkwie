@@ -1,6 +1,6 @@
-package com.rickensteven.sirkwie.domain;
+package com.rickensteven.sirkwie.core.domain;
 
-import com.rickensteven.sirkwie.Observable;
+import com.rickensteven.sirkwie.core.Observable;
 
 import java.util.List;
 

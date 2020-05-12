@@ -1,4 +1,4 @@
-package com.rickensteven.sirkwie.util;
+package com.rickensteven.sirkwie.core.util;
 
 import com.rickensteven.sirkwie.core.DP1CircuitLexer;
 import org.antlr.v4.runtime.ANTLRInputStream;

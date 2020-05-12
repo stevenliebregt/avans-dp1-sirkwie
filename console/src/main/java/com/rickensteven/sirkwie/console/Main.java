@@ -1,6 +1,6 @@
 package com.rickensteven.sirkwie.console;
 
-import com.rickensteven.sirkwie.CircuitFileReader;
+import com.rickensteven.sirkwie.core.CircuitFileReader;
 
 public class Main
 {
