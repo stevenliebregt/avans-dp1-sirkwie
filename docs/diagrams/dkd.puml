@@ -3,7 +3,7 @@
 ' Nodes
 abstract class Node {
     +value: Observable<boolean>
-    +{abstract} calculate()
+    +{abstract} calculate(): boolean
 }
 Node --> "0..*" Node : previous >
 Node --> "0..*" Node : next >

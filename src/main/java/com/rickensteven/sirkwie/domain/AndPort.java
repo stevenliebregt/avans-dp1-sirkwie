@@ -1,5 +1,7 @@
 package com.rickensteven.sirkwie.domain;
 
+import java.util.Set;
+
 /**
  * The output of an AND port is only '1' when both inputs are also '1'.
  *
@@ -12,13 +14,16 @@ package com.rickensteven.sirkwie.domain;
  */
 public class AndPort extends Node
 {
-    @Override
-    public void calculate()
+    public AndPort(Set<Node> previous)
     {
-        value.setValue(
-                previous.stream()
-                        .filter(node -> node.value.getValue())
-                        .count() == previous.size()
-        );
+        super(previous);
+    }
+
+    @Override
+    public boolean calculate()
+    {
+        return previous.stream()
+                .filter(node -> node.value.getValue())
+                .count() == previous.size();
     }
 }
