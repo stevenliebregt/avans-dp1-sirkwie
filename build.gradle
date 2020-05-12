@@ -21,6 +21,7 @@ application {
 plantuml {
     options {
         outputDir = project.file('dist/diagrams')
+        format = 'png'
     }
 
     diagrams {
