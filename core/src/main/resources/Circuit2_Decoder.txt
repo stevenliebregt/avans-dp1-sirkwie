@@ -1,0 +1,47 @@
+# Decoder, maakt van 3 bitjes input het getal 1 tot en met 8 door 8 outputs te hebben.
+# Let op: Je AND-node moet 3 inputs aan kunnen in dit geval.
+# Voor meer info: http://coep.vlab.co.in/?sub=28&brch=81&sim=609&cnt=1
+#
+# Description of all the nodes
+#
+A0:	INPUT_HIGH;
+A1:	INPUT_LOW;
+A2: INPUT_LOW;
+D0:	PROBE;
+D1:	PROBE;
+D2:	PROBE;
+D3:	PROBE;
+D4:	PROBE;
+D5:	PROBE;
+D6:	PROBE;
+D7:	PROBE;
+NOT0:	NOT;
+NOT1:	NOT;
+NOT2:	NOT;
+AND0:	AND;
+AND1:	AND;
+AND2:	AND;
+AND3:	AND;
+AND4:	AND;
+AND5:	AND;
+AND6:	AND;
+AND7:	AND;
+
+#
+#
+# Description of all the edges
+#
+A0:	NOT0,AND1,AND3,AND5,AND7;
+A1:	NOT1,AND2,AND3,AND6,AND7;
+A2:	NOT2,AND4,AND5,AND6,AND7;
+NOT0:	AND0,AND2,AND4,AND6;
+NOT1:	AND0,AND1,AND4,AND5;
+NOT2:	AND0,AND1,AND2,AND3;
+AND0:	D0;
+AND1:	D1;
+AND2:	D2;
+AND3:	D3;
+AND4:	D4;
+AND5:	D5;
+AND6:	D6;
+AND7:	D7;

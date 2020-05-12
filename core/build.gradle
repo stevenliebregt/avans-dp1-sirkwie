@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+    id 'antlr'
+}
+
+group 'com.rickensteven.sirkwie.core'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    antlr 'org.antlr:antlr4:4.5'
+
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.3.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.3.1'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+generateGrammarSource {
+    arguments += ["-visitor"]
+}

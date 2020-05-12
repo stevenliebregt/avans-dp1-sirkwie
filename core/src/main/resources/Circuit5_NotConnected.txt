@@ -1,0 +1,23 @@
+# Unconnected Pins
+#
+#
+#
+# Description of all the nodes
+#
+A:	INPUT_HIGH;
+B:	INPUT_LOW;
+F:	PROBE;
+NODE1:	AND;
+NODE2:	AND;
+NODE3:	AND;
+NODE4:	AND;
+
+#
+#
+# Description of all the edges
+#
+A:	NODE1;
+B:	NODE1;
+NODE1:	NODE2,NODE3;
+NODE3:	NODE4;
+NODE4:	F;

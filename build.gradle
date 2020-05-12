@@ -2,7 +2,6 @@ plugins {
     id 'java'
     id 'application'
     id 'org.fmiw.plantuml' version '0.1'
-    id 'antlr'
 }
 
 group 'com.rickensteven.sirkwie'
@@ -36,8 +35,6 @@ plantuml {
 }
 
 dependencies {
-    antlr 'org.antlr:antlr4:4.5'
-
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.3.1'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.3.1'
 }
@@ -45,9 +42,3 @@ dependencies {
 test {
     useJUnitPlatform()
 }
-
-generateGrammarSource {
-    arguments += ["-visitor"]
-}
-
-run.dependsOn generateGrammarSource

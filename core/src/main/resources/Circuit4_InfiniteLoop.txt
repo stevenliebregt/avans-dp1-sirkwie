@@ -1,0 +1,30 @@
+# Feedback. 
+#
+# Feedback geeft een error in het simulatie algoritme 
+#
+#
+# Description of all the nodes
+#
+S:	INPUT_HIGH;
+R:	INPUT_LOW;
+Q:	PROBE;
+NQ:	PROBE;
+NODE1:	OR;
+NODE2:	OR;
+NODE3:	NOT;
+NODE4:	NOT;
+NODE5:	AND;
+NODE6:	AND;
+
+#
+#
+# Description of all the edges
+#
+S:	NODE5,NODE6;
+R:	NODE5,NODE6;
+NODE1:	NODE3;
+NODE2:	NODE4;
+NODE3:	NODE2,Q;
+NODE4:	NODE1,NQ;
+NODE5:	NODE1;
+NODE6:	NODE2;

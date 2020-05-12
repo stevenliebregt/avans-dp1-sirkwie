@@ -1,0 +1,36 @@
+# Encoder, maakt van 8 bitjes waarvan er 1 op true staat een input 1 unieke code van 3 bitjes.
+# Let op: Je and-node moet 4 inputs aan kunnen in dit geval.
+# Let op: Node A0 is disconnected, maar dit zorgt niet voor een invalide circuit.
+# Voor meer info: http://coep.vlab.co.in/?sub=28&brch=81&sim=609&cnt=1
+#
+# Description of all the nodes
+#
+I0:	INPUT_LOW;
+I1:	INPUT_LOW;
+I2: INPUT_LOW;
+I3: INPUT_LOW;
+I4: INPUT_LOW;
+I5: INPUT_LOW;
+I6: INPUT_LOW;
+I7: INPUT_HIGH;
+D0:	PROBE;
+D1:	PROBE;
+D2:	PROBE;
+OR0:	OR;
+OR1:	OR;
+OR2:	OR;
+
+#
+#
+# Description of all the edges
+#
+I1:	OR2;
+I2:	OR1;
+I3:	OR2,OR1;
+I4:	OR0;
+I5:	OR2,OR0;
+I6:	OR0,OR1;
+I7:	OR2,OR1,OR0;
+OR0: D0;
+OR1: D1;
+OR2: D2;
