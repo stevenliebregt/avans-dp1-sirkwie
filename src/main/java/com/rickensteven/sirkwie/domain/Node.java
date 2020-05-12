@@ -2,14 +2,14 @@ package com.rickensteven.sirkwie.domain;
 
 import com.rickensteven.sirkwie.Observable;
 
-import java.util.Set;
+import java.util.List;
 
 public abstract class Node
 {
     protected Observable<Boolean> value;
-    protected Set<Node> previous;
+    protected List<Node> previous;
 
-    public Node(Set<Node> previous) {
+    public Node(List<Node> previous) {
         // TODO: Set previous
         // TODO: Set next
         this.previous = previous;

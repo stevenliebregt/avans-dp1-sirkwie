@@ -2,13 +2,13 @@ package com.rickensteven.sirkwie.domain;
 
 import com.rickensteven.sirkwie.Observable;
 
-import java.util.HashSet;
+import java.util.ArrayList;
 
 public class Input extends Node
 {
     public Input(boolean initialValue)
     {
-        super(new HashSet<>());
+        super(new ArrayList<>());
         this.value = new Observable<>(initialValue);
     }
 

@@ -5,8 +5,8 @@ import com.rickensteven.sirkwie.domain.Node;
 import com.rickensteven.sirkwie.domain.XorPort;
 import org.junit.jupiter.api.Test;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.ArrayList;
+import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -21,7 +21,7 @@ public class XorPortTest
     @Test
     public void shouldReturnOffA()
     {
-        Set<Node> inputs = new HashSet<Node>() {{
+        List<Node> inputs = new ArrayList<Node>() {{
             add(new Input(false));
             add(new Input(false));
         }};
@@ -39,7 +39,7 @@ public class XorPortTest
     @Test
     public void shouldReturnOnA()
     {
-        Set<Node> inputs = new HashSet<Node>() {{
+        List<Node> inputs = new ArrayList<Node>() {{
             add(new Input(false));
             add(new Input(true));
         }};
@@ -57,7 +57,7 @@ public class XorPortTest
     @Test
     public void shouldReturnOnB()
     {
-        Set<Node> inputs = new HashSet<Node>() {{
+        List<Node> inputs = new ArrayList<Node>() {{
             add(new Input(true));
             add(new Input(false));
         }};
@@ -75,7 +75,7 @@ public class XorPortTest
     @Test
     public void shouldReturnOffB()
     {
-        Set<Node> inputs = new HashSet<Node>() {{
+        List<Node> inputs = new ArrayList<Node>() {{
             add(new Input(true));
             add(new Input(true));
         }};

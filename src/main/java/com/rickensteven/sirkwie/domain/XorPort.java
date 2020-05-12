@@ -1,6 +1,6 @@
 package com.rickensteven.sirkwie.domain;
 
-import java.util.Set;
+import java.util.List;
 
 /**
  * The output of an XOR port is only '1' the number of '1' inputs is odd.
@@ -14,7 +14,7 @@ import java.util.Set;
  */
 public class XorPort extends Node
 {
-    public XorPort(Set<Node> previous)
+    public XorPort(List<Node> previous)
     {
         super(previous);
     }

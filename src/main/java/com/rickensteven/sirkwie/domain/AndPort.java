@@ -1,6 +1,6 @@
 package com.rickensteven.sirkwie.domain;
 
-import java.util.Set;
+import java.util.List;
 
 /**
  * The output of an AND port is only '1' when both inputs are also '1'.
@@ -14,7 +14,7 @@ import java.util.Set;
  */
 public class AndPort extends Node
 {
-    public AndPort(Set<Node> previous)
+    public AndPort(List<Node> previous)
     {
         super(previous);
     }
