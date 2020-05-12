@@ -26,6 +26,6 @@ public class XorPort extends Node
                 .filter(node -> node.value.getValue())
                 .count();
 
-        return on % 2 == 0;
+        return on % 2 == 1;
     }
 }
