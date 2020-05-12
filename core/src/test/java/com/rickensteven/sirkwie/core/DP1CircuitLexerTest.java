@@ -16,11 +16,11 @@ public class DP1CircuitLexerTest
         List<Token> tokens = LexerUtil.getTokens("A: INPUT_HIGH;");
 
         assertEquals(5, tokens.size());
-        assertEquals(com.rickensteven.sirkwie.core.DP1CircuitLexer.IDENTIFIER, tokens.get(0).getType());
-        assertEquals(com.rickensteven.sirkwie.core.DP1CircuitLexer.ID_DESC_SEPARATOR, tokens.get(1).getType());
-        assertEquals(com.rickensteven.sirkwie.core.DP1CircuitLexer.NODE_DESCRIPTOR, tokens.get(2).getType());
-        assertEquals(com.rickensteven.sirkwie.core.DP1CircuitLexer.EOL, tokens.get(3).getType());
-        assertEquals(com.rickensteven.sirkwie.core.DP1CircuitLexer.EOF, tokens.get(4).getType());
+        assertEquals(DP1CircuitLexer.IDENTIFIER, tokens.get(0).getType());
+        assertEquals(DP1CircuitLexer.ID_DESC_SEPARATOR, tokens.get(1).getType());
+        assertEquals(DP1CircuitLexer.NODE_DESCRIPTOR, tokens.get(2).getType());
+        assertEquals(DP1CircuitLexer.EOL, tokens.get(3).getType());
+        assertEquals(DP1CircuitLexer.EOF, tokens.get(4).getType());
     }
 
     // TODO: Make the rest of the tests if we are allowed to use ANTLR
