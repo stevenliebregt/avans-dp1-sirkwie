@@ -1,25 +1,25 @@
 package com.rickensteven.sirkwie.core;
 
 import com.rickensteven.sirkwie.core.domain.Circuit;
-import org.antlr.v4.runtime.ANTLRInputStream;
-import org.antlr.v4.runtime.CommonTokenStream;
-import org.antlr.v4.runtime.tree.ParseTree;
 
 public class CircuitBuilder
 {
-    public Circuit build(String cleanedTxtCircuit)
-    {
-        // TODO: Build the circuit
-        return null;
+    private Circuit circuit;
+
+    public CircuitBuilder() {
+        this.reset();
     }
 
-    private ParseTree parse(String cleanedTxtCircuit)
-    {
-        ANTLRInputStream antlrInputStream = new ANTLRInputStream(cleanedTxtCircuit);
-        DP1CircuitLexer dp1CircuitLexer = new DP1CircuitLexer(antlrInputStream);
-        CommonTokenStream commonTokenStream = new CommonTokenStream(dp1CircuitLexer);
-        DP1CircuitParser dp1CircuitParser = new DP1CircuitParser(commonTokenStream);
+    //TODO add methods for building circuit
+    public void addPort() {
 
-        return dp1CircuitParser.file();
+    }
+
+    public Circuit getCircuit() {
+        return circuit;
+    }
+
+    public void reset() {
+        this.circuit = new Circuit();
     }
 }

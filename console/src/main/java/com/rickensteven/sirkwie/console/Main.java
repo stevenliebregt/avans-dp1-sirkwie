@@ -1,8 +1,11 @@
 package com.rickensteven.sirkwie.console;
 
 import com.rickensteven.sirkwie.core.CircuitBuilder;
+import com.rickensteven.sirkwie.core.CircuitBuilderDirector;
 import com.rickensteven.sirkwie.core.CircuitFileReader;
+import com.rickensteven.sirkwie.core.CircuitParser;
 import com.rickensteven.sirkwie.core.domain.Circuit;
+import org.antlr.v4.runtime.tree.ParseTree;
 
 public class Main
 {
@@ -17,7 +20,12 @@ public class Main
             System.out.println(cleanedTxtCircuit);
 
             CircuitBuilder circuitBuilder = new CircuitBuilder();
-            Circuit circuit = circuitBuilder.build(cleanedTxtCircuit);
+            CircuitParser circuitParser = new CircuitParser();
+            ParseTree parseTree = circuitParser.parse(cleanedTxtCircuit);
+
+            CircuitBuilderDirector circuitBuilderDirector = new CircuitBuilderDirector(circuitBuilder);
+            circuitBuilderDirector.make(cleanedTxtCircuit);
+            Circuit circuit = circuitBuilder.getCircuit();
 
             System.out.println(circuit);
         } catch (Exception exception) {
