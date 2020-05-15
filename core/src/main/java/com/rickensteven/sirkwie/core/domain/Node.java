@@ -8,6 +8,7 @@ public abstract class Node
 {
     protected Observable<Boolean> value;
     protected List<Node> previous;
+    protected List<Node> next;
 
     public Node(List<Node> previous) {
         // TODO: Set previous
