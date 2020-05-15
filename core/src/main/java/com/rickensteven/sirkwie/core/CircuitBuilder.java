@@ -6,20 +6,24 @@ public class CircuitBuilder
 {
     private Circuit circuit;
 
-    public CircuitBuilder() {
+    public CircuitBuilder()
+    {
         this.reset();
     }
 
     //TODO add methods for building circuit
-    public void addPort() {
+    public void addPort()
+    {
 
     }
 
-    public Circuit getCircuit() {
+    public Circuit getCircuit()
+    {
         return circuit;
     }
 
-    public void reset() {
+    public void reset()
+    {
         this.circuit = new Circuit();
     }
 }
