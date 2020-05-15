@@ -1,5 +1,6 @@
 package com.rickensteven.sirkwie.core.domain;
 
+import java.util.HashSet;
 import java.util.Set;
 
 public class Circuit
@@ -8,11 +9,11 @@ public class Circuit
     private Set<Node> inputs;
     private Set<Node> probes;
 
-    public Circuit(Set<Node> nodes, Set<Node> inputs, Set<Node> probes)
+    public Circuit()
     {
-        this.nodes = nodes;
-        this.inputs = inputs;
-        this.probes = probes;
+        this.nodes = new HashSet<>();
+        this.inputs = new HashSet<>();
+        this.probes = new HashSet<>();
     }
 
     /**
