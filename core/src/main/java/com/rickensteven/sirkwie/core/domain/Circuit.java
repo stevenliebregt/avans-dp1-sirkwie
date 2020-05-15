@@ -50,6 +50,21 @@ public class Circuit
         return this.addNode(node);
     }
 
+    public Set<Node> getNodes()
+    {
+        return nodes;
+    }
+
+    public Set<Node> getInputs()
+    {
+        return inputs;
+    }
+
+    public Set<Node> getProbes()
+    {
+        return probes;
+    }
+
     public void simulate()
     {
         // TODO:
