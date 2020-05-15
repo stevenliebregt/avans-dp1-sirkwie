@@ -27,8 +27,9 @@ public class NandPortTest
         }};
 
         NandPort nandPort = new NandPort(inputs);
+        nandPort.calculate();
 
-        assertTrue(nandPort.calculate());
+        assertTrue(nandPort.getValue());
     }
 
     /**
@@ -45,8 +46,9 @@ public class NandPortTest
         }};
 
         NandPort nandPort = new NandPort(inputs);
+        nandPort.calculate();
 
-        assertTrue(nandPort.calculate());
+        assertTrue(nandPort.getValue());
     }
 
     /**
@@ -63,8 +65,9 @@ public class NandPortTest
         }};
 
         NandPort nandPort = new NandPort(inputs);
+        nandPort.calculate();
 
-        assertTrue(nandPort.calculate());
+        assertTrue(nandPort.getValue());
     }
 
     /**
@@ -81,7 +84,8 @@ public class NandPortTest
         }};
 
         NandPort nandPort = new NandPort(inputs);
+        nandPort.calculate();
 
-        assertFalse(nandPort.calculate());
+        assertFalse(nandPort.getValue());
     }
 }

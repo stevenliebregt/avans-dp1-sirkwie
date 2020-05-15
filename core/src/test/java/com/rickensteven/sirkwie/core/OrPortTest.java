@@ -27,8 +27,9 @@ public class OrPortTest
         }};
 
         OrPort orPort = new OrPort(inputs);
+        orPort.calculate();
 
-        assertFalse(orPort.calculate());
+        assertFalse(orPort.getValue());
     }
 
     /**
@@ -45,8 +46,9 @@ public class OrPortTest
         }};
 
         OrPort orPort = new OrPort(inputs);
+        orPort.calculate();
 
-        assertTrue(orPort.calculate());
+        assertTrue(orPort.getValue());
     }
 
     /**
@@ -63,8 +65,9 @@ public class OrPortTest
         }};
 
         OrPort orPort = new OrPort(inputs);
+        orPort.calculate();
 
-        assertTrue(orPort.calculate());
+        assertTrue(orPort.getValue());
     }
 
     /**
@@ -81,7 +84,8 @@ public class OrPortTest
         }};
 
         OrPort orPort = new OrPort(inputs);
+        orPort.calculate();
 
-        assertTrue(orPort.calculate());
+        assertTrue(orPort.getValue());
     }
 }

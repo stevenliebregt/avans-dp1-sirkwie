@@ -12,15 +12,17 @@ public class InputTest
     public void shouldBeOn()
     {
         Input input = new Input(true);
+        input.calculate();
 
-        assertTrue(input.calculate());
+        assertTrue(input.getValue());
     }
 
     @Test
     public void shouldBeOff()
     {
         Input input = new Input(false);
+        input.calculate();
 
-        assertFalse(input.calculate());
+        assertFalse(input.getValue());
     }
 }

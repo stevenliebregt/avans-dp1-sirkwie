@@ -27,8 +27,9 @@ public class AndPortTest
         }};
 
         AndPort andPort = new AndPort(inputs);
+        andPort.calculate();
 
-        assertFalse(andPort.calculate());
+        assertFalse(andPort.getValue());
     }
 
     /**
@@ -45,8 +46,9 @@ public class AndPortTest
         }};
 
         AndPort andPort = new AndPort(inputs);
+        andPort.calculate();
 
-        assertFalse(andPort.calculate());
+        assertFalse(andPort.getValue());
     }
 
     /**
@@ -63,8 +65,9 @@ public class AndPortTest
         }};
 
         AndPort andPort = new AndPort(inputs);
+        andPort.calculate();
 
-        assertFalse(andPort.calculate());
+        assertFalse(andPort.getValue());
     }
 
     /**
@@ -81,7 +84,8 @@ public class AndPortTest
         }};
 
         AndPort andPort = new AndPort(inputs);
+        andPort.calculate();
 
-        assertTrue(andPort.calculate());
+        assertTrue(andPort.getValue());
     }
 }

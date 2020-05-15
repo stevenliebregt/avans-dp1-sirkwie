@@ -27,8 +27,9 @@ public class XorPortTest
         }};
 
         XorPort xorPort = new XorPort(inputs);
+        xorPort.calculate();
 
-        assertFalse(xorPort.calculate());
+        assertFalse(xorPort.getValue());
     }
 
     /**
@@ -45,8 +46,9 @@ public class XorPortTest
         }};
 
         XorPort xorPort = new XorPort(inputs);
+        xorPort.calculate();
 
-        assertTrue(xorPort.calculate());
+        assertTrue(xorPort.getValue());
     }
 
     /**
@@ -63,8 +65,9 @@ public class XorPortTest
         }};
 
         XorPort xorPort = new XorPort(inputs);
+        xorPort.calculate();
 
-        assertTrue(xorPort.calculate());
+        assertTrue(xorPort.getValue());
     }
 
     /**
@@ -81,7 +84,8 @@ public class XorPortTest
         }};
 
         XorPort xorPort = new XorPort(inputs);
+        xorPort.calculate();
 
-        assertFalse(xorPort.calculate());
+        assertFalse(xorPort.getValue());
     }
 }

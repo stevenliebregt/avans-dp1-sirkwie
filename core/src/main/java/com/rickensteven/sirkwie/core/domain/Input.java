@@ -1,20 +1,18 @@
 package com.rickensteven.sirkwie.core.domain;
 
-import com.rickensteven.sirkwie.core.Observable;
-
-import java.util.ArrayList;
-
-public class Input extends Node
+public class Input extends NodeComposite
 {
-    public Input(boolean initialValue)
-    {
-        super(new ArrayList<>());
-        this.value = new Observable<>(initialValue);
+    public Input(boolean value) {
+        setValue(value);
+    }
+
+    public void setValue(boolean value) {
+        this.value = value;
     }
 
     @Override
-    public boolean calculate()
+    public void calculate()
     {
-        return value.getValue();
+        calculateNext();
     }
 }

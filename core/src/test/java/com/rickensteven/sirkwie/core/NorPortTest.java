@@ -27,8 +27,9 @@ public class NorPortTest
         }};
 
         NorPort norPort = new NorPort(inputs);
+        norPort.calculate();
 
-        assertTrue(norPort.calculate());
+        assertTrue(norPort.getValue());
     }
 
     /**
@@ -45,8 +46,9 @@ public class NorPortTest
         }};
 
         NorPort norPort = new NorPort(inputs);
+        norPort.calculate();
 
-        assertFalse(norPort.calculate());
+        assertFalse(norPort.getValue());
     }
 
     /**
@@ -63,8 +65,9 @@ public class NorPortTest
         }};
 
         NorPort norPort = new NorPort(inputs);
+        norPort.calculate();
 
-        assertFalse(norPort.calculate());
+        assertFalse(norPort.getValue());
     }
 
     /**
@@ -81,7 +84,8 @@ public class NorPortTest
         }};
 
         NorPort norPort = new NorPort(inputs);
+        norPort.calculate();
 
-        assertFalse(norPort.calculate());
+        assertFalse(norPort.getValue());
     }
 }

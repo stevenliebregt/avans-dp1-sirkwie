@@ -14,16 +14,16 @@ import java.util.List;
  */
 public class AndPort extends Port
 {
-    public AndPort(List<Node> previous)
-    {
+    public AndPort(List<Node> previous) {
         super(previous);
     }
 
     @Override
-    public boolean calculate()
+    public void calculate()
     {
-        return previous.stream()
-                .filter(node -> node.value.getValue())
+        value = previous.stream()
+                .filter(node -> node.value)
                 .count() == previous.size();
+        calculateNext();
     }
 }

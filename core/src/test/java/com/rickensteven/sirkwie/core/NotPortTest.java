@@ -12,17 +12,6 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class NotPortTest
 {
-    @Test
-    public void shouldThrowErrorNotOneInput()
-    {
-        List<Node> inputs = new ArrayList<Node>() {{
-            add(new Input(false));
-            add(new Input(false));
-        }};
-
-        assertThrows(IllegalArgumentException.class, () -> new NotPort(inputs));
-    }
-
     /**
      *   Input A | Output
      *  ---------|--------
@@ -31,13 +20,12 @@ public class NotPortTest
     @Test
     public void shouldReturnOn()
     {
-        List<Node> inputs = new ArrayList<Node>() {{
-            add(new Input(false));
-        }};
+        Node input = new Input(false);
 
-        NotPort notPort = new NotPort(inputs);
+        NotPort notPort = new NotPort(input);
+        notPort.calculate();
 
-        assertTrue(notPort.calculate());
+        assertTrue(notPort.getValue());
     }
 
     /**
@@ -48,13 +36,11 @@ public class NotPortTest
     @Test
     public void shouldReturnOff()
     {
-        List<Node> inputs = new ArrayList<Node>()
-        {{
-            add(new Input(true));
-        }};
+        Node input = new Input(true);
 
-        NotPort notPort = new NotPort(inputs);
+        NotPort notPort = new NotPort(input);
+        notPort.calculate();
 
-        assertFalse(notPort.calculate());
+        assertFalse(notPort.getValue());
     }
 }
