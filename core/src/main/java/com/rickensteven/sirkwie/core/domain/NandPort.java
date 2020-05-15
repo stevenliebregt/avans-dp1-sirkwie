@@ -4,13 +4,13 @@ import java.util.List;
 
 /**
  * The output of a NAND port is '1' when not both inputs are '1'.
- *
- *   Input A | Input B | Output
- *  ---------|---------|--------
- *         0 |       0 |      1
- *         0 |       1 |      1
- *         1 |       0 |      1
- *         1 |       1 |      0
+ * <p>
+ * Input A | Input B | Output
+ * ---------|---------|--------
+ * 0 |       0 |      1
+ * 0 |       1 |      1
+ * 1 |       0 |      1
+ * 1 |       1 |      0
  */
 public class NandPort extends Port
 {

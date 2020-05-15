@@ -18,6 +18,7 @@ public class Circuit
 
     /**
      * Adds a node to the list of nodes.
+     *
      * @param node The node to add.
      * @return The current circuit.
      */
@@ -29,9 +30,10 @@ public class Circuit
 
     /**
      * Adds a node to the list of inputs, and to the list of nodes.
-     * @see #addNode
+     *
      * @param node The node to add.
      * @return The current circuit.
+     * @see #addNode
      */
     public Circuit addInput(Node node)
     {
@@ -41,9 +43,10 @@ public class Circuit
 
     /**
      * Adds a node to the list of probes, and to the list of nodes.
-     * @see #addNode
+     *
      * @param node The node to add.
      * @return The current circuit.
+     * @see #addNode
      */
     public Circuit addProbe(Node node)
     {

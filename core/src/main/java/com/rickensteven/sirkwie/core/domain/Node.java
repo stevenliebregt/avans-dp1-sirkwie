@@ -10,7 +10,8 @@ public abstract class Node
     protected List<Node> previous;
     protected List<Node> next;
 
-    public Node(List<Node> previous) {
+    public Node(List<Node> previous)
+    {
         // TODO: Set previous
         // TODO: Set next
         this.previous = previous;

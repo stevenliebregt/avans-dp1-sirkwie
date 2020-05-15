@@ -4,11 +4,11 @@ import java.util.List;
 
 /**
  * The NOT port inverts the input.
- *
- *   Input A | Output
- *  ---------|--------
- *         0 |      1
- *         1 |      0
+ * <p>
+ * Input A | Output
+ * ---------|--------
+ * 0 |      1
+ * 1 |      0
  */
 public class NotPort extends Port
 {
