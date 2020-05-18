@@ -27,6 +27,6 @@ public class XorPort extends Port
                 .count();
 
         this.value = on % 2 == 1;
-        calculateNext();
+        super.calculate();
     }
 }

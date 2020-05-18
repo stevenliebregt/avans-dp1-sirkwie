@@ -25,6 +25,6 @@ public class NorPort extends Port
         value = previous
                 .stream()
                 .noneMatch(node -> node.value);
-        calculateNext();
+        super.calculate();
     }
 }

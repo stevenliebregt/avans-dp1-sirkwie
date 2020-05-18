@@ -25,6 +25,6 @@ public class NotPort extends Port
     public void calculate()
     {
         value = !previous.get(0).value;
-        calculateNext();
+        super.calculate();
     }
 }

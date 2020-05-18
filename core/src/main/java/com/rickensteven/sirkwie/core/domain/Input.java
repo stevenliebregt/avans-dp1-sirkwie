@@ -4,19 +4,14 @@ import java.util.List;
 
 public class Input extends NodeComposite
 {
-    public Input(List<Node> previous)
+    public Input(boolean value)
     {
-        super(previous);
+        super(null);
+        setValue(value);
     }
 
     public void setValue(boolean value)
     {
         this.value = value;
-    }
-
-    @Override
-    public void calculate()
-    {
-        calculateNext();
     }
 }

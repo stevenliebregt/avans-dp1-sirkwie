@@ -26,6 +26,6 @@ public class OrPort extends Port
                 .stream()
                 .filter(node -> node.value)
                 .count() >= 1;
-        this.calculateNext();
+        super.calculate();
     }
 }

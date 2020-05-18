@@ -26,7 +26,7 @@ public abstract class NodeComposite extends Node
         return this.children;
     }
 
-    public void calculateNext()
+    public void calculate()
     {
         this.children.forEach(Node::calculate);
     }

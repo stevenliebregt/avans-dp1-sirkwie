@@ -25,6 +25,6 @@ public class NandPort extends Port
         value = previous.stream()
                 .filter(node -> node.value)
                 .count() != previous.size();
-        calculateNext();
+        super.calculate();
     }
 }
