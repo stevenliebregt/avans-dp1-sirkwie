@@ -2,7 +2,6 @@ package com.rickensteven.sirkwie.core.domain;
 
 public class Probe extends Node
 {
-
     private final Node previous;
 
     public Probe(Node previous)

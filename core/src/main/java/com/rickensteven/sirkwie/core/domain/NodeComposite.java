@@ -5,7 +5,6 @@ import java.util.List;
 
 public abstract class NodeComposite extends Node
 {
-
     protected List<Node> children = new ArrayList<>();
 
     public void add(Node child)
