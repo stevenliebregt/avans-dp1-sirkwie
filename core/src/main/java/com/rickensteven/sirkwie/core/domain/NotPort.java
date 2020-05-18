@@ -1,7 +1,6 @@
 package com.rickensteven.sirkwie.core.domain;
 
-import java.util.ArrayList;
-import java.util.Collections;
+import java.util.List;
 
 /**
  * The NOT port inverts the input.
@@ -13,9 +12,13 @@ import java.util.Collections;
  */
 public class NotPort extends Port
 {
-    public NotPort(Node previous)
+    public NotPort(List<Node> previous)
     {
-        super(new ArrayList<>(Collections.singletonList(previous)));
+        super(previous);
+
+        if (previous.size() != 1) {
+            throw new IllegalArgumentException("The NOT port must have exactly 1 input");
+        }
     }
 
     @Override
