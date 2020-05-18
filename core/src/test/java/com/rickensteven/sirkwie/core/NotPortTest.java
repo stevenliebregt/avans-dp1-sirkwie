@@ -5,6 +5,9 @@ import com.rickensteven.sirkwie.core.domain.Node;
 import com.rickensteven.sirkwie.core.domain.NotPort;
 import org.junit.jupiter.api.Test;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
@@ -18,9 +21,12 @@ public class NotPortTest
     @Test
     public void shouldReturnOn()
     {
-        Node input = new Input(false);
+        List<Node> inputs = new ArrayList<Node>()
+        {{
+            add(new Input(false));
+        }};
 
-        NotPort notPort = new NotPort(input);
+        NotPort notPort = new NotPort(inputs);
         notPort.calculate();
 
         assertTrue(notPort.getValue());
@@ -34,9 +40,12 @@ public class NotPortTest
     @Test
     public void shouldReturnOff()
     {
-        Node input = new Input(true);
+        List<Node> inputs = new ArrayList<Node>()
+        {{
+            add(new Input(true));
+        }};
 
-        NotPort notPort = new NotPort(input);
+        NotPort notPort = new NotPort(inputs);
         notPort.calculate();
 
         assertFalse(notPort.getValue());
