@@ -1,18 +1,17 @@
 package com.rickensteven.sirkwie.core.domain;
 
+import java.util.List;
+
 public class Probe extends Node
 {
-
-    private final Node previous;
-
-    public Probe(Node previous)
+    public Probe(List<Node> previous)
     {
-        this.previous = previous;
+        super(previous);
     }
 
     @Override
     public void calculate()
     {
-        this.value = previous.value;
+        this.value = previous.get(0).value;
     }
 }

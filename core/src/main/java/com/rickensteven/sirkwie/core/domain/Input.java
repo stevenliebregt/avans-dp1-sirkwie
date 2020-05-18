@@ -1,10 +1,12 @@
 package com.rickensteven.sirkwie.core.domain;
 
+import java.util.List;
+
 public class Input extends NodeComposite
 {
-    public Input(boolean value)
+    public Input(List<Node> previous)
     {
-        setValue(value);
+        super(previous);
     }
 
     public void setValue(boolean value)
