@@ -2,11 +2,13 @@ package com.rickensteven.sirkwie.core.domain;
 
 public class Input extends NodeComposite
 {
-    public Input(boolean value) {
+    public Input(boolean value)
+    {
         setValue(value);
     }
 
-    public void setValue(boolean value) {
+    public void setValue(boolean value)
+    {
         this.value = value;
     }
 

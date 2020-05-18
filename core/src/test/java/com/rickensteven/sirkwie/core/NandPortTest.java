@@ -14,14 +14,15 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 public class NandPortTest
 {
     /**
-     *   Input A | Input B | Output
-     *  ---------|---------|--------
-     *         0 |       0 |      1
+     * Input A | Input B | Output
+     * ---------|---------|--------
+     * 0 |       0 |      1
      */
     @Test
     public void shouldReturnOnA()
     {
-        List<Node> inputs = new ArrayList<Node>() {{
+        List<Node> inputs = new ArrayList<Node>()
+        {{
             add(new Input(false));
             add(new Input(false));
         }};
@@ -33,14 +34,15 @@ public class NandPortTest
     }
 
     /**
-     *   Input A | Input B | Output
-     *  ---------|---------|--------
-     *         0 |       1 |      1
+     * Input A | Input B | Output
+     * ---------|---------|--------
+     * 0 |       1 |      1
      */
     @Test
     public void shouldReturnOnB()
     {
-        List<Node> inputs = new ArrayList<Node>() {{
+        List<Node> inputs = new ArrayList<Node>()
+        {{
             add(new Input(false));
             add(new Input(true));
         }};
@@ -52,14 +54,15 @@ public class NandPortTest
     }
 
     /**
-     *   Input A | Input B | Output
-     *  ---------|---------|--------
-     *         1 |       0 |      1
+     * Input A | Input B | Output
+     * ---------|---------|--------
+     * 1 |       0 |      1
      */
     @Test
     public void shouldReturnOnC()
     {
-        List<Node> inputs = new ArrayList<Node>() {{
+        List<Node> inputs = new ArrayList<Node>()
+        {{
             add(new Input(true));
             add(new Input(false));
         }};
@@ -71,14 +74,15 @@ public class NandPortTest
     }
 
     /**
-     *   Input A | Input B | Output
-     *  ---------|---------|--------
-     *         1 |       1 |      0
+     * Input A | Input B | Output
+     * ---------|---------|--------
+     * 1 |       1 |      0
      */
     @Test
     public void shouldReturnOff()
     {
-        List<Node> inputs = new ArrayList<Node>() {{
+        List<Node> inputs = new ArrayList<Node>()
+        {{
             add(new Input(true));
             add(new Input(true));
         }};

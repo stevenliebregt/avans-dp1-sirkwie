@@ -14,12 +14,14 @@ import java.util.List;
  */
 public class XorPort extends Port
 {
-    public XorPort(List<Node> previous) {
+    public XorPort(List<Node> previous)
+    {
         super(previous);
     }
 
     @Override
-    public void calculate() {
+    public void calculate()
+    {
         long on = previous.stream()
                 .filter(Node::getValue)
                 .count();

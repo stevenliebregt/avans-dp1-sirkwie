@@ -14,7 +14,8 @@ import java.util.List;
  */
 public class OrPort extends Port
 {
-    public OrPort(List<Node> previous) {
+    public OrPort(List<Node> previous)
+    {
         super(previous);
     }
 

@@ -5,17 +5,15 @@ import com.rickensteven.sirkwie.core.domain.Node;
 import com.rickensteven.sirkwie.core.domain.NotPort;
 import org.junit.jupiter.api.Test;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class NotPortTest
 {
     /**
-     *   Input A | Output
-     *  ---------|--------
-     *         0 |      1
+     * Input A | Output
+     * ---------|--------
+     * 0 |      1
      */
     @Test
     public void shouldReturnOn()
@@ -29,9 +27,9 @@ public class NotPortTest
     }
 
     /**
-     *   Input A | Output
-     *  ---------|--------
-     *         1 |      0
+     * Input A | Output
+     * ---------|--------
+     * 1 |      0
      */
     @Test
     public void shouldReturnOff()

@@ -11,35 +11,43 @@ public class CircuitBuilder
         this.reset();
     }
 
-    public void addAndPort() {
+    public void addAndPort()
+    {
 
     }
 
-    public void addNandPort() {
+    public void addNandPort()
+    {
 
     }
 
-    public void addNorPort() {
+    public void addNorPort()
+    {
 
     }
 
-    public void addNotPort() {
+    public void addNotPort()
+    {
 
     }
 
-    public void addOrPort() {
+    public void addOrPort()
+    {
 
     }
 
-    public void addXorPort() {
+    public void addXorPort()
+    {
 
     }
 
-    public void addInput() {
+    public void addInput()
+    {
 
     }
 
-    public void addProbe() {
+    public void addProbe()
+    {
 
     }
 

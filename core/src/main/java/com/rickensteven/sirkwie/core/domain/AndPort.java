@@ -14,7 +14,8 @@ import java.util.List;
  */
 public class AndPort extends Port
 {
-    public AndPort(List<Node> previous) {
+    public AndPort(List<Node> previous)
+    {
         super(previous);
     }
 

@@ -15,7 +15,8 @@ import java.util.List;
 public class NandPort extends Port
 {
 
-    public NandPort(List<Node> previous) {
+    public NandPort(List<Node> previous)
+    {
         super(previous);
     }
 
