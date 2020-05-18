@@ -2,6 +2,7 @@ package com.rickensteven.sirkwie.console;
 
 import com.rickensteven.sirkwie.core.*;
 import com.rickensteven.sirkwie.core.building.ANTLRCircuitBuilder;
+import com.rickensteven.sirkwie.core.building.ANTLRCircuitParser;
 import com.rickensteven.sirkwie.core.building.CircuitBuilderDirector;
 import com.rickensteven.sirkwie.core.domain.Circuit;
 
@@ -17,7 +18,8 @@ public class Main
 
             // Building example TODO: Check this
             CircuitBuilderDirector circuitBuilderDirector = new CircuitBuilderDirector();
-            ANTLRCircuitBuilder antlrCircuitBuilder = new ANTLRCircuitBuilder();
+            ANTLRCircuitParser antlrCircuitParser = new ANTLRCircuitParser();
+            ANTLRCircuitBuilder antlrCircuitBuilder = new ANTLRCircuitBuilder(antlrCircuitParser);
 
             circuitBuilderDirector.setCircuitBuilder(antlrCircuitBuilder);
             circuitBuilderDirector.construct(cleanedTxtCircuit);
