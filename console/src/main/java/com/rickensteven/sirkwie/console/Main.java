@@ -1,8 +1,9 @@
 package com.rickensteven.sirkwie.console;
 
 import com.rickensteven.sirkwie.core.*;
+import com.rickensteven.sirkwie.core.building.ANTLRCircuitBuilder;
+import com.rickensteven.sirkwie.core.building.CircuitBuilderDirector;
 import com.rickensteven.sirkwie.core.domain.Circuit;
-import org.antlr.v4.runtime.tree.ParseTree;
 
 public class Main
 {
@@ -14,15 +15,14 @@ public class Main
             CircuitFileReader circuitFileReader = new CircuitFileReader();
             String cleanedTxtCircuit = circuitFileReader.read("Circuit1_FullAdder.txt");
 
-            System.out.println(cleanedTxtCircuit);
+            // Building example TODO: Check this
+            CircuitBuilderDirector circuitBuilderDirector = new CircuitBuilderDirector();
+            ANTLRCircuitBuilder antlrCircuitBuilder = new ANTLRCircuitBuilder();
 
-            CircuitBuilder circuitBuilder = new CircuitBuilder();
-            CircuitParser circuitParser = new CircuitParser();
+            circuitBuilderDirector.setCircuitBuilder(antlrCircuitBuilder);
+            circuitBuilderDirector.construct(cleanedTxtCircuit);
 
-            ICircuitBuilderDirector circuitBuilderDirector = new ANTLRCircuitBuilderDirector(circuitBuilder, circuitParser);
-            circuitBuilderDirector.make(cleanedTxtCircuit);
-
-            Circuit circuit = circuitBuilder.getCircuit();
+            Circuit circuit = antlrCircuitBuilder.getCircuit();
 
             System.out.println(circuit);
         } catch (Exception exception) {
