@@ -1,17 +1,20 @@
 package com.rickensteven.sirkwie.core.domain;
 
-import java.util.List;
-
-public class Input extends NodeComposite
+public class Input extends Node
 {
     public Input(boolean value)
     {
-        super(null);
         setValue(value);
     }
 
     public void setValue(boolean value)
     {
         this.value = value;
+    }
+
+    @Override
+    public boolean calculate()
+    {
+        return value;
     }
 }

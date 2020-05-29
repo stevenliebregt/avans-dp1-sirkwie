@@ -14,17 +14,17 @@ import java.util.List;
  */
 public class NandPort extends Port
 {
-    public NandPort(List<Node> previous)
+    public NandPort(List<Node> parents)
     {
-        super(previous);
+        super(parents);
     }
 
     @Override
-    public void calculate()
+    public boolean calculate()
     {
-        value = previous.stream()
-                .filter(node -> node.value)
-                .count() != previous.size();
-        super.calculate();
+        value = parents.stream()
+                .filter(Node::calculate)
+                .count() != parents.size();
+        return value;
     }
 }

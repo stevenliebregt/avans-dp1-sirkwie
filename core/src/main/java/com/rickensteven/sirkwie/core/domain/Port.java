@@ -4,8 +4,8 @@ import java.util.List;
 
 public abstract class Port extends NodeComposite
 {
-    public Port(List<Node> previous)
+    public Port(List<Node> parents)
     {
-        super(previous);
+        super(parents);
     }
 }
