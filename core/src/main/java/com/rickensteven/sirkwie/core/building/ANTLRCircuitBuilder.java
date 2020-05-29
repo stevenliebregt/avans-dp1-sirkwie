@@ -22,12 +22,16 @@ public class ANTLRCircuitBuilder extends CircuitBuilder
     @Override
     public void buildNodes()
     {
+        System.out.println("I should build nodes");
+        System.out.println(parseTree.toStringTree());
         // TODO:
     }
 
     @Override
     public void buildEdges()
     {
+        System.out.println("I should build edges");
+        System.out.println(parseTree.toStringTree());
         // TODO:
     }
 }
