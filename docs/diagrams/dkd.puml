@@ -2,15 +2,23 @@
 
 ' Nodes
 abstract class Node {
-    +value: Observable<boolean>
+    -value: boolean
+    +getValue(): boolean
     +{abstract} calculate(): boolean
 }
 Node --> "0..*" Node : previous >
-Node --> "0..*" Node : next >
 
+abstract class NodeComposite {
+    +add(Node: child): void
+    +remove(Node: child): void
+    +getChildren(): List<Node>
+}
+NodeComposite --> "0..*" Node : children >
+
+' Inputs
 class InputNode {
 }
-Node <|-- InputNode
+NodeComposite <|-- InputNode
 
 class ProbeNode {
 }
@@ -19,7 +27,7 @@ Node <|-- ProbeNode
 ' Ports
 abstract class Port {
 }
-Node <|-- Port
+NodeComposite <|-- Port
 
 class AndPort {
 }
@@ -47,7 +55,13 @@ Port <|-- XorPort
 
 ' Circuit
 class Circuit {
-    +simulate()
+    +simulate(): void
+    +addProbe(Node node): Circuit
+    +addInput(Node node): Circuit
+    +addNode(Node node): Circuit
+    +getProbes(): Set<Node>
+    +getInputs(): Set<Node>
+    +getNodes(): Set<Node>
 }
 InputNode "1..*" <--* Circuit : inputs <
 ProbeNode "1..*" <--* Circuit : probes <
@@ -55,6 +69,31 @@ Node "1..*" <--* Circuit : nodes <
 
 ' CircuitBuilder
 class CircuitBuilder {
-    +new()
+    +{abstract} buildNodes(...): void
+    +{abstract} buildEdges(...): void
+    +reset(String cleanedTxtCircuit): void
+    +getCircuit(): Circuit
 }
+
+class ANTLRCircuitBuilder {
+}
+CircuitBuilder <|-- ANTLRCircuitBuilder
+
+' NodeFactory
+class NodeFactory {
+}
+
+' CircuitParser
+class ANTLRCircuitParser {
+}
+
+' CircuitFileReader
+class CircuitFileReader {
+}
+
+' Main
+class Main {
+
+}
+
 @enduml
