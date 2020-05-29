@@ -78,6 +78,13 @@ class CircuitBuilder {
 class ANTLRCircuitBuilder {
 }
 CircuitBuilder <|-- ANTLRCircuitBuilder
+ANTLRCircuitBuilder "1" --> ANTLRCircuitParser : parser >
+
+class CircuitBuilderDirector {
+    +setCircuitBuilder(CircuitBuilder: circuitBuilder)
+    +construct(String: cleanedTxtCircuit): void
+}
+CircuitBuilder "0..1" <-- CircuitBuilderDirector : builder <
 
 ' NodeFactory
 class NodeFactory {
@@ -85,6 +92,8 @@ class NodeFactory {
 
 ' CircuitParser
 class ANTLRCircuitParser {
+    -antlrCircuitParser: ANTLRCircuitParser
+    -parseTree: ParseTree
 }
 
 ' CircuitFileReader
@@ -93,7 +102,7 @@ class CircuitFileReader {
 
 ' Main
 class Main {
-
 }
+
 
 @enduml
