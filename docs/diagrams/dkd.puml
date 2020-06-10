@@ -24,34 +24,34 @@ class ProbeNode {
 }
 Node <|-- ProbeNode
 
-' Ports
-abstract class Port {
+' Gates
+abstract class Gate {
 }
-NodeComposite <|-- Port
+NodeComposite <|-- Gate
 
-class AndPort {
+class AndGate {
 }
-Port <|-- AndPort
+Gate <|-- AndGate
 
-class NAndPort {
+class NAndGate {
 }
-AndPort <|-- NAndPort
+AndGate <|-- NAndGate
 
-class OrPort {
+class OrGate {
 }
-Port <|-- OrPort
+Gate <|-- OrGate
 
-class NorPort {
+class NorGate {
 }
-OrPort <|-- NorPort
+OrGate <|-- NorGate
 
-class NotPort {
+class NotGate {
 }
-Port <|-- NotPort
+Gate <|-- NotGate
 
-class XorPort {
+class XorGate {
 }
-Port <|-- XorPort
+Gate <|-- XorGate
 
 ' Circuit
 class Circuit {
