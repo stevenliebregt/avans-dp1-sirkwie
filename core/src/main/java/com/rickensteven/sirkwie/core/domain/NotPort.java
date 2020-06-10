@@ -12,19 +12,19 @@ import java.util.List;
  */
 public class NotPort extends Port
 {
-    public NotPort(List<Node> previous)
+    public NotPort(List<Node> parents)
     {
-        super(previous);
+        super(parents);
 
-        if (previous.size() != 1) {
+        if (parents.size() != 1) {
             throw new IllegalArgumentException("The NOT port must have exactly 1 input");
         }
     }
 
     @Override
-    public void calculate()
+    public boolean calculate()
     {
-        value = !previous.get(0).value;
-        super.calculate();
+        value = !parents.get(0).calculate();
+        return value;
     }
 }

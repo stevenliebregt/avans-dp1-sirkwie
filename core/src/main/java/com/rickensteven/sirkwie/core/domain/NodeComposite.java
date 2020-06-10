@@ -5,29 +5,29 @@ import java.util.List;
 
 public abstract class NodeComposite extends Node
 {
-    protected List<Node> children = new ArrayList<>();
+    // Called parents because they are in the context of the circuit
+    protected List<Node> parents = new ArrayList<>();
 
-    public NodeComposite(List<Node> previous) {
-        super(previous);
+    public NodeComposite(List<Node> parents) {
+        this.parents.addAll(parents);
     }
 
-    public void add(Node child)
+    public NodeComposite() {}
+
+    public void add(Node parent)
     {
-        this.children.add(child);
+        this.parents.add(parent);
     }
 
-    public void remove(Node child)
+    public void remove(Node parent)
     {
-        this.children.remove(child);
+        this.parents.remove(parent);
     }
 
-    public List<Node> getChildren()
+    public List<Node> getParents()
     {
-        return this.children;
+        return this.parents;
     }
 
-    public void calculate()
-    {
-        this.children.forEach(Node::calculate);
-    }
+    public abstract boolean calculate();
 }

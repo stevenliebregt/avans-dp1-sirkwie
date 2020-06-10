@@ -14,18 +14,18 @@ import java.util.List;
  */
 public class OrPort extends Port
 {
-    public OrPort(List<Node> previous)
+    public OrPort(List<Node> parents)
     {
-        super(previous);
+        super(parents);
     }
 
     @Override
-    public void calculate()
+    public boolean calculate()
     {
-        value = previous
+        value = parents
                 .stream()
-                .filter(node -> node.value)
+                .filter(Node::calculate)
                 .count() >= 1;
-        super.calculate();
+        return value;
     }
 }

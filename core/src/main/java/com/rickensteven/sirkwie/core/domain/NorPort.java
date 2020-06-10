@@ -14,17 +14,17 @@ import java.util.List;
  */
 public class NorPort extends Port
 {
-    public NorPort(List<Node> previous)
+    public NorPort(List<Node> parents)
     {
-        super(previous);
+        super(parents);
     }
 
     @Override
-    public void calculate()
+    public boolean calculate()
     {
-        value = previous
+        value = parents
                 .stream()
-                .noneMatch(node -> node.value);
-        super.calculate();
+                .noneMatch(Node::calculate);
+        return value;
     }
 }

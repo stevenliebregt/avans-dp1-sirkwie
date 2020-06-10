@@ -14,19 +14,19 @@ import java.util.List;
  */
 public class XorPort extends Port
 {
-    public XorPort(List<Node> previous)
+    public XorPort(List<Node> parents)
     {
-        super(previous);
+        super(parents);
     }
 
     @Override
-    public void calculate()
+    public boolean calculate()
     {
-        long on = previous.stream()
-                .filter(Node::getValue)
+        long on = parents.stream()
+                .filter(Node::calculate)
                 .count();
 
         this.value = on % 2 == 1;
-        super.calculate();
+        return value;
     }
 }
