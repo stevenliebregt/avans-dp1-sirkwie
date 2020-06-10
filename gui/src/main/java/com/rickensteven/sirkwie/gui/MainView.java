@@ -32,12 +32,20 @@ public class MainView
     {
         view = new BorderPane();
         view.setTop(setupUiToolbar());
-        view.setCenter(setupUiSimulation());
+        view.setCenter(new Label("Please select a circuit file first"));
     }
 
     private void connectViewModel()
     {
-        mainViewModel.circuitProperty.addListener(((observable, oldValue, newValue) -> simulateButton.setDisable(newValue == null)));
+        mainViewModel.circuitProperty.addListener(((observable, oldValue, newValue) -> {
+            if (newValue == null) {
+                simulateButton.setDisable(true);
+                return;
+            }
+
+            simulateButton.setDisable(false);
+            view.setCenter(setupUiSimulation());
+        }));
     }
 
     private ToolBar setupUiToolbar()
@@ -65,6 +73,7 @@ public class MainView
     private Label setupUiSimulation()
     {
         // TODO: Display the simulation
+        System.out.println(mainViewModel.circuitProperty.getValue().getInputs());
 
         return new Label("Hello, world!");
     }

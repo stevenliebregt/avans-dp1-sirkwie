@@ -7,8 +7,6 @@ plugins {
 group 'com.rickensteven.sirkwie'
 version '1.0-SNAPSHOT'
 
-sourceCompatibility = 1.8
-
 mainClassName = 'com.rickensteven.sirkwie.gui.Main'
 
 repositories {
