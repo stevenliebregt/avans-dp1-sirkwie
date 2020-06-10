@@ -35,23 +35,23 @@ Gate <|-- AndGate
 
 class NAndGate {
 }
-AndGate <|-- NAndGate
+Gate <|-- NAndGate
 
 class OrGate {
 }
 Gate <|-- OrGate
 
-class NorGate {
+class NOrGate {
 }
-OrGate <|-- NorGate
+Gate <|-- NOrGate
 
 class NotGate {
 }
 Gate <|-- NotGate
 
-class XorGate {
+class XOrGate {
 }
-Gate <|-- XorGate
+Gate <|-- XOrGate
 
 ' Circuit
 class Circuit {
