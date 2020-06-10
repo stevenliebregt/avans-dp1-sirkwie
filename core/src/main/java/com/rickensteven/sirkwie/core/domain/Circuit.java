@@ -5,9 +5,9 @@ import java.util.Set;
 
 public class Circuit
 {
-    private Set<Node> nodes;
-    private Set<Node> inputs;
-    private Set<Node> probes;
+    private final Set<Node> nodes;
+    private final Set<Node> inputs;
+    private final Set<Node> probes;
 
     public Circuit()
     {
