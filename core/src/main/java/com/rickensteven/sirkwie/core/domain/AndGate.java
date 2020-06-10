@@ -3,18 +3,18 @@ package com.rickensteven.sirkwie.core.domain;
 import java.util.List;
 
 /**
- * The output of a NAND port is '1' when not both inputs are '1'.
+ * The output of an AND gate is only '1' when both inputs are also '1'.
  * <p>
  * Input A | Input B | Output
  * ---------|---------|--------
- * 0 |       0 |      1
- * 0 |       1 |      1
- * 1 |       0 |      1
- * 1 |       1 |      0
+ * 0 |       0 |      0
+ * 0 |       1 |      0
+ * 1 |       0 |      0
+ * 1 |       1 |      1
  */
-public class NandPort extends Port
+public class AndGate extends Gate
 {
-    public NandPort(List<Node> parents)
+    public AndGate(List<Node> parents)
     {
         super(parents);
     }
@@ -24,7 +24,7 @@ public class NandPort extends Port
     {
         value = parents.stream()
                 .filter(Node::calculate)
-                .count() != parents.size();
+                .count() == parents.size();
         return value;
     }
 }

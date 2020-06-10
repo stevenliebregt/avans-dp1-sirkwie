@@ -1,8 +1,8 @@
 package com.rickensteven.sirkwie.core;
 
 import com.rickensteven.sirkwie.core.domain.Input;
-import com.rickensteven.sirkwie.core.domain.NandPort;
 import com.rickensteven.sirkwie.core.domain.Node;
+import com.rickensteven.sirkwie.core.domain.OrGate;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
@@ -11,15 +11,15 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class NandPortTest
+public class OrGateTest
 {
     /**
      * Input A | Input B | Output
      * ---------|---------|--------
-     * 0 |       0 |      1
+     * 0 |       0 |      0
      */
     @Test
-    public void shouldReturnOnA()
+    public void shouldReturnOff()
     {
         List<Node> inputs = new ArrayList<Node>()
         {{
@@ -27,10 +27,10 @@ public class NandPortTest
             add(new Input(false));
         }};
 
-        NandPort nandPort = new NandPort(inputs);
-        nandPort.calculate();
+        OrGate orGate = new OrGate(inputs);
+        orGate.calculate();
 
-        assertTrue(nandPort.getValue());
+        assertFalse(orGate.getValue());
     }
 
     /**
@@ -39,7 +39,7 @@ public class NandPortTest
      * 0 |       1 |      1
      */
     @Test
-    public void shouldReturnOnB()
+    public void shouldReturnOnA()
     {
         List<Node> inputs = new ArrayList<Node>()
         {{
@@ -47,10 +47,10 @@ public class NandPortTest
             add(new Input(true));
         }};
 
-        NandPort nandPort = new NandPort(inputs);
-        nandPort.calculate();
+        OrGate orGate = new OrGate(inputs);
+        orGate.calculate();
 
-        assertTrue(nandPort.getValue());
+        assertTrue(orGate.getValue());
     }
 
     /**
@@ -59,7 +59,7 @@ public class NandPortTest
      * 1 |       0 |      1
      */
     @Test
-    public void shouldReturnOnC()
+    public void shouldReturnOnB()
     {
         List<Node> inputs = new ArrayList<Node>()
         {{
@@ -67,19 +67,19 @@ public class NandPortTest
             add(new Input(false));
         }};
 
-        NandPort nandPort = new NandPort(inputs);
-        nandPort.calculate();
+        OrGate orGate = new OrGate(inputs);
+        orGate.calculate();
 
-        assertTrue(nandPort.getValue());
+        assertTrue(orGate.getValue());
     }
 
     /**
      * Input A | Input B | Output
      * ---------|---------|--------
-     * 1 |       1 |      0
+     * 1 |       1 |      1
      */
     @Test
-    public void shouldReturnOff()
+    public void shouldReturnOnC()
     {
         List<Node> inputs = new ArrayList<Node>()
         {{
@@ -87,9 +87,9 @@ public class NandPortTest
             add(new Input(true));
         }};
 
-        NandPort nandPort = new NandPort(inputs);
-        nandPort.calculate();
+        OrGate orGate = new OrGate(inputs);
+        orGate.calculate();
 
-        assertFalse(nandPort.getValue());
+        assertTrue(orGate.getValue());
     }
 }

@@ -5,37 +5,37 @@ import org.junit.jupiter.api.Test;
 public class NodeFactoryTest
 {
     @Test
-    public void shouldReturnNotPort()
+    public void shouldReturnNotGate()
     {
         // TODO:
     }
 
     @Test
-    public void shouldReturnAndPort()
+    public void shouldReturnAndGate()
     {
         // TODO:
     }
 
     @Test
-    public void shouldReturnOrPort()
+    public void shouldReturnOrGate()
     {
         // TODO:
     }
 
     @Test
-    public void shouldReturnNorPort()
+    public void shouldReturnNorGate()
     {
         // TODO:
     }
 
     @Test
-    public void shouldReturnNandPort()
+    public void shouldReturnNandGate()
     {
         // TODO:
     }
 
     @Test
-    public void shouldReturnXorPort()
+    public void shouldReturnXorGate()
     {
         // TODO:
     }

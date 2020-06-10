@@ -3,18 +3,18 @@ package com.rickensteven.sirkwie.core.domain;
 import java.util.List;
 
 /**
- * The output of a NOR port is '1' when both inputs are '0'.
+ * The output of an OR gate is '1' if one or both of the inputs are '1'.
  * <p>
  * Input A | Input B | Output
  * ---------|---------|--------
- * 0 |       0 |      1
- * 0 |       1 |      0
- * 1 |       0 |      0
- * 1 |       1 |      0
+ * 0 |       0 |      0
+ * 0 |       1 |      1
+ * 1 |       0 |      1
+ * 1 |       1 |      1
  */
-public class NorPort extends Port
+public class OrGate extends Gate
 {
-    public NorPort(List<Node> parents)
+    public OrGate(List<Node> parents)
     {
         super(parents);
     }
@@ -24,7 +24,8 @@ public class NorPort extends Port
     {
         value = parents
                 .stream()
-                .noneMatch(Node::calculate);
+                .filter(Node::calculate)
+                .count() >= 1;
         return value;
     }
 }

@@ -3,18 +3,18 @@ package com.rickensteven.sirkwie.core.domain;
 import java.util.List;
 
 /**
- * The output of an AND port is only '1' when both inputs are also '1'.
+ * The output of an XOR gate is only '1' the number of '1' inputs is odd.
  * <p>
  * Input A | Input B | Output
  * ---------|---------|--------
  * 0 |       0 |      0
- * 0 |       1 |      0
- * 1 |       0 |      0
- * 1 |       1 |      1
+ * 0 |       1 |      1
+ * 1 |       0 |      1
+ * 1 |       1 |      0
  */
-public class AndPort extends Port
+public class XOrGate extends Gate
 {
-    public AndPort(List<Node> parents)
+    public XOrGate(List<Node> parents)
     {
         super(parents);
     }
@@ -22,9 +22,11 @@ public class AndPort extends Port
     @Override
     public boolean calculate()
     {
-        value = parents.stream()
+        long on = parents.stream()
                 .filter(Node::calculate)
-                .count() == parents.size();
+                .count();
+
+        this.value = on % 2 == 1;
         return value;
     }
 }

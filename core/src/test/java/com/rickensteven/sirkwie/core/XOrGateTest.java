@@ -2,7 +2,7 @@ package com.rickensteven.sirkwie.core;
 
 import com.rickensteven.sirkwie.core.domain.Input;
 import com.rickensteven.sirkwie.core.domain.Node;
-import com.rickensteven.sirkwie.core.domain.NorPort;
+import com.rickensteven.sirkwie.core.domain.XOrGate;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
@@ -11,32 +11,12 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class NorPortTest
+public class XOrGateTest
 {
     /**
      * Input A | Input B | Output
      * ---------|---------|--------
-     * 0 |       0 |      1
-     */
-    @Test
-    public void shouldReturnOn()
-    {
-        List<Node> inputs = new ArrayList<Node>()
-        {{
-            add(new Input(false));
-            add(new Input(false));
-        }};
-
-        NorPort norPort = new NorPort(inputs);
-        norPort.calculate();
-
-        assertTrue(norPort.getValue());
-    }
-
-    /**
-     * Input A | Input B | Output
-     * ---------|---------|--------
-     * 0 |       1 |      0
+     * 0 |       0 |      0
      */
     @Test
     public void shouldReturnOffA()
@@ -44,22 +24,42 @@ public class NorPortTest
         List<Node> inputs = new ArrayList<Node>()
         {{
             add(new Input(false));
-            add(new Input(true));
+            add(new Input(false));
         }};
 
-        NorPort norPort = new NorPort(inputs);
-        norPort.calculate();
+        XOrGate XOrGate = new XOrGate(inputs);
+        XOrGate.calculate();
 
-        assertFalse(norPort.getValue());
+        assertFalse(XOrGate.getValue());
     }
 
     /**
      * Input A | Input B | Output
      * ---------|---------|--------
-     * 1 |       0 |      0
+     * 0 |       1 |      1
      */
     @Test
-    public void shouldReturnOffB()
+    public void shouldReturnOnA()
+    {
+        List<Node> inputs = new ArrayList<Node>()
+        {{
+            add(new Input(false));
+            add(new Input(true));
+        }};
+
+        XOrGate XOrGate = new XOrGate(inputs);
+        XOrGate.calculate();
+
+        assertTrue(XOrGate.getValue());
+    }
+
+    /**
+     * Input A | Input B | Output
+     * ---------|---------|--------
+     * 1 |       0 |      1
+     */
+    @Test
+    public void shouldReturnOnB()
     {
         List<Node> inputs = new ArrayList<Node>()
         {{
@@ -67,10 +67,10 @@ public class NorPortTest
             add(new Input(false));
         }};
 
-        NorPort norPort = new NorPort(inputs);
-        norPort.calculate();
+        XOrGate XOrGate = new XOrGate(inputs);
+        XOrGate.calculate();
 
-        assertFalse(norPort.getValue());
+        assertTrue(XOrGate.getValue());
     }
 
     /**
@@ -79,7 +79,7 @@ public class NorPortTest
      * 1 |       1 |      0
      */
     @Test
-    public void shouldReturnOffC()
+    public void shouldReturnOffB()
     {
         List<Node> inputs = new ArrayList<Node>()
         {{
@@ -87,9 +87,9 @@ public class NorPortTest
             add(new Input(true));
         }};
 
-        NorPort norPort = new NorPort(inputs);
-        norPort.calculate();
+        XOrGate XOrGate = new XOrGate(inputs);
+        XOrGate.calculate();
 
-        assertFalse(norPort.getValue());
+        assertFalse(XOrGate.getValue());
     }
 }

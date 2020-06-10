@@ -2,7 +2,7 @@ package com.rickensteven.sirkwie.core;
 
 import com.rickensteven.sirkwie.core.domain.Input;
 import com.rickensteven.sirkwie.core.domain.Node;
-import com.rickensteven.sirkwie.core.domain.NotPort;
+import com.rickensteven.sirkwie.core.domain.NotGate;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
@@ -11,7 +11,7 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class NotPortTest
+public class NotGateTest
 {
     /**
      * Input A | Output
@@ -26,10 +26,10 @@ public class NotPortTest
             add(new Input(false));
         }};
 
-        NotPort notPort = new NotPort(inputs);
-        notPort.calculate();
+        NotGate notGate = new NotGate(inputs);
+        notGate.calculate();
 
-        assertTrue(notPort.getValue());
+        assertTrue(notGate.getValue());
     }
 
     /**
@@ -45,9 +45,9 @@ public class NotPortTest
             add(new Input(true));
         }};
 
-        NotPort notPort = new NotPort(inputs);
-        notPort.calculate();
+        NotGate notGate = new NotGate(inputs);
+        notGate.calculate();
 
-        assertFalse(notPort.getValue());
+        assertFalse(notGate.getValue());
     }
 }
