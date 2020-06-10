@@ -9,9 +9,9 @@ public class CircuitBuilderDirector
         this.circuitBuilder = circuitBuilder;
     }
 
-    public void construct(String cleanedTxtCircuit)
+    public void construct(CircuitDefinition circuitDefinition)
     {
-        circuitBuilder.reset(cleanedTxtCircuit);
+        circuitBuilder.reset(circuitDefinition);
         circuitBuilder.buildNodes();
         circuitBuilder.buildEdges();
     }
