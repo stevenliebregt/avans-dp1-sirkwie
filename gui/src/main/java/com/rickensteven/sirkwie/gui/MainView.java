@@ -3,9 +3,7 @@ package com.rickensteven.sirkwie.gui;
 import javafx.scene.Parent;
 import javafx.scene.control.Button;
 import javafx.scene.control.ToolBar;
-import javafx.scene.layout.StackPane;
-import javafx.scene.layout.VBox;
-import javafx.stage.Window;
+import javafx.scene.layout.*;
 
 public class MainView
 {
@@ -36,7 +34,13 @@ public class MainView
         Button simulateButton = new Button("Simulate");
         simulateButton.setOnMouseClicked((mouseEvent -> controller.simulateButtonClicked()));
 
-        toolBar.getItems().addAll(loadFileButton, simulateButton);
+        Pane spacer = new Pane();
+        HBox.setHgrow(spacer, Priority.ALWAYS);
+
+        Button closeButton = new Button("Close");
+        closeButton.setOnMouseClicked(controller::quit);
+
+        toolBar.getItems().addAll(loadFileButton, simulateButton, spacer, closeButton);
 
         VBox vBox = new VBox(toolBar);
 
