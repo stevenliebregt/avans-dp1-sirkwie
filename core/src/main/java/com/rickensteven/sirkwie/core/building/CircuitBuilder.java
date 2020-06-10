@@ -4,7 +4,7 @@ import com.rickensteven.sirkwie.core.domain.Circuit;
 
 public abstract class CircuitBuilder
 {
-    q// TODO: Template
+    // TODO: Template
     protected Circuit circuit;
 
     public Circuit getCircuit()
