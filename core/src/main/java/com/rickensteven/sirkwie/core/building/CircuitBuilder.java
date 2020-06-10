@@ -2,22 +2,36 @@ package com.rickensteven.sirkwie.core.building;
 
 import com.rickensteven.sirkwie.core.domain.Circuit;
 
-public abstract class CircuitBuilder
+public class CircuitBuilder
 {
     // TODO: Template
-    protected Circuit circuit;
+    private CircuitDefinition circuitDefinition;
+    private Circuit circuit;
 
     public Circuit getCircuit()
     {
         return circuit;
     }
 
-    public void reset(String cleanedTxtCircuit)
+    // TODO: Maybe not 100% correct yet, but it's about the idea
+
+    public void reset(CircuitDefinition circuitDefinition)
     {
-        this.circuit = new Circuit();
+        this.circuitDefinition = circuitDefinition;
+        circuit = new Circuit();
     }
 
-    // TODO: Maybe not 100% correct yet, but it's about the idea
-    public abstract void buildNodes();
-    public abstract void buildEdges();
+    public void buildNodes()
+    {
+        System.out.println("I should build nodes");
+        System.out.println(circuitDefinition.getNodes());
+        // TODO:
+    }
+
+    public void buildEdges()
+    {
+        System.out.println("I should build edges");
+        System.out.println(circuitDefinition.getEdges());
+        // TODO:
+    }
 }
