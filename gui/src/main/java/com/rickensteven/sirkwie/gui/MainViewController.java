@@ -1,6 +1,8 @@
 package com.rickensteven.sirkwie.gui;
 
 import com.rickensteven.sirkwie.core.CircuitLoaderFacade;
+import com.rickensteven.sirkwie.core.building.ANTLRCircuitParser;
+import com.rickensteven.sirkwie.core.building.ICircuitParser;
 import com.rickensteven.sirkwie.core.domain.Circuit;
 import javafx.application.Application;
 import javafx.application.Platform;
@@ -10,18 +12,21 @@ import javafx.stage.FileChooser;
 import javafx.stage.Window;
 
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 
 public class MainViewController
 {
+    private MainViewModel mainViewModel;
     private FileChooser fileChooser;
     private CircuitLoaderFacade circuitLoaderFacade;
 
-    public MainViewController()
+    public MainViewController(MainViewModel mainViewModel)
     {
+        this.mainViewModel = mainViewModel;
         fileChooser = new FileChooser();
-        circuitLoaderFacade = new CircuitLoaderFacade();
+
+        ICircuitParser circuitParser = new ANTLRCircuitParser(); // TODO: SELECT LIST
+        circuitLoaderFacade = new CircuitLoaderFacade(circuitParser);
     }
 
     public void loadFileButtonClicked(Window ownerWindow)
@@ -29,8 +34,9 @@ public class MainViewController
         File selectedFile = fileChooser.showOpenDialog(ownerWindow);
 
         try {
-            Circuit circuit = circuitLoaderFacade.loadCircuit(selectedFile.getAbsolutePath());
-            System.out.println(circuit); // TODO:
+            mainViewModel.circuitProperty.setValue(circuitLoaderFacade.loadCircuit(selectedFile.getAbsolutePath()));
+
+            // TODO:
         } catch (IOException exception) {
             Alert alert = new Alert(Alert.AlertType.ERROR, "The selected file could not be read");
             alert.showAndWait();

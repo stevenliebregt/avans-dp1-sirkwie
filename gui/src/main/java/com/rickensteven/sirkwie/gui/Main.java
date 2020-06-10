@@ -9,8 +9,9 @@ public class Main extends Application
     @Override
     public void start(Stage stage)
     {
-        MainViewController mainViewController = new MainViewController();
-        MainView mainView = new MainView(mainViewController);
+        MainViewModel mainViewModel = new MainViewModel();
+        MainViewController mainViewController = new MainViewController(mainViewModel);
+        MainView mainView = new MainView(mainViewController, mainViewModel);
 
         Scene scene = new Scene(mainView.getView(), 640, 480);
 

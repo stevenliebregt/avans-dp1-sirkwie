@@ -2,19 +2,25 @@ package com.rickensteven.sirkwie.gui;
 
 import javafx.scene.Parent;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.ToolBar;
 import javafx.scene.layout.*;
 
 public class MainView
 {
     private MainViewController controller;
-    private StackPane view;
+    private MainViewModel mainViewModel;
 
-    public MainView(MainViewController controller)
+    private BorderPane view;
+    private Button simulateButton;
+
+    public MainView(MainViewController controller, MainViewModel mainViewModel)
     {
         this.controller = controller;
+        this.mainViewModel = mainViewModel;
 
         setupUi();
+        connectViewModel();
     }
 
     public Parent getView()
@@ -24,14 +30,27 @@ public class MainView
 
     private void setupUi()
     {
-        view = new StackPane();
+        view = new BorderPane();
+        view.setTop(setupUiToolbar());
+        view.setCenter(setupUiSimulation());
+    }
 
+    private void connectViewModel()
+    {
+        mainViewModel.circuitProperty.addListener(((observable, oldValue, newValue) -> {
+            simulateButton.setDisable(newValue == null);
+        }));
+    }
+
+    private ToolBar setupUiToolbar()
+    {
         ToolBar toolBar = new ToolBar();
 
         Button loadFileButton = new Button("Load circuit file");
         loadFileButton.setOnMouseClicked((mouseEvent -> controller.loadFileButtonClicked(getView().getScene().getWindow())));
 
-        Button simulateButton = new Button("Simulate");
+        simulateButton = new Button("Simulate");
+        simulateButton.setDisable(true);
         simulateButton.setOnMouseClicked((mouseEvent -> controller.simulateButtonClicked()));
 
         Pane spacer = new Pane();
@@ -42,8 +61,13 @@ public class MainView
 
         toolBar.getItems().addAll(loadFileButton, simulateButton, spacer, closeButton);
 
-        VBox vBox = new VBox(toolBar);
+        return toolBar;
+    }
 
-        view.getChildren().add(vBox);
+    private Label setupUiSimulation()
+    {
+        // TODO: Display the simulation
+
+        return new Label("Hello, world!");
     }
 }
