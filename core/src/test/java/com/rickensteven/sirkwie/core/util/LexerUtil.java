@@ -9,11 +9,16 @@ import java.util.List;
 
 public class LexerUtil
 {
-    public static List<Token> getTokens(String input)
+    public static CommonTokenStream getTokenStream(String input)
     {
         ANTLRInputStream antlrInputStream = new ANTLRInputStream(input);
         DP1CircuitLexer dp1CircuitLexer = new DP1CircuitLexer(antlrInputStream);
-        CommonTokenStream commonTokenStream = new CommonTokenStream(dp1CircuitLexer);
+        return new CommonTokenStream(dp1CircuitLexer);
+    }
+
+    public static List<Token> getTokens(String input)
+    {
+        CommonTokenStream commonTokenStream = getTokenStream(input);
         commonTokenStream.fill();
 
         return commonTokenStream.getTokens();

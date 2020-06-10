@@ -1,18 +1,12 @@
 package com.rickensteven.sirkwie.core;
 
-import java.io.BufferedReader;
-import java.io.InputStream;
-import java.io.InputStreamReader;
+import java.io.*;
 
 public class CircuitFileReader
 {
-    public String read(String name) throws Exception
+    public String read(String filePath) throws IOException
     {
-        InputStream inputStream = ClassLoader.getSystemResourceAsStream(name);
-
-        if (inputStream == null) {
-            throw new Exception("Could not find circuit file");
-        }
+        InputStream inputStream = new FileInputStream(filePath);
 
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
 
