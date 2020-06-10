@@ -76,6 +76,8 @@ class CircuitBuilder {
 }
 
 class ANTLRCircuitBuilder {
+    +buildNodes(...): void
+    +buildEdges(...): void
 }
 CircuitBuilder <|-- ANTLRCircuitBuilder
 ANTLRCircuitBuilder "1" --> ANTLRCircuitParser : parser >
@@ -103,6 +105,5 @@ class CircuitFileReader {
 ' Main
 class Main {
 }
-
 
 @enduml
