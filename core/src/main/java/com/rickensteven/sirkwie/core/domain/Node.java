@@ -10,4 +10,8 @@ public abstract class Node
     {
         return value;
     }
+
+    public void addToCircuit(Circuit circuit) {
+        circuit.addNode(this);
+    }
 }

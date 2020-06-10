@@ -7,4 +7,11 @@ public class Probe extends NodeComposite
     {
         return value = parents.get(0).calculate();
     }
+
+    @Override
+    public void addToCircuit(Circuit circuit)
+    {
+        circuit.addProbe(this);
+        super.addToCircuit(circuit);
+    }
 }

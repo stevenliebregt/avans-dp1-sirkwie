@@ -1,35 +1,33 @@
 package com.rickensteven.sirkwie.core.building;
-
 import com.rickensteven.sirkwie.core.domain.*;
-
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Type;
 import java.util.HashMap;
 
 public class NodeFactory
 {
     private static NodeFactory _instance;
-    private final HashMap<String, Class<? extends Node>> _types;
+    private final HashMap<String, NodeType> _types;
 
     private NodeFactory() {
         _types = new HashMap<>()
         {
             {
-                put("INPUT_HIGH", Input.class);
-                put("INPUT_LOW", Input.class);
-                put("PROBE", Probe.class);
-                put("NOT", NotGate.class);
-                put("AND", AndGate.class);
-                put("OR", OrGate.class);
+                put("INPUT_HIGH", NodeType.INPUT_HIGH);
+                put("INPUT_LOW", NodeType.INPUT_LOW);
+                put("PROBE", NodeType.PROBE);
+                put("NOT", NodeType.NOT);
+                put("AND", NodeType.AND);
+                put("OR", NodeType.XOR);
+                put("NOR", NodeType.NOR);
+                put("NAND", NodeType.NAND);
+                put("XOR", NodeType.XOR);
             }
         };
     }
 
     // TODO error handling
-    public Node CreateNode(String typeName) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException
+    public Node CreateNode(String NodeTypeName)
     {
-        //TODO not sure if this works because constructor is empty for only some classes
-        return _types.get(typeName).getConstructor().newInstance();
+        return _types.get(NodeTypeName).getInstance();
     }
 
     public static NodeFactory GetInstance() {

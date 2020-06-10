@@ -38,11 +38,25 @@ public enum NodeType {
         public Node getInstance() {
             return new NotGate(null);
         }
+    },
+    NOR("NOR"){
+        @Override
+        public Node getInstance() {
+            return new NOrGate(null);
+        }
+    },
+    XOR("XOR"){
+        @Override
+        public Node getInstance() {
+            return new XOrGate(null);
+        }
+    },
+    NAND("NAND"){
+        @Override
+        public Node getInstance() {
+            return new NAndGate(null);
+        }
     };
-
-    NodeType(String type)
-    {
-    }
-
+    NodeType(String type) { }
     public abstract Node getInstance();
 }

@@ -17,4 +17,11 @@ public class Input extends Node
     {
         return value;
     }
+
+    @Override
+    public void addToCircuit(Circuit circuit)
+    {
+        circuit.addInput(this);
+        super.addToCircuit(circuit);
+    }
 }
