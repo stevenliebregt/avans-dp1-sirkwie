@@ -2,6 +2,7 @@ package com.rickensteven.sirkwie.core;
 
 import com.rickensteven.sirkwie.core.building.*;
 import com.rickensteven.sirkwie.core.domain.Circuit;
+import com.rickensteven.sirkwie.core.exception.CircuitSyntaxException;
 
 import java.io.IOException;
 
@@ -16,7 +17,7 @@ public class CircuitLoaderFacade
         circuitFileReader = new CircuitFileReader();
     }
 
-    public Circuit loadCircuit(String filePath) throws IOException // TODO: More specific exception
+    public Circuit loadCircuit(String filePath) throws IOException, CircuitSyntaxException
     {
         String cleanedTxtCircuit = circuitFileReader.read(filePath);
 

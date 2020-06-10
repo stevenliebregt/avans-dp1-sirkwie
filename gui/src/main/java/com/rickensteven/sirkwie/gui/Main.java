@@ -15,6 +15,7 @@ public class Main extends Application
 
         Scene scene = new Scene(mainView.getView(), 640, 480);
 
+        stage.setTitle("Sirkwie - Rick Berkers & Steven Liebregt");
         stage.setScene(scene);
         stage.show();
     }

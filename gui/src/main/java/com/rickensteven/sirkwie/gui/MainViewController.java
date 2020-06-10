@@ -4,7 +4,7 @@ import com.rickensteven.sirkwie.core.CircuitLoaderFacade;
 import com.rickensteven.sirkwie.core.building.ANTLRCircuitParser;
 import com.rickensteven.sirkwie.core.building.ICircuitParser;
 import com.rickensteven.sirkwie.core.domain.Circuit;
-import javafx.application.Application;
+import com.rickensteven.sirkwie.core.exception.CircuitSyntaxException;
 import javafx.application.Platform;
 import javafx.scene.control.Alert;
 import javafx.scene.input.MouseEvent;
@@ -34,13 +34,15 @@ public class MainViewController
         File selectedFile = fileChooser.showOpenDialog(ownerWindow);
 
         try {
-            mainViewModel.circuitProperty.setValue(circuitLoaderFacade.loadCircuit(selectedFile.getAbsolutePath()));
-
-            // TODO:
+            Circuit circuit = circuitLoaderFacade.loadCircuit(selectedFile.getAbsolutePath());
+            mainViewModel.circuitProperty.setValue(circuit);
         } catch (IOException exception) {
             Alert alert = new Alert(Alert.AlertType.ERROR, "The selected file could not be read");
             alert.showAndWait();
-        } // TODO: Error for invalid file
+        } catch (CircuitSyntaxException exception) {
+            Alert alert = new Alert(Alert.AlertType.ERROR, "The selected file contains syntax errors");
+            alert.showAndWait();
+        }
     }
 
     public void simulateButtonClicked()
