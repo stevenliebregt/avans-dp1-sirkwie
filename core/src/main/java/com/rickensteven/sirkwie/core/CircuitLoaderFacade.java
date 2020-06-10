@@ -2,6 +2,8 @@ package com.rickensteven.sirkwie.core;
 
 import com.rickensteven.sirkwie.core.building.*;
 import com.rickensteven.sirkwie.core.domain.Circuit;
+import com.rickensteven.sirkwie.core.exception.CircuitInfiniteLoopException;
+import com.rickensteven.sirkwie.core.exception.CircuitNotConnectedException;
 import com.rickensteven.sirkwie.core.exception.CircuitSyntaxException;
 
 import java.io.IOException;
@@ -17,7 +19,8 @@ public class CircuitLoaderFacade
         circuitFileReader = new CircuitFileReader();
     }
 
-    public Circuit loadCircuit(String filePath) throws IOException, CircuitSyntaxException
+    public Circuit loadCircuit(String filePath)
+            throws IOException, CircuitSyntaxException, CircuitInfiniteLoopException, CircuitNotConnectedException
     {
         String cleanedTxtCircuit = circuitFileReader.read(filePath);
 

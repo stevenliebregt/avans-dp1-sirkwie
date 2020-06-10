@@ -37,9 +37,7 @@ public class MainView
 
     private void connectViewModel()
     {
-        mainViewModel.circuitProperty.addListener(((observable, oldValue, newValue) -> {
-            simulateButton.setDisable(newValue == null);
-        }));
+        mainViewModel.circuitProperty.addListener(((observable, oldValue, newValue) -> simulateButton.setDisable(newValue == null)));
     }
 
     private ToolBar setupUiToolbar()

@@ -4,6 +4,8 @@ import com.rickensteven.sirkwie.core.CircuitLoaderFacade;
 import com.rickensteven.sirkwie.core.building.ANTLRCircuitParser;
 import com.rickensteven.sirkwie.core.building.ICircuitParser;
 import com.rickensteven.sirkwie.core.domain.Circuit;
+import com.rickensteven.sirkwie.core.exception.CircuitInfiniteLoopException;
+import com.rickensteven.sirkwie.core.exception.CircuitNotConnectedException;
 import com.rickensteven.sirkwie.core.exception.CircuitSyntaxException;
 import javafx.application.Platform;
 import javafx.scene.control.Alert;
@@ -25,7 +27,8 @@ public class MainViewController
         this.mainViewModel = mainViewModel;
         fileChooser = new FileChooser();
 
-        ICircuitParser circuitParser = new ANTLRCircuitParser(); // TODO: SELECT LIST
+        // This circuitparser could be swapped out for another, for example, XMLCircuitParser
+        ICircuitParser circuitParser = new ANTLRCircuitParser();
         circuitLoaderFacade = new CircuitLoaderFacade(circuitParser);
     }
 
@@ -37,11 +40,13 @@ public class MainViewController
             Circuit circuit = circuitLoaderFacade.loadCircuit(selectedFile.getAbsolutePath());
             mainViewModel.circuitProperty.setValue(circuit);
         } catch (IOException exception) {
-            Alert alert = new Alert(Alert.AlertType.ERROR, "The selected file could not be read");
-            alert.showAndWait();
+            alert("The selected file could not be read");
         } catch (CircuitSyntaxException exception) {
-            Alert alert = new Alert(Alert.AlertType.ERROR, "The selected file contains syntax errors");
-            alert.showAndWait();
+            alert("The selected file contains syntax errors");
+        } catch (CircuitInfiniteLoopException exception) {
+            alert("The selected file contains an infinite loop");
+        } catch (CircuitNotConnectedException exception) {
+            alert("The selected file contains probes that are not reachable");
         }
     }
 
@@ -53,5 +58,11 @@ public class MainViewController
     public void quit(MouseEvent mouseEvent)
     {
         Platform.exit();
+    }
+
+    private void alert(String message)
+    {
+        Alert alert = new Alert(Alert.AlertType.ERROR, message);
+        alert.showAndWait();
     }
 }
