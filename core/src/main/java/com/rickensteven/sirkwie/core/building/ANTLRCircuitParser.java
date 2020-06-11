@@ -21,11 +21,13 @@ public class ANTLRCircuitParser implements ICircuitParser
 
         ParseTree parseTree = dp1CircuitParser.file();
 
+        // By default ANTLR does not throw an exception when there are syntax
+        // errors, since we do want that we check a custom error listener.
         if (antlrParserErrorListener.hasSyntaxErrors()) {
             throw new CircuitSyntaxException("Syntax error in circuit file");
         }
 
-        //TODO Convert parsetree to CircuitDefinition
+        // TODO Convert parsetree to CircuitDefinition
 
         return new CircuitDefinition(null, null);
     }
