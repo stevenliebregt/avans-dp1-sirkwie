@@ -34,22 +34,7 @@ public class MainViewController
     {
         File selectedFile = fileChooser.showOpenDialog(ownerWindow);
 
-        try {
-            Circuit circuit = circuitLoaderFacade.loadCircuit(selectedFile.getAbsolutePath());
-            mainViewModel.circuitProperty.setValue(circuit);
-        } catch (IOException exception) {
-            alert("The selected file could not be read");
-        } catch (CircuitSyntaxException exception) {
-            alert("The selected file contains syntax errors");
-        } catch (CircuitInfiniteLoopException exception) {
-            alert("The selected file contains an infinite loop");
-        } catch (CircuitNotConnectedException exception) {
-            alert("The selected file contains probes that are not reachable");
-        } catch (NodeTypeUnknownException exception) {
-            alert("The selected file contains unknown node types");
-        } catch (NodeNotParentable exception) {
-            alert("The selected file contains specified nodes as children that cannot be children");
-        }
+        tryToLoadFile(selectedFile.getAbsolutePath());
     }
 
     public void simulateButtonClicked()
@@ -67,6 +52,27 @@ public class MainViewController
     public void quit(MouseEvent mouseEvent)
     {
         Platform.exit();
+        System.exit(0);
+    }
+
+    public void tryToLoadFile(String filePath)
+    {
+        try {
+            Circuit circuit = circuitLoaderFacade.loadCircuit(filePath);
+            mainViewModel.circuitProperty.setValue(circuit);
+        } catch (IOException exception) {
+            alert("The selected file could not be read");
+        } catch (CircuitSyntaxException exception) {
+            alert("The selected file contains syntax errors");
+        } catch (CircuitInfiniteLoopException exception) {
+            alert("The selected file contains an infinite loop");
+        } catch (CircuitNotConnectedException exception) {
+            alert("The selected file contains probes that are not reachable");
+        } catch (NodeTypeUnknownException exception) {
+            alert("The selected file contains unknown node types");
+        } catch (NodeNotParentable exception) {
+            alert("The selected file contains specified nodes as children that cannot be children");
+        }
     }
 
     private void alert(String message)

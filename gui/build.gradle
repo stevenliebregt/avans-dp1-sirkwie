@@ -11,10 +11,17 @@ mainClassName = 'com.rickensteven.sirkwie.gui.Main'
 
 repositories {
     mavenCentral()
+    maven { url 'https://jitpack.io' }
 }
 
 dependencies {
     compile project(':core')
+
+    // https://mvnrepository.com/artifact/com.github.graphstream/gs-core
+    compile group: 'com.github.graphstream', name: 'gs-core', version: '2.0-alpha'
+
+    /// https://mvnrepository.com/artifact/com.github.graphstream/gs-ui-javafx
+    compile group: 'com.github.graphstream', name: 'gs-ui-javafx', version: '2.0-alpha'
 
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.3.1'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.3.1'

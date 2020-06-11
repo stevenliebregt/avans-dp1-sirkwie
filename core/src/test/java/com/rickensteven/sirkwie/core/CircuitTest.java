@@ -26,7 +26,7 @@ public class CircuitTest
         circuit.addProbe(probe);
 
         assertEquals(1, circuit.getInputs().size());
-        assertEquals(3, circuit.getNodes().size());
+        assertEquals(1, circuit.getNodes().size());
         assertEquals(1, circuit.getProbes().size());
     }
 

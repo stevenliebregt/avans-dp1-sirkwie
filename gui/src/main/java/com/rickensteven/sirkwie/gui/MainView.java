@@ -1,6 +1,5 @@
 package com.rickensteven.sirkwie.gui;
 
-import com.rickensteven.sirkwie.core.domain.Circuit;
 import javafx.scene.Parent;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -18,7 +17,7 @@ public class MainView
     private BorderPane view;
     private Button simulateButton;
 
-    private String labelText;
+    private SimulationView simulationView;
 
     public MainView(MainViewController controller, MainViewModel mainViewModel)
     {
@@ -27,6 +26,9 @@ public class MainView
 
         setupUi();
         connectViewModel();
+
+        // TODO: Maybe remove, useful for testing to load default circuit on startup
+        controller.tryToLoadFile(ClassLoader.getSystemResource("Circuit1_FullAdder.txt").getPath());
     }
 
     public Parent getView()
@@ -39,6 +41,9 @@ public class MainView
         view = new BorderPane();
         view.setTop(setupUiToolbar());
         view.setCenter(new Label("Please select a circuit file first"));
+
+        simulationView = new SimulationView(controller, mainViewModel);
+        view.setCenter(simulationView.getView());
     }
 
     private void connectViewModel()
@@ -50,7 +55,6 @@ public class MainView
             }
 
             simulateButton.setDisable(false);
-            view.setCenter(setupUiSimulation());
         }));
     }
 
@@ -74,21 +78,5 @@ public class MainView
         toolBar.getItems().addAll(loadFileButton, simulateButton, spacer, closeButton);
 
         return toolBar;
-    }
-
-    private Label setupUiSimulation()
-    {
-        Circuit circuit = mainViewModel.circuitProperty.getValue();
-        labelText = "";
-        NodeDrawingVisitor drawingVisitor = new NodeDrawingVisitor();
-        circuit.getInputs().forEach(input -> {
-            input.accept(drawingVisitor);
-            labelText += (drawingVisitor.getValue() + System.lineSeparator());
-        });
-        circuit.getProbes().forEach(probe -> {
-            probe.accept(drawingVisitor);
-            labelText += (drawingVisitor.getValue() + System.lineSeparator());
-        });
-        return new Label(labelText);
     }
 }

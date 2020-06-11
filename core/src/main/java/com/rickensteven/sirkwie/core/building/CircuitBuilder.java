@@ -1,6 +1,7 @@
 package com.rickensteven.sirkwie.core.building;
 
 import com.rickensteven.sirkwie.core.domain.Circuit;
+import com.rickensteven.sirkwie.core.domain.INodeVisitor;
 import com.rickensteven.sirkwie.core.domain.Node;
 import com.rickensteven.sirkwie.core.domain.NodeComposite;
 import com.rickensteven.sirkwie.core.exception.NodeNotParentable;
