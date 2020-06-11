@@ -4,10 +4,7 @@ import com.rickensteven.sirkwie.core.CircuitLoaderFacade;
 import com.rickensteven.sirkwie.core.parsing.ANTLRCircuitParser;
 import com.rickensteven.sirkwie.core.parsing.ICircuitParser;
 import com.rickensteven.sirkwie.core.domain.Circuit;
-import com.rickensteven.sirkwie.core.exception.CircuitInfiniteLoopException;
-import com.rickensteven.sirkwie.core.exception.CircuitNotConnectedException;
-import com.rickensteven.sirkwie.core.exception.CircuitSyntaxException;
-import com.rickensteven.sirkwie.core.exception.NodeTypeUnknownException;
+import com.rickensteven.sirkwie.core.exception.*;
 import javafx.application.Platform;
 import javafx.scene.control.Alert;
 import javafx.scene.input.MouseEvent;
@@ -50,6 +47,8 @@ public class MainViewController
             alert("The selected file contains probes that are not reachable");
         } catch (NodeTypeUnknownException exception) {
             alert("The selected file contains unknown node types");
+        } catch (NodeNotParentable exception) {
+            alert("The selected file contains specified nodes as children that cannot be children");
         }
     }
 

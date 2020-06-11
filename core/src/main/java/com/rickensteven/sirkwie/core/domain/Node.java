@@ -5,6 +5,9 @@ public abstract class Node
     protected boolean value;
 
     public abstract boolean calculate();
+    public boolean canHaveParents() {
+        return false;
+    }
 
     public abstract void accept(INodeVisitor nodeVisitor);
 

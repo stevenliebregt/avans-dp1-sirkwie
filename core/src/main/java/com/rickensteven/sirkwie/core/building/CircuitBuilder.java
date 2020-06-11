@@ -1,8 +1,10 @@
 package com.rickensteven.sirkwie.core.building;
 
 import com.rickensteven.sirkwie.core.domain.Circuit;
+import com.rickensteven.sirkwie.core.domain.INodeVisitor;
 import com.rickensteven.sirkwie.core.domain.Node;
 import com.rickensteven.sirkwie.core.domain.NodeComposite;
+import com.rickensteven.sirkwie.core.exception.NodeNotParentable;
 
 import java.util.HashMap;
 
@@ -25,7 +27,6 @@ public class CircuitBuilder
         circuit = new Circuit();
     }
 
-    //TODO error handling
     public void buildNodes()
     {
         circuitDefinition.getNodes().forEach((key, value) -> {
@@ -35,14 +36,18 @@ public class CircuitBuilder
         });
     }
 
-    //TODO error handling
     public void buildEdges()
     {
         circuitDefinition.getEdges().forEach((key, value) -> {
             Node parentNode = this.nodes.get(key);
             value.forEach(child -> {
-                // TODO casting not nice?
-                NodeComposite nodeComposite = (NodeComposite) this.nodes.get(child);
+                Node node = this.nodes.get(child);
+                NodeParentableVisitor parentableVisitor = new NodeParentableVisitor();
+                node.accept(parentableVisitor);
+                if (!parentableVisitor.isParentable()) {
+                    throw new NodeNotParentable("Specified node cannot be given a parent");
+                }
+                NodeComposite nodeComposite = (NodeComposite) node;
                 nodeComposite.add(parentNode);
             });
         });
