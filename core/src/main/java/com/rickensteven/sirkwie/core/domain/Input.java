@@ -19,6 +19,12 @@ public class Input extends Node
     }
 
     @Override
+    public void accept(INodeVisitor nodeVisitor)
+    {
+        nodeVisitor.visit(this);
+    }
+
+    @Override
     public void addToCircuit(Circuit circuit)
     {
         circuit.addInput(this);

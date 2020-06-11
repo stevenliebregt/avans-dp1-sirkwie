@@ -34,4 +34,10 @@ public class XOrGate extends Gate
         this.value = on % 2 == 1;
         return value;
     }
+
+    @Override
+    public void accept(INodeVisitor nodeVisitor)
+    {
+        nodeVisitor.visit(this);
+    }
 }

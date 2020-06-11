@@ -32,4 +32,10 @@ public class NAndGate extends Gate
                 .count() != parents.size();
         return value;
     }
+
+    @Override
+    public void accept(INodeVisitor nodeVisitor)
+    {
+        nodeVisitor.visit(this);
+    }
 }
