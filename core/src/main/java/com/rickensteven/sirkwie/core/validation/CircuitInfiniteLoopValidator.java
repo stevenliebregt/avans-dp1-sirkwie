@@ -11,67 +11,36 @@ public class CircuitInfiniteLoopValidator
     public boolean circuitHasInfiniteLoops(Circuit circuit)
     {
         for (Probe probe : circuit.getProbes()) {
-            if (detectCycleForProbe(probe)) return true;
+            if (detect(probe)) return true;
         }
 
         return false;
     }
 
-    private boolean detectCycleForProbe(Probe probe)
+    private boolean detect(Probe probe)
     {
-        CycleDetector cycleDetector = new CycleDetector();
-        cycleDetector.detect(probe);
-
-        return cycleDetector.hasCycle();
+        return detect(probe, new HashSet<>());
     }
 
-    private static class CycleDetector
+    private boolean detect(NodeComposite node, Set<Node> visitedNodes)
     {
-        private boolean hasCycle = false;
+        List<Node> parents = node.getParents();
 
-        public boolean hasCycle()
-        {
-            return hasCycle;
-        }
+        for (Node parent : parents) {
+            if (!(parent instanceof NodeComposite)) continue; // Reached an end
 
-        public void detect(Probe probe)
-        {
-            List<Node> parents = probe.getParents();
+            if (visitedNodes.contains(parent)) { // We have already seen this one
+                return true;
+            }
 
-            for (Node parent : parents) {
-                if (!(parent instanceof NodeComposite)) continue; // Reached an end
+            Set<Node> clonedVisitedNodes = new HashSet<>(visitedNodes);
+            clonedVisitedNodes.add(parent);
 
-                Set<Node> visitedNodes = new HashSet<>();
-                visitedNodes.add(probe);
-                visitedNodes.add(parent);
-
-                if (detectRecursive((NodeComposite) parent, visitedNodes)) {
-                    hasCycle = true;
-                    return;
-                }
+            if (detect((NodeComposite) parent, clonedVisitedNodes)) {
+                return true;
             }
         }
 
-        private boolean detectRecursive(NodeComposite node, Set<Node> visitedNodes)
-        {
-            List<Node> parents = node.getParents();
-
-            for (Node parent : parents) {
-                if (!(parent instanceof NodeComposite)) continue; // Reached an end
-
-                if (visitedNodes.contains(parent)) { // We have already seen this one
-                    return true;
-                }
-
-                Set<Node> clonedVisitedNodes = new HashSet<>(visitedNodes);
-                clonedVisitedNodes.add(parent);
-
-                if (detectRecursive((NodeComposite) parent, clonedVisitedNodes)) {
-                    return true;
-                }
-            }
-
-            return false;
-        }
+        return false;
     }
 }
