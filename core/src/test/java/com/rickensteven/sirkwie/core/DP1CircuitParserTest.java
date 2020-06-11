@@ -18,6 +18,7 @@ public class DP1CircuitParserTest
     public void correctStringShouldNotThrowException()
     {
         assertDoesNotThrow(() -> {
+            @SuppressWarnings("ConstantConditions")
             String input = new BufferedReader(new InputStreamReader(ClassLoader.getSystemResourceAsStream("Circuit1_FullAdder_Clean.txt")))
                     .lines()
                     .collect(Collectors.joining(System.lineSeparator()));

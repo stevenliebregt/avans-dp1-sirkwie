@@ -1,9 +1,15 @@
 package com.rickensteven.sirkwie.core.domain;
 
+import java.util.Collections;
 import java.util.List;
 
 public class Probe extends NodeComposite
 {
+    public Probe()
+    {
+        super(Collections.emptyList());
+    }
+
     public Probe(List<Node> parents)
     {
         super(parents);
