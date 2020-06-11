@@ -5,8 +5,7 @@ import java.util.List;
 
 public abstract class NodeComposite extends Node
 {
-    // Called parents because they are in the context of the circuit
-    protected List<Node> parents = new ArrayList<>();
+    protected final List<Node> parents = new ArrayList<>();
 
     public NodeComposite(List<Node> parents)
     {

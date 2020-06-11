@@ -13,10 +13,10 @@ import java.io.IOException;
 
 public class CircuitLoaderFacade
 {
-    private CircuitFileReader circuitFileReader;
-    private CircuitNotConnectedValidator circuitNotConnectedValidator;
-    private CircuitInfiniteLoopValidator circuitInfiniteLoopValidator;
-    private ICircuitParser circuitParser;
+    private final CircuitFileReader circuitFileReader;
+    private final CircuitNotConnectedValidator circuitNotConnectedValidator;
+    private final CircuitInfiniteLoopValidator circuitInfiniteLoopValidator;
+    private final ICircuitParser circuitParser;
 
     public CircuitLoaderFacade(ICircuitParser circuitParser)
     {

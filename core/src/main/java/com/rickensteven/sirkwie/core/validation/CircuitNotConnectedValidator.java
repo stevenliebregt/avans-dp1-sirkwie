@@ -15,7 +15,7 @@ public class CircuitNotConnectedValidator
             if (probe.getParents().size() == 0) {
                 probesConnected.add(false);
                 continue;
-            };
+            }
 
             boolean reaches = false;
 
