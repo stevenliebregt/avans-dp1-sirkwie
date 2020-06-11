@@ -25,7 +25,7 @@ public class NodeFactory
 
     public Node createNode(String nodeTypeName)
     {
-        if (types.containsKey(nodeTypeName)) {
+        if (!types.containsKey(nodeTypeName)) {
             throw new NodeTypeUnknownException("File contains unknown node types");
         }
         return types.get(nodeTypeName).getInstance();
