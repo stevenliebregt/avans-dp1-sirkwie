@@ -5,6 +5,9 @@ import com.rickensteven.sirkwie.core.domain.Circuit;
 import com.rickensteven.sirkwie.core.exception.CircuitInfiniteLoopException;
 import com.rickensteven.sirkwie.core.exception.CircuitNotConnectedException;
 import com.rickensteven.sirkwie.core.exception.CircuitSyntaxException;
+import com.rickensteven.sirkwie.core.parsing.ICircuitParser;
+import com.rickensteven.sirkwie.core.validation.CircuitInfiniteLoopValidator;
+import com.rickensteven.sirkwie.core.validation.CircuitNotConnectedValidator;
 
 import java.io.IOException;
 

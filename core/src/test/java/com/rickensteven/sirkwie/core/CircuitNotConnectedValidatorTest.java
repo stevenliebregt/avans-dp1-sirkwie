@@ -1,6 +1,6 @@
 package com.rickensteven.sirkwie.core;
 
-import com.rickensteven.sirkwie.core.building.CircuitNotConnectedValidator;
+import com.rickensteven.sirkwie.core.validation.CircuitNotConnectedValidator;
 import com.rickensteven.sirkwie.core.domain.*;
 import org.junit.jupiter.api.Test;
 

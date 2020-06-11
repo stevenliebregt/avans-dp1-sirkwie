@@ -1,4 +1,4 @@
-package com.rickensteven.sirkwie.core.building;
+package com.rickensteven.sirkwie.core.validation;
 
 import com.rickensteven.sirkwie.core.domain.Circuit;
 
