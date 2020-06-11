@@ -29,4 +29,9 @@ public abstract class NodeComposite extends Node
     }
 
     public abstract boolean calculate();
+
+    @Override
+    public boolean canHaveParents() {
+        return true;
+    }
 }
