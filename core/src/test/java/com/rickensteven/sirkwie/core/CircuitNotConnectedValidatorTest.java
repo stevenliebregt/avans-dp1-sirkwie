@@ -1,6 +1,6 @@
 package com.rickensteven.sirkwie.core;
 
-import com.rickensteven.sirkwie.core.building.CircuitValidator;
+import com.rickensteven.sirkwie.core.building.CircuitNotConnectedValidator;
 import com.rickensteven.sirkwie.core.domain.*;
 import org.junit.jupiter.api.Test;
 
@@ -10,7 +10,7 @@ import java.util.Collections;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class CircuitValidatorTest
+public class CircuitNotConnectedValidatorTest
 {
     @Test
     public void notAllProbesAreConnected()
@@ -18,9 +18,9 @@ public class CircuitValidatorTest
         Circuit circuit = new Circuit();
         circuit.addProbe(new Probe());
 
-        CircuitValidator circuitValidator = new CircuitValidator();
+        CircuitNotConnectedValidator circuitNotConnectedValidator = new CircuitNotConnectedValidator();
 
-        assertFalse(circuitValidator.alProbesAreConnected(circuit));
+        assertTrue(circuitNotConnectedValidator.hasDisconnectedProbes(circuit));
     }
 
     @Test
@@ -39,9 +39,9 @@ public class CircuitValidatorTest
         circuit.addProbe(probeA);
         circuit.addProbe(probeB);
 
-        CircuitValidator circuitValidator = new CircuitValidator();
+        CircuitNotConnectedValidator circuitNotConnectedValidator = new CircuitNotConnectedValidator();
 
-        assertFalse(circuitValidator.alProbesAreConnected(circuit));
+        assertTrue(circuitNotConnectedValidator.hasDisconnectedProbes(circuit));
     }
 
     @Test
@@ -57,9 +57,9 @@ public class CircuitValidatorTest
         circuit.addNode(node);
         circuit.addProbe(probe);
 
-        CircuitValidator circuitValidator = new CircuitValidator();
+        CircuitNotConnectedValidator circuitNotConnectedValidator = new CircuitNotConnectedValidator();
 
-        assertTrue(circuitValidator.alProbesAreConnected(circuit));
+        assertFalse(circuitNotConnectedValidator.hasDisconnectedProbes(circuit));
     }
 
     @Test
@@ -91,20 +91,8 @@ public class CircuitValidatorTest
         circuit.addProbe(probe1);
         circuit.addProbe(probe2);
 
-        CircuitValidator circuitValidator = new CircuitValidator();
+        CircuitNotConnectedValidator circuitNotConnectedValidator = new CircuitNotConnectedValidator();
 
-        assertTrue(circuitValidator.alProbesAreConnected(circuit));
-    }
-
-    @Test
-    public void hasInfiniteLoops()
-    {
-        // TODO:
-    }
-
-    @Test
-    public void hasNoInfiniteLoops()
-    {
-        // TODO:
+        assertFalse(circuitNotConnectedValidator.hasDisconnectedProbes(circuit));
     }
 }

@@ -5,9 +5,9 @@ import com.rickensteven.sirkwie.core.domain.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CircuitValidator
+public class CircuitNotConnectedValidator
 {
-    public boolean alProbesAreConnected(Circuit circuit)
+    public boolean hasDisconnectedProbes(Circuit circuit)
     {
         List<Boolean> probesConnected = new ArrayList<>();
 
@@ -31,14 +31,7 @@ public class CircuitValidator
             }
         }
 
-        return !probesConnected.contains(false);
-    }
-
-    public boolean hasNoInfiniteLoops(Circuit circuit)
-    {
-        // TODO:
-
-        return true;
+        return probesConnected.contains(false);
     }
 
     private boolean isOrReachesInput(Node node)
