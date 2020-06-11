@@ -28,8 +28,6 @@ public class CircuitBuilder
     //TODO error handling
     public void buildNodes()
     {
-        System.out.println("I should build nodes");
-        System.out.println(circuitDefinition.getNodes());
         circuitDefinition.getNodes().forEach((key, value) -> {
             Node node = NodeFactory.getInstance().createNode(value);
             this.nodes.put(key, node);
@@ -40,8 +38,6 @@ public class CircuitBuilder
     //TODO error handling
     public void buildEdges()
     {
-        System.out.println("I should build edges");
-        System.out.println(circuitDefinition.getEdges());
         circuitDefinition.getEdges().forEach((key, value) -> {
             Node parentNode = this.nodes.get(key);
             value.forEach(child -> {
