@@ -54,7 +54,11 @@ public class MainViewController
 
     public void simulateButtonClicked()
     {
-        // TODO: Implement this
+        Circuit circuit = mainViewModel.circuitProperty.getValue();
+
+        if (circuit != null) {
+            circuit.simulate();
+        }
     }
 
     public void quit(MouseEvent mouseEvent)
