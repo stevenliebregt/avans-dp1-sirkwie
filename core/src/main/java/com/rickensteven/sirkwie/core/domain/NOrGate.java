@@ -19,6 +19,7 @@ public class NOrGate extends Gate
     {
         super(parents, name);
     }
+
     public NOrGate(String name)
     {
         super(Collections.emptyList(), name);

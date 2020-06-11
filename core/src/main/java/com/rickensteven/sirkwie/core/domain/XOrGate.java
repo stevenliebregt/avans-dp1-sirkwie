@@ -19,6 +19,7 @@ public class XOrGate extends Gate
     {
         super(parents, name);
     }
+
     public XOrGate(String name)
     {
         super(Collections.emptyList(), name);

@@ -19,6 +19,7 @@ public class OrGate extends Gate
     {
         super(parents, name);
     }
+
     public OrGate(String name)
     {
         super(Collections.emptyList(), name);

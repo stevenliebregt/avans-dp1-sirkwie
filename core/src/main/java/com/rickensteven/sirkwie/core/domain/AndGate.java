@@ -19,6 +19,7 @@ public class AndGate extends Gate
     {
         super(parents, name);
     }
+
     public AndGate(String name)
     {
         super(Collections.emptyList(), name);

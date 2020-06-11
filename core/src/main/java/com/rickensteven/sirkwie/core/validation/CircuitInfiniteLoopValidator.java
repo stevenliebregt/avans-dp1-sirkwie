@@ -1,6 +1,9 @@
 package com.rickensteven.sirkwie.core.validation;
 
-import com.rickensteven.sirkwie.core.domain.*;
+import com.rickensteven.sirkwie.core.domain.Circuit;
+import com.rickensteven.sirkwie.core.domain.Node;
+import com.rickensteven.sirkwie.core.domain.NodeComposite;
+import com.rickensteven.sirkwie.core.domain.Probe;
 
 import java.util.HashSet;
 import java.util.List;

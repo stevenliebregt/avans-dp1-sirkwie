@@ -5,6 +5,7 @@ import com.rickensteven.sirkwie.core.domain.*;
 public class NodeDrawingVisitor implements INodeVisitor
 {
     private String value;
+
     public String getValue()
     {
         return value;

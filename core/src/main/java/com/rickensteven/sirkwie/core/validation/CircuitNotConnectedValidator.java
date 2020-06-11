@@ -11,7 +11,7 @@ public class CircuitNotConnectedValidator
     {
         List<Boolean> probesConnected = new ArrayList<>();
 
-        for (Probe probe: circuit.getProbes()) {
+        for (Probe probe : circuit.getProbes()) {
             if (probe.getParents().size() == 0) {
                 probesConnected.add(false);
                 continue;

@@ -19,6 +19,7 @@ public class NAndGate extends Gate
     {
         super(parents, name);
     }
+
     public NAndGate(String name)
     {
         super(Collections.emptyList(), name);

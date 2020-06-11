@@ -1,7 +1,7 @@
 package com.rickensteven.sirkwie.core;
 
-import com.rickensteven.sirkwie.core.validation.CircuitNotConnectedValidator;
 import com.rickensteven.sirkwie.core.domain.*;
+import com.rickensteven.sirkwie.core.validation.CircuitNotConnectedValidator;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
@@ -74,7 +74,8 @@ public class CircuitNotConnectedValidatorTest
         Node node2 = new NotGate(Collections.singletonList(node1), "N2");
 
         Node node3 = new AndGate(Collections.emptyList(), "N3"); // This one is not connected to any inputs
-        Node node4 = new AndGate(new ArrayList<>() {{ // One of the parents is not connected, the other is, so it should be valid
+        Node node4 = new AndGate(new ArrayList<>()
+        {{ // One of the parents is not connected, the other is, so it should be valid
             add(input2);
             add(node3);
         }}, "N4");

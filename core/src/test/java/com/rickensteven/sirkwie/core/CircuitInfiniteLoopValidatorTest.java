@@ -1,10 +1,10 @@
 package com.rickensteven.sirkwie.core;
 
+import com.rickensteven.sirkwie.core.building.CircuitBuilder;
 import com.rickensteven.sirkwie.core.domain.*;
 import com.rickensteven.sirkwie.core.parsing.ANTLRCircuitParser;
-import com.rickensteven.sirkwie.core.building.CircuitBuilder;
-import com.rickensteven.sirkwie.core.validation.CircuitInfiniteLoopValidator;
 import com.rickensteven.sirkwie.core.util.ReadTestCircuitFileUtil;
+import com.rickensteven.sirkwie.core.validation.CircuitInfiniteLoopValidator;
 import org.junit.jupiter.api.Test;
 
 import java.util.Collections;

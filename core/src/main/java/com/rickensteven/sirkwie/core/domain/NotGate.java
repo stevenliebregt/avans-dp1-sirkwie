@@ -20,6 +20,7 @@ public class NotGate extends Gate
             throw new IllegalArgumentException("The NOT gate must have exactly 1 input");
         }
     }
+
     public NotGate(String name)
     {
         super(Collections.emptyList(), name);

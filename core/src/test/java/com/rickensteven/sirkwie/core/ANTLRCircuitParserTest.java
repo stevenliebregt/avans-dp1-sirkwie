@@ -1,8 +1,8 @@
 package com.rickensteven.sirkwie.core;
 
-import com.rickensteven.sirkwie.core.parsing.ANTLRCircuitParser;
 import com.rickensteven.sirkwie.core.building.CircuitDefinition;
 import com.rickensteven.sirkwie.core.exception.CircuitSyntaxException;
+import com.rickensteven.sirkwie.core.parsing.ANTLRCircuitParser;
 import org.junit.jupiter.api.Test;
 
 import java.io.BufferedReader;

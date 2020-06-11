@@ -34,7 +34,7 @@ public class ProbeTest
             });
         }};
 
-        Probe probe = new Probe(inputs,"P");
+        Probe probe = new Probe(inputs, "P");
         probe.calculate();
 
         assertTrue(probe.getValue());

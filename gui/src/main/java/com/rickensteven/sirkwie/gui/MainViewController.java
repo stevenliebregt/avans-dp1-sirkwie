@@ -1,10 +1,10 @@
 package com.rickensteven.sirkwie.gui;
 
 import com.rickensteven.sirkwie.core.CircuitLoaderFacade;
-import com.rickensteven.sirkwie.core.parsing.ANTLRCircuitParser;
-import com.rickensteven.sirkwie.core.parsing.ICircuitParser;
 import com.rickensteven.sirkwie.core.domain.Circuit;
 import com.rickensteven.sirkwie.core.exception.*;
+import com.rickensteven.sirkwie.core.parsing.ANTLRCircuitParser;
+import com.rickensteven.sirkwie.core.parsing.ICircuitParser;
 import javafx.application.Platform;
 import javafx.scene.control.Alert;
 import javafx.scene.input.MouseEvent;
@@ -56,9 +56,12 @@ public class MainViewController
     {
         Circuit circuit = mainViewModel.circuitProperty.getValue();
 
-        if (circuit != null) {
-            circuit.simulate();
+        if (circuit == null) {
+            alert("There was a problem loading the circuit");
+            return;
         }
+
+        circuit.simulate();
     }
 
     public void quit(MouseEvent mouseEvent)

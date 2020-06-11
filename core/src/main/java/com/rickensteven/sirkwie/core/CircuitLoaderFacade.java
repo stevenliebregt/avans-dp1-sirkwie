@@ -1,6 +1,8 @@
 package com.rickensteven.sirkwie.core;
 
-import com.rickensteven.sirkwie.core.building.*;
+import com.rickensteven.sirkwie.core.building.CircuitBuilder;
+import com.rickensteven.sirkwie.core.building.CircuitBuilderDirector;
+import com.rickensteven.sirkwie.core.building.CircuitDefinition;
 import com.rickensteven.sirkwie.core.domain.Circuit;
 import com.rickensteven.sirkwie.core.exception.CircuitInfiniteLoopException;
 import com.rickensteven.sirkwie.core.exception.CircuitNotConnectedException;
@@ -42,8 +44,10 @@ public class CircuitLoaderFacade
 
         Circuit circuit = circuitBuilder.getCircuit();
 
-        if (circuitNotConnectedValidator.hasDisconnectedProbes(circuit)) throw new CircuitNotConnectedException("Not all probes are connected"); // TODO: More specific, which node etc? maybe for extra points
-        if (circuitInfiniteLoopValidator.circuitHasInfiniteLoops(circuit)) throw new CircuitInfiniteLoopException("There are infinite loops in the circuit");
+        if (circuitNotConnectedValidator.hasDisconnectedProbes(circuit))
+            throw new CircuitNotConnectedException("Not all probes are connected"); // TODO: More specific, which node etc? maybe for extra points
+        if (circuitInfiniteLoopValidator.circuitHasInfiniteLoops(circuit))
+            throw new CircuitInfiniteLoopException("There are infinite loops in the circuit");
 
         return circuit;
     }

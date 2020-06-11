@@ -1,6 +1,5 @@
 package com.rickensteven.sirkwie.core.domain;
 
-import java.util.Collections;
 import java.util.List;
 
 public abstract class Gate extends NodeComposite
