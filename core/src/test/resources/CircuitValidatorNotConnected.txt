@@ -1,0 +1,5 @@
+A:	INPUT_HIGH;
+NODE1:	OR;
+S: Probe;
+
+A:	NODE1,NODE2;

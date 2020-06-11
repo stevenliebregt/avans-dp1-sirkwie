@@ -6,8 +6,8 @@ import java.util.Set;
 public class Circuit
 {
     private final Set<Node> nodes;
-    private final Set<Node> inputs;
-    private final Set<Node> probes;
+    private final Set<Input> inputs;
+    private final Set<Probe> probes;
 
     public Circuit()
     {
@@ -32,26 +32,24 @@ public class Circuit
      * Adds a node to the list of inputs, and to the list of nodes.
      *
      * @param node The node to add.
-     * @return The current circuit.
      * @see #addNode
      */
-    public Circuit addInput(Node node)
+    public void addInput(Input node)
     {
         this.inputs.add(node);
-        return this.addNode(node);
+        this.addNode(node);
     }
 
     /**
      * Adds a node to the list of probes, and to the list of nodes.
      *
      * @param node The node to add.
-     * @return The current circuit.
      * @see #addNode
      */
-    public Circuit addProbe(Node node)
+    public void addProbe(Probe node)
     {
         this.probes.add(node);
-        return this.addNode(node);
+        this.addNode(node);
     }
 
     public Set<Node> getNodes()
@@ -59,12 +57,12 @@ public class Circuit
         return nodes;
     }
 
-    public Set<Node> getInputs()
+    public Set<Input> getInputs()
     {
         return inputs;
     }
 
-    public Set<Node> getProbes()
+    public Set<Probe> getProbes()
     {
         return probes;
     }
