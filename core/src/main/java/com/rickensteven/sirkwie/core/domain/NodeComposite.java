@@ -15,6 +15,7 @@ public abstract class NodeComposite extends Node
 
     public NodeComposite()
     {
+        // TODO: ?
     }
 
     public void add(Node parent)

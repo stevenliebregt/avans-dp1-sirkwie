@@ -1,7 +1,7 @@
 grammar DP1Circuit;
 
 @header {
-package com.rickensteven.sirkwie.core;
+package com.rickensteven.sirkwie.core.antlr;
 }
 
 file                : nodeDefinitions GROUP_SEPARATOR edgeDefinitions ;
