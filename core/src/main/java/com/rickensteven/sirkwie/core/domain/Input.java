@@ -2,8 +2,9 @@ package com.rickensteven.sirkwie.core.domain;
 
 public class Input extends Node
 {
-    public Input(boolean value)
+    public Input(boolean value, String name)
     {
+        super(name);
         setValue(value);
     }
 

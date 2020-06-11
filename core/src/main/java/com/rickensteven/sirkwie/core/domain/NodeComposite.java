@@ -7,8 +7,9 @@ public abstract class NodeComposite extends Node
 {
     protected final List<Node> parents = new ArrayList<>();
 
-    public NodeComposite(List<Node> parents)
+    public NodeComposite(List<Node> parents, String name)
     {
+        super(name);
         this.parents.addAll(parents);
     }
 
@@ -28,9 +29,4 @@ public abstract class NodeComposite extends Node
     }
 
     public abstract boolean calculate();
-
-    @Override
-    public boolean canHaveParents() {
-        return true;
-    }
 }

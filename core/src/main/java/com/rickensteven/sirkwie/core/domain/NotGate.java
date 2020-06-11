@@ -13,16 +13,16 @@ import java.util.List;
  */
 public class NotGate extends Gate
 {
-    public NotGate(List<Node> parents)
+    public NotGate(List<Node> parents, String name)
     {
-        super(parents);
+        super(parents, name);
         if (parents.size() != 1) {
             throw new IllegalArgumentException("The NOT gate must have exactly 1 input");
         }
     }
-    public NotGate()
+    public NotGate(String name)
     {
-        super(Collections.emptyList());
+        super(Collections.emptyList(), name);
     }
 
     @Override

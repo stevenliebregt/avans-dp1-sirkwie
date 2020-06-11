@@ -37,8 +37,8 @@ public class CircuitInfiniteLoopValidatorTest
     {
         Circuit circuit = new Circuit();
 
-        Input input = new Input(true);
-        Probe probe = new Probe(Collections.singletonList(input));
+        Input input = new Input(true, "I");
+        Probe probe = new Probe(Collections.singletonList(input), "P");
 
         circuit.addInput(input);
         circuit.addProbe(probe);
@@ -53,9 +53,9 @@ public class CircuitInfiniteLoopValidatorTest
     {
         Circuit circuit = new Circuit();
 
-        Input input = new Input(true);
-        Node node = new NotGate(Collections.singletonList(input));
-        Probe probe = new Probe(Collections.singletonList(node));
+        Input input = new Input(true, "I");
+        Node node = new NotGate(Collections.singletonList(input), "N");
+        Probe probe = new Probe(Collections.singletonList(node), "P");
 
         circuit.addInput(input);
         circuit.addNode(node);
@@ -71,10 +71,10 @@ public class CircuitInfiniteLoopValidatorTest
     {
         Circuit circuit = new Circuit();
 
-        Input input = new Input(true);
-        Node node1 = new NotGate(Collections.singletonList(input));
-        Node node2 = new NotGate(Collections.singletonList(node1));
-        Probe probe = new Probe(Collections.singletonList(node2));
+        Input input = new Input(true, "I");
+        Node node1 = new NotGate(Collections.singletonList(input), "N1");
+        Node node2 = new NotGate(Collections.singletonList(node1), "N2");
+        Probe probe = new Probe(Collections.singletonList(node2), "N3");
 
         circuit.addInput(input);
         circuit.addNode(node1);

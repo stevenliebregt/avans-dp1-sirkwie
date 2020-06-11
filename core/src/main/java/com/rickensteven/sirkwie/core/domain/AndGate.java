@@ -15,13 +15,13 @@ import java.util.List;
  */
 public class AndGate extends Gate
 {
-    public AndGate(List<Node> parents)
+    public AndGate(List<Node> parents, String name)
     {
-        super(parents);
+        super(parents, name);
     }
-    public AndGate()
+    public AndGate(String name)
     {
-        super(Collections.emptyList());
+        super(Collections.emptyList(), name);
     }
 
     @Override

@@ -23,11 +23,11 @@ public class XOrGateTest
     {
         List<Node> inputs = new ArrayList<Node>()
         {{
-            add(new Input(false));
-            add(new Input(false));
+            add(new Input(false, "A"));
+            add(new Input(false, "B"));
         }};
 
-        XOrGate XOrGate = new XOrGate(inputs);
+        XOrGate XOrGate = new XOrGate(inputs, "X");
         XOrGate.calculate();
 
         assertFalse(XOrGate.getValue());
@@ -43,11 +43,11 @@ public class XOrGateTest
     {
         List<Node> inputs = new ArrayList<Node>()
         {{
-            add(new Input(false));
-            add(new Input(true));
+            add(new Input(false, "A"));
+            add(new Input(true, "B"));
         }};
 
-        XOrGate XOrGate = new XOrGate(inputs);
+        XOrGate XOrGate = new XOrGate(inputs, "X");
         XOrGate.calculate();
 
         assertTrue(XOrGate.getValue());
@@ -63,11 +63,11 @@ public class XOrGateTest
     {
         List<Node> inputs = new ArrayList<Node>()
         {{
-            add(new Input(true));
-            add(new Input(false));
+            add(new Input(true, "A"));
+            add(new Input(false, "B"));
         }};
 
-        XOrGate XOrGate = new XOrGate(inputs);
+        XOrGate XOrGate = new XOrGate(inputs, "X");
         XOrGate.calculate();
 
         assertTrue(XOrGate.getValue());
@@ -83,11 +83,11 @@ public class XOrGateTest
     {
         List<Node> inputs = new ArrayList<Node>()
         {{
-            add(new Input(true));
-            add(new Input(true));
+            add(new Input(true, "A"));
+            add(new Input(true, "B"));
         }};
 
-        XOrGate XOrGate = new XOrGate(inputs);
+        XOrGate XOrGate = new XOrGate(inputs, "X");
         XOrGate.calculate();
 
         assertFalse(XOrGate.getValue());

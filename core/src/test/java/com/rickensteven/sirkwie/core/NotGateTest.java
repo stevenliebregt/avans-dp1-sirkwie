@@ -20,12 +20,12 @@ public class NotGateTest
     @Test
     public void shouldReturnOn()
     {
-        List<Node> inputs = new ArrayList<Node>()
+        List<Node> inputs = new ArrayList<>()
         {{
-            add(new Input(false));
+            add(new Input(false, "A"));
         }};
 
-        NotGate notGate = new NotGate(inputs);
+        NotGate notGate = new NotGate(inputs, "N");
         notGate.calculate();
 
         assertTrue(notGate.getValue());
@@ -39,12 +39,12 @@ public class NotGateTest
     @Test
     public void shouldReturnOff()
     {
-        List<Node> inputs = new ArrayList<Node>()
+        List<Node> inputs = new ArrayList<>()
         {{
-            add(new Input(true));
+            add(new Input(true, "I"));
         }};
 
-        NotGate notGate = new NotGate(inputs);
+        NotGate notGate = new NotGate(inputs, "N");
         notGate.calculate();
 
         assertFalse(notGate.getValue());
@@ -54,13 +54,13 @@ public class NotGateTest
     public void moreThanOneParentShouldThrowException()
     {
         assertThrows(IllegalArgumentException.class, () -> {
-            List<Node> inputs = new ArrayList<Node>()
+            List<Node> inputs = new ArrayList<>()
             {{
-                add(new Input(false));
-                add(new Input(false));
+                add(new Input(false, "A"));
+                add(new Input(false, "B"));
             }};
 
-            new NotGate(inputs);
+            new NotGate(inputs, "I");
         });
     }
 }

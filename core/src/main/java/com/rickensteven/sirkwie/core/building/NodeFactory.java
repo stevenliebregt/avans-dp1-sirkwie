@@ -23,12 +23,12 @@ public class NodeFactory
         }
     };
 
-    public Node createNode(String nodeTypeName)
+    public Node createNode(String nodeName, String nodeTypeName)
     {
         if (!types.containsKey(nodeTypeName)) {
             throw new NodeTypeUnknownException("File contains unknown node types");
         }
-        return types.get(nodeTypeName).getInstance();
+        return types.get(nodeTypeName).getInstance(nodeName);
     }
 
     public static NodeFactory getInstance()

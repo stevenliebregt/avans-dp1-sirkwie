@@ -15,13 +15,13 @@ import java.util.List;
  */
 public class XOrGate extends Gate
 {
-    public XOrGate(List<Node> parents)
+    public XOrGate(List<Node> parents, String name)
     {
-        super(parents);
+        super(parents, name);
     }
-    public XOrGate()
+    public XOrGate(String name)
     {
-        super(Collections.emptyList());
+        super(Collections.emptyList(), name);
     }
 
     @Override

@@ -15,13 +15,13 @@ import java.util.List;
  */
 public class NAndGate extends Gate
 {
-    public NAndGate(List<Node> parents)
+    public NAndGate(List<Node> parents, String name)
     {
-        super(parents);
+        super(parents, name);
     }
-    public NAndGate()
+    public NAndGate(String name)
     {
-        super(Collections.emptyList());
+        super(Collections.emptyList(), name);
     }
 
     @Override

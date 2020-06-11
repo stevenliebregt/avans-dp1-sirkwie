@@ -23,11 +23,11 @@ public class AndGateTest
     {
         List<Node> inputs = new ArrayList<Node>()
         {{
-            add(new Input(false));
-            add(new Input(false));
+            add(new Input(false, "A"));
+            add(new Input(false, "B"));
         }};
 
-        AndGate andGate = new AndGate(inputs);
+        AndGate andGate = new AndGate(inputs, "G");
         andGate.calculate();
 
         assertFalse(andGate.getValue());
@@ -41,13 +41,13 @@ public class AndGateTest
     @Test
     public void shouldReturnOffB()
     {
-        List<Node> inputs = new ArrayList<Node>()
+        List<Node> inputs = new ArrayList<>()
         {{
-            add(new Input(false));
-            add(new Input(true));
+            add(new Input(false, "A"));
+            add(new Input(true, "B"));
         }};
 
-        AndGate andGate = new AndGate(inputs);
+        AndGate andGate = new AndGate(inputs, "G");
         andGate.calculate();
 
         assertFalse(andGate.getValue());
@@ -63,11 +63,11 @@ public class AndGateTest
     {
         List<Node> inputs = new ArrayList<Node>()
         {{
-            add(new Input(true));
-            add(new Input(false));
+            add(new Input(true, "A"));
+            add(new Input(false, "B"));
         }};
 
-        AndGate andGate = new AndGate(inputs);
+        AndGate andGate = new AndGate(inputs, "G");
         andGate.calculate();
 
         assertFalse(andGate.getValue());
@@ -83,11 +83,11 @@ public class AndGateTest
     {
         List<Node> inputs = new ArrayList<Node>()
         {{
-            add(new Input(true));
-            add(new Input(true));
+            add(new Input(true, "A"));
+            add(new Input(true, "B"));
         }};
 
-        AndGate andGate = new AndGate(inputs);
+        AndGate andGate = new AndGate(inputs, "G");
         andGate.calculate();
 
         assertTrue(andGate.getValue());

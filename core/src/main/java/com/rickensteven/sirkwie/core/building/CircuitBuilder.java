@@ -30,7 +30,7 @@ public class CircuitBuilder
     public void buildNodes()
     {
         circuitDefinition.getNodes().forEach((key, value) -> {
-            Node node = NodeFactory.getInstance().createNode(value);
+            Node node = NodeFactory.getInstance().createNode(key, value);
             this.nodes.put(key, node);
             node.addToCircuit(circuit);
         });

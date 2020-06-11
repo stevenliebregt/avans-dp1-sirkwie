@@ -6,65 +6,65 @@ public enum NodeType
 {
     INPUT_HIGH("INPUT_HIGH") {
         @Override
-        public Node getInstance()
+        public Node getInstance(String name)
         {
-            return new Input(true);
+            return new Input(true, name);
         }
     },
     INPUT_LOW("INPUT_LOW") {
         @Override
-        public Node getInstance()
+        public Node getInstance(String name)
         {
-            return new Input(false);
+            return new Input(false, name);
         }
     },
     PROBE("PROBE") {
         @Override
-        public Node getInstance()
+        public Node getInstance(String name)
         {
-            return new Probe();
+            return new Probe(name);
         }
     },
     AND("AND") {
         @Override
-        public Node getInstance()
+        public Node getInstance(String name)
         {
-            return new AndGate();
+            return new AndGate(name);
         }
     },
     OR("OR") {
         @Override
-        public Node getInstance()
+        public Node getInstance(String name)
         {
-            return new OrGate();
+            return new OrGate(name);
         }
     },
     NOT("NOT") {
         @Override
-        public Node getInstance()
+        public Node getInstance(String name)
         {
-            return new NotGate();
+            return new NotGate(name);
         }
     },
     NOR("NOR") {
         @Override
-        public Node getInstance()
+        public Node getInstance(String name)
         {
-            return new NOrGate();
+            return new NOrGate(name);
         }
     },
     XOR("XOR") {
         @Override
-        public Node getInstance()
+        public Node getInstance(String name)
         {
-            return new XOrGate();
+            return new XOrGate(name);
         }
     },
     NAND("NAND") {
         @Override
-        public Node getInstance()
+        public Node getInstance(String name)
         {
-            return new NAndGate();
+            return new NAndGate(name);
         }
     };
 
@@ -72,5 +72,5 @@ public enum NodeType
     {
     }
 
-    public abstract Node getInstance();
+    public abstract Node getInstance(String name);
 }

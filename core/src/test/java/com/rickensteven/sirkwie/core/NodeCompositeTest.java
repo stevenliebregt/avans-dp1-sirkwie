@@ -12,11 +12,11 @@ public class NodeCompositeTest
     @Test
     public void addParent()
     {
-        NodeComposite nodeComposite = new Probe();
+        NodeComposite nodeComposite = new Probe("P");
 
         assertEquals(0, nodeComposite.getParents().size());
 
-        nodeComposite.add(new Input(false));
+        nodeComposite.add(new Input(false, "I"));
 
         assertEquals(1, nodeComposite.getParents().size());
     }
@@ -24,8 +24,8 @@ public class NodeCompositeTest
     @Test
     public void removeParent()
     {
-        NodeComposite nodeComposite = new Probe();
-        Input input = new Input(false);
+        NodeComposite nodeComposite = new Probe("P");
+        Input input = new Input(false, "A");
 
         nodeComposite.add(input);
 

@@ -18,7 +18,7 @@ public class ProbeTest
     {
         List<Node> inputs = new ArrayList<Node>()
         {{
-            add(new Node()
+            add(new Node("N")
             {
                 @Override
                 public boolean calculate()
@@ -34,7 +34,7 @@ public class ProbeTest
             });
         }};
 
-        Probe probe = new Probe(inputs);
+        Probe probe = new Probe(inputs,"P");
         probe.calculate();
 
         assertTrue(probe.getValue());
@@ -45,7 +45,7 @@ public class ProbeTest
     {
         List<Node> inputs = new ArrayList<Node>()
         {{
-            add(new Node()
+            add(new Node("I")
             {
                 @Override
                 public boolean calculate()
@@ -61,7 +61,7 @@ public class ProbeTest
             });
         }};
 
-        Probe probe = new Probe(inputs);
+        Probe probe = new Probe(inputs, "P");
         probe.calculate();
 
         assertFalse(probe.getValue());
@@ -73,11 +73,11 @@ public class ProbeTest
         assertThrows(IllegalArgumentException.class, () -> {
             List<Node> inputs = new ArrayList<Node>()
             {{
-                add(new Input(false));
-                add(new Input(false));
+                add(new Input(false, "A"));
+                add(new Input(false, "B"));
             }};
 
-            new Probe(inputs);
+            new Probe(inputs, "P");
         });
     }
 }

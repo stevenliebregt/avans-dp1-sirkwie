@@ -23,11 +23,11 @@ public class NAndGateTest
     {
         List<Node> inputs = new ArrayList<Node>()
         {{
-            add(new Input(false));
-            add(new Input(false));
+            add(new Input(false, "A"));
+            add(new Input(false, "B"));
         }};
 
-        NAndGate NAndGate = new NAndGate(inputs);
+        NAndGate NAndGate = new NAndGate(inputs, "N");
         NAndGate.calculate();
 
         assertTrue(NAndGate.getValue());
@@ -41,13 +41,13 @@ public class NAndGateTest
     @Test
     public void shouldReturnOnB()
     {
-        List<Node> inputs = new ArrayList<Node>()
+        List<Node> inputs = new ArrayList<>()
         {{
-            add(new Input(false));
-            add(new Input(true));
+            add(new Input(false, "A"));
+            add(new Input(true, "B"));
         }};
 
-        NAndGate NAndGate = new NAndGate(inputs);
+        NAndGate NAndGate = new NAndGate(inputs, "N");
         NAndGate.calculate();
 
         assertTrue(NAndGate.getValue());
@@ -61,13 +61,13 @@ public class NAndGateTest
     @Test
     public void shouldReturnOnC()
     {
-        List<Node> inputs = new ArrayList<Node>()
+        List<Node> inputs = new ArrayList<>()
         {{
-            add(new Input(true));
-            add(new Input(false));
+            add(new Input(true, "A"));
+            add(new Input(false, "B"));
         }};
 
-        NAndGate NAndGate = new NAndGate(inputs);
+        NAndGate NAndGate = new NAndGate(inputs, "N");
         NAndGate.calculate();
 
         assertTrue(NAndGate.getValue());
@@ -83,11 +83,11 @@ public class NAndGateTest
     {
         List<Node> inputs = new ArrayList<Node>()
         {{
-            add(new Input(true));
-            add(new Input(true));
+            add(new Input(true, "A"));
+            add(new Input(true, "B"));
         }};
 
-        NAndGate NAndGate = new NAndGate(inputs);
+        NAndGate NAndGate = new NAndGate(inputs, "N");
         NAndGate.calculate();
 
         assertFalse(NAndGate.getValue());

@@ -15,13 +15,13 @@ import java.util.List;
  */
 public class NOrGate extends Gate
 {
-    public NOrGate(List<Node> parents)
+    public NOrGate(List<Node> parents, String name)
     {
-        super(parents);
+        super(parents, name);
     }
-    public NOrGate()
+    public NOrGate(String name)
     {
-        super(Collections.emptyList());
+        super(Collections.emptyList(), name);
     }
 
     @Override

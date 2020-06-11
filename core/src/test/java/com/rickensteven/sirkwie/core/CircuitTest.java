@@ -17,9 +17,9 @@ public class CircuitTest
     {
         Circuit circuit = new Circuit();
 
-        Input input = new Input(false);
-        NotGate notGate = new NotGate(Collections.singletonList(input));
-        Probe probe = new Probe(Collections.singletonList(notGate));
+        Input input = new Input(false, "I");
+        NotGate notGate = new NotGate(Collections.singletonList(input), "N");
+        Probe probe = new Probe(Collections.singletonList(notGate), "P");
 
         circuit.addInput(input);
         circuit.addNode(notGate);
@@ -35,9 +35,9 @@ public class CircuitTest
     {
         Circuit circuit = new Circuit();
 
-        Input input = new Input(false);
-        NotGate notGate = new NotGate(Collections.singletonList(input));
-        Probe probe = new Probe(Collections.singletonList(notGate));
+        Input input = new Input(false, "I");
+        NotGate notGate = new NotGate(Collections.singletonList(input), "N");
+        Probe probe = new Probe(Collections.singletonList(notGate), "P");
 
         circuit.addInput(input);
         circuit.addNode(notGate);

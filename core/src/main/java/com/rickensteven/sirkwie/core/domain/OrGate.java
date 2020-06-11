@@ -15,13 +15,13 @@ import java.util.List;
  */
 public class OrGate extends Gate
 {
-    public OrGate(List<Node> parents)
+    public OrGate(List<Node> parents, String name)
     {
-        super(parents);
+        super(parents, name);
     }
-    public OrGate()
+    public OrGate(String name)
     {
-        super(Collections.emptyList());
+        super(Collections.emptyList(), name);
     }
 
     @Override

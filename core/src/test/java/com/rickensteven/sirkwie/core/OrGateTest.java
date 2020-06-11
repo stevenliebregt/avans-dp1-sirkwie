@@ -23,11 +23,11 @@ public class OrGateTest
     {
         List<Node> inputs = new ArrayList<Node>()
         {{
-            add(new Input(false));
-            add(new Input(false));
+            add(new Input(false, "A"));
+            add(new Input(false, "B"));
         }};
 
-        OrGate orGate = new OrGate(inputs);
+        OrGate orGate = new OrGate(inputs, "O");
         orGate.calculate();
 
         assertFalse(orGate.getValue());
@@ -43,11 +43,11 @@ public class OrGateTest
     {
         List<Node> inputs = new ArrayList<Node>()
         {{
-            add(new Input(false));
-            add(new Input(true));
+            add(new Input(false, "A"));
+            add(new Input(true, "B"));
         }};
 
-        OrGate orGate = new OrGate(inputs);
+        OrGate orGate = new OrGate(inputs, "O");
         orGate.calculate();
 
         assertTrue(orGate.getValue());
@@ -63,11 +63,11 @@ public class OrGateTest
     {
         List<Node> inputs = new ArrayList<Node>()
         {{
-            add(new Input(true));
-            add(new Input(false));
+            add(new Input(true, "A"));
+            add(new Input(false, "B"));
         }};
 
-        OrGate orGate = new OrGate(inputs);
+        OrGate orGate = new OrGate(inputs, "O");
         orGate.calculate();
 
         assertTrue(orGate.getValue());
@@ -83,11 +83,11 @@ public class OrGateTest
     {
         List<Node> inputs = new ArrayList<Node>()
         {{
-            add(new Input(true));
-            add(new Input(true));
+            add(new Input(true, "A"));
+            add(new Input(true, "B"));
         }};
 
-        OrGate orGate = new OrGate(inputs);
+        OrGate orGate = new OrGate(inputs, "O");
         orGate.calculate();
 
         assertTrue(orGate.getValue());
