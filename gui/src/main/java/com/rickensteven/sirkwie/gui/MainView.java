@@ -18,6 +18,8 @@ public class MainView
     private BorderPane view;
     private Button simulateButton;
 
+    private String labelText;
+
     public MainView(MainViewController controller, MainViewModel mainViewModel)
     {
         this.controller = controller;
@@ -77,7 +79,16 @@ public class MainView
     private Label setupUiSimulation()
     {
         Circuit circuit = mainViewModel.circuitProperty.getValue();
-
-        return new Label("Hello, world!");
+        labelText = "";
+        NodeDrawingVisitor drawingVisitor = new NodeDrawingVisitor();
+        circuit.getInputs().forEach(input -> {
+            input.accept(drawingVisitor);
+            labelText += (drawingVisitor.getValue() + System.lineSeparator());
+        });
+        circuit.getProbes().forEach(probe -> {
+            probe.accept(drawingVisitor);
+            labelText += (drawingVisitor.getValue() + System.lineSeparator());
+        });
+        return new Label(labelText);
     }
 }
