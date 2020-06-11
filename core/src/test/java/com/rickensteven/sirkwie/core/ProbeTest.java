@@ -1,5 +1,6 @@
 package com.rickensteven.sirkwie.core;
 
+import com.rickensteven.sirkwie.core.domain.INodeVisitor;
 import com.rickensteven.sirkwie.core.domain.Input;
 import com.rickensteven.sirkwie.core.domain.Node;
 import com.rickensteven.sirkwie.core.domain.Probe;
@@ -24,6 +25,12 @@ public class ProbeTest
                 {
                     return true;
                 }
+
+                @Override
+                public void accept(INodeVisitor nodeVisitor)
+                {
+
+                }
             });
         }};
 
@@ -44,6 +51,12 @@ public class ProbeTest
                 public boolean calculate()
                 {
                     return false;
+                }
+
+                @Override
+                public void accept(INodeVisitor nodeVisitor)
+                {
+
                 }
             });
         }};
