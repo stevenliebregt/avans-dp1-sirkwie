@@ -31,7 +31,7 @@ public class CircuitBuilder
         System.out.println("I should build nodes");
         System.out.println(circuitDefinition.getNodes());
         circuitDefinition.getNodes().forEach((key, value) -> {
-            Node node = NodeFactory.GetInstance().CreateNode(value);
+            Node node = NodeFactory.getInstance().createNode(value);
             this.nodes.put(key, node);
             node.addToCircuit(circuit);
         });
