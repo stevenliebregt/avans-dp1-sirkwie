@@ -1,9 +1,9 @@
 package com.rickensteven.sirkwie.gui;
 
+import com.rickensteven.sirkwie.gui.graphstream.GraphstreamSimulationView;
+import com.rickensteven.sirkwie.gui.text.TextSimulationView;
 import javafx.scene.Parent;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.ToolBar;
+import javafx.scene.control.*;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.Pane;
@@ -17,8 +17,6 @@ public class MainView
     private BorderPane view;
     private Button simulateButton;
 
-    private SimulationView simulationView;
-
     public MainView(MainViewController controller, MainViewModel mainViewModel)
     {
         this.controller = controller;
@@ -29,6 +27,7 @@ public class MainView
 
         // TODO: Maybe remove, useful for testing to load default circuit on startup
         controller.tryToLoadFile(ClassLoader.getSystemResource("Circuit1_FullAdder.txt").getPath());
+        controller.simulateButtonClicked();
     }
 
     public Parent getView()
@@ -42,8 +41,16 @@ public class MainView
         view.setTop(setupUiToolbar());
         view.setCenter(new Label("Please select a circuit file first"));
 
-        simulationView = new SimulationView(controller, mainViewModel);
-        view.setCenter(simulationView.getView());
+        TextSimulationView textSimulationView = new TextSimulationView(controller, mainViewModel);
+        GraphstreamSimulationView graphstreamSimulationView = new GraphstreamSimulationView(controller, mainViewModel);
+
+        TabPane tabPane = new TabPane();
+        tabPane.setTabClosingPolicy(TabPane.TabClosingPolicy.UNAVAILABLE);
+
+        tabPane.getTabs().add(new Tab("Text", textSimulationView.getView()));
+        tabPane.getTabs().add(new Tab("Graphstream", graphstreamSimulationView.getView()));
+
+        view.setCenter(tabPane);
     }
 
     private void connectViewModel()
@@ -67,7 +74,7 @@ public class MainView
 
         simulateButton = new Button("Simulate");
         simulateButton.setDisable(true);
-        simulateButton.setOnMouseClicked((mouseEvent -> controller.simulateButtonClicked()));
+        simulateButton.setOnMouseClicked((mouseEvent -> controller.simulateButtonClicked())); // TODO: Update view correctly
 
         Pane spacer = new Pane();
         HBox.setHgrow(spacer, Priority.ALWAYS);

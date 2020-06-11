@@ -35,6 +35,7 @@ public class MainViewController
         File selectedFile = fileChooser.showOpenDialog(ownerWindow);
 
         tryToLoadFile(selectedFile.getAbsolutePath());
+        simulateButtonClicked();
     }
 
     public void simulateButtonClicked()
@@ -47,6 +48,7 @@ public class MainViewController
         }
 
         circuit.simulate();
+        mainViewModel.circuitSimulatedTriggerProperty.setValue(!mainViewModel.circuitSimulatedTriggerProperty.getValue());
     }
 
     public void quit(MouseEvent mouseEvent)
