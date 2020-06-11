@@ -29,42 +29,42 @@ public enum NodeType
         @Override
         public Node getInstance()
         {
-            return new AndGate(null);
+            return new AndGate();
         }
     },
     OR("OR") {
         @Override
         public Node getInstance()
         {
-            return new OrGate(null);
+            return new OrGate();
         }
     },
     NOT("NOT") {
         @Override
         public Node getInstance()
         {
-            return new NotGate(null);
+            return new NotGate();
         }
     },
     NOR("NOR") {
         @Override
         public Node getInstance()
         {
-            return new NOrGate(null);
+            return new NOrGate();
         }
     },
     XOR("XOR") {
         @Override
         public Node getInstance()
         {
-            return new XOrGate(null);
+            return new XOrGate();
         }
     },
     NAND("NAND") {
         @Override
         public Node getInstance()
         {
-            return new NAndGate(null);
+            return new NAndGate();
         }
     };
 

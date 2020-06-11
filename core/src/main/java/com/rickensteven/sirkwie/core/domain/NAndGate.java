@@ -1,5 +1,6 @@
 package com.rickensteven.sirkwie.core.domain;
 
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -17,6 +18,10 @@ public class NAndGate extends Gate
     public NAndGate(List<Node> parents)
     {
         super(parents);
+    }
+    public NAndGate()
+    {
+        super(Collections.emptyList());
     }
 
     @Override

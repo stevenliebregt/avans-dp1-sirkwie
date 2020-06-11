@@ -1,5 +1,6 @@
 package com.rickensteven.sirkwie.core.domain;
 
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -17,6 +18,10 @@ public class OrGate extends Gate
     public OrGate(List<Node> parents)
     {
         super(parents);
+    }
+    public OrGate()
+    {
+        super(Collections.emptyList());
     }
 
     @Override

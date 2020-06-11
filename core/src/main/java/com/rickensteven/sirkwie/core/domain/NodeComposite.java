@@ -10,12 +10,8 @@ public abstract class NodeComposite extends Node
 
     public NodeComposite(List<Node> parents)
     {
+        System.out.println(parents);
         this.parents.addAll(parents);
-    }
-
-    public NodeComposite()
-    {
-        // TODO: ?
     }
 
     public void add(Node parent)
