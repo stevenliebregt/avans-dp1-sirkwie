@@ -3,7 +3,7 @@ package com.rickensteven.sirkwie.core;
 import com.rickensteven.sirkwie.core.antlr.DP1CircuitParser;
 import com.rickensteven.sirkwie.core.util.LexerUtil;
 import com.rickensteven.sirkwie.core.util.TestANTLRErrorListener;
-import org.antlr.v4.runtime.*;
+import org.antlr.v4.runtime.CommonTokenStream;
 import org.junit.jupiter.api.Test;
 
 import java.io.BufferedReader;

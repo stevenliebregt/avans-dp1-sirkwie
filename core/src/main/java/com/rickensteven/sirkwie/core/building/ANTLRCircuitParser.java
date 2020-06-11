@@ -27,8 +27,13 @@ public class ANTLRCircuitParser implements ICircuitParser
             throw new CircuitSyntaxException("Syntax error in circuit file");
         }
 
-        // TODO Convert parsetree to CircuitDefinition
+        return convertParseTreeToCircuitDefinition(parseTree);
+    }
 
-        return new CircuitDefinition(null, null);
+    private CircuitDefinition convertParseTreeToCircuitDefinition(ParseTree parseTree)
+    {
+        ANTLRVisitor antlrVisitor = new ANTLRVisitor();
+
+        return antlrVisitor.visit(parseTree);
     }
 }

@@ -8,6 +8,8 @@ import java.util.HashMap;
 
 public class CircuitBuilder
 {
+    // TODO: Deze class, of een validator zou de CircuitInfiniteLoopException en CircuitNotConnectedException moeten gaan gooien
+
     private CircuitDefinition circuitDefinition;
     private Circuit circuit;
     private final HashMap<String, Node> nodes = new HashMap<>();

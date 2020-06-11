@@ -1,5 +1,7 @@
 package com.rickensteven.sirkwie.core.building;
-import com.rickensteven.sirkwie.core.domain.*;
+
+import com.rickensteven.sirkwie.core.domain.Node;
+
 import java.util.HashMap;
 
 public class NodeFactory
@@ -7,7 +9,8 @@ public class NodeFactory
     private static NodeFactory _instance;
     private final HashMap<String, NodeType> _types;
 
-    private NodeFactory() {
+    private NodeFactory()
+    {
         _types = new HashMap<>()
         {
             {
@@ -30,8 +33,9 @@ public class NodeFactory
         return _types.get(NodeTypeName).getInstance();
     }
 
-    public static NodeFactory GetInstance() {
-        if(_instance == null) _instance = new NodeFactory();
+    public static NodeFactory GetInstance()
+    {
+        if (_instance == null) _instance = new NodeFactory();
         return _instance;
     }
 }
