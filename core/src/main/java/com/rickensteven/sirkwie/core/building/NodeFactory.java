@@ -1,6 +1,7 @@
 package com.rickensteven.sirkwie.core.building;
 
 import com.rickensteven.sirkwie.core.domain.Node;
+import com.rickensteven.sirkwie.core.exception.NodeTypeUnknownException;
 
 import java.util.HashMap;
 
@@ -22,10 +23,12 @@ public class NodeFactory
         }
     };
 
-    // TODO error handling
-    public Node createNode(String NodeTypeName)
+    public Node createNode(String nodeTypeName)
     {
-        return types.get(NodeTypeName).getInstance();
+        if (types.containsKey(nodeTypeName)) {
+            throw new NodeTypeUnknownException("File contains unknown node types");
+        }
+        return types.get(nodeTypeName).getInstance();
     }
 
     public static NodeFactory getInstance()

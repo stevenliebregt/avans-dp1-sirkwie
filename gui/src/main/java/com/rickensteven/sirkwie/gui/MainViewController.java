@@ -7,6 +7,7 @@ import com.rickensteven.sirkwie.core.domain.Circuit;
 import com.rickensteven.sirkwie.core.exception.CircuitInfiniteLoopException;
 import com.rickensteven.sirkwie.core.exception.CircuitNotConnectedException;
 import com.rickensteven.sirkwie.core.exception.CircuitSyntaxException;
+import com.rickensteven.sirkwie.core.exception.NodeTypeUnknownException;
 import javafx.application.Platform;
 import javafx.scene.control.Alert;
 import javafx.scene.input.MouseEvent;
@@ -47,6 +48,8 @@ public class MainViewController
             alert("The selected file contains an infinite loop");
         } catch (CircuitNotConnectedException exception) {
             alert("The selected file contains probes that are not reachable");
+        } catch (NodeTypeUnknownException exception) {
+            alert("The selected file contains unknown node types");
         }
     }
 
