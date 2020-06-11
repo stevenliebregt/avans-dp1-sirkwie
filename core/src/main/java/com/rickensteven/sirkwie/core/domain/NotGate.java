@@ -31,4 +31,10 @@ public class NotGate extends Gate
         value = !parents.get(0).calculate();
         return value;
     }
+
+    @Override
+    public void accept(INodeVisitor nodeVisitor)
+    {
+        nodeVisitor.visit(this);
+    }
 }

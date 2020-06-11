@@ -32,4 +32,10 @@ public class NOrGate extends Gate
                 .noneMatch(Node::calculate);
         return value;
     }
+
+    @Override
+    public void accept(INodeVisitor nodeVisitor)
+    {
+        nodeVisitor.visit(this);
+    }
 }

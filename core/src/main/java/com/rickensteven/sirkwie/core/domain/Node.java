@@ -5,6 +5,7 @@ public abstract class Node
     protected boolean value;
 
     public abstract boolean calculate();
+    public abstract void accept(INodeVisitor nodeVisitor);
 
     public boolean getValue()
     {

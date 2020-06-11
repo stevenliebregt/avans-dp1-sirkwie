@@ -31,4 +31,10 @@ public class Probe extends NodeComposite
         circuit.addProbe(this);
         super.addToCircuit(circuit);
     }
+
+    @Override
+    public void accept(INodeVisitor nodeVisitor)
+    {
+        nodeVisitor.visit(this);
+    }
 }
