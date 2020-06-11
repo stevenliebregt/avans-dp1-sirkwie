@@ -14,6 +14,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class ANTLRCircuitParserTest
 {
+    @SuppressWarnings("SuspiciousMethodCalls")
     @Test
     public void parseTestTwoNodesTwoEdges()
     {

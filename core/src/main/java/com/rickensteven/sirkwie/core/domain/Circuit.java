@@ -71,6 +71,6 @@ public class Circuit
 
     public void simulate()
     {
-        // TODO:
+        probes.forEach(Node::calculate);
     }
 }

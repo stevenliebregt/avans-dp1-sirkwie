@@ -22,7 +22,7 @@ dependencies {
 
 javafx {
     version = "14"
-    modules = [ 'javafx.controls' ]
+    modules = ['javafx.controls']
 }
 
 test {

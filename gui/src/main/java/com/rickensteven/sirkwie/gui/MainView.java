@@ -1,10 +1,14 @@
 package com.rickensteven.sirkwie.gui;
 
+import com.rickensteven.sirkwie.core.domain.Circuit;
 import javafx.scene.Parent;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ToolBar;
-import javafx.scene.layout.*;
+import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.HBox;
+import javafx.scene.layout.Pane;
+import javafx.scene.layout.Priority;
 
 public class MainView
 {
@@ -72,8 +76,7 @@ public class MainView
 
     private Label setupUiSimulation()
     {
-        // TODO: Display the simulation
-        System.out.println(mainViewModel.circuitProperty.getValue().getInputs());
+        Circuit circuit = mainViewModel.circuitProperty.getValue();
 
         return new Label("Hello, world!");
     }
