@@ -15,7 +15,7 @@ public class NodeFactory
             put("PROBE", NodeType.PROBE);
             put("NOT", NodeType.NOT);
             put("AND", NodeType.AND);
-            put("OR", NodeType.XOR);
+            put("OR", NodeType.OR);
             put("NOR", NodeType.NOR);
             put("NAND", NodeType.NAND);
             put("XOR", NodeType.XOR);
