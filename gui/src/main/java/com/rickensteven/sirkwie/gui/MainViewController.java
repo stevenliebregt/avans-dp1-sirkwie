@@ -1,8 +1,8 @@
 package com.rickensteven.sirkwie.gui;
 
 import com.rickensteven.sirkwie.core.CircuitLoaderFacade;
-import com.rickensteven.sirkwie.core.building.ANTLRCircuitParser;
-import com.rickensteven.sirkwie.core.building.ICircuitParser;
+import com.rickensteven.sirkwie.core.parsing.ANTLRCircuitParser;
+import com.rickensteven.sirkwie.core.parsing.ICircuitParser;
 import com.rickensteven.sirkwie.core.domain.Circuit;
 import com.rickensteven.sirkwie.core.exception.*;
 import javafx.application.Platform;

@@ -1,4 +1,4 @@
-package com.rickensteven.sirkwie.core.building;
+package com.rickensteven.sirkwie.core.parsing;
 
 import org.antlr.v4.runtime.ANTLRErrorListener;
 import org.antlr.v4.runtime.Parser;

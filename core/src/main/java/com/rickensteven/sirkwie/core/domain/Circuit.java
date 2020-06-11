@@ -20,12 +20,10 @@ public class Circuit
      * Adds a node to the list of nodes.
      *
      * @param node The node to add.
-     * @return The current circuit.
      */
-    public Circuit addNode(Node node)
+    public void addNode(Node node)
     {
         this.nodes.add(node);
-        return this;
     }
 
     /**
