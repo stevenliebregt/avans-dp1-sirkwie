@@ -1,5 +1,6 @@
 package com.rickensteven.sirkwie.core;
 
+import com.rickensteven.sirkwie.core.antlr.DP1CircuitLexer;
 import com.rickensteven.sirkwie.core.util.LexerUtil;
 import org.antlr.v4.runtime.Token;
 import org.junit.jupiter.api.Test;

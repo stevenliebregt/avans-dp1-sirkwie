@@ -1,7 +1,7 @@
 package com.rickensteven.sirkwie.core.building;
 
-import com.rickensteven.sirkwie.core.DP1CircuitLexer;
-import com.rickensteven.sirkwie.core.DP1CircuitParser;
+import com.rickensteven.sirkwie.core.antlr.DP1CircuitLexer;
+import com.rickensteven.sirkwie.core.antlr.DP1CircuitParser;
 import com.rickensteven.sirkwie.core.exception.CircuitSyntaxException;
 import org.antlr.v4.runtime.ANTLRInputStream;
 import org.antlr.v4.runtime.CommonTokenStream;
@@ -21,11 +21,13 @@ public class ANTLRCircuitParser implements ICircuitParser
 
         ParseTree parseTree = dp1CircuitParser.file();
 
+        // By default ANTLR does not throw an exception when there are syntax
+        // errors, since we do want that we check a custom error listener.
         if (antlrParserErrorListener.hasSyntaxErrors()) {
             throw new CircuitSyntaxException("Syntax error in circuit file");
         }
 
-        //TODO Convert parsetree to CircuitDefinition
+        // TODO Convert parsetree to CircuitDefinition
 
         return new CircuitDefinition(null, null);
     }

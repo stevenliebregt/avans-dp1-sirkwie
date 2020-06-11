@@ -1,7 +1,6 @@
 plugins {
     id 'java'
     id 'antlr'
-    id 'jacoco'
 }
 
 group 'com.rickensteven.sirkwie.core'
@@ -19,23 +18,11 @@ dependencies {
 }
 
 test {
-    useJUnitPlatform()
-    finalizedBy jacocoTestReport
-}
-
-jacocoTestReport {
-    dependsOn test
-    finalizedBy jacocoTestCoverageVerification
-}
-
-jacocoTestCoverageVerification {
-    violationRules {
-        rule {
-            limit {
-                minimum = 0.7
-            }
-        }
+    testLogging {
+        events "passed", "skipped", "failed"
     }
+
+    useJUnitPlatform()
 }
 
 generateGrammarSource {

@@ -1,6 +1,5 @@
 rootProject.name = 'sirkwie'
 
 include 'core'
-include 'console'
 include 'gui'
 

@@ -2,7 +2,7 @@ package com.rickensteven.sirkwie.core;
 
 import com.rickensteven.sirkwie.core.domain.Input;
 import com.rickensteven.sirkwie.core.domain.Node;
-import com.rickensteven.sirkwie.core.domain.NotGate;
+import com.rickensteven.sirkwie.core.domain.Probe;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
@@ -10,44 +10,48 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class NotGateTest
+public class ProbeTest
 {
-    /**
-     * Input A | Output
-     * ---------|--------
-     * 0 |      1
-     */
     @Test
-    public void shouldReturnOn()
+    public void shouldBeOn()
     {
         List<Node> inputs = new ArrayList<Node>()
         {{
-            add(new Input(false));
+            add(new Node()
+            {
+                @Override
+                public boolean calculate()
+                {
+                    return true;
+                }
+            });
         }};
 
-        NotGate notGate = new NotGate(inputs);
-        notGate.calculate();
+        Probe probe = new Probe(inputs);
+        probe.calculate();
 
-        assertTrue(notGate.getValue());
+        assertTrue(probe.getValue());
     }
 
-    /**
-     * Input A | Output
-     * ---------|--------
-     * 1 |      0
-     */
     @Test
-    public void shouldReturnOff()
+    public void shouldBeOff()
     {
         List<Node> inputs = new ArrayList<Node>()
         {{
-            add(new Input(true));
+            add(new Node()
+            {
+                @Override
+                public boolean calculate()
+                {
+                    return false;
+                }
+            });
         }};
 
-        NotGate notGate = new NotGate(inputs);
-        notGate.calculate();
+        Probe probe = new Probe(inputs);
+        probe.calculate();
 
-        assertFalse(notGate.getValue());
+        assertFalse(probe.getValue());
     }
 
     @Test
@@ -60,7 +64,7 @@ public class NotGateTest
                 add(new Input(false));
             }};
 
-            new NotGate(inputs);
+            new Probe(inputs);
         });
     }
 }

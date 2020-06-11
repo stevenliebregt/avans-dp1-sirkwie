@@ -8,11 +8,15 @@ public abstract class NodeComposite extends Node
     // Called parents because they are in the context of the circuit
     protected List<Node> parents = new ArrayList<>();
 
-    public NodeComposite(List<Node> parents) {
+    public NodeComposite(List<Node> parents)
+    {
         this.parents.addAll(parents);
     }
 
-    public NodeComposite() {}
+    public NodeComposite()
+    {
+        // TODO: ?
+    }
 
     public void add(Node parent)
     {
