@@ -1,5 +1,6 @@
 package com.rickensteven.sirkwie.core.domain;
 
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -17,6 +18,10 @@ public class NOrGate extends Gate
     public NOrGate(List<Node> parents)
     {
         super(parents);
+    }
+    public NOrGate()
+    {
+        super(Collections.emptyList());
     }
 
     @Override

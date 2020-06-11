@@ -1,5 +1,6 @@
 package com.rickensteven.sirkwie.core.domain;
 
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -15,10 +16,13 @@ public class NotGate extends Gate
     public NotGate(List<Node> parents)
     {
         super(parents);
-
         if (parents.size() != 1) {
             throw new IllegalArgumentException("The NOT gate must have exactly 1 input");
         }
+    }
+    public NotGate()
+    {
+        super(Collections.emptyList());
     }
 
     @Override
