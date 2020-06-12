@@ -1,126 +1,127 @@
-
-
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html id="htmlId">
 <head>
-  <title>Coverage Report :: ANTLRParserErrorListener</title>
-  <style type="text/css">
-    @import "../../.css/coverage.css";
-  </style>
+    <title>Coverage Report :: ANTLRParserErrorListener</title>
+    <style type="text/css">
+        @import "../../.css/coverage.css";
+    </style>
 </head>
 
 <body>
 <div class="header"></div>
 
 <div class="content">
-<div class="breadCrumbs">
-    [ <a href="../../index.html">all classes</a> ]
-    [ <a href="../index.html">com.rickensteven.sirkwie.core.parsing</a> ]
-</div>
+    <div class="breadCrumbs">
+        [ <a href="../../index.html">all classes</a> ]
+        [ <a href="../index.html">com.rickensteven.sirkwie.core.parsing</a> ]
+    </div>
 
-<h1>Coverage Summary for Class: ANTLRParserErrorListener (com.rickensteven.sirkwie.core.parsing)</h1>
+    <h1>Coverage Summary for Class: ANTLRParserErrorListener (com.rickensteven.sirkwie.core.parsing)</h1>
 
-<table class="coverageStats">
-<tr>
-  <th class="name">Class</th>
-<th class="coverageStat 
+    <table class="coverageStats">
+        <tr>
+            <th class="name">Class</th>
+            <th class="coverageStat
 ">
-  Class, %
-</th>
-<th class="coverageStat 
+                Class, %
+            </th>
+            <th class="coverageStat
 ">
-  Method, %
-</th>
-<th class="coverageStat 
+                Method, %
+            </th>
+            <th class="coverageStat
 ">
-  Line, %
-</th>
-</tr>
-<tr>
-  <td class="name">ANTLRParserErrorListener</td>
-<td class="coverageStat">
+                Line, %
+            </th>
+        </tr>
+        <tr>
+            <td class="name">ANTLRParserErrorListener</td>
+            <td class="coverageStat">
   <span class="percent">
     100%
   </span>
-  <span class="absValue">
+                <span class="absValue">
     (1/ 1)
   </span>
-</td>
-<td class="coverageStat">
+            </td>
+            <td class="coverageStat">
   <span class="percent">
     50%
   </span>
-  <span class="absValue">
+                <span class="absValue">
     (3/ 6)
   </span>
-</td>
-<td class="coverageStat">
+            </td>
+            <td class="coverageStat">
   <span class="percent">
     62.5%
   </span>
-  <span class="absValue">
+                <span class="absValue">
     (5/ 8)
   </span>
-</td>
-</tr>
+            </td>
+        </tr>
 
-</table>
+    </table>
 
-<br/>
-<br/>
+    <br/>
+    <br/>
 
 
-<div class="sourceCode"><i>1</i>&nbsp;package com.rickensteven.sirkwie.core.parsing;
-<i>2</i>&nbsp;
-<i>3</i>&nbsp;import org.antlr.v4.runtime.ANTLRErrorListener;
-<i>4</i>&nbsp;import org.antlr.v4.runtime.Parser;
-<i>5</i>&nbsp;import org.antlr.v4.runtime.RecognitionException;
-<i>6</i>&nbsp;import org.antlr.v4.runtime.Recognizer;
-<i>7</i>&nbsp;import org.antlr.v4.runtime.atn.ATNConfigSet;
-<i>8</i>&nbsp;import org.antlr.v4.runtime.dfa.DFA;
-<i>9</i>&nbsp;
-<i>10</i>&nbsp;import java.util.BitSet;
-<i>11</i>&nbsp;
-<b class="fc"><i>12</i>&nbsp;public class ANTLRParserErrorListener implements ANTLRErrorListener</b>
-<i>13</i>&nbsp;{
-<b class="fc"><i>14</i>&nbsp;    private int syntaxErrorsCount = 0;</b>
-<i>15</i>&nbsp;
-<i>16</i>&nbsp;    public boolean hasSyntaxErrors()
-<i>17</i>&nbsp;    {
-<b class="fc"><i>18</i>&nbsp;        return syntaxErrorsCount &gt; 0;</b>
-<i>19</i>&nbsp;    }
-<i>20</i>&nbsp;
-<i>21</i>&nbsp;    @Override
-<i>22</i>&nbsp;    public void syntaxError(Recognizer&lt;?, ?&gt; recognizer, Object offendingSymbol, int line, int charPositionInLine, String msg, RecognitionException e)
-<i>23</i>&nbsp;    {
-<b class="fc"><i>24</i>&nbsp;        syntaxErrorsCount += 1;</b>
-<b class="fc"><i>25</i>&nbsp;    }</b>
-<i>26</i>&nbsp;
-<i>27</i>&nbsp;    @Override
-<i>28</i>&nbsp;    public void reportAmbiguity(Parser recognizer, DFA dfa, int startIndex, int stopIndex, boolean exact, BitSet ambigAlts, ATNConfigSet configs)
-<i>29</i>&nbsp;    {
-<i>30</i>&nbsp;        // We don&#39;t need this
-<b class="nc"><i>31</i>&nbsp;    }</b>
-<i>32</i>&nbsp;
-<i>33</i>&nbsp;    @Override
-<i>34</i>&nbsp;    public void reportAttemptingFullContext(Parser recognizer, DFA dfa, int startIndex, int stopIndex, BitSet conflictingAlts, ATNConfigSet configs)
-<i>35</i>&nbsp;    {
-<i>36</i>&nbsp;        // We don&#39;t need this
-<b class="nc"><i>37</i>&nbsp;    }</b>
-<i>38</i>&nbsp;
-<i>39</i>&nbsp;    @Override
-<i>40</i>&nbsp;    public void reportContextSensitivity(Parser recognizer, DFA dfa, int startIndex, int stopIndex, int prediction, ATNConfigSet configs)
-<i>41</i>&nbsp;    {
-<i>42</i>&nbsp;        // We don&#39;t need this
-<b class="nc"><i>43</i>&nbsp;    }</b>
-<i>44</i>&nbsp;}
-</div>
+    <div class="sourceCode"><i>1</i>&nbsp;package com.rickensteven.sirkwie.core.parsing;
+        <i>2</i>&nbsp;
+        <i>3</i>&nbsp;import org.antlr.v4.runtime.ANTLRErrorListener;
+        <i>4</i>&nbsp;import org.antlr.v4.runtime.Parser;
+        <i>5</i>&nbsp;import org.antlr.v4.runtime.RecognitionException;
+        <i>6</i>&nbsp;import org.antlr.v4.runtime.Recognizer;
+        <i>7</i>&nbsp;import org.antlr.v4.runtime.atn.ATNConfigSet;
+        <i>8</i>&nbsp;import org.antlr.v4.runtime.dfa.DFA;
+        <i>9</i>&nbsp;
+        <i>10</i>&nbsp;import java.util.BitSet;
+        <i>11</i>&nbsp;
+        <b class="fc"><i>12</i>&nbsp;public class ANTLRParserErrorListener implements ANTLRErrorListener</b>
+        <i>13</i>&nbsp;{
+        <b class="fc"><i>14</i>&nbsp; private int syntaxErrorsCount = 0;</b>
+        <i>15</i>&nbsp;
+        <i>16</i>&nbsp; public boolean hasSyntaxErrors()
+        <i>17</i>&nbsp; {
+        <b class="fc"><i>18</i>&nbsp; return syntaxErrorsCount &gt; 0;</b>
+        <i>19</i>&nbsp; }
+        <i>20</i>&nbsp;
+        <i>21</i>&nbsp; @Override
+        <i>22</i>&nbsp; public void syntaxError(Recognizer&lt;?, ?&gt; recognizer, Object offendingSymbol, int line, int
+        charPositionInLine, String msg, RecognitionException e)
+        <i>23</i>&nbsp; {
+        <b class="fc"><i>24</i>&nbsp; syntaxErrorsCount += 1;</b>
+        <b class="fc"><i>25</i>&nbsp; }</b>
+        <i>26</i>&nbsp;
+        <i>27</i>&nbsp; @Override
+        <i>28</i>&nbsp; public void reportAmbiguity(Parser recognizer, DFA dfa, int startIndex, int stopIndex, boolean
+        exact, BitSet ambigAlts, ATNConfigSet configs)
+        <i>29</i>&nbsp; {
+        <i>30</i>&nbsp; // We don&#39;t need this
+        <b class="nc"><i>31</i>&nbsp; }</b>
+        <i>32</i>&nbsp;
+        <i>33</i>&nbsp; @Override
+        <i>34</i>&nbsp; public void reportAttemptingFullContext(Parser recognizer, DFA dfa, int startIndex, int
+        stopIndex, BitSet conflictingAlts, ATNConfigSet configs)
+        <i>35</i>&nbsp; {
+        <i>36</i>&nbsp; // We don&#39;t need this
+        <b class="nc"><i>37</i>&nbsp; }</b>
+        <i>38</i>&nbsp;
+        <i>39</i>&nbsp; @Override
+        <i>40</i>&nbsp; public void reportContextSensitivity(Parser recognizer, DFA dfa, int startIndex, int stopIndex,
+        int prediction, ATNConfigSet configs)
+        <i>41</i>&nbsp; {
+        <i>42</i>&nbsp; // We don&#39;t need this
+        <b class="nc"><i>43</i>&nbsp; }</b>
+        <i>44</i>&nbsp;}
+    </div>
 </div>
 
 <div class="footer">
-    
+
     <div style="float:right;">generated on 2020-06-12 15:00</div>
 </div>
 </body>

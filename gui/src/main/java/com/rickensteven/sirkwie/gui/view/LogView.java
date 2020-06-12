@@ -7,6 +7,8 @@ import com.rickensteven.sirkwie.core.domain.Probe;
 import com.rickensteven.sirkwie.gui.Controller;
 import com.rickensteven.sirkwie.gui.ImageLoader;
 import com.rickensteven.sirkwie.gui.ViewModel;
+import com.rickensteven.sirkwie.gui.view.text.TableNodeDrawingVisitor;
+import javafx.geometry.Insets;
 import javafx.scene.control.Label;
 import javafx.scene.control.TreeItem;
 import javafx.scene.control.TreeView;
@@ -18,11 +20,14 @@ import java.util.*;
 
 public class LogView extends AbstractSimulationView implements ISimulationListener
 {
+    private TableNodeDrawingVisitor tableNodeDrawingVisitor = new TableNodeDrawingVisitor();
+
     private static final int HEIGHT = 200;
     private TreeView<String> treeView;
 
     private List<TreeItem<String>> rootNodes = new LinkedList<>();
     private Map<Node, TreeItem<String>> history = new LinkedHashMap<>();
+
     public LogView(Controller controller, ViewModel viewModel)
     {
         super(controller, viewModel);
@@ -49,7 +54,10 @@ public class LogView extends AbstractSimulationView implements ISimulationListen
         treeView = new TreeView<>();
         treeView.setShowRoot(false);
 
-        ((BorderPane) view).setTop(new Label("Calculation Flow"));
+        Label label = new Label("Calculation Flow");
+        label.setPadding(new Insets(4));
+
+        ((BorderPane) view).setTop(label);
         ((BorderPane) view).setCenter(treeView);
     }
 
@@ -95,7 +103,10 @@ public class LogView extends AbstractSimulationView implements ISimulationListen
         imageView.setFitHeight(16);
         imageView.setFitWidth(16);
 
+        node.accept(tableNodeDrawingVisitor);
+
         history.get(node).setGraphic(imageView);
+        history.get(node).setValue(node.getName() + " : " + tableNodeDrawingVisitor.getValue().getType());
         history.remove(node);
 
         refresh();

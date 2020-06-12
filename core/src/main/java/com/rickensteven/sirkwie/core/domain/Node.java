@@ -43,7 +43,9 @@ public abstract class Node
     }
 
     public abstract boolean calculate();
+
     public abstract void accept(INodeVisitor nodeVisitor);
+
     public void addToCircuit(Circuit circuit)
     {
         circuit.addNode(this);

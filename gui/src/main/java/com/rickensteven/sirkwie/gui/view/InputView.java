@@ -3,6 +3,7 @@ package com.rickensteven.sirkwie.gui.view;
 import com.rickensteven.sirkwie.core.domain.Circuit;
 import com.rickensteven.sirkwie.gui.Controller;
 import com.rickensteven.sirkwie.gui.ViewModel;
+import javafx.geometry.Pos;
 import javafx.scene.control.Button;
 import javafx.scene.control.ContentDisplay;
 import javafx.scene.image.ImageView;
@@ -43,6 +44,7 @@ public class InputView extends AbstractSimulationView
     protected void draw(Circuit circuit)
     {
         VBox vBox = new VBox();
+        vBox.setAlignment(Pos.CENTER);
         inputButtons = new LinkedHashMap<>();
 
         circuit.getInputs().forEach(input -> {

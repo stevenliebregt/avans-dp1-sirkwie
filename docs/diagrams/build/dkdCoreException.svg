@@ -1,4 +1,120 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="256px" preserveAspectRatio="none" style="width:1550px;height:256px;" version="1.1" viewBox="0 0 1550 256" width="1550px" zoomAndPan="magnify"><defs><filter height="300%" id="f73nllr9o35ds" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--cluster exception--><polygon fill="#FFFFFF" filter="url(#f73nllr9o35ds)" points="22,24,101,24,108,46.2969,1528,46.2969,1528,244,22,244,22,24" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="22" x2="108" y1="46.2969" y2="46.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="73" x="26" y="38.9951">exception</text><!--class CircuitInfiniteLoopException--><rect fill="#FEFECE" filter="url(#f73nllr9o35ds)" height="60.8047" id="CircuitInfiniteLoopException" style="stroke: #A80036; stroke-width: 1.5;" width="276" x="38" y="167"/><ellipse cx="94.25" cy="183" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M96.7188,189.1406 Q96.1406,189.4375 95.5,189.5781 Q94.8594,189.7344 94.1563,189.7344 Q91.6563,189.7344 90.3281,188.0938 Q89.0156,186.4375 89.0156,183.3125 Q89.0156,180.1875 90.3281,178.5313 Q91.6563,176.875 94.1563,176.875 Q94.8594,176.875 95.5,177.0313 Q96.1563,177.1875 96.7188,177.4844 L96.7188,180.2031 Q96.0938,179.625 95.5,179.3594 Q94.9063,179.0781 94.2813,179.0781 Q92.9375,179.0781 92.25,180.1563 Q91.5625,181.2188 91.5625,183.3125 Q91.5625,185.4063 92.25,186.4844 Q92.9375,187.5469 94.2813,187.5469 Q94.9063,187.5469 95.5,187.2813 Q96.0938,187 96.7188,186.4219 L96.7188,189.1406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="155" x="114.75" y="187.1543">CircuitInfiniteLoopException</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="39" x2="313" y1="199" y2="199"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="39" x2="313" y1="207" y2="207"/><ellipse cx="49" cy="218.9023" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="250" x="58" y="221.2104">CircuitInfiniteLoopException(errorMessage: String)</text><!--class RuntimeException--><rect fill="#FEFECE" filter="url(#f73nllr9o35ds)" height="48" id="RuntimeException" style="stroke: #A80036; stroke-width: 1.5;" width="134" x="733" y="59"/><ellipse cx="748" cy="75" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M750.4688,81.1406 Q749.8906,81.4375 749.25,81.5781 Q748.6094,81.7344 747.9063,81.7344 Q745.4063,81.7344 744.0781,80.0938 Q742.7656,78.4375 742.7656,75.3125 Q742.7656,72.1875 744.0781,70.5313 Q745.4063,68.875 747.9063,68.875 Q748.6094,68.875 749.25,69.0313 Q749.9063,69.1875 750.4688,69.4844 L750.4688,72.2031 Q749.8438,71.625 749.25,71.3594 Q748.6563,71.0781 748.0313,71.0781 Q746.6875,71.0781 746,72.1563 Q745.3125,73.2188 745.3125,75.3125 Q745.3125,77.4063 746,78.4844 Q746.6875,79.5469 748.0313,79.5469 Q748.6563,79.5469 749.25,79.2813 Q749.8438,79 750.4688,78.4219 L750.4688,81.1406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="102" x="762" y="79.1543">RuntimeException</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="734" x2="866" y1="91" y2="91"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="734" x2="866" y1="99" y2="99"/><!--class CircuitNotConnectedException--><rect fill="#FEFECE" filter="url(#f73nllr9o35ds)" height="60.8047" id="CircuitNotConnectedException" style="stroke: #A80036; stroke-width: 1.5;" width="289" x="349.5" y="167"/><ellipse cx="405.25" cy="183" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M407.7188,189.1406 Q407.1406,189.4375 406.5,189.5781 Q405.8594,189.7344 405.1563,189.7344 Q402.6563,189.7344 401.3281,188.0938 Q400.0156,186.4375 400.0156,183.3125 Q400.0156,180.1875 401.3281,178.5313 Q402.6563,176.875 405.1563,176.875 Q405.8594,176.875 406.5,177.0313 Q407.1563,177.1875 407.7188,177.4844 L407.7188,180.2031 Q407.0938,179.625 406.5,179.3594 Q405.9063,179.0781 405.2813,179.0781 Q403.9375,179.0781 403.25,180.1563 Q402.5625,181.2188 402.5625,183.3125 Q402.5625,185.4063 403.25,186.4844 Q403.9375,187.5469 405.2813,187.5469 Q405.9063,187.5469 406.5,187.2813 Q407.0938,187 407.7188,186.4219 L407.7188,189.1406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="169" x="425.75" y="187.1543">CircuitNotConnectedException</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="350.5" x2="637.5" y1="199" y2="199"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="350.5" x2="637.5" y1="207" y2="207"/><ellipse cx="360.5" cy="218.9023" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="263" x="369.5" y="221.2104">CircuitNotConnectedException(errorMessage: String)</text><!--class CircuitSyntaxException--><rect fill="#FEFECE" filter="url(#f73nllr9o35ds)" height="60.8047" id="CircuitSyntaxException" style="stroke: #A80036; stroke-width: 1.5;" width="252" x="674" y="167"/><ellipse cx="731.25" cy="183" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M733.7188,189.1406 Q733.1406,189.4375 732.5,189.5781 Q731.8594,189.7344 731.1563,189.7344 Q728.6563,189.7344 727.3281,188.0938 Q726.0156,186.4375 726.0156,183.3125 Q726.0156,180.1875 727.3281,178.5313 Q728.6563,176.875 731.1563,176.875 Q731.8594,176.875 732.5,177.0313 Q733.1563,177.1875 733.7188,177.4844 L733.7188,180.2031 Q733.0938,179.625 732.5,179.3594 Q731.9063,179.0781 731.2813,179.0781 Q729.9375,179.0781 729.25,180.1563 Q728.5625,181.2188 728.5625,183.3125 Q728.5625,185.4063 729.25,186.4844 Q729.9375,187.5469 731.2813,187.5469 Q731.9063,187.5469 732.5,187.2813 Q733.0938,187 733.7188,186.4219 L733.7188,189.1406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="129" x="751.75" y="187.1543">CircuitSyntaxException</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="675" x2="925" y1="199" y2="199"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="675" x2="925" y1="207" y2="207"/><ellipse cx="685" cy="218.9023" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="226" x="694" y="221.2104">CircuitSyntaxException(errorMessage: String)</text><!--class NodeNotParentable--><rect fill="#FEFECE" filter="url(#f73nllr9o35ds)" height="60.8047" id="NodeNotParentable" style="stroke: #A80036; stroke-width: 1.5;" width="233" x="961.5" y="167"/><ellipse cx="1019.75" cy="183" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M1022.2188,189.1406 Q1021.6406,189.4375 1021,189.5781 Q1020.3594,189.7344 1019.6563,189.7344 Q1017.1563,189.7344 1015.8281,188.0938 Q1014.5156,186.4375 1014.5156,183.3125 Q1014.5156,180.1875 1015.8281,178.5313 Q1017.1563,176.875 1019.6563,176.875 Q1020.3594,176.875 1021,177.0313 Q1021.6563,177.1875 1022.2188,177.4844 L1022.2188,180.2031 Q1021.5938,179.625 1021,179.3594 Q1020.4063,179.0781 1019.7813,179.0781 Q1018.4375,179.0781 1017.75,180.1563 Q1017.0625,181.2188 1017.0625,183.3125 Q1017.0625,185.4063 1017.75,186.4844 Q1018.4375,187.5469 1019.7813,187.5469 Q1020.4063,187.5469 1021,187.2813 Q1021.5938,187 1022.2188,186.4219 L1022.2188,189.1406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="108" x="1040.25" y="187.1543">NodeNotParentable</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="962.5" x2="1193.5" y1="199" y2="199"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="962.5" x2="1193.5" y1="207" y2="207"/><ellipse cx="972.5" cy="218.9023" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="207" x="981.5" y="221.2104">NodeNotParentable(errorMessage: String)</text><!--class NodeTypeUnknownException--><rect fill="#FEFECE" filter="url(#f73nllr9o35ds)" height="60.8047" id="NodeTypeUnknownException" style="stroke: #A80036; stroke-width: 1.5;" width="282" x="1230" y="167"/><ellipse cx="1285.25" cy="183" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M1287.7188,189.1406 Q1287.1406,189.4375 1286.5,189.5781 Q1285.8594,189.7344 1285.1563,189.7344 Q1282.6563,189.7344 1281.3281,188.0938 Q1280.0156,186.4375 1280.0156,183.3125 Q1280.0156,180.1875 1281.3281,178.5313 Q1282.6563,176.875 1285.1563,176.875 Q1285.8594,176.875 1286.5,177.0313 Q1287.1563,177.1875 1287.7188,177.4844 L1287.7188,180.2031 Q1287.0938,179.625 1286.5,179.3594 Q1285.9063,179.0781 1285.2813,179.0781 Q1283.9375,179.0781 1283.25,180.1563 Q1282.5625,181.2188 1282.5625,183.3125 Q1282.5625,185.4063 1283.25,186.4844 Q1283.9375,187.5469 1285.2813,187.5469 Q1285.9063,187.5469 1286.5,187.2813 Q1287.0938,187 1287.7188,186.4219 L1287.7188,189.1406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="163" x="1305.75" y="187.1543">NodeTypeUnknownException</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1231" x2="1511" y1="199" y2="199"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="1231" x2="1511" y1="207" y2="207"/><ellipse cx="1241" cy="218.9023" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="256" x="1250" y="221.2104">NodeTypeUnknownException(errorMessage: String)</text><!--link RuntimeException to CircuitInfiniteLoopException--><path d="M712.94,99.14 C618.92,115.55 464.76,142.68 332,167 C326.17,168.07 320.22,169.16 314.21,170.28 " fill="none" id="RuntimeException-CircuitInfiniteLoopException" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="none" points="712.01,92.19,732.92,95.65,714.42,105.98,712.01,92.19" style="stroke: #A80036; stroke-width: 1.0;"/><!--link RuntimeException to CircuitNotConnectedException--><path d="M718.29,114.04 C673.71,130.43 618.71,150.65 574.34,166.96 " fill="none" id="RuntimeException-CircuitNotConnectedException" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="none" points="716.15,107.37,737.34,107.04,720.98,120.51,716.15,107.37" style="stroke: #A80036; stroke-width: 1.0;"/><!--link RuntimeException to CircuitSyntaxException--><path d="M800,127.11 C800,140.31 800,154.54 800,166.65 " fill="none" id="RuntimeException-CircuitSyntaxException" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="none" points="793,127.04,800,107.04,807,127.04,793,127.04" style="stroke: #A80036; stroke-width: 1.0;"/><!--link RuntimeException to NodeNotParentable--><path d="M875.59,114.59 C915.86,130.88 965.15,150.83 1005.01,166.96 " fill="none" id="RuntimeException-NodeNotParentable" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="none" points="872.84,121.03,856.93,107.04,878.09,108.05,872.84,121.03" style="stroke: #A80036; stroke-width: 1.0;"/><!--link RuntimeException to NodeTypeUnknownException--><path d="M886.88,101.12 C977.9,119.05 1122.31,147.5 1229.75,168.67 " fill="none" id="RuntimeException-NodeTypeUnknownException" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="none" points="885.45,107.97,867.18,97.24,888.16,94.23,885.45,107.97" style="stroke: #A80036; stroke-width: 1.0;"/><!--
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     contentScriptType="application/ecmascript" contentStyleType="text/css" height="256px" preserveAspectRatio="none"
+     style="width:1550px;height:256px;" version="1.1" viewBox="0 0 1550 256" width="1550px" zoomAndPan="magnify">
+    <defs>
+        <filter height="300%" id="f73nllr9o35ds" width="300%" x="-1" y="-1">
+            <feGaussianBlur result="blurOut" stdDeviation="2.0"/>
+            <feColorMatrix in="blurOut" result="blurOut2" type="matrix"
+                           values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/>
+            <feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/>
+            <feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/>
+        </filter>
+    </defs>
+    <g><!--cluster exception-->
+        <polygon fill="#FFFFFF" filter="url(#f73nllr9o35ds)"
+                 points="22,24,101,24,108,46.2969,1528,46.2969,1528,244,22,244,22,24"
+                 style="stroke: #000000; stroke-width: 1.5;"/>
+        <line style="stroke: #000000; stroke-width: 1.5;" x1="22" x2="108" y1="46.2969" y2="46.2969"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs"
+              textLength="73" x="26" y="38.9951">exception
+        </text><!--class CircuitInfiniteLoopException-->
+        <rect fill="#FEFECE" filter="url(#f73nllr9o35ds)" height="60.8047" id="CircuitInfiniteLoopException"
+              style="stroke: #A80036; stroke-width: 1.5;" width="276" x="38" y="167"/>
+        <ellipse cx="94.25" cy="183" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M96.7188,189.1406 Q96.1406,189.4375 95.5,189.5781 Q94.8594,189.7344 94.1563,189.7344 Q91.6563,189.7344 90.3281,188.0938 Q89.0156,186.4375 89.0156,183.3125 Q89.0156,180.1875 90.3281,178.5313 Q91.6563,176.875 94.1563,176.875 Q94.8594,176.875 95.5,177.0313 Q96.1563,177.1875 96.7188,177.4844 L96.7188,180.2031 Q96.0938,179.625 95.5,179.3594 Q94.9063,179.0781 94.2813,179.0781 Q92.9375,179.0781 92.25,180.1563 Q91.5625,181.2188 91.5625,183.3125 Q91.5625,185.4063 92.25,186.4844 Q92.9375,187.5469 94.2813,187.5469 Q94.9063,187.5469 95.5,187.2813 Q96.0938,187 96.7188,186.4219 L96.7188,189.1406 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="155"
+              x="114.75" y="187.1543">CircuitInfiniteLoopException
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="39" x2="313" y1="199" y2="199"/>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="39" x2="313" y1="207" y2="207"/>
+        <ellipse cx="49" cy="218.9023" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="250"
+              x="58" y="221.2104">CircuitInfiniteLoopException(errorMessage: String)
+        </text><!--class RuntimeException-->
+        <rect fill="#FEFECE" filter="url(#f73nllr9o35ds)" height="48" id="RuntimeException"
+              style="stroke: #A80036; stroke-width: 1.5;" width="134" x="733" y="59"/>
+        <ellipse cx="748" cy="75" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M750.4688,81.1406 Q749.8906,81.4375 749.25,81.5781 Q748.6094,81.7344 747.9063,81.7344 Q745.4063,81.7344 744.0781,80.0938 Q742.7656,78.4375 742.7656,75.3125 Q742.7656,72.1875 744.0781,70.5313 Q745.4063,68.875 747.9063,68.875 Q748.6094,68.875 749.25,69.0313 Q749.9063,69.1875 750.4688,69.4844 L750.4688,72.2031 Q749.8438,71.625 749.25,71.3594 Q748.6563,71.0781 748.0313,71.0781 Q746.6875,71.0781 746,72.1563 Q745.3125,73.2188 745.3125,75.3125 Q745.3125,77.4063 746,78.4844 Q746.6875,79.5469 748.0313,79.5469 Q748.6563,79.5469 749.25,79.2813 Q749.8438,79 750.4688,78.4219 L750.4688,81.1406 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="102"
+              x="762" y="79.1543">RuntimeException
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="734" x2="866" y1="91" y2="91"/>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="734" x2="866" y1="99"
+              y2="99"/><!--class CircuitNotConnectedException-->
+        <rect fill="#FEFECE" filter="url(#f73nllr9o35ds)" height="60.8047" id="CircuitNotConnectedException"
+              style="stroke: #A80036; stroke-width: 1.5;" width="289" x="349.5" y="167"/>
+        <ellipse cx="405.25" cy="183" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M407.7188,189.1406 Q407.1406,189.4375 406.5,189.5781 Q405.8594,189.7344 405.1563,189.7344 Q402.6563,189.7344 401.3281,188.0938 Q400.0156,186.4375 400.0156,183.3125 Q400.0156,180.1875 401.3281,178.5313 Q402.6563,176.875 405.1563,176.875 Q405.8594,176.875 406.5,177.0313 Q407.1563,177.1875 407.7188,177.4844 L407.7188,180.2031 Q407.0938,179.625 406.5,179.3594 Q405.9063,179.0781 405.2813,179.0781 Q403.9375,179.0781 403.25,180.1563 Q402.5625,181.2188 402.5625,183.3125 Q402.5625,185.4063 403.25,186.4844 Q403.9375,187.5469 405.2813,187.5469 Q405.9063,187.5469 406.5,187.2813 Q407.0938,187 407.7188,186.4219 L407.7188,189.1406 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="169"
+              x="425.75" y="187.1543">CircuitNotConnectedException
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="350.5" x2="637.5" y1="199" y2="199"/>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="350.5" x2="637.5" y1="207" y2="207"/>
+        <ellipse cx="360.5" cy="218.9023" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="263"
+              x="369.5" y="221.2104">CircuitNotConnectedException(errorMessage: String)
+        </text><!--class CircuitSyntaxException-->
+        <rect fill="#FEFECE" filter="url(#f73nllr9o35ds)" height="60.8047" id="CircuitSyntaxException"
+              style="stroke: #A80036; stroke-width: 1.5;" width="252" x="674" y="167"/>
+        <ellipse cx="731.25" cy="183" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M733.7188,189.1406 Q733.1406,189.4375 732.5,189.5781 Q731.8594,189.7344 731.1563,189.7344 Q728.6563,189.7344 727.3281,188.0938 Q726.0156,186.4375 726.0156,183.3125 Q726.0156,180.1875 727.3281,178.5313 Q728.6563,176.875 731.1563,176.875 Q731.8594,176.875 732.5,177.0313 Q733.1563,177.1875 733.7188,177.4844 L733.7188,180.2031 Q733.0938,179.625 732.5,179.3594 Q731.9063,179.0781 731.2813,179.0781 Q729.9375,179.0781 729.25,180.1563 Q728.5625,181.2188 728.5625,183.3125 Q728.5625,185.4063 729.25,186.4844 Q729.9375,187.5469 731.2813,187.5469 Q731.9063,187.5469 732.5,187.2813 Q733.0938,187 733.7188,186.4219 L733.7188,189.1406 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="129"
+              x="751.75" y="187.1543">CircuitSyntaxException
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="675" x2="925" y1="199" y2="199"/>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="675" x2="925" y1="207" y2="207"/>
+        <ellipse cx="685" cy="218.9023" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="226"
+              x="694" y="221.2104">CircuitSyntaxException(errorMessage: String)
+        </text><!--class NodeNotParentable-->
+        <rect fill="#FEFECE" filter="url(#f73nllr9o35ds)" height="60.8047" id="NodeNotParentable"
+              style="stroke: #A80036; stroke-width: 1.5;" width="233" x="961.5" y="167"/>
+        <ellipse cx="1019.75" cy="183" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M1022.2188,189.1406 Q1021.6406,189.4375 1021,189.5781 Q1020.3594,189.7344 1019.6563,189.7344 Q1017.1563,189.7344 1015.8281,188.0938 Q1014.5156,186.4375 1014.5156,183.3125 Q1014.5156,180.1875 1015.8281,178.5313 Q1017.1563,176.875 1019.6563,176.875 Q1020.3594,176.875 1021,177.0313 Q1021.6563,177.1875 1022.2188,177.4844 L1022.2188,180.2031 Q1021.5938,179.625 1021,179.3594 Q1020.4063,179.0781 1019.7813,179.0781 Q1018.4375,179.0781 1017.75,180.1563 Q1017.0625,181.2188 1017.0625,183.3125 Q1017.0625,185.4063 1017.75,186.4844 Q1018.4375,187.5469 1019.7813,187.5469 Q1020.4063,187.5469 1021,187.2813 Q1021.5938,187 1022.2188,186.4219 L1022.2188,189.1406 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="108"
+              x="1040.25" y="187.1543">NodeNotParentable
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="962.5" x2="1193.5" y1="199" y2="199"/>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="962.5" x2="1193.5" y1="207" y2="207"/>
+        <ellipse cx="972.5" cy="218.9023" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="207"
+              x="981.5" y="221.2104">NodeNotParentable(errorMessage: String)
+        </text><!--class NodeTypeUnknownException-->
+        <rect fill="#FEFECE" filter="url(#f73nllr9o35ds)" height="60.8047" id="NodeTypeUnknownException"
+              style="stroke: #A80036; stroke-width: 1.5;" width="282" x="1230" y="167"/>
+        <ellipse cx="1285.25" cy="183" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M1287.7188,189.1406 Q1287.1406,189.4375 1286.5,189.5781 Q1285.8594,189.7344 1285.1563,189.7344 Q1282.6563,189.7344 1281.3281,188.0938 Q1280.0156,186.4375 1280.0156,183.3125 Q1280.0156,180.1875 1281.3281,178.5313 Q1282.6563,176.875 1285.1563,176.875 Q1285.8594,176.875 1286.5,177.0313 Q1287.1563,177.1875 1287.7188,177.4844 L1287.7188,180.2031 Q1287.0938,179.625 1286.5,179.3594 Q1285.9063,179.0781 1285.2813,179.0781 Q1283.9375,179.0781 1283.25,180.1563 Q1282.5625,181.2188 1282.5625,183.3125 Q1282.5625,185.4063 1283.25,186.4844 Q1283.9375,187.5469 1285.2813,187.5469 Q1285.9063,187.5469 1286.5,187.2813 Q1287.0938,187 1287.7188,186.4219 L1287.7188,189.1406 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="163"
+              x="1305.75" y="187.1543">NodeTypeUnknownException
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="1231" x2="1511" y1="199" y2="199"/>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="1231" x2="1511" y1="207" y2="207"/>
+        <ellipse cx="1241" cy="218.9023" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="256"
+              x="1250" y="221.2104">NodeTypeUnknownException(errorMessage: String)
+        </text><!--link RuntimeException to CircuitInfiniteLoopException-->
+        <path d="M712.94,99.14 C618.92,115.55 464.76,142.68 332,167 C326.17,168.07 320.22,169.16 314.21,170.28 "
+              fill="none" id="RuntimeException-CircuitInfiniteLoopException"
+              style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="none" points="712.01,92.19,732.92,95.65,714.42,105.98,712.01,92.19"
+                 style="stroke: #A80036; stroke-width: 1.0;"/><!--link RuntimeException to CircuitNotConnectedException-->
+        <path d="M718.29,114.04 C673.71,130.43 618.71,150.65 574.34,166.96 " fill="none"
+              id="RuntimeException-CircuitNotConnectedException" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="none" points="716.15,107.37,737.34,107.04,720.98,120.51,716.15,107.37"
+                 style="stroke: #A80036; stroke-width: 1.0;"/><!--link RuntimeException to CircuitSyntaxException-->
+        <path d="M800,127.11 C800,140.31 800,154.54 800,166.65 " fill="none"
+              id="RuntimeException-CircuitSyntaxException" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="none" points="793,127.04,800,107.04,807,127.04,793,127.04"
+                 style="stroke: #A80036; stroke-width: 1.0;"/><!--link RuntimeException to NodeNotParentable-->
+        <path d="M875.59,114.59 C915.86,130.88 965.15,150.83 1005.01,166.96 " fill="none"
+              id="RuntimeException-NodeNotParentable" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="none" points="872.84,121.03,856.93,107.04,878.09,108.05,872.84,121.03"
+                 style="stroke: #A80036; stroke-width: 1.0;"/><!--link RuntimeException to NodeTypeUnknownException-->
+        <path d="M886.88,101.12 C977.9,119.05 1122.31,147.5 1229.75,168.67 " fill="none"
+              id="RuntimeException-NodeTypeUnknownException" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="none" points="885.45,107.97,867.18,97.24,888.16,94.23,885.45,107.97"
+                 style="stroke: #A80036; stroke-width: 1.0;"/><!--
 @startuml
 
 package exception {
@@ -35,4 +151,6 @@ OS Version: 5.4.43-1-MANJARO
 Default Encoding: UTF-8
 Language: en
 Country: US
---></g></svg>
+-->
+    </g>
+</svg>

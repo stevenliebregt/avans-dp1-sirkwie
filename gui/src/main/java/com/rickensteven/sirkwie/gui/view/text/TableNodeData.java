@@ -3,10 +3,10 @@ package com.rickensteven.sirkwie.gui.view.text;
 import com.rickensteven.sirkwie.core.domain.Node;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
-public class TableNodeData {
+public class TableNodeData
+{
 
     private final String name;
     private final String type;
@@ -41,7 +41,7 @@ public class TableNodeData {
         StringBuilder b = new StringBuilder();
         for (int i = 0; i < parents.size(); i++) {
             b.append(parents.get(i).getName());
-            if (i+1 < parents.size()) b.append(", ");
+            if (i + 1 < parents.size()) b.append(", ");
         }
         return b.toString();
     }

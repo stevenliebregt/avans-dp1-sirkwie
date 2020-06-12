@@ -39,8 +39,8 @@ public class CircuitLoaderFacade
      *
      * @param filePath The path of the circuit file to load.
      * @return A circuit which has been simulated.
-     * @throws IOException When the circuit file could not be read.
-     * @throws CircuitSyntaxException When the circuit file contains syntax errors.
+     * @throws IOException                  When the circuit file could not be read.
+     * @throws CircuitSyntaxException       When the circuit file contains syntax errors.
      * @throws CircuitInfiniteLoopException When the circuit contains an infinite loop.
      * @throws CircuitNotConnectedException When the circuit has probes that are not connected.
      */

@@ -1,4 +1,486 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="878px" preserveAspectRatio="none" style="width:2031px;height:878px;" version="1.1" viewBox="0 0 2031 878" width="2031px" zoomAndPan="magnify"><defs><filter height="300%" id="f5t4mmpryyah4" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--cluster domain--><polygon fill="#FFFFFF" filter="url(#f5t4mmpryyah4)" points="22,24,83,24,90,46.2969,2009,46.2969,2009,866,22,866,22,24" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="22" x2="90" y1="46.2969" y2="46.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="55" x="26" y="38.9951">domain</text><!--class Node--><rect fill="#FEFECE" filter="url(#f5t4mmpryyah4)" height="163.2422" id="Node" style="stroke: #A80036; stroke-width: 1.5;" width="191" x="1149.5" y="299"/><ellipse cx="1226.25" cy="315" fill="#A9DCDF" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M1226.3594,310.0938 L1225.2031,315.1719 L1227.5313,315.1719 L1226.3594,310.0938 Z M1224.875,307.8594 L1227.8594,307.8594 L1231.2188,320.25 L1228.7656,320.25 L1228,317.1875 L1224.7188,317.1875 L1223.9688,320.25 L1221.5313,320.25 L1224.875,307.8594 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="29" x="1246.75" y="319.1543">Node</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1150.5" x2="1339.5" y1="331" y2="331"/><polygon fill="none" points="1160.5,337.9023,1164.5,341.9023,1160.5,345.9023,1156.5,341.9023" style="stroke: #B38D22; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="72" x="1169.5" y="345.2104">value: boolean</text><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="1157.5" y="352.707"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="63" x="1169.5" y="358.0151">name: String</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1150.5" x2="1339.5" y1="364.6094" y2="364.6094"/><ellipse cx="1160.5" cy="376.5117" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="97" x="1169.5" y="378.8198">Node(name: String)</text><ellipse cx="1160.5" cy="389.3164" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="97" x="1169.5" y="391.6245">getValue(): boolean</text><ellipse cx="1160.5" cy="402.1211" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="89" x="1169.5" y="404.4292">getName(): String</text><ellipse cx="1160.5" cy="414.9258" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="142" x="1169.5" y="417.2339">addToCircuit(circuit: Circuit)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="0" x="1172.5" y="430.0386"/><ellipse cx="1160.5" cy="440.5352" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="99" x="1169.5" y="442.8433">calculate(): boolean</text><ellipse cx="1160.5" cy="453.3398" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="165" x="1169.5" y="455.6479">accept(nodeVisitor: INodeVisitor)</text><!--class NodeComposite--><rect fill="#FEFECE" filter="url(#f5t4mmpryyah4)" height="137.6328" id="NodeComposite" style="stroke: #A80036; stroke-width: 1.5;" width="287" x="994.5" y="539"/><ellipse cx="1089.25" cy="555" fill="#A9DCDF" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M1089.3594,550.0938 L1088.2031,555.1719 L1090.5313,555.1719 L1089.3594,550.0938 Z M1087.875,547.8594 L1090.8594,547.8594 L1094.2188,560.25 L1091.7656,560.25 L1091,557.1875 L1087.7188,557.1875 L1086.9688,560.25 L1084.5313,560.25 L1087.875,547.8594 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="89" x="1109.75" y="559.1543">NodeComposite</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="995.5" x2="1280.5" y1="571" y2="571"/><polygon fill="none" points="1005.5,577.9023,1009.5,581.9023,1005.5,585.9023,1001.5,581.9023" style="stroke: #B38D22; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="105" x="1014.5" y="585.2104">parents: List&lt;Node&gt;</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="995.5" x2="1280.5" y1="591.8047" y2="591.8047"/><ellipse cx="1005.5" cy="603.707" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="261" x="1014.5" y="606.0151">NodeComposite(parents: List&lt;Node&gt;, name: String)</text><ellipse cx="1005.5" cy="616.5117" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="90" x="1014.5" y="618.8198">add(parent: Node)</text><ellipse cx="1005.5" cy="629.3164" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="110" x="1014.5" y="631.6245">remove(parent: Node)</text><ellipse cx="1005.5" cy="642.1211" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="129" x="1014.5" y="644.4292">getParents(): List&lt;Node&gt;</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="0" x="1017.5" y="657.2339"/><ellipse cx="1005.5" cy="667.7305" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="99" x="1014.5" y="670.0386">calculate(): boolean</text><!--class INodeVisitor--><rect fill="#FEFECE" filter="url(#f5t4mmpryyah4)" height="137.6328" id="INodeVisitor" style="stroke: #A80036; stroke-width: 1.5;" width="136" x="1746" y="71.5"/><ellipse cx="1777.65" cy="87.5" fill="#B4A7E5" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M1774.0719,83.2656 L1774.0719,81.1094 L1781.4625,81.1094 L1781.4625,83.2656 L1778.9938,83.2656 L1778.9938,91.3438 L1781.4625,91.3438 L1781.4625,93.5 L1774.0719,93.5 L1774.0719,91.3438 L1776.5406,91.3438 L1776.5406,83.2656 L1774.0719,83.2656 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="67" x="1795.35" y="91.6543">INodeVisitor</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1747" x2="1881" y1="103.5" y2="103.5"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="1747" x2="1881" y1="111.5" y2="111.5"/><ellipse cx="1757" cy="123.4023" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="87" x="1766" y="125.7104">visit(node: Probe)</text><ellipse cx="1757" cy="136.207" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="84" x="1766" y="138.5151">visit(node: Input)</text><ellipse cx="1757" cy="149.0117" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="102" x="1766" y="151.3198">visit(node: AndGate)</text><ellipse cx="1757" cy="161.8164" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="110" x="1766" y="164.1245">visit(node: NAndGate)</text><ellipse cx="1757" cy="174.6211" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="103" x="1766" y="176.9292">visit(node: NOrGate)</text><ellipse cx="1757" cy="187.4258" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="95" x="1766" y="189.7339">visit(node: OrGate)</text><ellipse cx="1757" cy="200.2305" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="102" x="1766" y="202.5386">visit(node: XOrGate)</text><!--class Circuit--><rect fill="#FEFECE" filter="url(#f5t4mmpryyah4)" height="163.2422" id="Circuit" style="stroke: #A80036; stroke-width: 1.5;" width="151" x="1341.5" y="59"/><ellipse cx="1395.25" cy="75" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M1397.7188,81.1406 Q1397.1406,81.4375 1396.5,81.5781 Q1395.8594,81.7344 1395.1563,81.7344 Q1392.6563,81.7344 1391.3281,80.0938 Q1390.0156,78.4375 1390.0156,75.3125 Q1390.0156,72.1875 1391.3281,70.5313 Q1392.6563,68.875 1395.1563,68.875 Q1395.8594,68.875 1396.5,69.0313 Q1397.1563,69.1875 1397.7188,69.4844 L1397.7188,72.2031 Q1397.0938,71.625 1396.5,71.3594 Q1395.9063,71.0781 1395.2813,71.0781 Q1393.9375,71.0781 1393.25,72.1563 Q1392.5625,73.2188 1392.5625,75.3125 Q1392.5625,77.4063 1393.25,78.4844 Q1393.9375,79.5469 1395.2813,79.5469 Q1395.9063,79.5469 1396.5,79.2813 Q1397.0938,79 1397.7188,78.4219 L1397.7188,81.1406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="35" x="1415.75" y="79.1543">Circuit</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1342.5" x2="1491.5" y1="91" y2="91"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="1342.5" x2="1491.5" y1="99" y2="99"/><ellipse cx="1352.5" cy="110.9023" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="41" x="1361.5" y="113.2104">Circuit()</text><ellipse cx="1352.5" cy="123.707" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="108" x="1361.5" y="126.0151">addNode(node: Node)</text><ellipse cx="1352.5" cy="136.5117" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="106" x="1361.5" y="138.8198">addInput(node: Input)</text><ellipse cx="1352.5" cy="149.3164" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="112" x="1361.5" y="151.6245">addProbe(node: Probe)</text><ellipse cx="1352.5" cy="162.1211" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="121" x="1361.5" y="164.4292">getNodes(): Set&lt;Node&gt;</text><ellipse cx="1352.5" cy="174.9258" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="119" x="1361.5" y="177.2339">getInputs(): Set&lt;Input&gt;</text><ellipse cx="1352.5" cy="187.7305" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="112" x="1361.5" y="190.0386">getInput(name: String)</text><ellipse cx="1352.5" cy="200.5352" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="125" x="1361.5" y="202.8433">getProbes(): Set&lt;Probe&gt;</text><ellipse cx="1352.5" cy="213.3398" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="51" x="1361.5" y="215.6479">simulate()</text><!--class Input--><rect fill="#FEFECE" filter="url(#f5t4mmpryyah4)" height="112.0234" id="Input" style="stroke: #A80036; stroke-width: 1.5;" width="200" x="1317" y="552"/><ellipse cx="1398.75" cy="568" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M1401.2188,574.1406 Q1400.6406,574.4375 1400,574.5781 Q1399.3594,574.7344 1398.6563,574.7344 Q1396.1563,574.7344 1394.8281,573.0938 Q1393.5156,571.4375 1393.5156,568.3125 Q1393.5156,565.1875 1394.8281,563.5313 Q1396.1563,561.875 1398.6563,561.875 Q1399.3594,561.875 1400,562.0313 Q1400.6563,562.1875 1401.2188,562.4844 L1401.2188,565.2031 Q1400.5938,564.625 1400,564.3594 Q1399.4063,564.0781 1398.7813,564.0781 Q1397.4375,564.0781 1396.75,565.1563 Q1396.0625,566.2188 1396.0625,568.3125 Q1396.0625,570.4063 1396.75,571.4844 Q1397.4375,572.5469 1398.7813,572.5469 Q1399.4063,572.5469 1400,572.2813 Q1400.5938,572 1401.2188,571.4219 L1401.2188,574.1406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="28" x="1419.25" y="572.1543">Input</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1318" x2="1516" y1="584" y2="584"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="1318" x2="1516" y1="592" y2="592"/><ellipse cx="1328" cy="603.9023" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="174" x="1337" y="606.2104">Input(value: boolean, name: String)</text><ellipse cx="1328" cy="616.707" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="123" x="1337" y="619.0151">setValue(value: boolean)</text><ellipse cx="1328" cy="629.5117" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="99" x="1337" y="631.8198">calculate(): boolean</text><ellipse cx="1328" cy="642.3164" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="165" x="1337" y="644.6245">accept(nodeVisitor: INodeVisitor)</text><ellipse cx="1328" cy="655.1211" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="142" x="1337" y="657.4292">addToCircuit(circuit: Circuit)</text><!--class Probe--><rect fill="#FEFECE" filter="url(#f5t4mmpryyah4)" height="112.0234" id="Probe" style="stroke: #A80036; stroke-width: 1.5;" width="236" x="1757" y="738"/><ellipse cx="1854.75" cy="754" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M1857.2188,760.1406 Q1856.6406,760.4375 1856,760.5781 Q1855.3594,760.7344 1854.6563,760.7344 Q1852.1563,760.7344 1850.8281,759.0938 Q1849.5156,757.4375 1849.5156,754.3125 Q1849.5156,751.1875 1850.8281,749.5313 Q1852.1563,747.875 1854.6563,747.875 Q1855.3594,747.875 1856,748.0313 Q1856.6563,748.1875 1857.2188,748.4844 L1857.2188,751.2031 Q1856.5938,750.625 1856,750.3594 Q1855.4063,750.0781 1854.7813,750.0781 Q1853.4375,750.0781 1852.75,751.1563 Q1852.0625,752.2188 1852.0625,754.3125 Q1852.0625,756.4063 1852.75,757.4844 Q1853.4375,758.5469 1854.7813,758.5469 Q1855.4063,758.5469 1856,758.2813 Q1856.5938,758 1857.2188,757.4219 L1857.2188,760.1406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="32" x="1875.25" y="758.1543">Probe</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1758" x2="1992" y1="770" y2="770"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="1758" x2="1992" y1="778" y2="778"/><ellipse cx="1768" cy="789.9023" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="99" x="1777" y="792.2104">Probe(name: String)</text><ellipse cx="1768" cy="802.707" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="210" x="1777" y="805.0151">Probe(parents: List&lt;Node&gt;, name: String)</text><ellipse cx="1768" cy="815.5117" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="99" x="1777" y="817.8198">calculate(): boolean</text><ellipse cx="1768" cy="828.3164" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="165" x="1777" y="830.6245">accept(nodeVisitor: INodeVisitor)</text><ellipse cx="1768" cy="841.1211" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="142" x="1777" y="843.4292">addToCircuit(circuit: Circuit)</text><!--class AndGate--><rect fill="#FEFECE" filter="url(#f5t4mmpryyah4)" height="99.2188" id="AndGate" style="stroke: #A80036; stroke-width: 1.5;" width="251" x="38.5" y="744.5"/><ellipse cx="135.25" cy="760.5" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M137.7188,766.6406 Q137.1406,766.9375 136.5,767.0781 Q135.8594,767.2344 135.1563,767.2344 Q132.6563,767.2344 131.3281,765.5938 Q130.0156,763.9375 130.0156,760.8125 Q130.0156,757.6875 131.3281,756.0313 Q132.6563,754.375 135.1563,754.375 Q135.8594,754.375 136.5,754.5313 Q137.1563,754.6875 137.7188,754.9844 L137.7188,757.7031 Q137.0938,757.125 136.5,756.8594 Q135.9063,756.5781 135.2813,756.5781 Q133.9375,756.5781 133.25,757.6563 Q132.5625,758.7188 132.5625,760.8125 Q132.5625,762.9063 133.25,763.9844 Q133.9375,765.0469 135.2813,765.0469 Q135.9063,765.0469 136.5,764.7813 Q137.0938,764.5 137.7188,763.9219 L137.7188,766.6406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="49" x="155.75" y="764.6543">AndGate</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="39.5" x2="288.5" y1="776.5" y2="776.5"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="39.5" x2="288.5" y1="784.5" y2="784.5"/><ellipse cx="49.5" cy="796.4023" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="114" x="58.5" y="798.7104">AndGate(name: String)</text><ellipse cx="49.5" cy="809.207" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="225" x="58.5" y="811.5151">AndGate(parents: List&lt;Node&gt;, name: String)</text><ellipse cx="49.5" cy="822.0117" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="99" x="58.5" y="824.3198">calculate(): boolean</text><ellipse cx="49.5" cy="834.8164" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="165" x="58.5" y="837.1245">accept(nodeVisitor: INodeVisitor)</text><!--class NAndGate--><rect fill="#FEFECE" filter="url(#f5t4mmpryyah4)" height="99.2188" id="NAndGate" style="stroke: #A80036; stroke-width: 1.5;" width="259" x="324.5" y="744.5"/><ellipse cx="421.25" cy="760.5" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M423.7188,766.6406 Q423.1406,766.9375 422.5,767.0781 Q421.8594,767.2344 421.1563,767.2344 Q418.6563,767.2344 417.3281,765.5938 Q416.0156,763.9375 416.0156,760.8125 Q416.0156,757.6875 417.3281,756.0313 Q418.6563,754.375 421.1563,754.375 Q421.8594,754.375 422.5,754.5313 Q423.1563,754.6875 423.7188,754.9844 L423.7188,757.7031 Q423.0938,757.125 422.5,756.8594 Q421.9063,756.5781 421.2813,756.5781 Q419.9375,756.5781 419.25,757.6563 Q418.5625,758.7188 418.5625,760.8125 Q418.5625,762.9063 419.25,763.9844 Q419.9375,765.0469 421.2813,765.0469 Q421.9063,765.0469 422.5,764.7813 Q423.0938,764.5 423.7188,763.9219 L423.7188,766.6406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="57" x="441.75" y="764.6543">NAndGate</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="325.5" x2="582.5" y1="776.5" y2="776.5"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="325.5" x2="582.5" y1="784.5" y2="784.5"/><ellipse cx="335.5" cy="796.4023" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="122" x="344.5" y="798.7104">NAndGate(name: String)</text><ellipse cx="335.5" cy="809.207" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="233" x="344.5" y="811.5151">NAndGate(parents: List&lt;Node&gt;, name: String)</text><ellipse cx="335.5" cy="822.0117" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="99" x="344.5" y="824.3198">calculate(): boolean</text><ellipse cx="335.5" cy="834.8164" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="165" x="344.5" y="837.1245">accept(nodeVisitor: INodeVisitor)</text><!--class NOrGate--><rect fill="#FEFECE" filter="url(#f5t4mmpryyah4)" height="99.2188" id="NOrGate" style="stroke: #A80036; stroke-width: 1.5;" width="252" x="619" y="744.5"/><ellipse cx="716.75" cy="760.5" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M719.2188,766.6406 Q718.6406,766.9375 718,767.0781 Q717.3594,767.2344 716.6563,767.2344 Q714.1563,767.2344 712.8281,765.5938 Q711.5156,763.9375 711.5156,760.8125 Q711.5156,757.6875 712.8281,756.0313 Q714.1563,754.375 716.6563,754.375 Q717.3594,754.375 718,754.5313 Q718.6563,754.6875 719.2188,754.9844 L719.2188,757.7031 Q718.5938,757.125 718,756.8594 Q717.4063,756.5781 716.7813,756.5781 Q715.4375,756.5781 714.75,757.6563 Q714.0625,758.7188 714.0625,760.8125 Q714.0625,762.9063 714.75,763.9844 Q715.4375,765.0469 716.7813,765.0469 Q717.4063,765.0469 718,764.7813 Q718.5938,764.5 719.2188,763.9219 L719.2188,766.6406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="48" x="737.25" y="764.6543">NOrGate</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="620" x2="870" y1="776.5" y2="776.5"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="620" x2="870" y1="784.5" y2="784.5"/><ellipse cx="630" cy="796.4023" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="115" x="639" y="798.7104">NOrGate(name: String)</text><ellipse cx="630" cy="809.207" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="226" x="639" y="811.5151">NOrGate(parents: List&lt;Node&gt;, name: String)</text><ellipse cx="630" cy="822.0117" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="99" x="639" y="824.3198">calculate(): boolean</text><ellipse cx="630" cy="834.8164" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="165" x="639" y="837.1245">accept(nodeVisitor: INodeVisitor)</text><!--class NotGate--><rect fill="#FEFECE" filter="url(#f5t4mmpryyah4)" height="99.2188" id="NotGate" style="stroke: #A80036; stroke-width: 1.5;" width="250" x="906" y="744.5"/><ellipse cx="1003.75" cy="760.5" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M1006.2188,766.6406 Q1005.6406,766.9375 1005,767.0781 Q1004.3594,767.2344 1003.6563,767.2344 Q1001.1563,767.2344 999.8281,765.5938 Q998.5156,763.9375 998.5156,760.8125 Q998.5156,757.6875 999.8281,756.0313 Q1001.1563,754.375 1003.6563,754.375 Q1004.3594,754.375 1005,754.5313 Q1005.6563,754.6875 1006.2188,754.9844 L1006.2188,757.7031 Q1005.5938,757.125 1005,756.8594 Q1004.4063,756.5781 1003.7813,756.5781 Q1002.4375,756.5781 1001.75,757.6563 Q1001.0625,758.7188 1001.0625,760.8125 Q1001.0625,762.9063 1001.75,763.9844 Q1002.4375,765.0469 1003.7813,765.0469 Q1004.4063,765.0469 1005,764.7813 Q1005.5938,764.5 1006.2188,763.9219 L1006.2188,766.6406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="46" x="1024.25" y="764.6543">NotGate</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="907" x2="1155" y1="776.5" y2="776.5"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="907" x2="1155" y1="784.5" y2="784.5"/><ellipse cx="917" cy="796.4023" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="113" x="926" y="798.7104">NotGate(name: String)</text><ellipse cx="917" cy="809.207" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="224" x="926" y="811.5151">NotGate(parents: List&lt;Node&gt;, name: String)</text><ellipse cx="917" cy="822.0117" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="99" x="926" y="824.3198">calculate(): boolean</text><ellipse cx="917" cy="834.8164" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="165" x="926" y="837.1245">accept(nodeVisitor: INodeVisitor)</text><!--class OrGate--><rect fill="#FEFECE" filter="url(#f5t4mmpryyah4)" height="99.2188" id="OrGate" style="stroke: #A80036; stroke-width: 1.5;" width="244" x="1191" y="744.5"/><ellipse cx="1288.75" cy="760.5" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M1291.2188,766.6406 Q1290.6406,766.9375 1290,767.0781 Q1289.3594,767.2344 1288.6563,767.2344 Q1286.1563,767.2344 1284.8281,765.5938 Q1283.5156,763.9375 1283.5156,760.8125 Q1283.5156,757.6875 1284.8281,756.0313 Q1286.1563,754.375 1288.6563,754.375 Q1289.3594,754.375 1290,754.5313 Q1290.6563,754.6875 1291.2188,754.9844 L1291.2188,757.7031 Q1290.5938,757.125 1290,756.8594 Q1289.4063,756.5781 1288.7813,756.5781 Q1287.4375,756.5781 1286.75,757.6563 Q1286.0625,758.7188 1286.0625,760.8125 Q1286.0625,762.9063 1286.75,763.9844 Q1287.4375,765.0469 1288.7813,765.0469 Q1289.4063,765.0469 1290,764.7813 Q1290.5938,764.5 1291.2188,763.9219 L1291.2188,766.6406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="40" x="1309.25" y="764.6543">OrGate</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1192" x2="1434" y1="776.5" y2="776.5"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="1192" x2="1434" y1="784.5" y2="784.5"/><ellipse cx="1202" cy="796.4023" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="107" x="1211" y="798.7104">OrGate(name: String)</text><ellipse cx="1202" cy="809.207" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="218" x="1211" y="811.5151">OrGate(parents: List&lt;Node&gt;, name: String)</text><ellipse cx="1202" cy="822.0117" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="99" x="1211" y="824.3198">calculate(): boolean</text><ellipse cx="1202" cy="834.8164" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="165" x="1211" y="837.1245">accept(nodeVisitor: INodeVisitor)</text><!--class XOrGate--><rect fill="#FEFECE" filter="url(#f5t4mmpryyah4)" height="99.2188" id="XOrGate" style="stroke: #A80036; stroke-width: 1.5;" width="251" x="1470.5" y="744.5"/><ellipse cx="1567.75" cy="760.5" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M1570.2188,766.6406 Q1569.6406,766.9375 1569,767.0781 Q1568.3594,767.2344 1567.6563,767.2344 Q1565.1563,767.2344 1563.8281,765.5938 Q1562.5156,763.9375 1562.5156,760.8125 Q1562.5156,757.6875 1563.8281,756.0313 Q1565.1563,754.375 1567.6563,754.375 Q1568.3594,754.375 1569,754.5313 Q1569.6563,754.6875 1570.2188,754.9844 L1570.2188,757.7031 Q1569.5938,757.125 1569,756.8594 Q1568.4063,756.5781 1567.7813,756.5781 Q1566.4375,756.5781 1565.75,757.6563 Q1565.0625,758.7188 1565.0625,760.8125 Q1565.0625,762.9063 1565.75,763.9844 Q1566.4375,765.0469 1567.7813,765.0469 Q1568.4063,765.0469 1569,764.7813 Q1569.5938,764.5 1570.2188,763.9219 L1570.2188,766.6406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="48" x="1588.25" y="764.6543">XOrGate</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1471.5" x2="1720.5" y1="776.5" y2="776.5"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="1471.5" x2="1720.5" y1="784.5" y2="784.5"/><ellipse cx="1481.5" cy="796.4023" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="114" x="1490.5" y="798.7104">XOrGate(name: String)</text><ellipse cx="1481.5" cy="809.207" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="225" x="1490.5" y="811.5151">XOrGate(parents: List&lt;Node&gt;, name: String)</text><ellipse cx="1481.5" cy="822.0117" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="99" x="1490.5" y="824.3198">calculate(): boolean</text><ellipse cx="1481.5" cy="834.8164" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="165" x="1490.5" y="837.1245">accept(nodeVisitor: INodeVisitor)</text><!--link Node to NodeComposite--><path d="M1228.58,481.76 C1225.62,491.17 1222.12,500.4 1218,509 C1213.11,519.2 1206.96,529.26 1200.24,538.83 " fill="none" id="Node-NodeComposite" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="none" points="1221.88,479.73,1233.95,462.32,1235.37,483.46,1221.88,479.73" style="stroke: #A80036; stroke-width: 1.0;"/><!--link NodeComposite to Node--><path d="M1137.54,538.98 C1139.31,523.09 1142.75,506.56 1149,492 C1152.72,483.33 1157.38,474.85 1162.63,466.69 " fill="none" id="NodeComposite-Node" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="1165.6,462.19,1157.3004,467.4926,1162.843,466.3612,1163.9744,471.9038,1165.6,462.19" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="none" points="1155,496.0755,1159,500.0755,1155,504.0755,1151,500.0755" style="stroke: #B38D22; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="47" x="1162" y="505.0814">parents</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="0" x="1137.2709" y="527.7204"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="22" x="1135.5488" y="482.2108">1..*</text><!--link Circuit to Node--><path d="M1358.77,222.08 C1341.91,245.4 1323.45,270.94 1306.41,294.53 " fill="none" id="Circuit-Node" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="1303.46,298.6,1311.9709,293.6437,1306.3864,294.5459,1305.4842,288.9614,1303.46,298.6" style="stroke: #A80036; stroke-width: 1.0;"/><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="1339" y="258.0755"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="37" x="1349" y="265.0814">nodes</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="0" x="1353.2175" y="242.3693"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="22" x="1285.5386" y="287.9947">0..*</text><!--link Circuit to Input--><path d="M1417,222.05 C1417,314.36 1417,463.53 1417,546.47 " fill="none" id="Circuit-Input" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="1417,551.83,1421,542.83,1417,546.83,1413,542.83,1417,551.83" style="stroke: #A80036; stroke-width: 1.0;"/><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="1420" y="378.0755"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="38" x="1430" y="385.0814">inputs</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="0" x="1416.8156" y="242.3365"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="22" x="1393.5906" y="540.7619">0..*</text><!--link Circuit to Probe--><path d="M1473.62,222.04 C1566.93,354.77 1750.87,616.43 1833.31,733.7 " fill="none" id="Circuit-Probe" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="1836.2,737.81,1834.2751,728.1511,1833.3155,733.726,1827.7406,732.7663,1836.2,737.81" style="stroke: #A80036; stroke-width: 1.0;"/><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="1677" y="498.0755"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="42" x="1687" y="505.0814">probes</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="0" x="1478.6553" y="242.3256"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="22" x="1807.8194" y="726.7393">0..*</text><!--link Node to Input--><path d="M1318.75,478.18 C1337.95,503.36 1357.99,529.63 1374.92,551.83 " fill="none" id="Node-Input" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="none" points="1313.17,482.42,1306.61,462.27,1324.31,473.93,1313.17,482.42" style="stroke: #A80036; stroke-width: 1.0;"/><!--link NodeComposite to Probe--><path d="M1301.12,676.75 C1493.83,726.54 1554.74,688.75 1739,738 C1744.91,739.58 1750.9,741.34 1756.91,743.25 " fill="none" id="NodeComposite-Probe" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="none" points="1299.25,683.49,1281.74,671.56,1302.87,669.97,1299.25,683.49" style="stroke: #A80036; stroke-width: 1.0;"/><!--link NodeComposite to AndGate--><path d="M974.07,624.02 C804.91,641.94 534.4,677.36 307,738 C299.8,739.92 292.47,742.08 285.12,744.4 " fill="none" id="NodeComposite-AndGate" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="none" points="973.57,617.04,994.19,621.92,975.03,630.96,973.57,617.04" style="stroke: #A80036; stroke-width: 1.0;"/><!--link NodeComposite to NAndGate--><path d="M974.4,643.04 C867.54,666.58 725.44,700.36 602,738 C595.31,740.04 588.49,742.22 581.63,744.49 " fill="none" id="NodeComposite-NAndGate" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="none" points="973.24,636.13,994.27,638.69,976.23,649.81,973.24,636.13" style="stroke: #A80036; stroke-width: 1.0;"/><!--link NodeComposite to NOrGate--><path d="M976.17,684.77 C933.13,704.92 887.8,726.14 848.79,744.41 " fill="none" id="NodeComposite-NOrGate" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="none" points="973.37,678.35,994.45,676.21,979.3,691.03,973.37,678.35" style="stroke: #A80036; stroke-width: 1.0;"/><!--link NodeComposite to NotGate--><path d="M1088.11,694.8 C1078.2,711.83 1068.14,729.14 1059.27,744.39 " fill="none" id="NodeComposite-NotGate" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="none" points="1082.2,691.02,1098.31,677.25,1094.31,698.06,1082.2,691.02" style="stroke: #A80036; stroke-width: 1.0;"/><!--link NodeComposite to OrGate--><path d="M1216.79,691.84 C1233.88,709.81 1251.42,728.26 1266.77,744.39 " fill="none" id="NodeComposite-OrGate" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="none" points="1211.63,696.57,1202.91,677.25,1221.77,686.92,1211.63,696.57" style="stroke: #A80036; stroke-width: 1.0;"/><!--link NodeComposite to XOrGate--><path d="M1300.68,677.23 C1366.32,703.78 1422.22,725.77 1470.43,744.56 " fill="none" id="NodeComposite-XOrGate" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="none" points="1297.81,683.62,1281.9,669.61,1303.07,670.64,1297.81,683.62" style="stroke: #A80036; stroke-width: 1.0;"/><!--
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     contentScriptType="application/ecmascript" contentStyleType="text/css" height="878px" preserveAspectRatio="none"
+     style="width:2031px;height:878px;" version="1.1" viewBox="0 0 2031 878" width="2031px" zoomAndPan="magnify">
+    <defs>
+        <filter height="300%" id="f5t4mmpryyah4" width="300%" x="-1" y="-1">
+            <feGaussianBlur result="blurOut" stdDeviation="2.0"/>
+            <feColorMatrix in="blurOut" result="blurOut2" type="matrix"
+                           values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/>
+            <feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/>
+            <feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/>
+        </filter>
+    </defs>
+    <g><!--cluster domain-->
+        <polygon fill="#FFFFFF" filter="url(#f5t4mmpryyah4)"
+                 points="22,24,83,24,90,46.2969,2009,46.2969,2009,866,22,866,22,24"
+                 style="stroke: #000000; stroke-width: 1.5;"/>
+        <line style="stroke: #000000; stroke-width: 1.5;" x1="22" x2="90" y1="46.2969" y2="46.2969"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs"
+              textLength="55" x="26" y="38.9951">domain
+        </text><!--class Node-->
+        <rect fill="#FEFECE" filter="url(#f5t4mmpryyah4)" height="163.2422" id="Node"
+              style="stroke: #A80036; stroke-width: 1.5;" width="191" x="1149.5" y="299"/>
+        <ellipse cx="1226.25" cy="315" fill="#A9DCDF" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M1226.3594,310.0938 L1225.2031,315.1719 L1227.5313,315.1719 L1226.3594,310.0938 Z M1224.875,307.8594 L1227.8594,307.8594 L1231.2188,320.25 L1228.7656,320.25 L1228,317.1875 L1224.7188,317.1875 L1223.9688,320.25 L1221.5313,320.25 L1224.875,307.8594 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs"
+              textLength="29" x="1246.75" y="319.1543">Node
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="1150.5" x2="1339.5" y1="331" y2="331"/>
+        <polygon fill="none" points="1160.5,337.9023,1164.5,341.9023,1160.5,345.9023,1156.5,341.9023"
+                 style="stroke: #B38D22; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="72"
+              x="1169.5" y="345.2104">value: boolean
+        </text>
+        <rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="1157.5" y="352.707"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="63"
+              x="1169.5" y="358.0151">name: String
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="1150.5" x2="1339.5" y1="364.6094" y2="364.6094"/>
+        <ellipse cx="1160.5" cy="376.5117" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="97"
+              x="1169.5" y="378.8198">Node(name: String)
+        </text>
+        <ellipse cx="1160.5" cy="389.3164" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="97"
+              x="1169.5" y="391.6245">getValue(): boolean
+        </text>
+        <ellipse cx="1160.5" cy="402.1211" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="89"
+              x="1169.5" y="404.4292">getName(): String
+        </text>
+        <ellipse cx="1160.5" cy="414.9258" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="142"
+              x="1169.5" y="417.2339">addToCircuit(circuit: Circuit)
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="0"
+              x="1172.5" y="430.0386"/>
+        <ellipse cx="1160.5" cy="440.5352" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs"
+              textLength="99" x="1169.5" y="442.8433">calculate(): boolean
+        </text>
+        <ellipse cx="1160.5" cy="453.3398" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs"
+              textLength="165" x="1169.5" y="455.6479">accept(nodeVisitor: INodeVisitor)
+        </text><!--class NodeComposite-->
+        <rect fill="#FEFECE" filter="url(#f5t4mmpryyah4)" height="137.6328" id="NodeComposite"
+              style="stroke: #A80036; stroke-width: 1.5;" width="287" x="994.5" y="539"/>
+        <ellipse cx="1089.25" cy="555" fill="#A9DCDF" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M1089.3594,550.0938 L1088.2031,555.1719 L1090.5313,555.1719 L1089.3594,550.0938 Z M1087.875,547.8594 L1090.8594,547.8594 L1094.2188,560.25 L1091.7656,560.25 L1091,557.1875 L1087.7188,557.1875 L1086.9688,560.25 L1084.5313,560.25 L1087.875,547.8594 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs"
+              textLength="89" x="1109.75" y="559.1543">NodeComposite
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="995.5" x2="1280.5" y1="571" y2="571"/>
+        <polygon fill="none" points="1005.5,577.9023,1009.5,581.9023,1005.5,585.9023,1001.5,581.9023"
+                 style="stroke: #B38D22; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="105"
+              x="1014.5" y="585.2104">parents: List&lt;Node&gt;
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="995.5" x2="1280.5" y1="591.8047" y2="591.8047"/>
+        <ellipse cx="1005.5" cy="603.707" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="261"
+              x="1014.5" y="606.0151">NodeComposite(parents: List&lt;Node&gt;, name: String)
+        </text>
+        <ellipse cx="1005.5" cy="616.5117" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="90"
+              x="1014.5" y="618.8198">add(parent: Node)
+        </text>
+        <ellipse cx="1005.5" cy="629.3164" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="110"
+              x="1014.5" y="631.6245">remove(parent: Node)
+        </text>
+        <ellipse cx="1005.5" cy="642.1211" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="129"
+              x="1014.5" y="644.4292">getParents(): List&lt;Node&gt;
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="0"
+              x="1017.5" y="657.2339"/>
+        <ellipse cx="1005.5" cy="667.7305" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs"
+              textLength="99" x="1014.5" y="670.0386">calculate(): boolean
+        </text><!--class INodeVisitor-->
+        <rect fill="#FEFECE" filter="url(#f5t4mmpryyah4)" height="137.6328" id="INodeVisitor"
+              style="stroke: #A80036; stroke-width: 1.5;" width="136" x="1746" y="71.5"/>
+        <ellipse cx="1777.65" cy="87.5" fill="#B4A7E5" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M1774.0719,83.2656 L1774.0719,81.1094 L1781.4625,81.1094 L1781.4625,83.2656 L1778.9938,83.2656 L1778.9938,91.3438 L1781.4625,91.3438 L1781.4625,93.5 L1774.0719,93.5 L1774.0719,91.3438 L1776.5406,91.3438 L1776.5406,83.2656 L1774.0719,83.2656 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs"
+              textLength="67" x="1795.35" y="91.6543">INodeVisitor
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="1747" x2="1881" y1="103.5" y2="103.5"/>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="1747" x2="1881" y1="111.5" y2="111.5"/>
+        <ellipse cx="1757" cy="123.4023" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="87"
+              x="1766" y="125.7104">visit(node: Probe)
+        </text>
+        <ellipse cx="1757" cy="136.207" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="84"
+              x="1766" y="138.5151">visit(node: Input)
+        </text>
+        <ellipse cx="1757" cy="149.0117" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="102"
+              x="1766" y="151.3198">visit(node: AndGate)
+        </text>
+        <ellipse cx="1757" cy="161.8164" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="110"
+              x="1766" y="164.1245">visit(node: NAndGate)
+        </text>
+        <ellipse cx="1757" cy="174.6211" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="103"
+              x="1766" y="176.9292">visit(node: NOrGate)
+        </text>
+        <ellipse cx="1757" cy="187.4258" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="95"
+              x="1766" y="189.7339">visit(node: OrGate)
+        </text>
+        <ellipse cx="1757" cy="200.2305" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="102"
+              x="1766" y="202.5386">visit(node: XOrGate)
+        </text><!--class Circuit-->
+        <rect fill="#FEFECE" filter="url(#f5t4mmpryyah4)" height="163.2422" id="Circuit"
+              style="stroke: #A80036; stroke-width: 1.5;" width="151" x="1341.5" y="59"/>
+        <ellipse cx="1395.25" cy="75" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M1397.7188,81.1406 Q1397.1406,81.4375 1396.5,81.5781 Q1395.8594,81.7344 1395.1563,81.7344 Q1392.6563,81.7344 1391.3281,80.0938 Q1390.0156,78.4375 1390.0156,75.3125 Q1390.0156,72.1875 1391.3281,70.5313 Q1392.6563,68.875 1395.1563,68.875 Q1395.8594,68.875 1396.5,69.0313 Q1397.1563,69.1875 1397.7188,69.4844 L1397.7188,72.2031 Q1397.0938,71.625 1396.5,71.3594 Q1395.9063,71.0781 1395.2813,71.0781 Q1393.9375,71.0781 1393.25,72.1563 Q1392.5625,73.2188 1392.5625,75.3125 Q1392.5625,77.4063 1393.25,78.4844 Q1393.9375,79.5469 1395.2813,79.5469 Q1395.9063,79.5469 1396.5,79.2813 Q1397.0938,79 1397.7188,78.4219 L1397.7188,81.1406 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="35"
+              x="1415.75" y="79.1543">Circuit
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="1342.5" x2="1491.5" y1="91" y2="91"/>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="1342.5" x2="1491.5" y1="99" y2="99"/>
+        <ellipse cx="1352.5" cy="110.9023" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="41"
+              x="1361.5" y="113.2104">Circuit()
+        </text>
+        <ellipse cx="1352.5" cy="123.707" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="108"
+              x="1361.5" y="126.0151">addNode(node: Node)
+        </text>
+        <ellipse cx="1352.5" cy="136.5117" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="106"
+              x="1361.5" y="138.8198">addInput(node: Input)
+        </text>
+        <ellipse cx="1352.5" cy="149.3164" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="112"
+              x="1361.5" y="151.6245">addProbe(node: Probe)
+        </text>
+        <ellipse cx="1352.5" cy="162.1211" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="121"
+              x="1361.5" y="164.4292">getNodes(): Set&lt;Node&gt;
+        </text>
+        <ellipse cx="1352.5" cy="174.9258" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="119"
+              x="1361.5" y="177.2339">getInputs(): Set&lt;Input&gt;
+        </text>
+        <ellipse cx="1352.5" cy="187.7305" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="112"
+              x="1361.5" y="190.0386">getInput(name: String)
+        </text>
+        <ellipse cx="1352.5" cy="200.5352" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="125"
+              x="1361.5" y="202.8433">getProbes(): Set&lt;Probe&gt;
+        </text>
+        <ellipse cx="1352.5" cy="213.3398" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="51"
+              x="1361.5" y="215.6479">simulate()
+        </text><!--class Input-->
+        <rect fill="#FEFECE" filter="url(#f5t4mmpryyah4)" height="112.0234" id="Input"
+              style="stroke: #A80036; stroke-width: 1.5;" width="200" x="1317" y="552"/>
+        <ellipse cx="1398.75" cy="568" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M1401.2188,574.1406 Q1400.6406,574.4375 1400,574.5781 Q1399.3594,574.7344 1398.6563,574.7344 Q1396.1563,574.7344 1394.8281,573.0938 Q1393.5156,571.4375 1393.5156,568.3125 Q1393.5156,565.1875 1394.8281,563.5313 Q1396.1563,561.875 1398.6563,561.875 Q1399.3594,561.875 1400,562.0313 Q1400.6563,562.1875 1401.2188,562.4844 L1401.2188,565.2031 Q1400.5938,564.625 1400,564.3594 Q1399.4063,564.0781 1398.7813,564.0781 Q1397.4375,564.0781 1396.75,565.1563 Q1396.0625,566.2188 1396.0625,568.3125 Q1396.0625,570.4063 1396.75,571.4844 Q1397.4375,572.5469 1398.7813,572.5469 Q1399.4063,572.5469 1400,572.2813 Q1400.5938,572 1401.2188,571.4219 L1401.2188,574.1406 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="28"
+              x="1419.25" y="572.1543">Input
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="1318" x2="1516" y1="584" y2="584"/>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="1318" x2="1516" y1="592" y2="592"/>
+        <ellipse cx="1328" cy="603.9023" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="174"
+              x="1337" y="606.2104">Input(value: boolean, name: String)
+        </text>
+        <ellipse cx="1328" cy="616.707" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="123"
+              x="1337" y="619.0151">setValue(value: boolean)
+        </text>
+        <ellipse cx="1328" cy="629.5117" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="99"
+              x="1337" y="631.8198">calculate(): boolean
+        </text>
+        <ellipse cx="1328" cy="642.3164" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="165"
+              x="1337" y="644.6245">accept(nodeVisitor: INodeVisitor)
+        </text>
+        <ellipse cx="1328" cy="655.1211" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="142"
+              x="1337" y="657.4292">addToCircuit(circuit: Circuit)
+        </text><!--class Probe-->
+        <rect fill="#FEFECE" filter="url(#f5t4mmpryyah4)" height="112.0234" id="Probe"
+              style="stroke: #A80036; stroke-width: 1.5;" width="236" x="1757" y="738"/>
+        <ellipse cx="1854.75" cy="754" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M1857.2188,760.1406 Q1856.6406,760.4375 1856,760.5781 Q1855.3594,760.7344 1854.6563,760.7344 Q1852.1563,760.7344 1850.8281,759.0938 Q1849.5156,757.4375 1849.5156,754.3125 Q1849.5156,751.1875 1850.8281,749.5313 Q1852.1563,747.875 1854.6563,747.875 Q1855.3594,747.875 1856,748.0313 Q1856.6563,748.1875 1857.2188,748.4844 L1857.2188,751.2031 Q1856.5938,750.625 1856,750.3594 Q1855.4063,750.0781 1854.7813,750.0781 Q1853.4375,750.0781 1852.75,751.1563 Q1852.0625,752.2188 1852.0625,754.3125 Q1852.0625,756.4063 1852.75,757.4844 Q1853.4375,758.5469 1854.7813,758.5469 Q1855.4063,758.5469 1856,758.2813 Q1856.5938,758 1857.2188,757.4219 L1857.2188,760.1406 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="32"
+              x="1875.25" y="758.1543">Probe
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="1758" x2="1992" y1="770" y2="770"/>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="1758" x2="1992" y1="778" y2="778"/>
+        <ellipse cx="1768" cy="789.9023" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="99"
+              x="1777" y="792.2104">Probe(name: String)
+        </text>
+        <ellipse cx="1768" cy="802.707" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="210"
+              x="1777" y="805.0151">Probe(parents: List&lt;Node&gt;, name: String)
+        </text>
+        <ellipse cx="1768" cy="815.5117" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="99"
+              x="1777" y="817.8198">calculate(): boolean
+        </text>
+        <ellipse cx="1768" cy="828.3164" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="165"
+              x="1777" y="830.6245">accept(nodeVisitor: INodeVisitor)
+        </text>
+        <ellipse cx="1768" cy="841.1211" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="142"
+              x="1777" y="843.4292">addToCircuit(circuit: Circuit)
+        </text><!--class AndGate-->
+        <rect fill="#FEFECE" filter="url(#f5t4mmpryyah4)" height="99.2188" id="AndGate"
+              style="stroke: #A80036; stroke-width: 1.5;" width="251" x="38.5" y="744.5"/>
+        <ellipse cx="135.25" cy="760.5" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M137.7188,766.6406 Q137.1406,766.9375 136.5,767.0781 Q135.8594,767.2344 135.1563,767.2344 Q132.6563,767.2344 131.3281,765.5938 Q130.0156,763.9375 130.0156,760.8125 Q130.0156,757.6875 131.3281,756.0313 Q132.6563,754.375 135.1563,754.375 Q135.8594,754.375 136.5,754.5313 Q137.1563,754.6875 137.7188,754.9844 L137.7188,757.7031 Q137.0938,757.125 136.5,756.8594 Q135.9063,756.5781 135.2813,756.5781 Q133.9375,756.5781 133.25,757.6563 Q132.5625,758.7188 132.5625,760.8125 Q132.5625,762.9063 133.25,763.9844 Q133.9375,765.0469 135.2813,765.0469 Q135.9063,765.0469 136.5,764.7813 Q137.0938,764.5 137.7188,763.9219 L137.7188,766.6406 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="49"
+              x="155.75" y="764.6543">AndGate
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="39.5" x2="288.5" y1="776.5" y2="776.5"/>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="39.5" x2="288.5" y1="784.5" y2="784.5"/>
+        <ellipse cx="49.5" cy="796.4023" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="114"
+              x="58.5" y="798.7104">AndGate(name: String)
+        </text>
+        <ellipse cx="49.5" cy="809.207" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="225"
+              x="58.5" y="811.5151">AndGate(parents: List&lt;Node&gt;, name: String)
+        </text>
+        <ellipse cx="49.5" cy="822.0117" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="99"
+              x="58.5" y="824.3198">calculate(): boolean
+        </text>
+        <ellipse cx="49.5" cy="834.8164" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="165"
+              x="58.5" y="837.1245">accept(nodeVisitor: INodeVisitor)
+        </text><!--class NAndGate-->
+        <rect fill="#FEFECE" filter="url(#f5t4mmpryyah4)" height="99.2188" id="NAndGate"
+              style="stroke: #A80036; stroke-width: 1.5;" width="259" x="324.5" y="744.5"/>
+        <ellipse cx="421.25" cy="760.5" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M423.7188,766.6406 Q423.1406,766.9375 422.5,767.0781 Q421.8594,767.2344 421.1563,767.2344 Q418.6563,767.2344 417.3281,765.5938 Q416.0156,763.9375 416.0156,760.8125 Q416.0156,757.6875 417.3281,756.0313 Q418.6563,754.375 421.1563,754.375 Q421.8594,754.375 422.5,754.5313 Q423.1563,754.6875 423.7188,754.9844 L423.7188,757.7031 Q423.0938,757.125 422.5,756.8594 Q421.9063,756.5781 421.2813,756.5781 Q419.9375,756.5781 419.25,757.6563 Q418.5625,758.7188 418.5625,760.8125 Q418.5625,762.9063 419.25,763.9844 Q419.9375,765.0469 421.2813,765.0469 Q421.9063,765.0469 422.5,764.7813 Q423.0938,764.5 423.7188,763.9219 L423.7188,766.6406 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="57"
+              x="441.75" y="764.6543">NAndGate
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="325.5" x2="582.5" y1="776.5" y2="776.5"/>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="325.5" x2="582.5" y1="784.5" y2="784.5"/>
+        <ellipse cx="335.5" cy="796.4023" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="122"
+              x="344.5" y="798.7104">NAndGate(name: String)
+        </text>
+        <ellipse cx="335.5" cy="809.207" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="233"
+              x="344.5" y="811.5151">NAndGate(parents: List&lt;Node&gt;, name: String)
+        </text>
+        <ellipse cx="335.5" cy="822.0117" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="99"
+              x="344.5" y="824.3198">calculate(): boolean
+        </text>
+        <ellipse cx="335.5" cy="834.8164" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="165"
+              x="344.5" y="837.1245">accept(nodeVisitor: INodeVisitor)
+        </text><!--class NOrGate-->
+        <rect fill="#FEFECE" filter="url(#f5t4mmpryyah4)" height="99.2188" id="NOrGate"
+              style="stroke: #A80036; stroke-width: 1.5;" width="252" x="619" y="744.5"/>
+        <ellipse cx="716.75" cy="760.5" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M719.2188,766.6406 Q718.6406,766.9375 718,767.0781 Q717.3594,767.2344 716.6563,767.2344 Q714.1563,767.2344 712.8281,765.5938 Q711.5156,763.9375 711.5156,760.8125 Q711.5156,757.6875 712.8281,756.0313 Q714.1563,754.375 716.6563,754.375 Q717.3594,754.375 718,754.5313 Q718.6563,754.6875 719.2188,754.9844 L719.2188,757.7031 Q718.5938,757.125 718,756.8594 Q717.4063,756.5781 716.7813,756.5781 Q715.4375,756.5781 714.75,757.6563 Q714.0625,758.7188 714.0625,760.8125 Q714.0625,762.9063 714.75,763.9844 Q715.4375,765.0469 716.7813,765.0469 Q717.4063,765.0469 718,764.7813 Q718.5938,764.5 719.2188,763.9219 L719.2188,766.6406 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="48"
+              x="737.25" y="764.6543">NOrGate
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="620" x2="870" y1="776.5" y2="776.5"/>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="620" x2="870" y1="784.5" y2="784.5"/>
+        <ellipse cx="630" cy="796.4023" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="115"
+              x="639" y="798.7104">NOrGate(name: String)
+        </text>
+        <ellipse cx="630" cy="809.207" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="226"
+              x="639" y="811.5151">NOrGate(parents: List&lt;Node&gt;, name: String)
+        </text>
+        <ellipse cx="630" cy="822.0117" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="99"
+              x="639" y="824.3198">calculate(): boolean
+        </text>
+        <ellipse cx="630" cy="834.8164" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="165"
+              x="639" y="837.1245">accept(nodeVisitor: INodeVisitor)
+        </text><!--class NotGate-->
+        <rect fill="#FEFECE" filter="url(#f5t4mmpryyah4)" height="99.2188" id="NotGate"
+              style="stroke: #A80036; stroke-width: 1.5;" width="250" x="906" y="744.5"/>
+        <ellipse cx="1003.75" cy="760.5" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M1006.2188,766.6406 Q1005.6406,766.9375 1005,767.0781 Q1004.3594,767.2344 1003.6563,767.2344 Q1001.1563,767.2344 999.8281,765.5938 Q998.5156,763.9375 998.5156,760.8125 Q998.5156,757.6875 999.8281,756.0313 Q1001.1563,754.375 1003.6563,754.375 Q1004.3594,754.375 1005,754.5313 Q1005.6563,754.6875 1006.2188,754.9844 L1006.2188,757.7031 Q1005.5938,757.125 1005,756.8594 Q1004.4063,756.5781 1003.7813,756.5781 Q1002.4375,756.5781 1001.75,757.6563 Q1001.0625,758.7188 1001.0625,760.8125 Q1001.0625,762.9063 1001.75,763.9844 Q1002.4375,765.0469 1003.7813,765.0469 Q1004.4063,765.0469 1005,764.7813 Q1005.5938,764.5 1006.2188,763.9219 L1006.2188,766.6406 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="46"
+              x="1024.25" y="764.6543">NotGate
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="907" x2="1155" y1="776.5" y2="776.5"/>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="907" x2="1155" y1="784.5" y2="784.5"/>
+        <ellipse cx="917" cy="796.4023" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="113"
+              x="926" y="798.7104">NotGate(name: String)
+        </text>
+        <ellipse cx="917" cy="809.207" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="224"
+              x="926" y="811.5151">NotGate(parents: List&lt;Node&gt;, name: String)
+        </text>
+        <ellipse cx="917" cy="822.0117" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="99"
+              x="926" y="824.3198">calculate(): boolean
+        </text>
+        <ellipse cx="917" cy="834.8164" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="165"
+              x="926" y="837.1245">accept(nodeVisitor: INodeVisitor)
+        </text><!--class OrGate-->
+        <rect fill="#FEFECE" filter="url(#f5t4mmpryyah4)" height="99.2188" id="OrGate"
+              style="stroke: #A80036; stroke-width: 1.5;" width="244" x="1191" y="744.5"/>
+        <ellipse cx="1288.75" cy="760.5" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M1291.2188,766.6406 Q1290.6406,766.9375 1290,767.0781 Q1289.3594,767.2344 1288.6563,767.2344 Q1286.1563,767.2344 1284.8281,765.5938 Q1283.5156,763.9375 1283.5156,760.8125 Q1283.5156,757.6875 1284.8281,756.0313 Q1286.1563,754.375 1288.6563,754.375 Q1289.3594,754.375 1290,754.5313 Q1290.6563,754.6875 1291.2188,754.9844 L1291.2188,757.7031 Q1290.5938,757.125 1290,756.8594 Q1289.4063,756.5781 1288.7813,756.5781 Q1287.4375,756.5781 1286.75,757.6563 Q1286.0625,758.7188 1286.0625,760.8125 Q1286.0625,762.9063 1286.75,763.9844 Q1287.4375,765.0469 1288.7813,765.0469 Q1289.4063,765.0469 1290,764.7813 Q1290.5938,764.5 1291.2188,763.9219 L1291.2188,766.6406 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="40"
+              x="1309.25" y="764.6543">OrGate
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="1192" x2="1434" y1="776.5" y2="776.5"/>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="1192" x2="1434" y1="784.5" y2="784.5"/>
+        <ellipse cx="1202" cy="796.4023" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="107"
+              x="1211" y="798.7104">OrGate(name: String)
+        </text>
+        <ellipse cx="1202" cy="809.207" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="218"
+              x="1211" y="811.5151">OrGate(parents: List&lt;Node&gt;, name: String)
+        </text>
+        <ellipse cx="1202" cy="822.0117" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="99"
+              x="1211" y="824.3198">calculate(): boolean
+        </text>
+        <ellipse cx="1202" cy="834.8164" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="165"
+              x="1211" y="837.1245">accept(nodeVisitor: INodeVisitor)
+        </text><!--class XOrGate-->
+        <rect fill="#FEFECE" filter="url(#f5t4mmpryyah4)" height="99.2188" id="XOrGate"
+              style="stroke: #A80036; stroke-width: 1.5;" width="251" x="1470.5" y="744.5"/>
+        <ellipse cx="1567.75" cy="760.5" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M1570.2188,766.6406 Q1569.6406,766.9375 1569,767.0781 Q1568.3594,767.2344 1567.6563,767.2344 Q1565.1563,767.2344 1563.8281,765.5938 Q1562.5156,763.9375 1562.5156,760.8125 Q1562.5156,757.6875 1563.8281,756.0313 Q1565.1563,754.375 1567.6563,754.375 Q1568.3594,754.375 1569,754.5313 Q1569.6563,754.6875 1570.2188,754.9844 L1570.2188,757.7031 Q1569.5938,757.125 1569,756.8594 Q1568.4063,756.5781 1567.7813,756.5781 Q1566.4375,756.5781 1565.75,757.6563 Q1565.0625,758.7188 1565.0625,760.8125 Q1565.0625,762.9063 1565.75,763.9844 Q1566.4375,765.0469 1567.7813,765.0469 Q1568.4063,765.0469 1569,764.7813 Q1569.5938,764.5 1570.2188,763.9219 L1570.2188,766.6406 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="48"
+              x="1588.25" y="764.6543">XOrGate
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="1471.5" x2="1720.5" y1="776.5" y2="776.5"/>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="1471.5" x2="1720.5" y1="784.5" y2="784.5"/>
+        <ellipse cx="1481.5" cy="796.4023" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="114"
+              x="1490.5" y="798.7104">XOrGate(name: String)
+        </text>
+        <ellipse cx="1481.5" cy="809.207" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="225"
+              x="1490.5" y="811.5151">XOrGate(parents: List&lt;Node&gt;, name: String)
+        </text>
+        <ellipse cx="1481.5" cy="822.0117" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="99"
+              x="1490.5" y="824.3198">calculate(): boolean
+        </text>
+        <ellipse cx="1481.5" cy="834.8164" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="165"
+              x="1490.5" y="837.1245">accept(nodeVisitor: INodeVisitor)
+        </text><!--link Node to NodeComposite-->
+        <path d="M1228.58,481.76 C1225.62,491.17 1222.12,500.4 1218,509 C1213.11,519.2 1206.96,529.26 1200.24,538.83 "
+              fill="none" id="Node-NodeComposite" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="none" points="1221.88,479.73,1233.95,462.32,1235.37,483.46,1221.88,479.73"
+                 style="stroke: #A80036; stroke-width: 1.0;"/><!--link NodeComposite to Node-->
+        <path d="M1137.54,538.98 C1139.31,523.09 1142.75,506.56 1149,492 C1152.72,483.33 1157.38,474.85 1162.63,466.69 "
+              fill="none" id="NodeComposite-Node" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="#A80036"
+                 points="1165.6,462.19,1157.3004,467.4926,1162.843,466.3612,1163.9744,471.9038,1165.6,462.19"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="none" points="1155,496.0755,1159,500.0755,1155,504.0755,1151,500.0755"
+                 style="stroke: #B38D22; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="47"
+              x="1162" y="505.0814">parents
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="0"
+              x="1137.2709" y="527.7204"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="22"
+              x="1135.5488" y="482.2108">1..*
+        </text><!--link Circuit to Node-->
+        <path d="M1358.77,222.08 C1341.91,245.4 1323.45,270.94 1306.41,294.53 " fill="none" id="Circuit-Node"
+              style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="#A80036"
+                 points="1303.46,298.6,1311.9709,293.6437,1306.3864,294.5459,1305.4842,288.9614,1303.46,298.6"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="1339" y="258.0755"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="37"
+              x="1349" y="265.0814">nodes
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="0"
+              x="1353.2175" y="242.3693"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="22"
+              x="1285.5386" y="287.9947">0..*
+        </text><!--link Circuit to Input-->
+        <path d="M1417,222.05 C1417,314.36 1417,463.53 1417,546.47 " fill="none" id="Circuit-Input"
+              style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="#A80036" points="1417,551.83,1421,542.83,1417,546.83,1413,542.83,1417,551.83"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="1420" y="378.0755"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="38"
+              x="1430" y="385.0814">inputs
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="0"
+              x="1416.8156" y="242.3365"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="22"
+              x="1393.5906" y="540.7619">0..*
+        </text><!--link Circuit to Probe-->
+        <path d="M1473.62,222.04 C1566.93,354.77 1750.87,616.43 1833.31,733.7 " fill="none" id="Circuit-Probe"
+              style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="#A80036"
+                 points="1836.2,737.81,1834.2751,728.1511,1833.3155,733.726,1827.7406,732.7663,1836.2,737.81"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="1677" y="498.0755"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="42"
+              x="1687" y="505.0814">probes
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="0"
+              x="1478.6553" y="242.3256"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="22"
+              x="1807.8194" y="726.7393">0..*
+        </text><!--link Node to Input-->
+        <path d="M1318.75,478.18 C1337.95,503.36 1357.99,529.63 1374.92,551.83 " fill="none" id="Node-Input"
+              style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="none" points="1313.17,482.42,1306.61,462.27,1324.31,473.93,1313.17,482.42"
+                 style="stroke: #A80036; stroke-width: 1.0;"/><!--link NodeComposite to Probe-->
+        <path d="M1301.12,676.75 C1493.83,726.54 1554.74,688.75 1739,738 C1744.91,739.58 1750.9,741.34 1756.91,743.25 "
+              fill="none" id="NodeComposite-Probe" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="none" points="1299.25,683.49,1281.74,671.56,1302.87,669.97,1299.25,683.49"
+                 style="stroke: #A80036; stroke-width: 1.0;"/><!--link NodeComposite to AndGate-->
+        <path d="M974.07,624.02 C804.91,641.94 534.4,677.36 307,738 C299.8,739.92 292.47,742.08 285.12,744.4 "
+              fill="none" id="NodeComposite-AndGate" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="none" points="973.57,617.04,994.19,621.92,975.03,630.96,973.57,617.04"
+                 style="stroke: #A80036; stroke-width: 1.0;"/><!--link NodeComposite to NAndGate-->
+        <path d="M974.4,643.04 C867.54,666.58 725.44,700.36 602,738 C595.31,740.04 588.49,742.22 581.63,744.49 "
+              fill="none" id="NodeComposite-NAndGate" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="none" points="973.24,636.13,994.27,638.69,976.23,649.81,973.24,636.13"
+                 style="stroke: #A80036; stroke-width: 1.0;"/><!--link NodeComposite to NOrGate-->
+        <path d="M976.17,684.77 C933.13,704.92 887.8,726.14 848.79,744.41 " fill="none" id="NodeComposite-NOrGate"
+              style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="none" points="973.37,678.35,994.45,676.21,979.3,691.03,973.37,678.35"
+                 style="stroke: #A80036; stroke-width: 1.0;"/><!--link NodeComposite to NotGate-->
+        <path d="M1088.11,694.8 C1078.2,711.83 1068.14,729.14 1059.27,744.39 " fill="none" id="NodeComposite-NotGate"
+              style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="none" points="1082.2,691.02,1098.31,677.25,1094.31,698.06,1082.2,691.02"
+                 style="stroke: #A80036; stroke-width: 1.0;"/><!--link NodeComposite to OrGate-->
+        <path d="M1216.79,691.84 C1233.88,709.81 1251.42,728.26 1266.77,744.39 " fill="none" id="NodeComposite-OrGate"
+              style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="none" points="1211.63,696.57,1202.91,677.25,1221.77,686.92,1211.63,696.57"
+                 style="stroke: #A80036; stroke-width: 1.0;"/><!--link NodeComposite to XOrGate-->
+        <path d="M1300.68,677.23 C1366.32,703.78 1422.22,725.77 1470.43,744.56 " fill="none" id="NodeComposite-XOrGate"
+              style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="none" points="1297.81,683.62,1281.9,669.61,1303.07,670.64,1297.81,683.62"
+                 style="stroke: #A80036; stroke-width: 1.0;"/><!--
 @startuml
 
 package domain {
@@ -123,4 +605,6 @@ OS Version: 5.4.43-1-MANJARO
 Default Encoding: UTF-8
 Language: en
 Country: US
---></g></svg>
+-->
+    </g>
+</svg>

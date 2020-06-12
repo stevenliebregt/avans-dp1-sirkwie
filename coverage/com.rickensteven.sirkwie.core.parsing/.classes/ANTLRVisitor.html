@@ -1,144 +1,141 @@
-
-
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html id="htmlId">
 <head>
-  <title>Coverage Report :: ANTLRVisitor</title>
-  <style type="text/css">
-    @import "../../.css/coverage.css";
-  </style>
+    <title>Coverage Report :: ANTLRVisitor</title>
+    <style type="text/css">
+        @import "../../.css/coverage.css";
+    </style>
 </head>
 
 <body>
 <div class="header"></div>
 
 <div class="content">
-<div class="breadCrumbs">
-    [ <a href="../../index.html">all classes</a> ]
-    [ <a href="../index.html">com.rickensteven.sirkwie.core.parsing</a> ]
-</div>
+    <div class="breadCrumbs">
+        [ <a href="../../index.html">all classes</a> ]
+        [ <a href="../index.html">com.rickensteven.sirkwie.core.parsing</a> ]
+    </div>
 
-<h1>Coverage Summary for Class: ANTLRVisitor (com.rickensteven.sirkwie.core.parsing)</h1>
+    <h1>Coverage Summary for Class: ANTLRVisitor (com.rickensteven.sirkwie.core.parsing)</h1>
 
-<table class="coverageStats">
-<tr>
-  <th class="name">Class</th>
-<th class="coverageStat 
+    <table class="coverageStats">
+        <tr>
+            <th class="name">Class</th>
+            <th class="coverageStat
 ">
-  Class, %
-</th>
-<th class="coverageStat 
+                Class, %
+            </th>
+            <th class="coverageStat
 ">
-  Method, %
-</th>
-<th class="coverageStat 
+                Method, %
+            </th>
+            <th class="coverageStat
 ">
-  Line, %
-</th>
-</tr>
-<tr>
-  <td class="name">ANTLRVisitor</td>
-<td class="coverageStat">
+                Line, %
+            </th>
+        </tr>
+        <tr>
+            <td class="name">ANTLRVisitor</td>
+            <td class="coverageStat">
   <span class="percent">
     100%
   </span>
-  <span class="absValue">
+                <span class="absValue">
     (1/ 1)
   </span>
-</td>
-<td class="coverageStat">
+            </td>
+            <td class="coverageStat">
   <span class="percent">
     100%
   </span>
-  <span class="absValue">
+                <span class="absValue">
     (4/ 4)
   </span>
-</td>
-<td class="coverageStat">
+            </td>
+            <td class="coverageStat">
   <span class="percent">
     100%
   </span>
-  <span class="absValue">
+                <span class="absValue">
     (18/ 18)
   </span>
-</td>
-</tr>
+            </td>
+        </tr>
 
-</table>
+    </table>
 
-<br/>
-<br/>
+    <br/>
+    <br/>
 
 
-<div class="sourceCode"><i>1</i>&nbsp;package com.rickensteven.sirkwie.core.parsing;
-<i>2</i>&nbsp;
-<i>3</i>&nbsp;import com.rickensteven.sirkwie.core.antlr.DP1CircuitBaseVisitor;
-<i>4</i>&nbsp;import com.rickensteven.sirkwie.core.antlr.DP1CircuitParser;
-<i>5</i>&nbsp;import com.rickensteven.sirkwie.core.building.CircuitDefinition;
-<i>6</i>&nbsp;import org.antlr.v4.runtime.tree.ParseTree;
-<i>7</i>&nbsp;import org.antlr.v4.runtime.tree.TerminalNode;
-<i>8</i>&nbsp;
-<i>9</i>&nbsp;import java.util.ArrayList;
-<i>10</i>&nbsp;import java.util.HashMap;
-<i>11</i>&nbsp;import java.util.LinkedHashMap;
-<i>12</i>&nbsp;import java.util.List;
-<i>13</i>&nbsp;
-<i>14</i>&nbsp;public class ANTLRVisitor extends DP1CircuitBaseVisitor&lt;CircuitDefinition&gt;
-<i>15</i>&nbsp;{
-<i>16</i>&nbsp;    private final HashMap&lt;String, String&gt; nodes;
-<i>17</i>&nbsp;    private final HashMap&lt;String, List&lt;String&gt;&gt; edges;
-<i>18</i>&nbsp;    private final CircuitDefinition circuitDefinition;
-<i>19</i>&nbsp;
-<i>20</i>&nbsp;    public ANTLRVisitor()
-<b class="fc"><i>21</i>&nbsp;    {</b>
-<b class="fc"><i>22</i>&nbsp;        nodes = new LinkedHashMap&lt;&gt;();</b>
-<b class="fc"><i>23</i>&nbsp;        edges = new LinkedHashMap&lt;&gt;();</b>
-<b class="fc"><i>24</i>&nbsp;        circuitDefinition = new CircuitDefinition(nodes, edges);</b>
-<b class="fc"><i>25</i>&nbsp;    }</b>
-<i>26</i>&nbsp;
-<i>27</i>&nbsp;    @Override
-<i>28</i>&nbsp;    public CircuitDefinition visit(ParseTree tree)
-<i>29</i>&nbsp;    {
-<b class="fc"><i>30</i>&nbsp;        super.visit(tree);</b>
-<i>31</i>&nbsp;
-<b class="fc"><i>32</i>&nbsp;        return circuitDefinition;</b>
-<i>33</i>&nbsp;    }
-<i>34</i>&nbsp;
-<i>35</i>&nbsp;    @Override
-<i>36</i>&nbsp;    public CircuitDefinition visitNodeDefinition(DP1CircuitParser.NodeDefinitionContext ctx)
-<i>37</i>&nbsp;    {
-<b class="fc"><i>38</i>&nbsp;        String identifier = ctx.IDENTIFIER().toString();</b>
-<b class="fc"><i>39</i>&nbsp;        String descriptor = ctx.NODE_DESCRIPTOR().toString();</b>
-<i>40</i>&nbsp;
-<b class="fc"><i>41</i>&nbsp;        nodes.put(identifier, descriptor);</b>
-<i>42</i>&nbsp;
-<b class="fc"><i>43</i>&nbsp;        return super.visitNodeDefinition(ctx);</b>
-<i>44</i>&nbsp;    }
-<i>45</i>&nbsp;
-<i>46</i>&nbsp;    @Override
-<i>47</i>&nbsp;    public CircuitDefinition visitEdgeDefinition(DP1CircuitParser.EdgeDefinitionContext ctx)
-<i>48</i>&nbsp;    {
-<b class="fc"><i>49</i>&nbsp;        List&lt;TerminalNode&gt; terminalNodes = ctx.IDENTIFIER();</b>
-<i>50</i>&nbsp;
-<b class="fc"><i>51</i>&nbsp;        String identifier = terminalNodes.get(0).toString();</b>
-<b class="fc"><i>52</i>&nbsp;        List&lt;String&gt; edges = new ArrayList&lt;&gt;();</b>
-<i>53</i>&nbsp;
-<b class="fc"><i>54</i>&nbsp;        for (int i = 1; i &lt; terminalNodes.size(); i++) {</b>
-<b class="fc"><i>55</i>&nbsp;            edges.add(terminalNodes.get(i).toString());</b>
-<i>56</i>&nbsp;        }
-<i>57</i>&nbsp;
-<b class="fc"><i>58</i>&nbsp;        this.edges.put(identifier, edges);</b>
-<i>59</i>&nbsp;
-<b class="fc"><i>60</i>&nbsp;        return super.visitEdgeDefinition(ctx);</b>
-<i>61</i>&nbsp;    }
-<i>62</i>&nbsp;}
-</div>
+    <div class="sourceCode"><i>1</i>&nbsp;package com.rickensteven.sirkwie.core.parsing;
+        <i>2</i>&nbsp;
+        <i>3</i>&nbsp;import com.rickensteven.sirkwie.core.antlr.DP1CircuitBaseVisitor;
+        <i>4</i>&nbsp;import com.rickensteven.sirkwie.core.antlr.DP1CircuitParser;
+        <i>5</i>&nbsp;import com.rickensteven.sirkwie.core.building.CircuitDefinition;
+        <i>6</i>&nbsp;import org.antlr.v4.runtime.tree.ParseTree;
+        <i>7</i>&nbsp;import org.antlr.v4.runtime.tree.TerminalNode;
+        <i>8</i>&nbsp;
+        <i>9</i>&nbsp;import java.util.ArrayList;
+        <i>10</i>&nbsp;import java.util.HashMap;
+        <i>11</i>&nbsp;import java.util.LinkedHashMap;
+        <i>12</i>&nbsp;import java.util.List;
+        <i>13</i>&nbsp;
+        <i>14</i>&nbsp;public class ANTLRVisitor extends DP1CircuitBaseVisitor&lt;CircuitDefinition&gt;
+        <i>15</i>&nbsp;{
+        <i>16</i>&nbsp; private final HashMap&lt;String, String&gt; nodes;
+        <i>17</i>&nbsp; private final HashMap&lt;String, List&lt;String&gt;&gt; edges;
+        <i>18</i>&nbsp; private final CircuitDefinition circuitDefinition;
+        <i>19</i>&nbsp;
+        <i>20</i>&nbsp; public ANTLRVisitor()
+        <b class="fc"><i>21</i>&nbsp; {</b>
+        <b class="fc"><i>22</i>&nbsp; nodes = new LinkedHashMap&lt;&gt;();</b>
+        <b class="fc"><i>23</i>&nbsp; edges = new LinkedHashMap&lt;&gt;();</b>
+        <b class="fc"><i>24</i>&nbsp; circuitDefinition = new CircuitDefinition(nodes, edges);</b>
+        <b class="fc"><i>25</i>&nbsp; }</b>
+        <i>26</i>&nbsp;
+        <i>27</i>&nbsp; @Override
+        <i>28</i>&nbsp; public CircuitDefinition visit(ParseTree tree)
+        <i>29</i>&nbsp; {
+        <b class="fc"><i>30</i>&nbsp; super.visit(tree);</b>
+        <i>31</i>&nbsp;
+        <b class="fc"><i>32</i>&nbsp; return circuitDefinition;</b>
+        <i>33</i>&nbsp; }
+        <i>34</i>&nbsp;
+        <i>35</i>&nbsp; @Override
+        <i>36</i>&nbsp; public CircuitDefinition visitNodeDefinition(DP1CircuitParser.NodeDefinitionContext ctx)
+        <i>37</i>&nbsp; {
+        <b class="fc"><i>38</i>&nbsp; String identifier = ctx.IDENTIFIER().toString();</b>
+        <b class="fc"><i>39</i>&nbsp; String descriptor = ctx.NODE_DESCRIPTOR().toString();</b>
+        <i>40</i>&nbsp;
+        <b class="fc"><i>41</i>&nbsp; nodes.put(identifier, descriptor);</b>
+        <i>42</i>&nbsp;
+        <b class="fc"><i>43</i>&nbsp; return super.visitNodeDefinition(ctx);</b>
+        <i>44</i>&nbsp; }
+        <i>45</i>&nbsp;
+        <i>46</i>&nbsp; @Override
+        <i>47</i>&nbsp; public CircuitDefinition visitEdgeDefinition(DP1CircuitParser.EdgeDefinitionContext ctx)
+        <i>48</i>&nbsp; {
+        <b class="fc"><i>49</i>&nbsp; List&lt;TerminalNode&gt; terminalNodes = ctx.IDENTIFIER();</b>
+        <i>50</i>&nbsp;
+        <b class="fc"><i>51</i>&nbsp; String identifier = terminalNodes.get(0).toString();</b>
+        <b class="fc"><i>52</i>&nbsp; List&lt;String&gt; edges = new ArrayList&lt;&gt;();</b>
+        <i>53</i>&nbsp;
+        <b class="fc"><i>54</i>&nbsp; for (int i = 1; i &lt; terminalNodes.size(); i++) {</b>
+        <b class="fc"><i>55</i>&nbsp; edges.add(terminalNodes.get(i).toString());</b>
+        <i>56</i>&nbsp; }
+        <i>57</i>&nbsp;
+        <b class="fc"><i>58</i>&nbsp; this.edges.put(identifier, edges);</b>
+        <i>59</i>&nbsp;
+        <b class="fc"><i>60</i>&nbsp; return super.visitEdgeDefinition(ctx);</b>
+        <i>61</i>&nbsp; }
+        <i>62</i>&nbsp;}
+    </div>
 </div>
 
 <div class="footer">
-    
+
     <div style="float:right;">generated on 2020-06-12 15:00</div>
 </div>
 </body>

@@ -1,9 +1,9 @@
 package com.rickensteven.sirkwie.gui.view.text;
 
 import com.rickensteven.sirkwie.core.domain.Circuit;
-import com.rickensteven.sirkwie.gui.view.AbstractSimulationView;
 import com.rickensteven.sirkwie.gui.Controller;
 import com.rickensteven.sirkwie.gui.ViewModel;
+import com.rickensteven.sirkwie.gui.view.AbstractSimulationView;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;

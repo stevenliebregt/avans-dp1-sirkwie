@@ -2,7 +2,9 @@ package com.rickensteven.sirkwie.core.domain;
 
 import com.rickensteven.sirkwie.core.ISimulationListener;
 
-import java.util.*;
+import java.util.Collection;
+import java.util.LinkedHashSet;
+import java.util.Set;
 
 public class Circuit
 {

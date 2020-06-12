@@ -1,172 +1,169 @@
-
-
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html id="htmlId">
 <head>
-  <title>Coverage Report :: Circuit</title>
-  <style type="text/css">
-    @import "../../.css/coverage.css";
-  </style>
+    <title>Coverage Report :: Circuit</title>
+    <style type="text/css">
+        @import "../../.css/coverage.css";
+    </style>
 </head>
 
 <body>
 <div class="header"></div>
 
 <div class="content">
-<div class="breadCrumbs">
-    [ <a href="../../index.html">all classes</a> ]
-    [ <a href="../index.html">com.rickensteven.sirkwie.core.domain</a> ]
-</div>
+    <div class="breadCrumbs">
+        [ <a href="../../index.html">all classes</a> ]
+        [ <a href="../index.html">com.rickensteven.sirkwie.core.domain</a> ]
+    </div>
 
-<h1>Coverage Summary for Class: Circuit (com.rickensteven.sirkwie.core.domain)</h1>
+    <h1>Coverage Summary for Class: Circuit (com.rickensteven.sirkwie.core.domain)</h1>
 
-<table class="coverageStats">
-<tr>
-  <th class="name">Class</th>
-<th class="coverageStat 
+    <table class="coverageStats">
+        <tr>
+            <th class="name">Class</th>
+            <th class="coverageStat
 ">
-  Class, %
-</th>
-<th class="coverageStat 
+                Class, %
+            </th>
+            <th class="coverageStat
 ">
-  Method, %
-</th>
-<th class="coverageStat 
+                Method, %
+            </th>
+            <th class="coverageStat
 ">
-  Line, %
-</th>
-</tr>
-<tr>
-  <td class="name">Circuit</td>
-<td class="coverageStat">
+                Line, %
+            </th>
+        </tr>
+        <tr>
+            <td class="name">Circuit</td>
+            <td class="coverageStat">
   <span class="percent">
     100%
   </span>
-  <span class="absValue">
+                <span class="absValue">
     (1/ 1)
   </span>
-</td>
-<td class="coverageStat">
+            </td>
+            <td class="coverageStat">
   <span class="percent">
     100%
   </span>
-  <span class="absValue">
+                <span class="absValue">
     (10/ 10)
   </span>
-</td>
-<td class="coverageStat">
+            </td>
+            <td class="coverageStat">
   <span class="percent">
     100%
   </span>
-  <span class="absValue">
+                <span class="absValue">
     (28/ 28)
   </span>
-</td>
-</tr>
+            </td>
+        </tr>
 
-</table>
+    </table>
 
-<br/>
-<br/>
+    <br/>
+    <br/>
 
 
-<div class="sourceCode"><i>1</i>&nbsp;package com.rickensteven.sirkwie.core.domain;
-<i>2</i>&nbsp;
-<i>3</i>&nbsp;import java.util.LinkedHashSet;
-<i>4</i>&nbsp;import java.util.Set;
-<i>5</i>&nbsp;
-<i>6</i>&nbsp;public class Circuit
-<i>7</i>&nbsp;{
-<i>8</i>&nbsp;    private final Set&lt;Node&gt; nodes;
-<i>9</i>&nbsp;    private final Set&lt;Input&gt; inputs;
-<i>10</i>&nbsp;    private final Set&lt;Probe&gt; probes;
-<i>11</i>&nbsp;
-<i>12</i>&nbsp;    public Circuit()
-<b class="fc"><i>13</i>&nbsp;    {</b>
-<b class="fc"><i>14</i>&nbsp;        this.nodes = new LinkedHashSet&lt;&gt;();</b>
-<b class="fc"><i>15</i>&nbsp;        this.inputs = new LinkedHashSet&lt;&gt;();</b>
-<b class="fc"><i>16</i>&nbsp;        this.probes = new LinkedHashSet&lt;&gt;();</b>
-<b class="fc"><i>17</i>&nbsp;    }</b>
-<i>18</i>&nbsp;
-<i>19</i>&nbsp;    /**
-<i>20</i>&nbsp;     * Adds a node to the list of nodes.
-<i>21</i>&nbsp;     *
-<i>22</i>&nbsp;     * @param node The node to add.
-<i>23</i>&nbsp;     */
-<i>24</i>&nbsp;    public void addNode(Node node)
-<i>25</i>&nbsp;    {
-<b class="fc"><i>26</i>&nbsp;        this.nodes.add(node);</b>
-<b class="fc"><i>27</i>&nbsp;    }</b>
-<i>28</i>&nbsp;
-<i>29</i>&nbsp;    /**
-<i>30</i>&nbsp;     * Adds a node to the list of inputs, and to the list of nodes.
-<i>31</i>&nbsp;     *
-<i>32</i>&nbsp;     * @param node The node to add.
-<i>33</i>&nbsp;     * @see #addNode
-<i>34</i>&nbsp;     */
-<i>35</i>&nbsp;    public void addInput(Input node)
-<i>36</i>&nbsp;    {
-<b class="fc"><i>37</i>&nbsp;        this.inputs.add(node);</b>
-<b class="fc"><i>38</i>&nbsp;        this.addNode(node);</b>
-<b class="fc"><i>39</i>&nbsp;    }</b>
-<i>40</i>&nbsp;
-<i>41</i>&nbsp;    /**
-<i>42</i>&nbsp;     * Adds a node to the list of probes, and to the list of nodes.
-<i>43</i>&nbsp;     *
-<i>44</i>&nbsp;     * @param node The node to add.
-<i>45</i>&nbsp;     * @see #addNode
-<i>46</i>&nbsp;     */
-<i>47</i>&nbsp;    public void addProbe(Probe node)
-<i>48</i>&nbsp;    {
-<b class="fc"><i>49</i>&nbsp;        this.probes.add(node);</b>
-<b class="fc"><i>50</i>&nbsp;        this.addNode(node);</b>
-<b class="fc"><i>51</i>&nbsp;    }</b>
-<i>52</i>&nbsp;
-<i>53</i>&nbsp;    public Set&lt;Node&gt; getNodes()
-<i>54</i>&nbsp;    {
-<b class="fc"><i>55</i>&nbsp;        return nodes;</b>
-<i>56</i>&nbsp;    }
-<i>57</i>&nbsp;
-<i>58</i>&nbsp;    public Set&lt;Input&gt; getInputs()
-<i>59</i>&nbsp;    {
-<b class="fc"><i>60</i>&nbsp;        return inputs;</b>
-<i>61</i>&nbsp;    }
-<i>62</i>&nbsp;
-<i>63</i>&nbsp;    public Set&lt;Probe&gt; getProbes()
-<i>64</i>&nbsp;    {
-<b class="fc"><i>65</i>&nbsp;        return probes;</b>
-<i>66</i>&nbsp;    }
-<i>67</i>&nbsp;
-<i>68</i>&nbsp;    public Input getInput(String name)
-<i>69</i>&nbsp;    {
-<b class="fc"><i>70</i>&nbsp;        return this.inputs</b>
-<b class="fc"><i>71</i>&nbsp;                .stream()</b>
-<b class="fc"><i>72</i>&nbsp;                .filter(node -&gt; node.getName().equals(name))</b>
-<b class="fc"><i>73</i>&nbsp;                .findFirst()</b>
-<b class="fc"><i>74</i>&nbsp;                .orElse(null);</b>
-<i>75</i>&nbsp;    }
-<i>76</i>&nbsp;
-<i>77</i>&nbsp;    public Probe getProbe(String name)
-<i>78</i>&nbsp;    {
-<b class="fc"><i>79</i>&nbsp;        return this.probes</b>
-<b class="fc"><i>80</i>&nbsp;                .stream()</b>
-<b class="fc"><i>81</i>&nbsp;                .filter(node -&gt; node.getName().equals(name))</b>
-<b class="fc"><i>82</i>&nbsp;                .findFirst()</b>
-<b class="fc"><i>83</i>&nbsp;                .orElse(null);</b>
-<i>84</i>&nbsp;    }
-<i>85</i>&nbsp;
-<i>86</i>&nbsp;    public void simulate()
-<i>87</i>&nbsp;    {
-<b class="fc"><i>88</i>&nbsp;        probes.forEach(Node::calculate);</b>
-<b class="fc"><i>89</i>&nbsp;    }</b>
-<i>90</i>&nbsp;}
-</div>
+    <div class="sourceCode"><i>1</i>&nbsp;package com.rickensteven.sirkwie.core.domain;
+        <i>2</i>&nbsp;
+        <i>3</i>&nbsp;import java.util.LinkedHashSet;
+        <i>4</i>&nbsp;import java.util.Set;
+        <i>5</i>&nbsp;
+        <i>6</i>&nbsp;public class Circuit
+        <i>7</i>&nbsp;{
+        <i>8</i>&nbsp; private final Set&lt;Node&gt; nodes;
+        <i>9</i>&nbsp; private final Set&lt;Input&gt; inputs;
+        <i>10</i>&nbsp; private final Set&lt;Probe&gt; probes;
+        <i>11</i>&nbsp;
+        <i>12</i>&nbsp; public Circuit()
+        <b class="fc"><i>13</i>&nbsp; {</b>
+        <b class="fc"><i>14</i>&nbsp; this.nodes = new LinkedHashSet&lt;&gt;();</b>
+        <b class="fc"><i>15</i>&nbsp; this.inputs = new LinkedHashSet&lt;&gt;();</b>
+        <b class="fc"><i>16</i>&nbsp; this.probes = new LinkedHashSet&lt;&gt;();</b>
+        <b class="fc"><i>17</i>&nbsp; }</b>
+        <i>18</i>&nbsp;
+        <i>19</i>&nbsp; /**
+        <i>20</i>&nbsp; * Adds a node to the list of nodes.
+        <i>21</i>&nbsp; *
+        <i>22</i>&nbsp; * @param node The node to add.
+        <i>23</i>&nbsp; */
+        <i>24</i>&nbsp; public void addNode(Node node)
+        <i>25</i>&nbsp; {
+        <b class="fc"><i>26</i>&nbsp; this.nodes.add(node);</b>
+        <b class="fc"><i>27</i>&nbsp; }</b>
+        <i>28</i>&nbsp;
+        <i>29</i>&nbsp; /**
+        <i>30</i>&nbsp; * Adds a node to the list of inputs, and to the list of nodes.
+        <i>31</i>&nbsp; *
+        <i>32</i>&nbsp; * @param node The node to add.
+        <i>33</i>&nbsp; * @see #addNode
+        <i>34</i>&nbsp; */
+        <i>35</i>&nbsp; public void addInput(Input node)
+        <i>36</i>&nbsp; {
+        <b class="fc"><i>37</i>&nbsp; this.inputs.add(node);</b>
+        <b class="fc"><i>38</i>&nbsp; this.addNode(node);</b>
+        <b class="fc"><i>39</i>&nbsp; }</b>
+        <i>40</i>&nbsp;
+        <i>41</i>&nbsp; /**
+        <i>42</i>&nbsp; * Adds a node to the list of probes, and to the list of nodes.
+        <i>43</i>&nbsp; *
+        <i>44</i>&nbsp; * @param node The node to add.
+        <i>45</i>&nbsp; * @see #addNode
+        <i>46</i>&nbsp; */
+        <i>47</i>&nbsp; public void addProbe(Probe node)
+        <i>48</i>&nbsp; {
+        <b class="fc"><i>49</i>&nbsp; this.probes.add(node);</b>
+        <b class="fc"><i>50</i>&nbsp; this.addNode(node);</b>
+        <b class="fc"><i>51</i>&nbsp; }</b>
+        <i>52</i>&nbsp;
+        <i>53</i>&nbsp; public Set&lt;Node&gt; getNodes()
+        <i>54</i>&nbsp; {
+        <b class="fc"><i>55</i>&nbsp; return nodes;</b>
+        <i>56</i>&nbsp; }
+        <i>57</i>&nbsp;
+        <i>58</i>&nbsp; public Set&lt;Input&gt; getInputs()
+        <i>59</i>&nbsp; {
+        <b class="fc"><i>60</i>&nbsp; return inputs;</b>
+        <i>61</i>&nbsp; }
+        <i>62</i>&nbsp;
+        <i>63</i>&nbsp; public Set&lt;Probe&gt; getProbes()
+        <i>64</i>&nbsp; {
+        <b class="fc"><i>65</i>&nbsp; return probes;</b>
+        <i>66</i>&nbsp; }
+        <i>67</i>&nbsp;
+        <i>68</i>&nbsp; public Input getInput(String name)
+        <i>69</i>&nbsp; {
+        <b class="fc"><i>70</i>&nbsp; return this.inputs</b>
+        <b class="fc"><i>71</i>&nbsp; .stream()</b>
+        <b class="fc"><i>72</i>&nbsp; .filter(node -&gt; node.getName().equals(name))</b>
+        <b class="fc"><i>73</i>&nbsp; .findFirst()</b>
+        <b class="fc"><i>74</i>&nbsp; .orElse(null);</b>
+        <i>75</i>&nbsp; }
+        <i>76</i>&nbsp;
+        <i>77</i>&nbsp; public Probe getProbe(String name)
+        <i>78</i>&nbsp; {
+        <b class="fc"><i>79</i>&nbsp; return this.probes</b>
+        <b class="fc"><i>80</i>&nbsp; .stream()</b>
+        <b class="fc"><i>81</i>&nbsp; .filter(node -&gt; node.getName().equals(name))</b>
+        <b class="fc"><i>82</i>&nbsp; .findFirst()</b>
+        <b class="fc"><i>83</i>&nbsp; .orElse(null);</b>
+        <i>84</i>&nbsp; }
+        <i>85</i>&nbsp;
+        <i>86</i>&nbsp; public void simulate()
+        <i>87</i>&nbsp; {
+        <b class="fc"><i>88</i>&nbsp; probes.forEach(Node::calculate);</b>
+        <b class="fc"><i>89</i>&nbsp; }</b>
+        <i>90</i>&nbsp;}
+    </div>
 </div>
 
 <div class="footer">
-    
+
     <div style="float:right;">generated on 2020-06-12 15:00</div>
 </div>
 </body>

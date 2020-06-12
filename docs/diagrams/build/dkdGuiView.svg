@@ -1,4 +1,547 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="915px" preserveAspectRatio="none" style="width:2345px;height:915px;" version="1.1" viewBox="0 0 2345 915" width="2345px" zoomAndPan="magnify"><defs><filter height="300%" id="fs6h357zubvet" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--cluster view--><polygon fill="#FFFFFF" filter="url(#fs6h357zubvet)" points="22,24,62,24,69,46.2969,2323,46.2969,2323,903,22,903,22,24" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="22" x2="69" y1="46.2969" y2="46.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="34" x="26" y="38.9951">view</text><!--cluster graphstream--><polygon fill="#FFFFFF" filter="url(#fs6h357zubvet)" points="1101,285,1203,285,1210,307.2969,1885,307.2969,1885,879,1101,879,1101,285" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="1101" x2="1210" y1="307.2969" y2="307.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="96" x="1105" y="299.9951">graphstream</text><!--cluster text--><polygon fill="#FFFFFF" filter="url(#fs6h357zubvet)" points="1909,311,1945,311,1952,333.2969,2299,333.2969,2299,714,1909,714,1909,311" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="1909" x2="1952" y1="333.2969" y2="333.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="30" x="1913" y="325.9951">text</text><!--class AbstractSimulationView--><rect fill="#FEFECE" filter="url(#fs6h357zubvet)" height="163.2422" id="AbstractSimulationView" style="stroke: #A80036; stroke-width: 1.5;" width="378" x="598" y="59"/><ellipse cx="716.75" cy="75" fill="#A9DCDF" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M716.8594,70.0938 L715.7031,75.1719 L718.0313,75.1719 L716.8594,70.0938 Z M715.375,67.8594 L718.3594,67.8594 L721.7188,80.25 L719.2656,80.25 L718.5,77.1875 L715.2188,77.1875 L714.4688,80.25 L712.0313,80.25 L715.375,67.8594 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="132" x="737.25" y="79.1543">AbstractSimulationView</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="599" x2="975" y1="91" y2="91"/><polygon fill="none" points="609,97.9023,613,101.9023,609,105.9023,605,101.9023" style="stroke: #B38D22; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="54" x="618" y="105.2104">view: Pane</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="599" x2="975" y1="111.8047" y2="111.8047"/><ellipse cx="609" cy="123.707" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="352" x="618" y="126.0151">AbstractSimulationView(controller: Controller, viewModel: ViewModel)</text><ellipse cx="609" cy="136.5117" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="79" x="618" y="138.8198">getView(): Pane</text><polygon fill="#FFFF44" points="609,144.3164,613,148.3164,609,152.3164,605,148.3164" style="stroke: #B38D22; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="113" x="618" y="151.6245">update(circuit: Circuit)</text><polygon fill="#FFFF44" points="609,157.1211,613,161.1211,609,165.1211,605,161.1211" style="stroke: #B38D22; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="103" x="618" y="164.4292">connectViewModel()</text><polygon fill="#FFFF44" points="609,169.9258,613,173.9258,609,177.9258,605,173.9258" style="stroke: #B38D22; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="58" x="618" y="177.2339">resetView()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="0" x="621" y="190.0386"/><polygon fill="#FFFF44" points="609,195.5352,613,199.5352,609,203.5352,605,199.5352" style="stroke: #B38D22; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="46" x="618" y="202.8433">setupUi()</text><polygon fill="#FFFF44" points="609,208.3398,613,212.3398,609,216.3398,605,212.3398" style="stroke: #B38D22; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="104" x="618" y="215.6479">draw(circuit: Circuit)</text><!--class Controller--><rect fill="#FEFECE" filter="url(#fs6h357zubvet)" height="48" id="Controller" style="stroke: #A80036; stroke-width: 1.5;" width="86" x="38" y="365"/><ellipse cx="53" cy="381" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M55.4688,387.1406 Q54.8906,387.4375 54.25,387.5781 Q53.6094,387.7344 52.9063,387.7344 Q50.4063,387.7344 49.0781,386.0938 Q47.7656,384.4375 47.7656,381.3125 Q47.7656,378.1875 49.0781,376.5313 Q50.4063,374.875 52.9063,374.875 Q53.6094,374.875 54.25,375.0313 Q54.9063,375.1875 55.4688,375.4844 L55.4688,378.2031 Q54.8438,377.625 54.25,377.3594 Q53.6563,377.0781 53.0313,377.0781 Q51.6875,377.0781 51,378.1563 Q50.3125,379.2188 50.3125,381.3125 Q50.3125,383.4063 51,384.4844 Q51.6875,385.5469 53.0313,385.5469 Q53.6563,385.5469 54.25,385.2813 Q54.8438,385 55.4688,384.4219 L55.4688,387.1406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="54" x="67" y="385.1543">Controller</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="39" x2="123" y1="397" y2="397"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="39" x2="123" y1="405" y2="405"/><!--class ViewModel--><rect fill="#FEFECE" filter="url(#fs6h357zubvet)" height="48" id="ViewModel" style="stroke: #A80036; stroke-width: 1.5;" width="93" x="159.5" y="365"/><ellipse cx="174.5" cy="381" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M176.9688,387.1406 Q176.3906,387.4375 175.75,387.5781 Q175.1094,387.7344 174.4063,387.7344 Q171.9063,387.7344 170.5781,386.0938 Q169.2656,384.4375 169.2656,381.3125 Q169.2656,378.1875 170.5781,376.5313 Q171.9063,374.875 174.4063,374.875 Q175.1094,374.875 175.75,375.0313 Q176.4063,375.1875 176.9688,375.4844 L176.9688,378.2031 Q176.3438,377.625 175.75,377.3594 Q175.1563,377.0781 174.5313,377.0781 Q173.1875,377.0781 172.5,378.1563 Q171.8125,379.2188 171.8125,381.3125 Q171.8125,383.4063 172.5,384.4844 Q173.1875,385.5469 174.5313,385.5469 Q175.1563,385.5469 175.75,385.2813 Q176.3438,385 176.9688,384.4219 L176.9688,387.1406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="61" x="188.5" y="385.1543">ViewModel</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="160.5" x2="251.5" y1="397" y2="397"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="160.5" x2="251.5" y1="405" y2="405"/><!--class ImageLoader--><rect fill="#FEFECE" filter="url(#fs6h357zubvet)" height="48" id="ImageLoader" style="stroke: #A80036; stroke-width: 1.5;" width="105" x="977.5" y="365"/><ellipse cx="992.5" cy="381" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M994.9688,387.1406 Q994.3906,387.4375 993.75,387.5781 Q993.1094,387.7344 992.4063,387.7344 Q989.9063,387.7344 988.5781,386.0938 Q987.2656,384.4375 987.2656,381.3125 Q987.2656,378.1875 988.5781,376.5313 Q989.9063,374.875 992.4063,374.875 Q993.1094,374.875 993.75,375.0313 Q994.4063,375.1875 994.9688,375.4844 L994.9688,378.2031 Q994.3438,377.625 993.75,377.3594 Q993.1563,377.0781 992.5313,377.0781 Q991.1875,377.0781 990.5,378.1563 Q989.8125,379.2188 989.8125,381.3125 Q989.8125,383.4063 990.5,384.4844 Q991.1875,385.5469 992.5313,385.5469 Q993.1563,385.5469 993.75,385.2813 Q994.3438,385 994.9688,384.4219 L994.9688,387.1406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="73" x="1006.5" y="385.1543">ImageLoader</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="978.5" x2="1081.5" y1="397" y2="397"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="978.5" x2="1081.5" y1="405" y2="405"/><!--class InputView--><rect fill="#FEFECE" filter="url(#fs6h357zubvet)" height="137.6328" id="InputView" style="stroke: #A80036; stroke-width: 1.5;" width="308" x="288" y="320"/><ellipse cx="410.25" cy="336" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M412.7188,342.1406 Q412.1406,342.4375 411.5,342.5781 Q410.8594,342.7344 410.1563,342.7344 Q407.6563,342.7344 406.3281,341.0938 Q405.0156,339.4375 405.0156,336.3125 Q405.0156,333.1875 406.3281,331.5313 Q407.6563,329.875 410.1563,329.875 Q410.8594,329.875 411.5,330.0313 Q412.1563,330.1875 412.7188,330.4844 L412.7188,333.2031 Q412.0938,332.625 411.5,332.3594 Q410.9063,332.0781 410.2813,332.0781 Q408.9375,332.0781 408.25,333.1563 Q407.5625,334.2188 407.5625,336.3125 Q407.5625,338.4063 408.25,339.4844 Q408.9375,340.5469 410.2813,340.5469 Q410.9063,340.5469 411.5,340.2813 Q412.0938,340 412.7188,339.4219 L412.7188,342.1406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="55" x="430.75" y="340.1543">InputView</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="289" x2="595" y1="352" y2="352"/><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="296" y="360.9023"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="54" x="308" y="366.2104">WIDTH: int</text><line style="stroke: #000000; stroke-width: 1.0;" x1="308" x2="362" y1="368.2104" y2="368.2104"/><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="296" y="373.707"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="176" x="308" y="379.0151">inputButtons: Map&lt;String, Button&gt;</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="289" x2="595" y1="385.6094" y2="385.6094"/><ellipse cx="299" cy="397.5117" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="282" x="308" y="399.8198">InputView(controller: Controller, viewModel: ViewModel)</text><polygon fill="#FFFF44" points="299,405.3164,303,409.3164,299,413.3164,295,409.3164" style="stroke: #B38D22; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="46" x="308" y="412.6245">setupUi()</text><polygon fill="#FFFF44" points="299,418.1211,303,422.1211,299,426.1211,295,422.1211" style="stroke: #B38D22; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="104" x="308" y="425.4292">draw(circuit: Circuit)</text><polygon fill="#FFFF44" points="299,430.9258,303,434.9258,299,438.9258,295,434.9258" style="stroke: #B38D22; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="113" x="308" y="438.2339">update(circuit: Circuit)</text><rect fill="#F24D5C" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="296" y="445.7305"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="214" x="308" y="451.0386">getImageView(value: boolean): ImageView</text><!--class ProbeView--><rect fill="#FEFECE" filter="url(#fs6h357zubvet)" height="137.6328" id="ProbeView" style="stroke: #A80036; stroke-width: 1.5;" width="311" x="631.5" y="320"/><ellipse cx="753.25" cy="336" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M755.7188,342.1406 Q755.1406,342.4375 754.5,342.5781 Q753.8594,342.7344 753.1563,342.7344 Q750.6563,342.7344 749.3281,341.0938 Q748.0156,339.4375 748.0156,336.3125 Q748.0156,333.1875 749.3281,331.5313 Q750.6563,329.875 753.1563,329.875 Q753.8594,329.875 754.5,330.0313 Q755.1563,330.1875 755.7188,330.4844 L755.7188,333.2031 Q755.0938,332.625 754.5,332.3594 Q753.9063,332.0781 753.2813,332.0781 Q751.9375,332.0781 751.25,333.1563 Q750.5625,334.2188 750.5625,336.3125 Q750.5625,338.4063 751.25,339.4844 Q751.9375,340.5469 753.2813,340.5469 Q753.9063,340.5469 754.5,340.2813 Q755.0938,340 755.7188,339.4219 L755.7188,342.1406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="59" x="773.75" y="340.1543">ProbeView</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="632.5" x2="941.5" y1="352" y2="352"/><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="639.5" y="360.9023"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="54" x="651.5" y="366.2104">WIDTH: int</text><line style="stroke: #000000; stroke-width: 1.0;" x1="651.5" x2="705.5" y1="368.2104" y2="368.2104"/><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="639.5" y="373.707"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="179" x="651.5" y="379.0151">probeButtons: Map&lt;String, Button&gt;</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="632.5" x2="941.5" y1="385.6094" y2="385.6094"/><ellipse cx="642.5" cy="397.5117" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="285" x="651.5" y="399.8198">ProbeView(controller: Controller, viewModel: ViewModel)</text><polygon fill="#FFFF44" points="642.5,405.3164,646.5,409.3164,642.5,413.3164,638.5,409.3164" style="stroke: #B38D22; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="46" x="651.5" y="412.6245">setupUi()</text><polygon fill="#FFFF44" points="642.5,418.1211,646.5,422.1211,642.5,426.1211,638.5,422.1211" style="stroke: #B38D22; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="104" x="651.5" y="425.4292">draw(circuit: Circuit)</text><polygon fill="#FFFF44" points="642.5,430.9258,646.5,434.9258,642.5,438.9258,638.5,434.9258" style="stroke: #B38D22; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="113" x="651.5" y="438.2339">update(circuit: Circuit)</text><rect fill="#F24D5C" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="639.5" y="445.7305"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="214" x="651.5" y="451.0386">getImageView(value: boolean): ImageView</text><!--class MainView--><rect fill="#FEFECE" filter="url(#fs6h357zubvet)" height="137.6328" id="MainView" style="stroke: #A80036; stroke-width: 1.5;" width="307" x="42.5" y="71.5"/><ellipse cx="164.75" cy="87.5" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M167.2188,93.6406 Q166.6406,93.9375 166,94.0781 Q165.3594,94.2344 164.6563,94.2344 Q162.1563,94.2344 160.8281,92.5938 Q159.5156,90.9375 159.5156,87.8125 Q159.5156,84.6875 160.8281,83.0313 Q162.1563,81.375 164.6563,81.375 Q165.3594,81.375 166,81.5313 Q166.6563,81.6875 167.2188,81.9844 L167.2188,84.7031 Q166.5938,84.125 166,83.8594 Q165.4063,83.5781 164.7813,83.5781 Q163.4375,83.5781 162.75,84.6563 Q162.0625,85.7188 162.0625,87.8125 Q162.0625,89.9063 162.75,90.9844 Q163.4375,92.0469 164.7813,92.0469 Q165.4063,92.0469 166,91.7813 Q166.5938,91.5 167.2188,90.9219 L167.2188,93.6406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="54" x="185.25" y="91.6543">MainView</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="43.5" x2="348.5" y1="103.5" y2="103.5"/><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="50.5" y="112.4023"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="87" x="62.5" y="117.7104">view: BorderPane</text><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="50.5" y="125.207"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="115" x="62.5" y="130.5151">simulateButton: Button</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="43.5" x2="348.5" y1="137.1094" y2="137.1094"/><ellipse cx="53.5" cy="149.0117" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="281" x="62.5" y="151.3198">MainView(controller: Controller, viewModel: ViewModel)</text><ellipse cx="53.5" cy="161.8164" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="87" x="62.5" y="164.1245">getView(): Parent</text><rect fill="#F24D5C" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="50.5" y="171.6211"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="46" x="62.5" y="176.9292">setupUi()</text><rect fill="#F24D5C" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="50.5" y="184.4258"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="103" x="62.5" y="189.7339">connectViewModel()</text><rect fill="#F24D5C" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="50.5" y="197.2305"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="126" x="62.5" y="202.5386">setupUiToolbar(): Toolbar</text><!--class GraphNodeData--><rect fill="#FEFECE" filter="url(#fs6h357zubvet)" height="86.4141" id="GraphNodeData" style="stroke: #A80036; stroke-width: 1.5;" width="240" x="1267" y="777"/><ellipse cx="1337.75" cy="793" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M1340.2188,799.1406 Q1339.6406,799.4375 1339,799.5781 Q1338.3594,799.7344 1337.6563,799.7344 Q1335.1563,799.7344 1333.8281,798.0938 Q1332.5156,796.4375 1332.5156,793.3125 Q1332.5156,790.1875 1333.8281,788.5313 Q1335.1563,786.875 1337.6563,786.875 Q1338.3594,786.875 1339,787.0313 Q1339.6563,787.1875 1340.2188,787.4844 L1340.2188,790.2031 Q1339.5938,789.625 1339,789.3594 Q1338.4063,789.0781 1337.7813,789.0781 Q1336.4375,789.0781 1335.75,790.1563 Q1335.0625,791.2188 1335.0625,793.3125 Q1335.0625,795.4063 1335.75,796.4844 Q1336.4375,797.5469 1337.7813,797.5469 Q1338.4063,797.5469 1339,797.2813 Q1339.5938,797 1340.2188,796.4219 L1340.2188,799.1406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="90" x="1358.25" y="797.1543">GraphNodeData</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1268" x2="1506" y1="809" y2="809"/><ellipse cx="1278" cy="820.9023" fill="none" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="63" x="1287" y="823.2104">name: String</text><ellipse cx="1278" cy="833.707" fill="none" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="57" x="1287" y="836.0151">type: String</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1268" x2="1506" y1="842.6094" y2="842.6094"/><ellipse cx="1278" cy="854.5117" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="214" x="1287" y="856.8198">GraphNodeData(name: String, type: String)</text><!--class GraphNodeDrawingVisitor--><rect fill="#FEFECE" filter="url(#fs6h357zubvet)" height="150.4375" id="GraphNodeDrawingVisitor" style="stroke: #A80036; stroke-width: 1.5;" width="176" x="1299" y="541.5"/><ellipse cx="1314" cy="557.5" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M1316.4688,563.6406 Q1315.8906,563.9375 1315.25,564.0781 Q1314.6094,564.2344 1313.9063,564.2344 Q1311.4063,564.2344 1310.0781,562.5938 Q1308.7656,560.9375 1308.7656,557.8125 Q1308.7656,554.6875 1310.0781,553.0313 Q1311.4063,551.375 1313.9063,551.375 Q1314.6094,551.375 1315.25,551.5313 Q1315.9063,551.6875 1316.4688,551.9844 L1316.4688,554.7031 Q1315.8438,554.125 1315.25,553.8594 Q1314.6563,553.5781 1314.0313,553.5781 Q1312.6875,553.5781 1312,554.6563 Q1311.3125,555.7188 1311.3125,557.8125 Q1311.3125,559.9063 1312,560.9844 Q1312.6875,562.0469 1314.0313,562.0469 Q1314.6563,562.0469 1315.25,561.7813 Q1315.8438,561.5 1316.4688,560.9219 L1316.4688,563.6406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="144" x="1328" y="561.6543">GraphNodeDrawingVisitor</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1300" x2="1474" y1="573.5" y2="573.5"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="1300" x2="1474" y1="581.5" y2="581.5"/><ellipse cx="1310" cy="593.4023" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="138" x="1319" y="595.7104">getValue(): GraphNodeData</text><ellipse cx="1310" cy="606.207" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="87" x="1319" y="608.5151">visit(node: Probe)</text><ellipse cx="1310" cy="619.0117" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="84" x="1319" y="621.3198">visit(node: Input)</text><ellipse cx="1310" cy="631.8164" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="102" x="1319" y="634.1245">visit(node: AndGate)</text><ellipse cx="1310" cy="644.6211" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="110" x="1319" y="646.9292">visit(node: NAndGate)</text><ellipse cx="1310" cy="657.4258" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="103" x="1319" y="659.7339">visit(node: NOrGate)</text><ellipse cx="1310" cy="670.2305" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="95" x="1319" y="672.5386">visit(node: OrGate)</text><ellipse cx="1310" cy="683.0352" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="102" x="1319" y="685.3433">visit(node: XOrGate)</text><!--class INodeVisitor--><rect fill="#FEFECE" filter="url(#fs6h357zubvet)" height="48" id="INodeVisitor" style="stroke: #A80036; stroke-width: 1.5;" width="99" x="1769.5" y="365"/><ellipse cx="1784.5" cy="381" fill="#B4A7E5" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M1780.9219,376.7656 L1780.9219,374.6094 L1788.3125,374.6094 L1788.3125,376.7656 L1785.8438,376.7656 L1785.8438,384.8438 L1788.3125,384.8438 L1788.3125,387 L1780.9219,387 L1780.9219,384.8438 L1783.3906,384.8438 L1783.3906,376.7656 L1780.9219,376.7656 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="67" x="1798.5" y="385.1543">INodeVisitor</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1770.5" x2="1867.5" y1="397" y2="397"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="1770.5" x2="1867.5" y1="405" y2="405"/><!--class GraphstreamSimulationView--><rect fill="#FEFECE" filter="url(#fs6h357zubvet)" height="137.6328" id="GraphstreamSimulationView" style="stroke: #A80036; stroke-width: 1.5;" width="401" x="1333.5" y="320"/><ellipse cx="1450.25" cy="336" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M1452.7188,342.1406 Q1452.1406,342.4375 1451.5,342.5781 Q1450.8594,342.7344 1450.1563,342.7344 Q1447.6563,342.7344 1446.3281,341.0938 Q1445.0156,339.4375 1445.0156,336.3125 Q1445.0156,333.1875 1446.3281,331.5313 Q1447.6563,329.875 1450.1563,329.875 Q1450.8594,329.875 1451.5,330.0313 Q1452.1563,330.1875 1452.7188,330.4844 L1452.7188,333.2031 Q1452.0938,332.625 1451.5,332.3594 Q1450.9063,332.0781 1450.2813,332.0781 Q1448.9375,332.0781 1448.25,333.1563 Q1447.5625,334.2188 1447.5625,336.3125 Q1447.5625,338.4063 1448.25,339.4844 Q1448.9375,340.5469 1450.2813,340.5469 Q1450.9063,340.5469 1451.5,340.2813 Q1452.0938,340 1452.7188,339.4219 L1452.7188,342.1406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="159" x="1470.75" y="340.1543">GraphstreamSimulationView</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1334.5" x2="1733.5" y1="352" y2="352"/><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="1341.5" y="360.9023"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="89" x="1353.5" y="366.2104">graph: MultiGraph</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1334.5" x2="1733.5" y1="372.8047" y2="372.8047"/><ellipse cx="1344.5" cy="384.707" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="375" x="1353.5" y="387.0151">GraphstreamSimulationView(controller: Controller, viewModel: ViewModel)</text><polygon fill="#FFFF44" points="1344.5,392.5117,1348.5,396.5117,1344.5,400.5117,1340.5,396.5117" style="stroke: #B38D22; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="46" x="1353.5" y="399.8198">setupUi()</text><polygon fill="#FFFF44" points="1344.5,405.3164,1348.5,409.3164,1344.5,413.3164,1340.5,409.3164" style="stroke: #B38D22; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="104" x="1353.5" y="412.6245">draw(circuit: Circuit)</text><rect fill="#F24D5C" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="1341.5" y="420.1211"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="135" x="1353.5" y="425.4292">drawNodes(circuit: Circuit)</text><rect fill="#F24D5C" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="1341.5" y="432.9258"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="133" x="1353.5" y="438.2339">drawEdges(circuit: Circuit)</text><rect fill="#F24D5C" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="1341.5" y="445.7305"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="112" x="1353.5" y="451.0386">getStyleSheet(): String</text><!--class GraphNodeSimulationView--><rect fill="#FEFECE" filter="url(#fs6h357zubvet)" height="48" id="GraphNodeSimulationView" style="stroke: #A80036; stroke-width: 1.5;" width="181" x="1117.5" y="365"/><ellipse cx="1132.5" cy="381" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M1134.9688,387.1406 Q1134.3906,387.4375 1133.75,387.5781 Q1133.1094,387.7344 1132.4063,387.7344 Q1129.9063,387.7344 1128.5781,386.0938 Q1127.2656,384.4375 1127.2656,381.3125 Q1127.2656,378.1875 1128.5781,376.5313 Q1129.9063,374.875 1132.4063,374.875 Q1133.1094,374.875 1133.75,375.0313 Q1134.4063,375.1875 1134.9688,375.4844 L1134.9688,378.2031 Q1134.3438,377.625 1133.75,377.3594 Q1133.1563,377.0781 1132.5313,377.0781 Q1131.1875,377.0781 1130.5,378.1563 Q1129.8125,379.2188 1129.8125,381.3125 Q1129.8125,383.4063 1130.5,384.4844 Q1131.1875,385.5469 1132.5313,385.5469 Q1133.1563,385.5469 1133.75,385.2813 Q1134.3438,385 1134.9688,384.4219 L1134.9688,387.1406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="149" x="1146.5" y="385.1543">GraphNodeSimulationView</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1118.5" x2="1297.5" y1="397" y2="397"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="1118.5" x2="1297.5" y1="405" y2="405"/><!--class TextNodeDrawingVisitor--><rect fill="#FEFECE" filter="url(#fs6h357zubvet)" height="163.2422" id="TextNodeDrawingVisitor" style="stroke: #A80036; stroke-width: 1.5;" width="167" x="1972.5" y="535"/><ellipse cx="1987.5" cy="551" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M1989.9688,557.1406 Q1989.3906,557.4375 1988.75,557.5781 Q1988.1094,557.7344 1987.4063,557.7344 Q1984.9063,557.7344 1983.5781,556.0938 Q1982.2656,554.4375 1982.2656,551.3125 Q1982.2656,548.1875 1983.5781,546.5313 Q1984.9063,544.875 1987.4063,544.875 Q1988.1094,544.875 1988.75,545.0313 Q1989.4063,545.1875 1989.9688,545.4844 L1989.9688,548.2031 Q1989.3438,547.625 1988.75,547.3594 Q1988.1563,547.0781 1987.5313,547.0781 Q1986.1875,547.0781 1985.5,548.1563 Q1984.8125,549.2188 1984.8125,551.3125 Q1984.8125,553.4063 1985.5,554.4844 Q1986.1875,555.5469 1987.5313,555.5469 Q1988.1563,555.5469 1988.75,555.2813 Q1989.3438,555 1989.9688,554.4219 L1989.9688,557.1406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="135" x="2001.5" y="555.1543">TextNodeDrawingVisitor</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1973.5" x2="2138.5" y1="567" y2="567"/><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="1980.5" y="575.9023"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="62" x="1992.5" y="581.2104">value: String</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1973.5" x2="2138.5" y1="587.8047" y2="587.8047"/><ellipse cx="1983.5" cy="599.707" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="87" x="1992.5" y="602.0151">getValue(): String</text><ellipse cx="1983.5" cy="612.5117" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="87" x="1992.5" y="614.8198">visit(node: Probe)</text><ellipse cx="1983.5" cy="625.3164" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="84" x="1992.5" y="627.6245">visit(node: Input)</text><ellipse cx="1983.5" cy="638.1211" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="102" x="1992.5" y="640.4292">visit(node: AndGate)</text><ellipse cx="1983.5" cy="650.9258" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="110" x="1992.5" y="653.2339">visit(node: NAndGate)</text><ellipse cx="1983.5" cy="663.7305" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="103" x="1992.5" y="666.0386">visit(node: NOrGate)</text><ellipse cx="1983.5" cy="676.5352" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="95" x="1992.5" y="678.8433">visit(node: OrGate)</text><ellipse cx="1983.5" cy="689.3398" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="102" x="1992.5" y="691.6479">visit(node: XOrGate)</text><!--class TextSimulationView--><rect fill="#FEFECE" filter="url(#fs6h357zubvet)" height="86.4141" id="TextSimulationView" style="stroke: #A80036; stroke-width: 1.5;" width="358" x="1925" y="346"/><ellipse cx="2044.25" cy="362" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M2046.7188,368.1406 Q2046.1406,368.4375 2045.5,368.5781 Q2044.8594,368.7344 2044.1563,368.7344 Q2041.6563,368.7344 2040.3281,367.0938 Q2039.0156,365.4375 2039.0156,362.3125 Q2039.0156,359.1875 2040.3281,357.5313 Q2041.6563,355.875 2044.1563,355.875 Q2044.8594,355.875 2045.5,356.0313 Q2046.1563,356.1875 2046.7188,356.4844 L2046.7188,359.2031 Q2046.0938,358.625 2045.5,358.3594 Q2044.9063,358.0781 2044.2813,358.0781 Q2042.9375,358.0781 2042.25,359.1563 Q2041.5625,360.2188 2041.5625,362.3125 Q2041.5625,364.4063 2042.25,365.4844 Q2042.9375,366.5469 2044.2813,366.5469 Q2044.9063,366.5469 2045.5,366.2813 Q2046.0938,366 2046.7188,365.4219 L2046.7188,368.1406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="111" x="2064.75" y="366.1543">TextSimulationView</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1926" x2="2282" y1="378" y2="378"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="1926" x2="2282" y1="386" y2="386"/><ellipse cx="1936" cy="397.9023" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="332" x="1945" y="400.2104">TextSimulationView(controller: Controller, viewModel: ViewModel)</text><polygon fill="#FFFF44" points="1936,405.707,1940,409.707,1936,413.707,1932,409.707" style="stroke: #B38D22; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="46" x="1945" y="413.0151">setupUi()</text><polygon fill="#FFFF44" points="1936,418.5117,1940,422.5117,1936,426.5117,1932,422.5117" style="stroke: #B38D22; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="104" x="1945" y="425.8198">draw(circuit: Circuit)</text><!--link AbstractSimulationView to Controller--><path d="M597.76,190.3 C460,225.75 296.13,267.75 288,269 C271.94,271.47 155.75,268.35 142,277 C112.69,295.44 96.35,333.21 88.12,359.54 " fill="none" id="AbstractSimulationView-Controller" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="86.58,364.64,93.0077,357.1777,88.0233,359.8528,85.3482,354.8685,86.58,364.64" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="none" points="361,256.0755,365,260.0755,361,264.0755,357,260.0755" style="stroke: #B38D22; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="58" x="368" y="265.0814">controller</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="88.9151" y="353.9739">1</text><!--link AbstractSimulationView to ViewModel--><path d="M598.46,222.15 C547.28,240.77 491.27,258.25 438,269 C419.79,272.67 286.89,267.38 271,277 C240.79,295.29 223.1,333.35 213.99,359.77 " fill="none" id="AbstractSimulationView-ViewModel" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="212.38,364.56,219.0274,357.2928,213.9654,359.818,211.4402,354.7561,212.38,364.56" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="none" points="512,256.0755,516,260.0755,512,264.0755,508,260.0755" style="stroke: #B38D22; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="65" x="519" y="265.0814">viewModel</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="204.9601" y="353.8744">1</text><!--link AbstractSimulationView to ImageLoader--><path d="M901.73,222.25 C922.26,239.16 942.61,257.75 960,277 C983.05,302.52 1003.25,336.53 1015.95,360.15 " fill="none" id="AbstractSimulationView-ImageLoader" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="1018.39,364.73,1017.7039,354.9051,1016.046,360.3135,1010.6375,358.6555,1018.39,364.73" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="none" points="957,256.0755,961,260.0755,957,264.0755,953,260.0755" style="stroke: #B38D22; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="80" x="964" y="265.0814">imageLoader</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="1006.5851" y="354.0859">1</text><!--link AbstractSimulationView to InputView--><path d="M725.31,237.68 C713.64,249.94 700.49,260.98 686,269 C657.83,284.6 644.33,266.21 614,277 C585.2,287.25 556.35,303.14 530.71,319.72 " fill="none" id="AbstractSimulationView-InputView" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="none" points="720.36,232.71,738.79,222.26,730.9,241.92,720.36,232.71" style="stroke: #A80036; stroke-width: 1.0;"/><!--link AbstractSimulationView to ProbeView--><path d="M787,242.29 C787,268.41 787,295.91 787,319.9 " fill="none" id="AbstractSimulationView-ProbeView" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="none" points="780,242.21,787,222.21,794,242.21,780,242.21" style="stroke: #A80036; stroke-width: 1.0;"/><!--link MainView to Controller--><path d="M144.17,209.59 C135.29,223.17 126.76,237.68 120,252 C103.32,287.34 92.31,331.28 86.37,359.48 " fill="none" id="MainView-Controller" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="85.31,364.56,91.0513,356.5576,86.3235,359.6638,83.2173,354.936,85.31,364.56" style="stroke: #A80036; stroke-width: 1.0;"/><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="123" y="258.0755"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="58" x="133" y="265.0814">controller</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="77.3856" y="353.8744">1</text><!--link MainView to ViewModel--><path d="M198.76,209.51 C200.76,258.95 203.38,323.34 204.85,359.72 " fill="none" id="MainView-ViewModel" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="205.06,364.88,208.6971,355.7273,204.8602,359.884,200.7035,356.0471,205.06,364.88" style="stroke: #A80036; stroke-width: 1.0;"/><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="204" y="258.0755"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="65" x="214" y="265.0814">viewModel</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="195.7941" y="353.8781">1</text><!--link INodeVisitor to GraphNodeDrawingVisitor--><path d="M1786.56,428.06 C1776.25,438.66 1764.31,449.57 1752,458 C1665.14,517.44 1552.24,561.95 1475.15,588.23 " fill="none" id="INodeVisitor-GraphNodeDrawingVisitor" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="none" points="1781.65,423.05,1800.34,413.07,1791.96,432.53,1781.65,423.05" style="stroke: #A80036; stroke-width: 1.0;"/><!--link GraphNodeDrawingVisitor to GraphNodeData--><path d="M1387,691.67 C1387,718.49 1387,748.02 1387,771.88 " fill="none" id="GraphNodeDrawingVisitor-GraphNodeData" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="1387,776.88,1391,767.88,1387,771.88,1383,767.88,1387,776.88" style="stroke: #A80036; stroke-width: 1.0;"/><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="1390" y="736.0755"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="33" x="1400" y="743.0814">value</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="1378.3625" y="765.8729">1</text><!--link AbstractSimulationView to GraphstreamSimulationView--><path d="M995.94,183.84 C1094.58,206.64 1212.99,238.13 1316,277 C1347.89,289.03 1381.21,304.43 1411.92,319.9 " fill="none" id="AbstractSimulationView-GraphstreamSimulationView" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="none" points="994.11,190.6,976.17,179.32,997.22,176.95,994.11,190.6" style="stroke: #A80036; stroke-width: 1.0;"/><!--link GraphNodeSimulationView to GraphNodeDrawingVisitor--><path d="M1226.48,413.28 C1249.59,442.39 1290.32,493.71 1324.98,537.36 " fill="none" id="GraphNodeSimulationView-GraphNodeDrawingVisitor" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="1328.1,541.29,1325.6481,531.7512,1324.9958,537.3704,1319.3766,536.718,1328.1,541.29" style="stroke: #A80036; stroke-width: 1.0;"/><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="1300" y="494.0755"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="36" x="1310" y="501.0814">visitor</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="1314.1048" y="530.4744">1</text><!--link INodeVisitor to TextNodeDrawingVisitor--><path d="M1858.36,427.45 C1889.35,456.94 1933.64,499.08 1972.44,536 " fill="none" id="INodeVisitor-TextNodeDrawingVisitor" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="none" points="1853.13,432.14,1843.47,413.28,1862.79,422,1853.13,432.14" style="stroke: #A80036; stroke-width: 1.0;"/><!--link AbstractSimulationView to TextSimulationView--><path d="M996.39,145.94 C1220.67,155.59 1584.87,185.49 1885,277 C1938.21,293.22 1994.08,321.75 2036.07,345.82 " fill="none" id="AbstractSimulationView-TextSimulationView" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="none" points="995.83,152.92,976.13,145.11,996.4,138.93,995.83,152.92" style="stroke: #A80036; stroke-width: 1.0;"/><!--link TextSimulationView to TextNodeDrawingVisitor--><path d="M2095.03,432.15 C2089.18,459.61 2081.35,496.42 2074.23,529.85 " fill="none" id="TextSimulationView-TextNodeDrawingVisitor" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="2073.19,534.75,2078.9806,526.7833,2074.2337,529.8602,2071.1569,525.1133,2073.19,534.75" style="stroke: #A80036; stroke-width: 1.0;"/><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="2085" y="494.0755"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="36" x="2095" y="501.0814">visitor</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="2066.3647" y="523.8785">1</text><!--
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     contentScriptType="application/ecmascript" contentStyleType="text/css" height="915px" preserveAspectRatio="none"
+     style="width:2345px;height:915px;" version="1.1" viewBox="0 0 2345 915" width="2345px" zoomAndPan="magnify">
+    <defs>
+        <filter height="300%" id="fs6h357zubvet" width="300%" x="-1" y="-1">
+            <feGaussianBlur result="blurOut" stdDeviation="2.0"/>
+            <feColorMatrix in="blurOut" result="blurOut2" type="matrix"
+                           values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/>
+            <feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/>
+            <feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/>
+        </filter>
+    </defs>
+    <g><!--cluster view-->
+        <polygon fill="#FFFFFF" filter="url(#fs6h357zubvet)"
+                 points="22,24,62,24,69,46.2969,2323,46.2969,2323,903,22,903,22,24"
+                 style="stroke: #000000; stroke-width: 1.5;"/>
+        <line style="stroke: #000000; stroke-width: 1.5;" x1="22" x2="69" y1="46.2969" y2="46.2969"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs"
+              textLength="34" x="26" y="38.9951">view
+        </text><!--cluster graphstream-->
+        <polygon fill="#FFFFFF" filter="url(#fs6h357zubvet)"
+                 points="1101,285,1203,285,1210,307.2969,1885,307.2969,1885,879,1101,879,1101,285"
+                 style="stroke: #000000; stroke-width: 1.5;"/>
+        <line style="stroke: #000000; stroke-width: 1.5;" x1="1101" x2="1210" y1="307.2969" y2="307.2969"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs"
+              textLength="96" x="1105" y="299.9951">graphstream
+        </text><!--cluster text-->
+        <polygon fill="#FFFFFF" filter="url(#fs6h357zubvet)"
+                 points="1909,311,1945,311,1952,333.2969,2299,333.2969,2299,714,1909,714,1909,311"
+                 style="stroke: #000000; stroke-width: 1.5;"/>
+        <line style="stroke: #000000; stroke-width: 1.5;" x1="1909" x2="1952" y1="333.2969" y2="333.2969"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs"
+              textLength="30" x="1913" y="325.9951">text
+        </text><!--class AbstractSimulationView-->
+        <rect fill="#FEFECE" filter="url(#fs6h357zubvet)" height="163.2422" id="AbstractSimulationView"
+              style="stroke: #A80036; stroke-width: 1.5;" width="378" x="598" y="59"/>
+        <ellipse cx="716.75" cy="75" fill="#A9DCDF" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M716.8594,70.0938 L715.7031,75.1719 L718.0313,75.1719 L716.8594,70.0938 Z M715.375,67.8594 L718.3594,67.8594 L721.7188,80.25 L719.2656,80.25 L718.5,77.1875 L715.2188,77.1875 L714.4688,80.25 L712.0313,80.25 L715.375,67.8594 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs"
+              textLength="132" x="737.25" y="79.1543">AbstractSimulationView
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="599" x2="975" y1="91" y2="91"/>
+        <polygon fill="none" points="609,97.9023,613,101.9023,609,105.9023,605,101.9023"
+                 style="stroke: #B38D22; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="54"
+              x="618" y="105.2104">view: Pane
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="599" x2="975" y1="111.8047" y2="111.8047"/>
+        <ellipse cx="609" cy="123.707" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="352"
+              x="618" y="126.0151">AbstractSimulationView(controller: Controller, viewModel: ViewModel)
+        </text>
+        <ellipse cx="609" cy="136.5117" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="79"
+              x="618" y="138.8198">getView(): Pane
+        </text>
+        <polygon fill="#FFFF44" points="609,144.3164,613,148.3164,609,152.3164,605,148.3164"
+                 style="stroke: #B38D22; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="113"
+              x="618" y="151.6245">update(circuit: Circuit)
+        </text>
+        <polygon fill="#FFFF44" points="609,157.1211,613,161.1211,609,165.1211,605,161.1211"
+                 style="stroke: #B38D22; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="103"
+              x="618" y="164.4292">connectViewModel()
+        </text>
+        <polygon fill="#FFFF44" points="609,169.9258,613,173.9258,609,177.9258,605,173.9258"
+                 style="stroke: #B38D22; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="58"
+              x="618" y="177.2339">resetView()
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="0"
+              x="621" y="190.0386"/>
+        <polygon fill="#FFFF44" points="609,195.5352,613,199.5352,609,203.5352,605,199.5352"
+                 style="stroke: #B38D22; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs"
+              textLength="46" x="618" y="202.8433">setupUi()
+        </text>
+        <polygon fill="#FFFF44" points="609,208.3398,613,212.3398,609,216.3398,605,212.3398"
+                 style="stroke: #B38D22; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs"
+              textLength="104" x="618" y="215.6479">draw(circuit: Circuit)
+        </text><!--class Controller-->
+        <rect fill="#FEFECE" filter="url(#fs6h357zubvet)" height="48" id="Controller"
+              style="stroke: #A80036; stroke-width: 1.5;" width="86" x="38" y="365"/>
+        <ellipse cx="53" cy="381" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M55.4688,387.1406 Q54.8906,387.4375 54.25,387.5781 Q53.6094,387.7344 52.9063,387.7344 Q50.4063,387.7344 49.0781,386.0938 Q47.7656,384.4375 47.7656,381.3125 Q47.7656,378.1875 49.0781,376.5313 Q50.4063,374.875 52.9063,374.875 Q53.6094,374.875 54.25,375.0313 Q54.9063,375.1875 55.4688,375.4844 L55.4688,378.2031 Q54.8438,377.625 54.25,377.3594 Q53.6563,377.0781 53.0313,377.0781 Q51.6875,377.0781 51,378.1563 Q50.3125,379.2188 50.3125,381.3125 Q50.3125,383.4063 51,384.4844 Q51.6875,385.5469 53.0313,385.5469 Q53.6563,385.5469 54.25,385.2813 Q54.8438,385 55.4688,384.4219 L55.4688,387.1406 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="54"
+              x="67" y="385.1543">Controller
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="39" x2="123" y1="397" y2="397"/>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="39" x2="123" y1="405" y2="405"/><!--class ViewModel-->
+        <rect fill="#FEFECE" filter="url(#fs6h357zubvet)" height="48" id="ViewModel"
+              style="stroke: #A80036; stroke-width: 1.5;" width="93" x="159.5" y="365"/>
+        <ellipse cx="174.5" cy="381" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M176.9688,387.1406 Q176.3906,387.4375 175.75,387.5781 Q175.1094,387.7344 174.4063,387.7344 Q171.9063,387.7344 170.5781,386.0938 Q169.2656,384.4375 169.2656,381.3125 Q169.2656,378.1875 170.5781,376.5313 Q171.9063,374.875 174.4063,374.875 Q175.1094,374.875 175.75,375.0313 Q176.4063,375.1875 176.9688,375.4844 L176.9688,378.2031 Q176.3438,377.625 175.75,377.3594 Q175.1563,377.0781 174.5313,377.0781 Q173.1875,377.0781 172.5,378.1563 Q171.8125,379.2188 171.8125,381.3125 Q171.8125,383.4063 172.5,384.4844 Q173.1875,385.5469 174.5313,385.5469 Q175.1563,385.5469 175.75,385.2813 Q176.3438,385 176.9688,384.4219 L176.9688,387.1406 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="61"
+              x="188.5" y="385.1543">ViewModel
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="160.5" x2="251.5" y1="397" y2="397"/>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="160.5" x2="251.5" y1="405"
+              y2="405"/><!--class ImageLoader-->
+        <rect fill="#FEFECE" filter="url(#fs6h357zubvet)" height="48" id="ImageLoader"
+              style="stroke: #A80036; stroke-width: 1.5;" width="105" x="977.5" y="365"/>
+        <ellipse cx="992.5" cy="381" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M994.9688,387.1406 Q994.3906,387.4375 993.75,387.5781 Q993.1094,387.7344 992.4063,387.7344 Q989.9063,387.7344 988.5781,386.0938 Q987.2656,384.4375 987.2656,381.3125 Q987.2656,378.1875 988.5781,376.5313 Q989.9063,374.875 992.4063,374.875 Q993.1094,374.875 993.75,375.0313 Q994.4063,375.1875 994.9688,375.4844 L994.9688,378.2031 Q994.3438,377.625 993.75,377.3594 Q993.1563,377.0781 992.5313,377.0781 Q991.1875,377.0781 990.5,378.1563 Q989.8125,379.2188 989.8125,381.3125 Q989.8125,383.4063 990.5,384.4844 Q991.1875,385.5469 992.5313,385.5469 Q993.1563,385.5469 993.75,385.2813 Q994.3438,385 994.9688,384.4219 L994.9688,387.1406 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="73"
+              x="1006.5" y="385.1543">ImageLoader
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="978.5" x2="1081.5" y1="397" y2="397"/>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="978.5" x2="1081.5" y1="405"
+              y2="405"/><!--class InputView-->
+        <rect fill="#FEFECE" filter="url(#fs6h357zubvet)" height="137.6328" id="InputView"
+              style="stroke: #A80036; stroke-width: 1.5;" width="308" x="288" y="320"/>
+        <ellipse cx="410.25" cy="336" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M412.7188,342.1406 Q412.1406,342.4375 411.5,342.5781 Q410.8594,342.7344 410.1563,342.7344 Q407.6563,342.7344 406.3281,341.0938 Q405.0156,339.4375 405.0156,336.3125 Q405.0156,333.1875 406.3281,331.5313 Q407.6563,329.875 410.1563,329.875 Q410.8594,329.875 411.5,330.0313 Q412.1563,330.1875 412.7188,330.4844 L412.7188,333.2031 Q412.0938,332.625 411.5,332.3594 Q410.9063,332.0781 410.2813,332.0781 Q408.9375,332.0781 408.25,333.1563 Q407.5625,334.2188 407.5625,336.3125 Q407.5625,338.4063 408.25,339.4844 Q408.9375,340.5469 410.2813,340.5469 Q410.9063,340.5469 411.5,340.2813 Q412.0938,340 412.7188,339.4219 L412.7188,342.1406 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="55"
+              x="430.75" y="340.1543">InputView
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="289" x2="595" y1="352" y2="352"/>
+        <rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="296" y="360.9023"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs"
+              text-decoration="underline" textLength="54" x="308" y="366.2104">WIDTH: int
+        </text>
+        <line style="stroke: #000000; stroke-width: 1.0;" x1="308" x2="362" y1="368.2104" y2="368.2104"/>
+        <rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="296" y="373.707"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="176"
+              x="308" y="379.0151">inputButtons: Map&lt;String, Button&gt;
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="289" x2="595" y1="385.6094" y2="385.6094"/>
+        <ellipse cx="299" cy="397.5117" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="282"
+              x="308" y="399.8198">InputView(controller: Controller, viewModel: ViewModel)
+        </text>
+        <polygon fill="#FFFF44" points="299,405.3164,303,409.3164,299,413.3164,295,409.3164"
+                 style="stroke: #B38D22; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="46"
+              x="308" y="412.6245">setupUi()
+        </text>
+        <polygon fill="#FFFF44" points="299,418.1211,303,422.1211,299,426.1211,295,422.1211"
+                 style="stroke: #B38D22; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="104"
+              x="308" y="425.4292">draw(circuit: Circuit)
+        </text>
+        <polygon fill="#FFFF44" points="299,430.9258,303,434.9258,299,438.9258,295,434.9258"
+                 style="stroke: #B38D22; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="113"
+              x="308" y="438.2339">update(circuit: Circuit)
+        </text>
+        <rect fill="#F24D5C" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="296" y="445.7305"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="214"
+              x="308" y="451.0386">getImageView(value: boolean): ImageView
+        </text><!--class ProbeView-->
+        <rect fill="#FEFECE" filter="url(#fs6h357zubvet)" height="137.6328" id="ProbeView"
+              style="stroke: #A80036; stroke-width: 1.5;" width="311" x="631.5" y="320"/>
+        <ellipse cx="753.25" cy="336" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M755.7188,342.1406 Q755.1406,342.4375 754.5,342.5781 Q753.8594,342.7344 753.1563,342.7344 Q750.6563,342.7344 749.3281,341.0938 Q748.0156,339.4375 748.0156,336.3125 Q748.0156,333.1875 749.3281,331.5313 Q750.6563,329.875 753.1563,329.875 Q753.8594,329.875 754.5,330.0313 Q755.1563,330.1875 755.7188,330.4844 L755.7188,333.2031 Q755.0938,332.625 754.5,332.3594 Q753.9063,332.0781 753.2813,332.0781 Q751.9375,332.0781 751.25,333.1563 Q750.5625,334.2188 750.5625,336.3125 Q750.5625,338.4063 751.25,339.4844 Q751.9375,340.5469 753.2813,340.5469 Q753.9063,340.5469 754.5,340.2813 Q755.0938,340 755.7188,339.4219 L755.7188,342.1406 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="59"
+              x="773.75" y="340.1543">ProbeView
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="632.5" x2="941.5" y1="352" y2="352"/>
+        <rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="639.5" y="360.9023"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs"
+              text-decoration="underline" textLength="54" x="651.5" y="366.2104">WIDTH: int
+        </text>
+        <line style="stroke: #000000; stroke-width: 1.0;" x1="651.5" x2="705.5" y1="368.2104" y2="368.2104"/>
+        <rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="639.5" y="373.707"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="179"
+              x="651.5" y="379.0151">probeButtons: Map&lt;String, Button&gt;
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="632.5" x2="941.5" y1="385.6094" y2="385.6094"/>
+        <ellipse cx="642.5" cy="397.5117" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="285"
+              x="651.5" y="399.8198">ProbeView(controller: Controller, viewModel: ViewModel)
+        </text>
+        <polygon fill="#FFFF44" points="642.5,405.3164,646.5,409.3164,642.5,413.3164,638.5,409.3164"
+                 style="stroke: #B38D22; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="46"
+              x="651.5" y="412.6245">setupUi()
+        </text>
+        <polygon fill="#FFFF44" points="642.5,418.1211,646.5,422.1211,642.5,426.1211,638.5,422.1211"
+                 style="stroke: #B38D22; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="104"
+              x="651.5" y="425.4292">draw(circuit: Circuit)
+        </text>
+        <polygon fill="#FFFF44" points="642.5,430.9258,646.5,434.9258,642.5,438.9258,638.5,434.9258"
+                 style="stroke: #B38D22; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="113"
+              x="651.5" y="438.2339">update(circuit: Circuit)
+        </text>
+        <rect fill="#F24D5C" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="639.5" y="445.7305"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="214"
+              x="651.5" y="451.0386">getImageView(value: boolean): ImageView
+        </text><!--class MainView-->
+        <rect fill="#FEFECE" filter="url(#fs6h357zubvet)" height="137.6328" id="MainView"
+              style="stroke: #A80036; stroke-width: 1.5;" width="307" x="42.5" y="71.5"/>
+        <ellipse cx="164.75" cy="87.5" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M167.2188,93.6406 Q166.6406,93.9375 166,94.0781 Q165.3594,94.2344 164.6563,94.2344 Q162.1563,94.2344 160.8281,92.5938 Q159.5156,90.9375 159.5156,87.8125 Q159.5156,84.6875 160.8281,83.0313 Q162.1563,81.375 164.6563,81.375 Q165.3594,81.375 166,81.5313 Q166.6563,81.6875 167.2188,81.9844 L167.2188,84.7031 Q166.5938,84.125 166,83.8594 Q165.4063,83.5781 164.7813,83.5781 Q163.4375,83.5781 162.75,84.6563 Q162.0625,85.7188 162.0625,87.8125 Q162.0625,89.9063 162.75,90.9844 Q163.4375,92.0469 164.7813,92.0469 Q165.4063,92.0469 166,91.7813 Q166.5938,91.5 167.2188,90.9219 L167.2188,93.6406 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="54"
+              x="185.25" y="91.6543">MainView
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="43.5" x2="348.5" y1="103.5" y2="103.5"/>
+        <rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="50.5" y="112.4023"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="87"
+              x="62.5" y="117.7104">view: BorderPane
+        </text>
+        <rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="50.5" y="125.207"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="115"
+              x="62.5" y="130.5151">simulateButton: Button
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="43.5" x2="348.5" y1="137.1094" y2="137.1094"/>
+        <ellipse cx="53.5" cy="149.0117" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="281"
+              x="62.5" y="151.3198">MainView(controller: Controller, viewModel: ViewModel)
+        </text>
+        <ellipse cx="53.5" cy="161.8164" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="87"
+              x="62.5" y="164.1245">getView(): Parent
+        </text>
+        <rect fill="#F24D5C" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="50.5" y="171.6211"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="46"
+              x="62.5" y="176.9292">setupUi()
+        </text>
+        <rect fill="#F24D5C" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="50.5" y="184.4258"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="103"
+              x="62.5" y="189.7339">connectViewModel()
+        </text>
+        <rect fill="#F24D5C" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="50.5" y="197.2305"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="126"
+              x="62.5" y="202.5386">setupUiToolbar(): Toolbar
+        </text><!--class GraphNodeData-->
+        <rect fill="#FEFECE" filter="url(#fs6h357zubvet)" height="86.4141" id="GraphNodeData"
+              style="stroke: #A80036; stroke-width: 1.5;" width="240" x="1267" y="777"/>
+        <ellipse cx="1337.75" cy="793" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M1340.2188,799.1406 Q1339.6406,799.4375 1339,799.5781 Q1338.3594,799.7344 1337.6563,799.7344 Q1335.1563,799.7344 1333.8281,798.0938 Q1332.5156,796.4375 1332.5156,793.3125 Q1332.5156,790.1875 1333.8281,788.5313 Q1335.1563,786.875 1337.6563,786.875 Q1338.3594,786.875 1339,787.0313 Q1339.6563,787.1875 1340.2188,787.4844 L1340.2188,790.2031 Q1339.5938,789.625 1339,789.3594 Q1338.4063,789.0781 1337.7813,789.0781 Q1336.4375,789.0781 1335.75,790.1563 Q1335.0625,791.2188 1335.0625,793.3125 Q1335.0625,795.4063 1335.75,796.4844 Q1336.4375,797.5469 1337.7813,797.5469 Q1338.4063,797.5469 1339,797.2813 Q1339.5938,797 1340.2188,796.4219 L1340.2188,799.1406 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="90"
+              x="1358.25" y="797.1543">GraphNodeData
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="1268" x2="1506" y1="809" y2="809"/>
+        <ellipse cx="1278" cy="820.9023" fill="none" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="63"
+              x="1287" y="823.2104">name: String
+        </text>
+        <ellipse cx="1278" cy="833.707" fill="none" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="57"
+              x="1287" y="836.0151">type: String
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="1268" x2="1506" y1="842.6094" y2="842.6094"/>
+        <ellipse cx="1278" cy="854.5117" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="214"
+              x="1287" y="856.8198">GraphNodeData(name: String, type: String)
+        </text><!--class GraphNodeDrawingVisitor-->
+        <rect fill="#FEFECE" filter="url(#fs6h357zubvet)" height="150.4375" id="GraphNodeDrawingVisitor"
+              style="stroke: #A80036; stroke-width: 1.5;" width="176" x="1299" y="541.5"/>
+        <ellipse cx="1314" cy="557.5" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M1316.4688,563.6406 Q1315.8906,563.9375 1315.25,564.0781 Q1314.6094,564.2344 1313.9063,564.2344 Q1311.4063,564.2344 1310.0781,562.5938 Q1308.7656,560.9375 1308.7656,557.8125 Q1308.7656,554.6875 1310.0781,553.0313 Q1311.4063,551.375 1313.9063,551.375 Q1314.6094,551.375 1315.25,551.5313 Q1315.9063,551.6875 1316.4688,551.9844 L1316.4688,554.7031 Q1315.8438,554.125 1315.25,553.8594 Q1314.6563,553.5781 1314.0313,553.5781 Q1312.6875,553.5781 1312,554.6563 Q1311.3125,555.7188 1311.3125,557.8125 Q1311.3125,559.9063 1312,560.9844 Q1312.6875,562.0469 1314.0313,562.0469 Q1314.6563,562.0469 1315.25,561.7813 Q1315.8438,561.5 1316.4688,560.9219 L1316.4688,563.6406 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="144"
+              x="1328" y="561.6543">GraphNodeDrawingVisitor
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="1300" x2="1474" y1="573.5" y2="573.5"/>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="1300" x2="1474" y1="581.5" y2="581.5"/>
+        <ellipse cx="1310" cy="593.4023" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="138"
+              x="1319" y="595.7104">getValue(): GraphNodeData
+        </text>
+        <ellipse cx="1310" cy="606.207" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="87"
+              x="1319" y="608.5151">visit(node: Probe)
+        </text>
+        <ellipse cx="1310" cy="619.0117" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="84"
+              x="1319" y="621.3198">visit(node: Input)
+        </text>
+        <ellipse cx="1310" cy="631.8164" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="102"
+              x="1319" y="634.1245">visit(node: AndGate)
+        </text>
+        <ellipse cx="1310" cy="644.6211" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="110"
+              x="1319" y="646.9292">visit(node: NAndGate)
+        </text>
+        <ellipse cx="1310" cy="657.4258" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="103"
+              x="1319" y="659.7339">visit(node: NOrGate)
+        </text>
+        <ellipse cx="1310" cy="670.2305" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="95"
+              x="1319" y="672.5386">visit(node: OrGate)
+        </text>
+        <ellipse cx="1310" cy="683.0352" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="102"
+              x="1319" y="685.3433">visit(node: XOrGate)
+        </text><!--class INodeVisitor-->
+        <rect fill="#FEFECE" filter="url(#fs6h357zubvet)" height="48" id="INodeVisitor"
+              style="stroke: #A80036; stroke-width: 1.5;" width="99" x="1769.5" y="365"/>
+        <ellipse cx="1784.5" cy="381" fill="#B4A7E5" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M1780.9219,376.7656 L1780.9219,374.6094 L1788.3125,374.6094 L1788.3125,376.7656 L1785.8438,376.7656 L1785.8438,384.8438 L1788.3125,384.8438 L1788.3125,387 L1780.9219,387 L1780.9219,384.8438 L1783.3906,384.8438 L1783.3906,376.7656 L1780.9219,376.7656 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs"
+              textLength="67" x="1798.5" y="385.1543">INodeVisitor
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="1770.5" x2="1867.5" y1="397" y2="397"/>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="1770.5" x2="1867.5" y1="405"
+              y2="405"/><!--class GraphstreamSimulationView-->
+        <rect fill="#FEFECE" filter="url(#fs6h357zubvet)" height="137.6328" id="GraphstreamSimulationView"
+              style="stroke: #A80036; stroke-width: 1.5;" width="401" x="1333.5" y="320"/>
+        <ellipse cx="1450.25" cy="336" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M1452.7188,342.1406 Q1452.1406,342.4375 1451.5,342.5781 Q1450.8594,342.7344 1450.1563,342.7344 Q1447.6563,342.7344 1446.3281,341.0938 Q1445.0156,339.4375 1445.0156,336.3125 Q1445.0156,333.1875 1446.3281,331.5313 Q1447.6563,329.875 1450.1563,329.875 Q1450.8594,329.875 1451.5,330.0313 Q1452.1563,330.1875 1452.7188,330.4844 L1452.7188,333.2031 Q1452.0938,332.625 1451.5,332.3594 Q1450.9063,332.0781 1450.2813,332.0781 Q1448.9375,332.0781 1448.25,333.1563 Q1447.5625,334.2188 1447.5625,336.3125 Q1447.5625,338.4063 1448.25,339.4844 Q1448.9375,340.5469 1450.2813,340.5469 Q1450.9063,340.5469 1451.5,340.2813 Q1452.0938,340 1452.7188,339.4219 L1452.7188,342.1406 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="159"
+              x="1470.75" y="340.1543">GraphstreamSimulationView
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="1334.5" x2="1733.5" y1="352" y2="352"/>
+        <rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="1341.5" y="360.9023"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="89"
+              x="1353.5" y="366.2104">graph: MultiGraph
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="1334.5" x2="1733.5" y1="372.8047" y2="372.8047"/>
+        <ellipse cx="1344.5" cy="384.707" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="375"
+              x="1353.5" y="387.0151">GraphstreamSimulationView(controller: Controller, viewModel: ViewModel)
+        </text>
+        <polygon fill="#FFFF44" points="1344.5,392.5117,1348.5,396.5117,1344.5,400.5117,1340.5,396.5117"
+                 style="stroke: #B38D22; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="46"
+              x="1353.5" y="399.8198">setupUi()
+        </text>
+        <polygon fill="#FFFF44" points="1344.5,405.3164,1348.5,409.3164,1344.5,413.3164,1340.5,409.3164"
+                 style="stroke: #B38D22; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="104"
+              x="1353.5" y="412.6245">draw(circuit: Circuit)
+        </text>
+        <rect fill="#F24D5C" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="1341.5" y="420.1211"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="135"
+              x="1353.5" y="425.4292">drawNodes(circuit: Circuit)
+        </text>
+        <rect fill="#F24D5C" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="1341.5" y="432.9258"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="133"
+              x="1353.5" y="438.2339">drawEdges(circuit: Circuit)
+        </text>
+        <rect fill="#F24D5C" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="1341.5" y="445.7305"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="112"
+              x="1353.5" y="451.0386">getStyleSheet(): String
+        </text><!--class GraphNodeSimulationView-->
+        <rect fill="#FEFECE" filter="url(#fs6h357zubvet)" height="48" id="GraphNodeSimulationView"
+              style="stroke: #A80036; stroke-width: 1.5;" width="181" x="1117.5" y="365"/>
+        <ellipse cx="1132.5" cy="381" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M1134.9688,387.1406 Q1134.3906,387.4375 1133.75,387.5781 Q1133.1094,387.7344 1132.4063,387.7344 Q1129.9063,387.7344 1128.5781,386.0938 Q1127.2656,384.4375 1127.2656,381.3125 Q1127.2656,378.1875 1128.5781,376.5313 Q1129.9063,374.875 1132.4063,374.875 Q1133.1094,374.875 1133.75,375.0313 Q1134.4063,375.1875 1134.9688,375.4844 L1134.9688,378.2031 Q1134.3438,377.625 1133.75,377.3594 Q1133.1563,377.0781 1132.5313,377.0781 Q1131.1875,377.0781 1130.5,378.1563 Q1129.8125,379.2188 1129.8125,381.3125 Q1129.8125,383.4063 1130.5,384.4844 Q1131.1875,385.5469 1132.5313,385.5469 Q1133.1563,385.5469 1133.75,385.2813 Q1134.3438,385 1134.9688,384.4219 L1134.9688,387.1406 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="149"
+              x="1146.5" y="385.1543">GraphNodeSimulationView
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="1118.5" x2="1297.5" y1="397" y2="397"/>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="1118.5" x2="1297.5" y1="405"
+              y2="405"/><!--class TextNodeDrawingVisitor-->
+        <rect fill="#FEFECE" filter="url(#fs6h357zubvet)" height="163.2422" id="TextNodeDrawingVisitor"
+              style="stroke: #A80036; stroke-width: 1.5;" width="167" x="1972.5" y="535"/>
+        <ellipse cx="1987.5" cy="551" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M1989.9688,557.1406 Q1989.3906,557.4375 1988.75,557.5781 Q1988.1094,557.7344 1987.4063,557.7344 Q1984.9063,557.7344 1983.5781,556.0938 Q1982.2656,554.4375 1982.2656,551.3125 Q1982.2656,548.1875 1983.5781,546.5313 Q1984.9063,544.875 1987.4063,544.875 Q1988.1094,544.875 1988.75,545.0313 Q1989.4063,545.1875 1989.9688,545.4844 L1989.9688,548.2031 Q1989.3438,547.625 1988.75,547.3594 Q1988.1563,547.0781 1987.5313,547.0781 Q1986.1875,547.0781 1985.5,548.1563 Q1984.8125,549.2188 1984.8125,551.3125 Q1984.8125,553.4063 1985.5,554.4844 Q1986.1875,555.5469 1987.5313,555.5469 Q1988.1563,555.5469 1988.75,555.2813 Q1989.3438,555 1989.9688,554.4219 L1989.9688,557.1406 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="135"
+              x="2001.5" y="555.1543">TextNodeDrawingVisitor
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="1973.5" x2="2138.5" y1="567" y2="567"/>
+        <rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="1980.5" y="575.9023"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="62"
+              x="1992.5" y="581.2104">value: String
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="1973.5" x2="2138.5" y1="587.8047" y2="587.8047"/>
+        <ellipse cx="1983.5" cy="599.707" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="87"
+              x="1992.5" y="602.0151">getValue(): String
+        </text>
+        <ellipse cx="1983.5" cy="612.5117" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="87"
+              x="1992.5" y="614.8198">visit(node: Probe)
+        </text>
+        <ellipse cx="1983.5" cy="625.3164" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="84"
+              x="1992.5" y="627.6245">visit(node: Input)
+        </text>
+        <ellipse cx="1983.5" cy="638.1211" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="102"
+              x="1992.5" y="640.4292">visit(node: AndGate)
+        </text>
+        <ellipse cx="1983.5" cy="650.9258" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="110"
+              x="1992.5" y="653.2339">visit(node: NAndGate)
+        </text>
+        <ellipse cx="1983.5" cy="663.7305" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="103"
+              x="1992.5" y="666.0386">visit(node: NOrGate)
+        </text>
+        <ellipse cx="1983.5" cy="676.5352" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="95"
+              x="1992.5" y="678.8433">visit(node: OrGate)
+        </text>
+        <ellipse cx="1983.5" cy="689.3398" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="102"
+              x="1992.5" y="691.6479">visit(node: XOrGate)
+        </text><!--class TextSimulationView-->
+        <rect fill="#FEFECE" filter="url(#fs6h357zubvet)" height="86.4141" id="TextSimulationView"
+              style="stroke: #A80036; stroke-width: 1.5;" width="358" x="1925" y="346"/>
+        <ellipse cx="2044.25" cy="362" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M2046.7188,368.1406 Q2046.1406,368.4375 2045.5,368.5781 Q2044.8594,368.7344 2044.1563,368.7344 Q2041.6563,368.7344 2040.3281,367.0938 Q2039.0156,365.4375 2039.0156,362.3125 Q2039.0156,359.1875 2040.3281,357.5313 Q2041.6563,355.875 2044.1563,355.875 Q2044.8594,355.875 2045.5,356.0313 Q2046.1563,356.1875 2046.7188,356.4844 L2046.7188,359.2031 Q2046.0938,358.625 2045.5,358.3594 Q2044.9063,358.0781 2044.2813,358.0781 Q2042.9375,358.0781 2042.25,359.1563 Q2041.5625,360.2188 2041.5625,362.3125 Q2041.5625,364.4063 2042.25,365.4844 Q2042.9375,366.5469 2044.2813,366.5469 Q2044.9063,366.5469 2045.5,366.2813 Q2046.0938,366 2046.7188,365.4219 L2046.7188,368.1406 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="111"
+              x="2064.75" y="366.1543">TextSimulationView
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="1926" x2="2282" y1="378" y2="378"/>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="1926" x2="2282" y1="386" y2="386"/>
+        <ellipse cx="1936" cy="397.9023" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="332"
+              x="1945" y="400.2104">TextSimulationView(controller: Controller, viewModel: ViewModel)
+        </text>
+        <polygon fill="#FFFF44" points="1936,405.707,1940,409.707,1936,413.707,1932,409.707"
+                 style="stroke: #B38D22; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="46"
+              x="1945" y="413.0151">setupUi()
+        </text>
+        <polygon fill="#FFFF44" points="1936,418.5117,1940,422.5117,1936,426.5117,1932,422.5117"
+                 style="stroke: #B38D22; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="104"
+              x="1945" y="425.8198">draw(circuit: Circuit)
+        </text><!--link AbstractSimulationView to Controller-->
+        <path d="M597.76,190.3 C460,225.75 296.13,267.75 288,269 C271.94,271.47 155.75,268.35 142,277 C112.69,295.44 96.35,333.21 88.12,359.54 "
+              fill="none" id="AbstractSimulationView-Controller" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="#A80036" points="86.58,364.64,93.0077,357.1777,88.0233,359.8528,85.3482,354.8685,86.58,364.64"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="none" points="361,256.0755,365,260.0755,361,264.0755,357,260.0755"
+                 style="stroke: #B38D22; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="58"
+              x="368" y="265.0814">controller
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8"
+              x="88.9151" y="353.9739">1
+        </text><!--link AbstractSimulationView to ViewModel-->
+        <path d="M598.46,222.15 C547.28,240.77 491.27,258.25 438,269 C419.79,272.67 286.89,267.38 271,277 C240.79,295.29 223.1,333.35 213.99,359.77 "
+              fill="none" id="AbstractSimulationView-ViewModel" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="#A80036"
+                 points="212.38,364.56,219.0274,357.2928,213.9654,359.818,211.4402,354.7561,212.38,364.56"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="none" points="512,256.0755,516,260.0755,512,264.0755,508,260.0755"
+                 style="stroke: #B38D22; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="65"
+              x="519" y="265.0814">viewModel
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8"
+              x="204.9601" y="353.8744">1
+        </text><!--link AbstractSimulationView to ImageLoader-->
+        <path d="M901.73,222.25 C922.26,239.16 942.61,257.75 960,277 C983.05,302.52 1003.25,336.53 1015.95,360.15 "
+              fill="none" id="AbstractSimulationView-ImageLoader" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="#A80036"
+                 points="1018.39,364.73,1017.7039,354.9051,1016.046,360.3135,1010.6375,358.6555,1018.39,364.73"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="none" points="957,256.0755,961,260.0755,957,264.0755,953,260.0755"
+                 style="stroke: #B38D22; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="80"
+              x="964" y="265.0814">imageLoader
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8"
+              x="1006.5851" y="354.0859">1
+        </text><!--link AbstractSimulationView to InputView-->
+        <path d="M725.31,237.68 C713.64,249.94 700.49,260.98 686,269 C657.83,284.6 644.33,266.21 614,277 C585.2,287.25 556.35,303.14 530.71,319.72 "
+              fill="none" id="AbstractSimulationView-InputView" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="none" points="720.36,232.71,738.79,222.26,730.9,241.92,720.36,232.71"
+                 style="stroke: #A80036; stroke-width: 1.0;"/><!--link AbstractSimulationView to ProbeView-->
+        <path d="M787,242.29 C787,268.41 787,295.91 787,319.9 " fill="none" id="AbstractSimulationView-ProbeView"
+              style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="none" points="780,242.21,787,222.21,794,242.21,780,242.21"
+                 style="stroke: #A80036; stroke-width: 1.0;"/><!--link MainView to Controller-->
+        <path d="M144.17,209.59 C135.29,223.17 126.76,237.68 120,252 C103.32,287.34 92.31,331.28 86.37,359.48 "
+              fill="none" id="MainView-Controller" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="#A80036" points="85.31,364.56,91.0513,356.5576,86.3235,359.6638,83.2173,354.936,85.31,364.56"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="123" y="258.0755"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="58"
+              x="133" y="265.0814">controller
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8"
+              x="77.3856" y="353.8744">1
+        </text><!--link MainView to ViewModel-->
+        <path d="M198.76,209.51 C200.76,258.95 203.38,323.34 204.85,359.72 " fill="none" id="MainView-ViewModel"
+              style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="#A80036"
+                 points="205.06,364.88,208.6971,355.7273,204.8602,359.884,200.7035,356.0471,205.06,364.88"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="204" y="258.0755"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="65"
+              x="214" y="265.0814">viewModel
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8"
+              x="195.7941" y="353.8781">1
+        </text><!--link INodeVisitor to GraphNodeDrawingVisitor-->
+        <path d="M1786.56,428.06 C1776.25,438.66 1764.31,449.57 1752,458 C1665.14,517.44 1552.24,561.95 1475.15,588.23 "
+              fill="none" id="INodeVisitor-GraphNodeDrawingVisitor"
+              style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/>
+        <polygon fill="none" points="1781.65,423.05,1800.34,413.07,1791.96,432.53,1781.65,423.05"
+                 style="stroke: #A80036; stroke-width: 1.0;"/><!--link GraphNodeDrawingVisitor to GraphNodeData-->
+        <path d="M1387,691.67 C1387,718.49 1387,748.02 1387,771.88 " fill="none"
+              id="GraphNodeDrawingVisitor-GraphNodeData" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="#A80036" points="1387,776.88,1391,767.88,1387,771.88,1383,767.88,1387,776.88"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="1390" y="736.0755"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="33"
+              x="1400" y="743.0814">value
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8"
+              x="1378.3625" y="765.8729">1
+        </text><!--link AbstractSimulationView to GraphstreamSimulationView-->
+        <path d="M995.94,183.84 C1094.58,206.64 1212.99,238.13 1316,277 C1347.89,289.03 1381.21,304.43 1411.92,319.9 "
+              fill="none" id="AbstractSimulationView-GraphstreamSimulationView"
+              style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="none" points="994.11,190.6,976.17,179.32,997.22,176.95,994.11,190.6"
+                 style="stroke: #A80036; stroke-width: 1.0;"/><!--link GraphNodeSimulationView to GraphNodeDrawingVisitor-->
+        <path d="M1226.48,413.28 C1249.59,442.39 1290.32,493.71 1324.98,537.36 " fill="none"
+              id="GraphNodeSimulationView-GraphNodeDrawingVisitor" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="#A80036"
+                 points="1328.1,541.29,1325.6481,531.7512,1324.9958,537.3704,1319.3766,536.718,1328.1,541.29"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="1300" y="494.0755"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="36"
+              x="1310" y="501.0814">visitor
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8"
+              x="1314.1048" y="530.4744">1
+        </text><!--link INodeVisitor to TextNodeDrawingVisitor-->
+        <path d="M1858.36,427.45 C1889.35,456.94 1933.64,499.08 1972.44,536 " fill="none"
+              id="INodeVisitor-TextNodeDrawingVisitor"
+              style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/>
+        <polygon fill="none" points="1853.13,432.14,1843.47,413.28,1862.79,422,1853.13,432.14"
+                 style="stroke: #A80036; stroke-width: 1.0;"/><!--link AbstractSimulationView to TextSimulationView-->
+        <path d="M996.39,145.94 C1220.67,155.59 1584.87,185.49 1885,277 C1938.21,293.22 1994.08,321.75 2036.07,345.82 "
+              fill="none" id="AbstractSimulationView-TextSimulationView" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="none" points="995.83,152.92,976.13,145.11,996.4,138.93,995.83,152.92"
+                 style="stroke: #A80036; stroke-width: 1.0;"/><!--link TextSimulationView to TextNodeDrawingVisitor-->
+        <path d="M2095.03,432.15 C2089.18,459.61 2081.35,496.42 2074.23,529.85 " fill="none"
+              id="TextSimulationView-TextNodeDrawingVisitor" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="#A80036"
+                 points="2073.19,534.75,2078.9806,526.7833,2074.2337,529.8602,2071.1569,525.1133,2073.19,534.75"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="2085" y="494.0755"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="36"
+              x="2095" y="501.0814">visitor
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8"
+              x="2066.3647" y="523.8785">1
+        </text><!--
 @startuml
 
 package view {
@@ -124,4 +667,6 @@ OS Version: 5.4.43-1-MANJARO
 Default Encoding: UTF-8
 Language: en
 Country: US
---></g></svg>
+-->
+    </g>
+</svg>
