@@ -28,11 +28,10 @@ public class OrGate extends NodeComposite
     @Override
     public boolean calculate()
     {
-        value = parents
+        return value = parents
                 .stream()
                 .filter(Node::calculate)
                 .count() >= 1;
-        return value;
     }
 
     @Override

@@ -29,8 +29,7 @@ public class NotGate extends NodeComposite
     @Override
     public boolean calculate()
     {
-        value = !parents.get(0).calculate();
-        return value;
+        return value = !parents.get(0).calculate();
     }
 
     @Override

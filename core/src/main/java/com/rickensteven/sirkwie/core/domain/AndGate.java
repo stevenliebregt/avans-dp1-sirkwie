@@ -28,10 +28,11 @@ public class AndGate extends NodeComposite
     @Override
     public boolean calculate()
     {
-        value = parents.stream()
-                .filter(Node::calculate)
-                .count() == parents.size();
-        return value;
+        for (Node parent : parents) {
+            if (!parent.calculate()) return value = false;
+        }
+
+        return value = true;
     }
 
     @Override

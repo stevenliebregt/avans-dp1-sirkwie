@@ -21,7 +21,7 @@ public class AndGateTest
     @Test
     public void shouldReturnOffA()
     {
-        List<Node> inputs = new ArrayList<Node>()
+        List<Node> inputs = new ArrayList<>()
         {{
             add(new Input(false, "A"));
             add(new Input(false, "B"));
@@ -81,7 +81,7 @@ public class AndGateTest
     @Test
     public void shouldReturnOn()
     {
-        List<Node> inputs = new ArrayList<Node>()
+        List<Node> inputs = new ArrayList<>()
         {{
             add(new Input(true, "A"));
             add(new Input(true, "B"));

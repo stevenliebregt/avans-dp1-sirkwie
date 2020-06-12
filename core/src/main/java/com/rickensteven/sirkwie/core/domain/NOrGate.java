@@ -28,10 +28,11 @@ public class NOrGate extends NodeComposite
     @Override
     public boolean calculate()
     {
-        value = parents
-                .stream()
-                .noneMatch(Node::calculate);
-        return value;
+        for (Node parent : parents) {
+            if (parent.calculate()) return value = false;
+        }
+
+        return value = true;
     }
 
     @Override

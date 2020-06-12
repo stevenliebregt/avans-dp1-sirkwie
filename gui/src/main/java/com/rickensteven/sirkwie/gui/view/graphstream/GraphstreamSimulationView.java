@@ -72,7 +72,18 @@ public class GraphstreamSimulationView extends AbstractSimulationView
         thread.start();
     }
 
+    @Override
+    protected void update(Circuit circuit)
+    {
+        drawNodes(circuit, false);
+    }
+
     private void drawNodes(Circuit circuit)
+    {
+        drawNodes(circuit, true);
+    }
+
+    private void drawNodes(Circuit circuit, boolean addToGraph)
     {
         circuit.getNodes().forEach(node -> {
             String name = node.getName();
@@ -80,9 +91,12 @@ public class GraphstreamSimulationView extends AbstractSimulationView
             node.accept(visitor);
             GraphNodeData nodeData = visitor.getValue();
 
-            graph.addNode(name);
-            graph.getNode(name).setAttribute("ui.label", nodeData.name + " " + nodeData.type);
-            graph.getNode(name).setAttribute("ui.class", node.getValue() ? "on" : "off"); // TODO: ON | OFF
+            if (addToGraph) {
+                graph.addNode(name);
+            }
+
+            graph.getNode(name).setAttribute("ui.label", nodeData.name + " " + nodeData.type + "\r\n");
+            graph.getNode(name).setAttribute("ui.class", node.getValue() ? "on" : "off");
         });
     }
 
