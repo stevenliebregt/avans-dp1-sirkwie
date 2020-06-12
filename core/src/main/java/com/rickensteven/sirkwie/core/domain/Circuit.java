@@ -74,6 +74,15 @@ public class Circuit
                 .orElse(null);
     }
 
+    public Probe getProbe(String name)
+    {
+        return this.probes
+                .stream()
+                .filter(node -> node.getName().equals(name))
+                .findFirst()
+                .orElse(null);
+    }
+
     public void simulate()
     {
         probes.forEach(Node::calculate);

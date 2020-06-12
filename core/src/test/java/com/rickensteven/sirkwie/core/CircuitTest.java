@@ -26,7 +26,7 @@ public class CircuitTest
         circuit.addProbe(probe);
 
         assertEquals(1, circuit.getInputs().size());
-        assertEquals(1, circuit.getNodes().size());
+        assertEquals(3, circuit.getNodes().size());
         assertEquals(1, circuit.getProbes().size());
     }
 
@@ -49,5 +49,22 @@ public class CircuitTest
         input.setValue(true);
         circuit.simulate();
         assertFalse(probe.getValue());
+    }
+
+    @Test
+    public void getCorrectInput()
+    {
+        Circuit circuit = new Circuit();
+
+        Input inputA = new Input(false, "A");
+        Input inputB = new Input(false, "B");
+
+        circuit.addInput(inputA);
+        circuit.addInput(inputB);
+
+        assertEquals(2, circuit.getInputs().size());
+        assertEquals(2, circuit.getNodes().size());
+        assertNotNull(circuit.getInput("A"));
+        assertNull(circuit.getInput("C"));
     }
 }
