@@ -67,6 +67,14 @@ public class CircuitLoaderFacadeTest
         });
     }
 
+    /**
+     * Een circuit is incorrect als... of als niet alle PROBES bereikt kunnen worden.
+     * http://webdictaat.aii.avans.nl/dictaten/DesignPatterns1/#/Eindopdracht
+     *
+     * The file Circuit5_NotConnected has been provided to test this, but all probes
+     * are actually reacheable in that file, so we added Circuit6_NotAllProbesReachable
+     * to test our implementation.
+     */
     @Test
     public void antlrCircuit5NotConnected()
     {
@@ -74,7 +82,7 @@ public class CircuitLoaderFacadeTest
         CircuitLoaderFacade circuitLoaderFacade = new CircuitLoaderFacade(circuitParser);
 
         assertThrows(CircuitNotConnectedException.class, () -> {
-            circuitLoaderFacade.loadCircuit(ClassLoader.getSystemResource("Circuit5_NotConnected.txt").getPath());
+            circuitLoaderFacade.loadCircuit(ClassLoader.getSystemResource("Circuit6_NotAllProbesReachable.txt").getPath());
         });
     }
 }

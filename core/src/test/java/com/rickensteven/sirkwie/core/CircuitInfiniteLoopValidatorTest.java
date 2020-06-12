@@ -33,6 +33,24 @@ public class CircuitInfiniteLoopValidatorTest
     }
 
     @Test
+    public void hasInfiniteLoopsProvidedFile()
+    {
+        String circuitTxtClean = ReadTestCircuitFileUtil.read("Circuit4_InfiniteLoop.txt");
+
+        ANTLRCircuitParser antlrCircuitParser = new ANTLRCircuitParser();
+        CircuitBuilder circuitBuilder = new CircuitBuilder();
+        circuitBuilder.reset(antlrCircuitParser.parse(circuitTxtClean));
+        circuitBuilder.buildNodes();
+        circuitBuilder.buildEdges();
+
+        Circuit circuit = circuitBuilder.getCircuit();
+
+        CircuitInfiniteLoopValidator circuitInfiniteLoopValidator = new CircuitInfiniteLoopValidator();
+
+        assertTrue(circuitInfiniteLoopValidator.circuitHasInfiniteLoops(circuit));
+    }
+
+    @Test
     public void hasNoInfiniteLoopsSimplest()
     {
         Circuit circuit = new Circuit();
