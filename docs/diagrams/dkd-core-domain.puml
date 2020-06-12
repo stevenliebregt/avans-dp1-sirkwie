@@ -9,10 +9,14 @@ package domain {
         +getValue(): boolean
         +getName(): String
         +addToCircuit(circuit: Circuit)
+        +addSimulationListener(simulationListener: ISimulationListener)
+        #notifyStartCalculation()
+        #notifyStopCalculation(calculatedValue: boolean)
 
         +{abstract}calculate(): boolean
         +{abstract}accept(nodeVisitor: INodeVisitor)
     }
+    Node --> "0..*" ISimulationListener : -simulationListeners
 
     abstract class NodeComposite extends Node {
         #parents: List<Node>
@@ -45,7 +49,10 @@ package domain {
         +getInputs(): Set<Input>
         +getInput(name: String)
         +getProbes(): Set<Probe>
+        +getProbe(name: String)
         +simulate()
+        +addSimulationListener(simulationListener: ISimulationListener)
+        +addSimulationListeners(simulationListeners: Collection<ISimulationListener>)
     }
     Circuit " " --> "0..*" Node : -nodes
     Circuit " " --> "0..*" Input : -inputs

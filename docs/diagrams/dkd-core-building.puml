@@ -61,7 +61,6 @@ package building {
         XOR
         NAND
 
-        +NodeType(type: String)
         +{abstract}getInstance(name: String): Node
     }
 }

@@ -15,7 +15,7 @@ repositories {
 plantuml {
     options {
         outputDir = project.file('docs/diagrams/build')
-        format = 'svg'
+        format = 'png'
     }
 
     diagrams {

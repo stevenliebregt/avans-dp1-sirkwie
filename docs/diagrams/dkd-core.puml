@@ -16,7 +16,15 @@ package com.rickensteven.sirkwie.core {
     class CircuitLoaderFacade {
         +CircuitLoaderFacade(circuitParser: ICircuitParser)
         +loadCircuit(filePath: String): Circuit
+        +addSimulationListener(simulationListener: ISimulationListener)
     }
+    CircuitLoaderFacade --> "0..*" ISimulationListener : -simulationListeners
+
+    interface ISimulationListener {
+        onStartCalculate(node: Node);
+        onStopCalculate(node: Node, calculatedValue: boolean);
+    }
+
     CircuitLoaderFacade --> "1" CircuitFileReader : -circuitFileReader
     CircuitLoaderFacade --> "1" CircuitNotConnectedValidator : -circuitNotConnectedValidator
     CircuitLoaderFacade --> "1" CircuitInfiniteLoopValidator : -circuitInfiniteLoopValidator

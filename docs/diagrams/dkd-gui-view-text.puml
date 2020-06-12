@@ -1,10 +1,23 @@
 @startuml
 
 package text {
-    class TextNodeDrawingVisitor implements INodeVisitor {
-        -value: String
+    class TableNodeData {
+        -name: String
+        -type: String
+        -output: boolean
+        -parents: List<Node>
 
-        +getValue(): String
+        +TableNodeData(type: String, name: String, output: boolean, parents: List<Node>)
+        +getName(): String
+        +getType(): String
+        +getOutput(): String
+        +getParents(): String
+    }
+
+    class TableNodeDrawingVisitor implements INodeVisitor {
+        -value: TableNodeData
+
+        +getValue(): TableNodeData
         +visit(node: Probe)
         +visit(node: Input)
         +visit(node: AndGate)
@@ -13,13 +26,14 @@ package text {
         +visit(node: OrGate)
         +visit(node: XOrGate)
     }
+    TableNodeDrawingVisitor -> "1" TableNodeData: -value
 
     class TextSimulationView extends AbstractSimulationView {
         +TextSimulationView(controller: Controller, viewModel: ViewModel)
         #setupUi()
         #draw(circuit: Circuit)
     }
-    TextSimulationView --> "1" TextNodeDrawingVisitor : -visitor
+    TextSimulationView --> "1" TableNodeDrawingVisitor : -visitor
 }
 
 @enduml

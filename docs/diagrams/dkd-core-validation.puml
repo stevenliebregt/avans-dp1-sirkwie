@@ -9,8 +9,9 @@ package validation {
 
     class CircuitNotConnectedValidator {
         +hasDisconnectedProbes(circuit: Circuit): boolean
-        -isOrReachesInput(node: Node): boolean
+        -checkParenting(circuit: Circuit): boolean
     }
+    CircuitNotConnectedValidator --> "1" NodeParentableVisitor : -visitor
 }
 
 @enduml

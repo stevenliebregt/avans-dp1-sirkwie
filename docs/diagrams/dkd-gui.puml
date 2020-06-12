@@ -8,7 +8,17 @@ package com.rickensteven.sirkwie.gui {
         class FileChooser <<javafx.stage>>
     }
 
-    class Main extends Application {
+    class Main {
+        +{static}main(args: String[])
+    }
+    note top of Main
+        Thanks to a "feature" of JavaFX, you cannot
+        create a fat jar if your entry class
+        extends the JavaFX Application class
+    end note
+    Main -- FXMain
+
+    class FXMain extends Application {
         -{static}SCENE_WIDTH: int
         -{static}SCENE_HEIGHT: int
 
@@ -16,9 +26,9 @@ package com.rickensteven.sirkwie.gui {
         +start(stage: Stage)
         +stop()
     }
-    Main -- ViewModel
-    Main -- Controller
-    Main -- MainView
+    FXMain -- ViewModel
+    FXMain -- Controller
+    FXMain -- MainView
 
     class Controller {
         +Controller(viewModel: ViewModel)
@@ -27,6 +37,8 @@ package com.rickensteven.sirkwie.gui {
         +quit(mouseEvent: MouseEvent)
         +tryToLoadFile(filePath: String)
         +inputButtonClicked(nodeName: String)
+        +addListener(simulationListener: ISimulationListener)
+        -simulate(circuit: Circuit)
         -alert(message: String)
     }
     Controller --> "1" ViewModel : -viewModel
@@ -35,6 +47,7 @@ package com.rickensteven.sirkwie.gui {
 
     class ViewModel {
         +circuitProperty: Property<Circuit>
+        +circuitSimulateStartTriggerProperty: BooleanProperty
         +circuitSimulatedTriggerProperty: BooleanProperty
     }
     note bottom of ViewModel

@@ -39,6 +39,25 @@ package view {
         -getImageView(value: boolean): ImageView
     }
 
+    class LogView extends AbstractSimulationView implements ISimulationListener {
+        -{static}HEIGHT: int
+        -treeView: TreeView<String>
+        -rootNodes: LinkedList<TreeItem<String>>
+        -history: LinkedHashMap<Node, TreeItem<String>>
+
+        +LogView(controller: Controller, viewModel: ViewModel)
+        #setupUi()
+        #draw(circuit: Circuit)
+        #update(circuit: Circuit)
+        +onStartCalculate(node: Node)
+        +onStopCalculate(node: Node)
+        #connectViewModel()
+        -refresh()
+        #resetView()
+        -expand(item: TreeItem<String>)
+    }
+    LogView --> "1" TableNodeDrawingVisitor : -tableNodeDrawingVisitor
+
     class MainView {
         -view: BorderPane
         -simulateButton: Button

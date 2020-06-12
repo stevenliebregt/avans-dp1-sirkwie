@@ -25,8 +25,9 @@ package graphstream {
 
         +GraphstreamSimulationView(controller: Controller, viewModel: ViewModel)
         #setupUi()
+        #update(circuit: Circuit)
         #draw(circuit: Circuit)
-        -drawNodes(circuit: Circuit)
+        -drawNodes(circuit: Circuit, addToGraph: boolean)
         -drawEdges(circuit: Circuit)
         -getStyleSheet(): String
     }
