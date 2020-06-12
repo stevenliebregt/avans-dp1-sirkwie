@@ -20,8 +20,6 @@ public class CircuitNotConnectedValidator
 
         if (checkParenting(circuit)) return true;
 
-        // TODO: Check again
-
         return hasParentNodes.size() != isParentNodes.size();
     }
 
