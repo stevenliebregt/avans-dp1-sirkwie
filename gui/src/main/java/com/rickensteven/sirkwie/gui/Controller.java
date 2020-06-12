@@ -49,9 +49,7 @@ public class Controller
             return;
         }
 
-        circuit.simulate();
-        viewModel.circuitSimulatedTriggerProperty
-                .setValue(!viewModel.circuitSimulatedTriggerProperty.getValue());
+        simulate(circuit);
     }
 
     public void quit(MouseEvent mouseEvent)
@@ -101,14 +99,19 @@ public class Controller
         }
 
         input.setValue(!input.getValue());
-        circuit.simulate();
-        viewModel.circuitSimulatedTriggerProperty
-                .setValue(!viewModel.circuitSimulatedTriggerProperty.getValue());
+        simulate(circuit);
     }
 
     public void addListener(ISimulationListener simulationListener)
     {
         circuitLoaderFacade.addSimulationListener(simulationListener);
+    }
+
+    private void simulate(Circuit circuit)
+    {
+        viewModel.circuitSimulateStartTriggerProperty.setValue(!viewModel.circuitSimulatedTriggerProperty.getValue());
+        circuit.simulate();
+        viewModel.circuitSimulatedTriggerProperty.setValue(!viewModel.circuitSimulatedTriggerProperty.getValue());
     }
 
     private void alert(String message)

@@ -10,5 +10,6 @@ public class ViewModel
 {
     public final Property<Circuit> circuitProperty = new SimpleObjectProperty<>(null);
 
+    public final BooleanProperty circuitSimulateStartTriggerProperty = new SimpleBooleanProperty(false);
     public final BooleanProperty circuitSimulatedTriggerProperty = new SimpleBooleanProperty(false);
 }

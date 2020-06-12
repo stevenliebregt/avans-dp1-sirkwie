@@ -5,7 +5,6 @@ import com.rickensteven.sirkwie.core.exception.CircuitInfiniteLoopException;
 import com.rickensteven.sirkwie.core.exception.CircuitNotConnectedException;
 import com.rickensteven.sirkwie.core.parsing.ANTLRCircuitParser;
 import com.rickensteven.sirkwie.core.parsing.ICircuitParser;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -54,7 +53,25 @@ public class CircuitLoaderFacadeTest
     @Test
     public void antlrCircuit3Encoder()
     {
-        // TODO:
+        ICircuitParser circuitParser = new ANTLRCircuitParser();
+        CircuitLoaderFacade circuitLoaderFacade = new CircuitLoaderFacade(circuitParser);
+
+        assertDoesNotThrow(() -> {
+            Circuit circuit = circuitLoaderFacade.loadCircuit(ClassLoader.getSystemResource("Circuit3_Encoder.txt").getPath());
+
+            assertFalse(circuit.getInput("I0").getValue());
+            assertFalse(circuit.getInput("I1").getValue());
+            assertFalse(circuit.getInput("I2").getValue());
+            assertFalse(circuit.getInput("I3").getValue());
+            assertFalse(circuit.getInput("I4").getValue());
+            assertFalse(circuit.getInput("I5").getValue());
+            assertFalse(circuit.getInput("I6").getValue());
+            assertTrue(circuit.getInput("I7").getValue());
+
+            assertEquals(8, circuit.getInputs().size());
+            assertEquals(14, circuit.getNodes().size());
+            assertEquals(3, circuit.getProbes().size());
+        });
     }
 
     @Test

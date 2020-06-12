@@ -49,10 +49,6 @@ public class MainView
         ProbeView probeView = new ProbeView(controller, viewModel);
         view.setRight(probeView.getView());
 
-        // Add the log view
-        LogView logView = new LogView(controller, viewModel);
-        view.setBottom(logView.getView());
-
         // Set the simulation views
         TextSimulationView textSimulationView = new TextSimulationView(controller, viewModel);
         GraphstreamSimulationView graphstreamSimulationView = new GraphstreamSimulationView(controller, viewModel);
@@ -63,7 +59,15 @@ public class MainView
         tabPane.getTabs().add(new Tab("Text", textSimulationView.getView()));
         tabPane.getTabs().add(new Tab("Graphstream", graphstreamSimulationView.getView()));
 
-        view.setCenter(tabPane);
+        // Add the log view
+        LogView logView = new LogView(controller, viewModel);
+
+        // Create pane which has log and tab
+        BorderPane borderPane = new BorderPane();
+        borderPane.setCenter(tabPane);
+        borderPane.setBottom(logView.getView());
+
+        view.setCenter(borderPane);
     }
 
     private void connectViewModel()

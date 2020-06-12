@@ -28,7 +28,7 @@ public class ImageLoader
         return new Image(inputStream);
     }
 
-    public ImageView loadView(String name)
+    public ImageView loadView(String name) // TODO: Flyweight
     {
         Image image = load(name);
 
