@@ -7,7 +7,6 @@ import java.util.List;
 
 public class TableNodeData
 {
-
     private final String name;
     private final String type;
     private final boolean output;

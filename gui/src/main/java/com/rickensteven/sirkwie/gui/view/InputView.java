@@ -15,7 +15,7 @@ import java.util.Map;
 
 public class InputView extends AbstractSimulationView
 {
-    private static final int WIDTH = 100;
+    private static final int WIDTH = 80;
     private Map<String, Button> inputButtons;
 
     public InputView(Controller controller, ViewModel viewModel)
@@ -45,11 +45,14 @@ public class InputView extends AbstractSimulationView
     {
         VBox vBox = new VBox();
         vBox.setAlignment(Pos.CENTER);
+        vBox.setSpacing(4);
+
         inputButtons = new LinkedHashMap<>();
 
         circuit.getInputs().forEach(input -> {
             Button button = new Button(input.getName(), getImageView(input.getValue()));
             button.setContentDisplay(ContentDisplay.TOP);
+            button.setPrefSize(60, 60);
             button.setOnMouseClicked((mouseEvent -> controller.inputButtonClicked(input.getName())));
 
             inputButtons.put(input.getName(), button);

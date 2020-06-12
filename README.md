@@ -28,6 +28,10 @@ schrijven bent.
 | :core:test | Run de tests van de core package |
 | generateDiagrams | Genereer PNG images van de diagrammen |
 
+## Verborgen patterns
+
+* Flyweight in de `com.rickensteven.sirkwie.gui.ImageLoader#load`.
+
 ## Icons
 
 <div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>

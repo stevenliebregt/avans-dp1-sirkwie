@@ -15,7 +15,7 @@ import java.util.Map;
 
 public class ProbeView extends AbstractSimulationView
 {
-    private static final int WIDTH = 100;
+    private static final int WIDTH = 80;
     private Map<String, Button> probeButtons;
 
     public ProbeView(Controller controller, ViewModel viewModel)
@@ -45,11 +45,14 @@ public class ProbeView extends AbstractSimulationView
     {
         VBox vBox = new VBox();
         vBox.setAlignment(Pos.CENTER);
+        vBox.setSpacing(4);
+
         probeButtons = new LinkedHashMap<>();
 
         circuit.getProbes().forEach(probe -> {
             Button button = new Button(probe.getName(), getImageView(probe.getValue()));
             button.setContentDisplay(ContentDisplay.TOP);
+            button.setPrefSize(60, 60);
 
             probeButtons.put(probe.getName(), button);
         });
