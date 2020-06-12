@@ -28,7 +28,7 @@ public class MainView
         connectViewModel();
 
         // Load the full-adder circuit on startup so it is not so empty.
-        controller.tryToLoadFile(ClassLoader.getSystemResource("Circuit1_FullAdder.txt").getPath());
+        controller.tryToLoadFile("/Circuit1_FullAdder.txt");
     }
 
     public Parent getView()

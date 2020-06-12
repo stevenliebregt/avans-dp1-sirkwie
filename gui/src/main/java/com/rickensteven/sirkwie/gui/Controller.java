@@ -36,6 +36,10 @@ public class Controller
     {
         File selectedFile = fileChooser.showOpenDialog(ownerWindow);
 
+        if (selectedFile == null) { // Cancel clicked in dialog
+            return;
+        }
+
         tryToLoadFile(selectedFile.getAbsolutePath());
         simulateButtonClicked();
     }

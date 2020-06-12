@@ -6,7 +6,13 @@ public class CircuitFileReader
 {
     public String read(String filePath) throws IOException
     {
-        InputStream inputStream = new FileInputStream(filePath);
+        InputStream inputStream = getClass().getResourceAsStream(filePath);
+
+        // Try to fetch the file another way, this allows us to read files from
+        // inside, and outside of a JAR.
+        if (inputStream == null) {
+            inputStream = new FileInputStream(filePath);
+        }
 
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
 
