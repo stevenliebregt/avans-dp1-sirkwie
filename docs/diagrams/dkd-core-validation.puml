@@ -1,0 +1,11 @@
+@startuml
+
+class CircuitInfiniteLoopValidator {
+
+}
+
+class CircuitNotConnectedValidator {
+
+}
+
+@enduml

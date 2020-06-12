@@ -2,27 +2,67 @@
 
 package building {
     class CircuitBuilder {
-
+        +getCircuit(): Circuit
+        +reset(circuitDefinition: CircuitDefinition)
+        +buildNodes()
+        +buildEdges()
     }
+    CircuitBuilder --> "1" CircuitDefinition : -circuitDefinition
+    CircuitBuilder --> "1" Circuit : -circuit
+    CircuitBuilder --> "0..*" Node : -nodes
+    CircuitBuilder --> "1" NodeParentableVisitor : -nodeParentableVisitor
+    CircuitBuilder -- NodeFactory
 
     class CircuitBuilderDirector {
-
+       +setCircuitBuilder(circuitBuilder: CircuitBuilder)
+       +construct(circuitDefinition: CircuitDefinition)
     }
+    CircuitBuilderDirector --> "1" CircuitBuilder : -circuitBuilder
 
     class CircuitDefinition {
+        -nodes: Map<String, String>
+        -edges: Map<String, List<String>>
 
+        +CircuitDefinition(nodes: Map<String, String>, edges: Map<String, List<String>>)
+        +getNodes(): Map<String, String>
+        +getEdges(): Map<String, List<String>>
     }
 
-    class NodeFactory {
+    class NodeFactory <<Singleton>> {
+        -{static}instance: NodeFactory
+        -types: Map<String, NodeType>
 
+        +{static}getInstance(): NodeFactory
+        +createNode(nodeName: String, nodeTypeName: String): Node
     }
+    NodeFactory -- NodeType
 
-    class NodeParentableVisitor {
+    class NodeParentableVisitor implements INodeVisitor {
+        +parentable: boolean
 
+        +isParentable(): boolean
+        +visit(node: Probe)
+        +visit(node: Input)
+        +visit(node: AndGate)
+        +visit(node: NAndGate)
+        +visit(node: NOrGate)
+        +visit(node: OrGate)
+        +visit(node: XOrGate)
     }
 
     enum NodeType {
+        INPUT_HIGH
+        INPUT_LOW
+        PROBE
+        AND
+        OR
+        NOT
+        NOR
+        XOR
+        NAND
 
+        +NodeType(type: String)
+        +{abstract}getInstance(name: String): Node
     }
 }
 

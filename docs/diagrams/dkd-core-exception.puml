@@ -1,0 +1,23 @@
+@startuml
+
+class CircuitInfiniteLoopException extends RuntimeException {
+    +CircuitInfiniteLoopException(errorMessage: String)
+}
+
+class CircuitNotConnectedException extends RuntimeException {
+    +CircuitNotConnectedException(errorMessage: String)
+}
+
+class CircuitSyntaxException extends RuntimeException {
+    +CircuitSyntaxException(errorMessage: String)
+}
+
+class NodeNotParentable extends RuntimeException {
+    +NodeNotParentable(errorMessage: String)
+}
+
+class NodeTypeUnknownException extends RuntimeException {
+    +NodeTypeUnknownException(errorMessage: String)
+}
+
+@enduml

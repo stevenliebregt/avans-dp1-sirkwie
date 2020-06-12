@@ -24,6 +24,9 @@ plantuml {
         dkdCore { sourceFile = project.file('docs/diagrams/dkd-core.puml') }
         dkdCoreBuilding { sourceFile = project.file('docs/diagrams/dkd-core-building.puml') }
         dkdCoreDomain { sourceFile = project.file('docs/diagrams/dkd-core-domain.puml') }
+        dkdCoreException { sourceFile = project.file('docs/diagrams/dkd-core-exception.puml') }
+        dkdCoreParsing { sourceFile = project.file('docs/diagrams/dkd-core-parsing.puml') }
+        dkdCoreValidation { sourceFile = project.file('docs/diagrams/dkd-core-validation.puml') }
 
         dkdGui { sourceFile = project.file('docs/diagrams/dkd-gui.puml') }
 

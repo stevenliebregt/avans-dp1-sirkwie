@@ -1,8 +1,19 @@
 @startuml
 
 package com.rickensteven.sirkwie.core {
-    !include dkd-core-building.puml
     !include dkd-core-domain.puml
+    !include dkd-core-building.puml
+    !include dkd-core-exception.puml
+    !include dkd-core-parsing.puml
+    !include dkd-core-validation.puml
+
+    class CircuitFileReader {
+
+    }
+
+    class CircuitLoaderFacade {
+
+    }
 }
 
 @enduml
