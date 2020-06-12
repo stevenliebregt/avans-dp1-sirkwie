@@ -27,7 +27,7 @@ public class MainView
         setupUi();
         connectViewModel();
 
-        // TODO: Maybe remove, useful for testing to load default circuit on startup
+        // Load the full-adder circuit on startup so it is not so empty.
         controller.tryToLoadFile(ClassLoader.getSystemResource("Circuit1_FullAdder.txt").getPath());
     }
 
