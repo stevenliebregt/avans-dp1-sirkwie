@@ -36,6 +36,7 @@ public class CircuitNotConnectedValidatorTest
 
         circuit.addInput(input);
         circuit.addNode(nodeA);
+        circuit.addNode(nodeB);
         circuit.addProbe(probeA);
         circuit.addProbe(probeB);
 
@@ -63,7 +64,7 @@ public class CircuitNotConnectedValidatorTest
     }
 
     @Test
-    public void allProbesAreConnectedComplex()
+    public void notAllProbesAreConnectedComplex()
     {
         Circuit circuit = new Circuit();
 
@@ -75,7 +76,7 @@ public class CircuitNotConnectedValidatorTest
 
         Node node3 = new AndGate(Collections.emptyList(), "N3"); // This one is not connected to any inputs
         Node node4 = new AndGate(new ArrayList<>()
-        {{ // One of the parents is not connected, the other is, so it should be valid
+        {{ // One of the parents is not connected
             add(input2);
             add(node3);
         }}, "N4");
@@ -94,6 +95,6 @@ public class CircuitNotConnectedValidatorTest
 
         CircuitNotConnectedValidator circuitNotConnectedValidator = new CircuitNotConnectedValidator();
 
-        assertFalse(circuitNotConnectedValidator.hasDisconnectedProbes(circuit));
+        assertTrue(circuitNotConnectedValidator.hasDisconnectedProbes(circuit));
     }
 }

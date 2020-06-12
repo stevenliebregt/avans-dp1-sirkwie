@@ -1,46 +1,62 @@
 package com.rickensteven.sirkwie.core.validation;
 
+import com.rickensteven.sirkwie.core.building.NodeParentableVisitor;
 import com.rickensteven.sirkwie.core.domain.*;
 
-import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class CircuitNotConnectedValidator
 {
+    private NodeParentableVisitor visitor = new NodeParentableVisitor();
+    private Set<Node> hasParentNodes;
+    private Set<Node> isParentNodes;
+
     public boolean hasDisconnectedProbes(Circuit circuit)
     {
-        List<Boolean> probesConnected = new ArrayList<>();
+        hasParentNodes = new HashSet<>();
+        isParentNodes = new HashSet<>();
 
-        for (Probe probe : circuit.getProbes()) {
-            if (probe.getParents().size() == 0) {
-                probesConnected.add(false);
-                continue;
-            }
+        if (checkParenting(circuit)) return true;
 
-            boolean reaches = false;
+        // TODO: Check again
 
-            for (Node node : probe.getParents()) {
-                if (reaches) continue;
-
-                if (isOrReachesInput(node)) {
-                    reaches = true;
-                    probesConnected.add(true);
-                } else {
-                    probesConnected.add(false);
-                }
-            }
-        }
-
-        return probesConnected.contains(false);
+        return hasParentNodes.size() != isParentNodes.size();
     }
 
-    private boolean isOrReachesInput(Node node)
+    /**
+     * Checks and stores parents on both sides of nodes.
+     *
+     * @param circuit The circuit to check.
+     * @return true If there are any nodes without parents.
+     */
+    private boolean checkParenting(Circuit circuit)
     {
-        if (node instanceof Input) return true;
+        for (Node node : circuit.getNodes()) {
+            node.accept(visitor);
 
-        if (node instanceof NodeComposite) {
-            for (Node parent : ((NodeComposite) node).getParents()) {
-                if (isOrReachesInput(parent)) return true;
+            // Skip leaf nodes
+            if (!visitor.isParentable()) continue;
+
+            // Early quit on probes
+            if (node instanceof Probe && ((Probe) node).getParents().size() == 0) {
+                return true;
+            }
+
+            List<Node> parents = ((NodeComposite) node).getParents();
+
+            // Early quit on nodes without parents
+            if (parents.size() == 0) {
+                return true;
+            } else if (!(node instanceof Probe)) {
+                hasParentNodes.add(node); // Remember that this node has parents
+            }
+
+            for (Node parent : parents) {
+                if (parent instanceof Input) continue;
+
+                isParentNodes.add(parent);
             }
         }
 

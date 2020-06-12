@@ -5,6 +5,7 @@ import com.rickensteven.sirkwie.core.exception.CircuitInfiniteLoopException;
 import com.rickensteven.sirkwie.core.exception.CircuitNotConnectedException;
 import com.rickensteven.sirkwie.core.parsing.ANTLRCircuitParser;
 import com.rickensteven.sirkwie.core.parsing.ICircuitParser;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -67,16 +68,19 @@ public class CircuitLoaderFacadeTest
         });
     }
 
-    /**
-     * Een circuit is incorrect als... of als niet alle PROBES bereikt kunnen worden.
-     * http://webdictaat.aii.avans.nl/dictaten/DesignPatterns1/#/Eindopdracht
-     *
-     * The file Circuit5_NotConnected has been provided to test this, but all probes
-     * are actually reacheable in that file, so we added Circuit6_NotAllProbesReachable
-     * to test our implementation.
-     */
     @Test
     public void antlrCircuit5NotConnected()
+    {
+        ICircuitParser circuitParser = new ANTLRCircuitParser();
+        CircuitLoaderFacade circuitLoaderFacade = new CircuitLoaderFacade(circuitParser);
+
+        assertThrows(CircuitNotConnectedException.class, () -> {
+            circuitLoaderFacade.loadCircuit(ClassLoader.getSystemResource("Circuit5_NotConnected.txt").getPath());
+        });
+    }
+
+    @Test
+    public void antlrCircuit6NotConnected()
     {
         ICircuitParser circuitParser = new ANTLRCircuitParser();
         CircuitLoaderFacade circuitLoaderFacade = new CircuitLoaderFacade(circuitParser);
