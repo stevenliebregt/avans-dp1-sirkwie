@@ -7,13 +7,20 @@ package com.rickensteven.sirkwie.core {
     !include dkd-core-parsing.puml
     !include dkd-core-validation.puml
 
-    class CircuitFileReader {
+    left to right direction
 
+    class CircuitFileReader {
+        +read(filePath: String): String
     }
 
     class CircuitLoaderFacade {
-
+        +CircuitLoaderFacade(circuitParser: ICircuitParser)
+        +loadCircuit(filePath: String): Circuit
     }
+    CircuitLoaderFacade --> "1" CircuitFileReader : -circuitFileReader
+    CircuitLoaderFacade --> "1" CircuitNotConnectedValidator : -circuitNotConnectedValidator
+    CircuitLoaderFacade --> "1" CircuitInfiniteLoopValidator : -circuitInfiniteLoopValidator
+    CircuitLoaderFacade --> "1" ICircuitParser : -circuitParser
 }
 
 @enduml

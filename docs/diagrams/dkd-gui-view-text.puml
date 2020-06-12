@@ -1,0 +1,25 @@
+@startuml
+
+package text {
+    class TextNodeDrawingVisitor implements INodeVisitor {
+        -value: String
+
+        +getValue(): String
+        +visit(node: Probe)
+        +visit(node: Input)
+        +visit(node: AndGate)
+        +visit(node: NAndGate)
+        +visit(node: NOrGate)
+        +visit(node: OrGate)
+        +visit(node: XOrGate)
+    }
+
+    class TextSimulationView extends AbstractSimulationView {
+        +TextSimulationView(controller: Controller, viewModel: ViewModel)
+        #setupUi()
+        #draw(circuit: Circuit)
+    }
+    TextSimulationView --> "1" TextNodeDrawingVisitor : -visitor
+}
+
+@enduml

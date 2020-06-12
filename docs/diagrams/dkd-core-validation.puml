@@ -1,11 +1,16 @@
 @startuml
 
-class CircuitInfiniteLoopValidator {
+package validation {
+    class CircuitInfiniteLoopValidator {
+        +circuitHasInfiniteLoops(circuit: Circuit): boolean
+        -detect(probe: Probe): boolean
+        -detect(node: NodeComposite, visitedNodes: Set<Node>): boolean
+    }
 
-}
-
-class CircuitNotConnectedValidator {
-
+    class CircuitNotConnectedValidator {
+        +hasDisconnectedProbes(circuit: Circuit): boolean
+        -isOrReachesInput(node: Node): boolean
+    }
 }
 
 @enduml

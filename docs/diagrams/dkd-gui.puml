@@ -1,8 +1,53 @@
 @startuml
 
 package com.rickensteven.sirkwie.gui {
-    class Main {
+    !include dkd-gui-view.puml
 
+    package javafx #ffcc00 {
+        class Application <<javafx.application>>
+        class FileChooser <<javafx.stage>>
+    }
+
+    class Main extends Application {
+        -{static}SCENE_WIDTH: int
+        -{static}SCENE_HEIGHT: int
+
+        +{static}main(args: String[])
+        +start(stage: Stage)
+        +stop()
+    }
+    Main -- ViewModel
+    Main -- Controller
+    Main -- MainView
+
+    class Controller {
+        +Controller(viewModel: ViewModel)
+        +loadFileButtonClicked(ownerWindow: Window)
+        +simulateButtonClicked()
+        +quit(mouseEvent: MouseEvent)
+        +tryToLoadFile(filePath: String)
+        +inputButtonClicked(nodeName: String)
+        -alert(message: String)
+    }
+    Controller --> "1" ViewModel : -viewModel
+    Controller --> "1" FileChooser : -fileChooser
+    Controller --> "1" CircuitLoaderFacade : -circuitLoaderFacade
+
+    class ViewModel {
+        +circuitProperty: Property<Circuit>
+        +circuitSimulatedTriggerProperty: BooleanProperty
+    }
+    note bottom of ViewModel
+        Property class comes from JavaFX
+    end note
+
+    class ImageLoader <<Singleton>> {
+        -{static}IMAGES_BASEPATH: String
+        -{static}instance: ImageLoader
+
+        +{static}getInstance(): ImageLoader
+        +load(name: String): Image
+        +loadView(name: String): ImageView
     }
 }
 

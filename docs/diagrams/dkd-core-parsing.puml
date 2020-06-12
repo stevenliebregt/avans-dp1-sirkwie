@@ -1,33 +1,35 @@
 @startuml
 
-class ANTLRErrorListener <<org.antlr.v4.runtime>>
-abstract class DP1CircuitBaseVisitor <<generated>>
+package parsing {
+    class ANTLRErrorListener <<org.antlr.v4.runtime>>
+    abstract class DP1CircuitBaseVisitor <<generated>>
 
-class ANTLRCircuitParser implements ICircuitParser {
-    +parse(cleantedTxtCircuit): CircuitDefinition
-    -convertParseTreeToCircuitDefinition(parseTree: ParseTree): CircuitDefinition
-}
+    class ANTLRCircuitParser implements ICircuitParser {
+        +parse(cleantedTxtCircuit): CircuitDefinition
+        -convertParseTreeToCircuitDefinition(parseTree: ParseTree): CircuitDefinition
+    }
 
-class ANTLRParserErrorListener implements ANTLRErrorListener {
-    -syntaxErrorsCount: int
+    class ANTLRParserErrorListener implements ANTLRErrorListener {
+        -syntaxErrorsCount: int
 
-    +hasSyntaxErrors(): boolean
-    +syntaxError(recognizer, offendingSymbol, line, charPositionInLine, msg, e)
-}
+        +hasSyntaxErrors(): boolean
+        +syntaxError(recognizer, offendingSymbol, line, charPositionInLine, msg, e)
+    }
 
-class ANTLRVisitor extends DP1CircuitBaseVisitor {
-    -nodes: Map<String, String>
-    -edges: Map<String, List<String>>
+    class ANTLRVisitor extends DP1CircuitBaseVisitor {
+        -nodes: Map<String, String>
+        -edges: Map<String, List<String>>
 
-    +ANTLRVisitor()
-    +visit(tree: ParseTree)
-    +visitNodeDefinition(ctx: DP1CircuitParser.NodeDefinitionContext): CircuitDefinition
-    +visitEdgeDefinition(ctx: DP1CircuitParser.EdgeDefinitionContext): CircuitDefinition
-}
-ANTLRVisitor --> "1" CircuitDefinition : -circuitDefinition
+        +ANTLRVisitor()
+        +visit(tree: ParseTree)
+        +visitNodeDefinition(ctx: DP1CircuitParser.NodeDefinitionContext): CircuitDefinition
+        +visitEdgeDefinition(ctx: DP1CircuitParser.EdgeDefinitionContext): CircuitDefinition
+    }
+    ANTLRVisitor --> "1" CircuitDefinition : -circuitDefinition
 
-interface ICircuitParser {
-    +parse(cleanedTxtCircuit: String): CircuitDefinition
+    interface ICircuitParser {
+        +parse(cleanedTxtCircuit: String): CircuitDefinition
+    }
 }
 
 @enduml

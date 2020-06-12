@@ -15,7 +15,7 @@ repositories {
 plantuml {
     options {
         outputDir = project.file('docs/diagrams/build')
-        format = 'png'
+        format = 'svg'
     }
 
     diagrams {
@@ -29,6 +29,9 @@ plantuml {
         dkdCoreValidation { sourceFile = project.file('docs/diagrams/dkd-core-validation.puml') }
 
         dkdGui { sourceFile = project.file('docs/diagrams/dkd-gui.puml') }
+        dkdGuiView { sourceFile = project.file('docs/diagrams/dkd-gui-view.puml') }
+        dkdGuiViewGraphstream { sourceFile = project.file('docs/diagrams/dkd-gui-view-graphstream.puml') }
+        dkdGuiViewText { sourceFile = project.file('docs/diagrams/dkd-gui-view-text.puml') }
 
         sequence { sourceFile = project.file('docs/diagrams/sequence.puml') }
     }

@@ -1,0 +1,36 @@
+@startuml
+
+package graphstream {
+    class GraphNodeData {
+        +name: String
+        +type: String
+
+        +GraphNodeData(name: String, type: String)
+    }
+
+    class GraphNodeDrawingVisitor implements INodeVisitor {
+        +getValue(): GraphNodeData
+        +visit(node: Probe)
+        +visit(node: Input)
+        +visit(node: AndGate)
+        +visit(node: NAndGate)
+        +visit(node: NOrGate)
+        +visit(node: OrGate)
+        +visit(node: XOrGate)
+    }
+    GraphNodeDrawingVisitor --> "1" GraphNodeData : -value
+
+    class GraphstreamSimulationView extends AbstractSimulationView {
+        -graph: MultiGraph
+
+        +GraphstreamSimulationView(controller: Controller, viewModel: ViewModel)
+        #setupUi()
+        #draw(circuit: Circuit)
+        -drawNodes(circuit: Circuit)
+        -drawEdges(circuit: Circuit)
+        -getStyleSheet(): String
+    }
+    GraphNodeSimulationView --> "1" GraphNodeDrawingVisitor : -visitor
+}
+
+@enduml

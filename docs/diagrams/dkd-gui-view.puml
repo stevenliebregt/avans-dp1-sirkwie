@@ -1,0 +1,59 @@
+@startuml
+
+package view {
+    abstract class AbstractSimulationView {
+        #view: Pane
+
+        +AbstractSimulationView(controller: Controller, viewModel: ViewModel)
+        +getView(): Pane
+        #update(circuit: Circuit)
+        #connectViewModel()
+        #resetView()
+
+        #{abstract}setupUi()
+        #{abstract}draw(circuit: Circuit)
+    }
+    AbstractSimulationView --> "1" Controller : #controller
+    AbstractSimulationView --> "1" ViewModel : #viewModel
+    AbstractSimulationView --> "1" ImageLoader : #imageLoader
+
+    class InputView extends AbstractSimulationView {
+        -{static}WIDTH: int
+        -inputButtons: Map<String, Button>
+
+        +InputView(controller: Controller, viewModel: ViewModel)
+        #setupUi()
+        #draw(circuit: Circuit)
+        #update(circuit: Circuit)
+        -getImageView(value: boolean): ImageView
+    }
+
+    class ProbeView extends AbstractSimulationView {
+        -{static}WIDTH: int
+        -probeButtons: Map<String, Button>
+
+        +ProbeView(controller: Controller, viewModel: ViewModel)
+        #setupUi()
+        #draw(circuit: Circuit)
+        #update(circuit: Circuit)
+        -getImageView(value: boolean): ImageView
+    }
+
+    class MainView {
+        -view: BorderPane
+        -simulateButton: Button
+
+        +MainView(controller: Controller, viewModel: ViewModel)
+        +getView(): Parent
+        -setupUi()
+        -connectViewModel()
+        -setupUiToolbar(): Toolbar
+    }
+    MainView --> "1" Controller : -controller
+    MainView --> "1" ViewModel : -viewModel
+
+    !include dkd-gui-view-graphstream.puml
+    !include dkd-gui-view-text.puml
+}
+
+@enduml

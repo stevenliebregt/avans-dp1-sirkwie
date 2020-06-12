@@ -9,7 +9,7 @@ import java.io.InputStream;
 
 public class ImageLoader
 {
-    public static final String IMAGES_BASEPATH = "images/";
+    private static final String IMAGES_BASEPATH = "images/";
 
     private static ImageLoader instance;
 
