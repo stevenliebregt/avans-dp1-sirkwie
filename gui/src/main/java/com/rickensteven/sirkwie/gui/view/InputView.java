@@ -20,8 +20,6 @@ public class InputView extends AbstractSimulationView
     public InputView(Controller controller, ViewModel viewModel)
     {
         super(controller, viewModel);
-
-        inputButtons = new LinkedHashMap<>();
     }
 
     @Override
@@ -45,6 +43,7 @@ public class InputView extends AbstractSimulationView
     protected void draw(Circuit circuit)
     {
         VBox vBox = new VBox();
+        inputButtons = new LinkedHashMap<>();
 
         circuit.getInputs().forEach(input -> {
             Button button = new Button(input.getName(), getImageView(input.getValue()));

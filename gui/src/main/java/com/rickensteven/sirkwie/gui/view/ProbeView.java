@@ -20,8 +20,6 @@ public class ProbeView extends AbstractSimulationView
     public ProbeView(Controller controller, ViewModel viewModel)
     {
         super(controller, viewModel);
-
-        probeButtons = new LinkedHashMap<>();
     }
 
     @Override
@@ -45,6 +43,7 @@ public class ProbeView extends AbstractSimulationView
     protected void draw(Circuit circuit)
     {
         VBox vBox = new VBox();
+        probeButtons = new LinkedHashMap<>();
 
         circuit.getProbes().forEach(probe -> {
             Button button = new Button(probe.getName(), getImageView(probe.getValue()));
