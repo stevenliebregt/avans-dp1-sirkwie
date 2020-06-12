@@ -36,11 +36,11 @@ public class CircuitBuilder
 
     public void buildEdges()
     {
-        circuitDefinition.getEdges().forEach((key, value) -> {
-            Node parentNode = this.nodes.get(key);
+        circuitDefinition.getEdges().forEach((nodeIdentifier, connections) -> {
+            Node parentNode = this.nodes.get(nodeIdentifier);
 
-            value.forEach(child -> {
-                Node node = this.nodes.get(child);
+            connections.forEach(connection -> {
+                Node node = this.nodes.get(connection);
                 node.accept(visitor);
 
                 if (!visitor.isParentable()) {

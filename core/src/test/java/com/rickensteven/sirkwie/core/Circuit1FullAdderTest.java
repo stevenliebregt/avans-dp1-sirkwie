@@ -1,4 +1,4 @@
-package com.rickensteven.sirkwie.core.circuit;
+package com.rickensteven.sirkwie.core;
 
 import com.rickensteven.sirkwie.core.domain.Circuit;
 import com.rickensteven.sirkwie.core.util.ReadTestCircuitFileUtil;
