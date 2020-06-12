@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<circuit>
+    <nodes>
+        <node name="A" type="INPUT_HIGH" />
+        <node name="NODE1" type="AND" />
+        <node name="S" type="PROBE" />
+    </nodes>
+    <edges>
+        <edge source="A" target="NODE1" />
+        <edge source="NODE1" target="S" />
+    </edges>
+</circuit>

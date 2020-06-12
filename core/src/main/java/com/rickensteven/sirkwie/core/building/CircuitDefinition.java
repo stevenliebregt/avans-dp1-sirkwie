@@ -1,25 +1,25 @@
 package com.rickensteven.sirkwie.core.building;
 
-import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class CircuitDefinition
 {
-    private final HashMap<String, String> nodes;
-    private final HashMap<String, List<String>> edges;
+    private final Map<String, String> nodes;
+    private final Map<String, List<String>> edges;
 
-    public CircuitDefinition(HashMap<String, String> nodes, HashMap<String, List<String>> edges)
+    public CircuitDefinition(Map<String, String> nodes, Map<String, List<String>> edges)
     {
         this.nodes = nodes;
         this.edges = edges;
     }
 
-    public HashMap<String, String> getNodes()
+    public Map<String, String> getNodes()
     {
         return nodes;
     }
 
-    public HashMap<String, List<String>> getEdges()
+    public Map<String, List<String>> getEdges()
     {
         return edges;
     }
