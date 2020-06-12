@@ -7,6 +7,7 @@ import com.rickensteven.sirkwie.gui.ViewModel;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.layout.Priority;
 import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
 
@@ -30,15 +31,15 @@ public class TextSimulationView extends AbstractSimulationView
     @Override
     protected void draw(Circuit circuit)
     {
-        TableView tableView = new TableView();
+        TableView<TableNodeData> tableView = new TableView<>();
 
-        TableColumn<String, TableNodeData> column1 = new TableColumn<>("Name");
+        TableColumn<TableNodeData, String> column1 = new TableColumn<>("Name");
         column1.setCellValueFactory(new PropertyValueFactory<>("name"));
-        TableColumn<String, TableNodeData> column2 = new TableColumn<>("Type");
+        TableColumn<TableNodeData, String> column2 = new TableColumn<>("Type");
         column2.setCellValueFactory(new PropertyValueFactory<>("type"));
-        TableColumn<String, TableNodeData> column3 = new TableColumn<>("Output");
+        TableColumn<TableNodeData, String> column3 = new TableColumn<>("Output");
         column3.setCellValueFactory(new PropertyValueFactory<>("output"));
-        TableColumn<String, TableNodeData> column4 = new TableColumn<>("Parents");
+        TableColumn<TableNodeData, String> column4 = new TableColumn<>("Parents");
         column4.setCellValueFactory(new PropertyValueFactory<>("parents"));
 
         tableView.getColumns().add(column1);
@@ -50,6 +51,8 @@ public class TextSimulationView extends AbstractSimulationView
             node.accept(visitor);
             tableView.getItems().add(visitor.getValue());
         });
+
+        VBox.setVgrow(tableView, Priority.ALWAYS);
 
         VBox vbox = new VBox(tableView);
         view.getChildren().add(vbox);
