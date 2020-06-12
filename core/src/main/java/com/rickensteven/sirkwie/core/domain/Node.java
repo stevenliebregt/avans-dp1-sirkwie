@@ -9,7 +9,7 @@ public abstract class Node
 {
     protected boolean value;
     private final String name;
-    private Set<ISimulationListener> simulationListeners;
+    private final Set<ISimulationListener> simulationListeners;
 
     public Node(String name)
     {

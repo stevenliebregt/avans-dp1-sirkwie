@@ -21,7 +21,7 @@ public class NAndGateTest
     @Test
     public void shouldReturnOnA()
     {
-        List<Node> inputs = new ArrayList<Node>()
+        List<Node> inputs = new ArrayList<>()
         {{
             add(new Input(false, "A"));
             add(new Input(false, "B"));
@@ -81,7 +81,7 @@ public class NAndGateTest
     @Test
     public void shouldReturnOff()
     {
-        List<Node> inputs = new ArrayList<Node>()
+        List<Node> inputs = new ArrayList<>()
         {{
             add(new Input(true, "A"));
             add(new Input(true, "B"));

@@ -15,7 +15,7 @@ public class ImageLoader
 {
     private static final String IMAGES_BASEPATH = "images/";
 
-    private Map<String, Image> images = new HashMap<>();
+    private final Map<String, Image> images = new HashMap<>();
 
     private static ImageLoader instance;
 

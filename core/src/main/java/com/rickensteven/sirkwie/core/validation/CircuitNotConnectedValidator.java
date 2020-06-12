@@ -9,7 +9,7 @@ import java.util.Set;
 
 public class CircuitNotConnectedValidator
 {
-    private NodeParentableVisitor visitor = new NodeParentableVisitor();
+    private final NodeParentableVisitor visitor = new NodeParentableVisitor();
     private Set<Node> hasParentNodes;
     private Set<Node> isParentNodes;
 

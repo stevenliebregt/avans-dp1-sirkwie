@@ -16,7 +16,7 @@ public class ProbeTest
     @Test
     public void shouldBeOn()
     {
-        List<Node> inputs = new ArrayList<Node>()
+        List<Node> inputs = new ArrayList<>()
         {{
             add(new Node("N")
             {
@@ -43,7 +43,7 @@ public class ProbeTest
     @Test
     public void shouldBeOff()
     {
-        List<Node> inputs = new ArrayList<Node>()
+        List<Node> inputs = new ArrayList<>()
         {{
             add(new Node("I")
             {
@@ -71,7 +71,7 @@ public class ProbeTest
     public void moreThanOneParentShouldThrowException()
     {
         assertThrows(IllegalArgumentException.class, () -> {
-            List<Node> inputs = new ArrayList<Node>()
+            List<Node> inputs = new ArrayList<>()
             {{
                 add(new Input(false, "A"));
                 add(new Input(false, "B"));

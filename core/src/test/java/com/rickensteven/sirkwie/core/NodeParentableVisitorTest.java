@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class NodeParentableVisitorTest
 {
-    private NodeParentableVisitor nodeParentableVisitor = new NodeParentableVisitor();
+    private final NodeParentableVisitor nodeParentableVisitor = new NodeParentableVisitor();
 
     @Test
     public void probe()

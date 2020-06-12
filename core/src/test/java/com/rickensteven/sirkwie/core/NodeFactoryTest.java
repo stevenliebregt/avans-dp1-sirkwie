@@ -74,8 +74,6 @@ public class NodeFactoryTest
     @Test
     public void shouldThrowError()
     {
-        assertThrows(NodeTypeUnknownException.class, () -> {
-            nodeFactory.createNode("DOES NOT EXIST", "DOES NOT EXIST");
-        });
+        assertThrows(NodeTypeUnknownException.class, () -> nodeFactory.createNode("DOES NOT EXIST", "DOES NOT EXIST"));
     }
 }

@@ -79,9 +79,7 @@ public class CircuitLoaderFacadeTest
         ICircuitParser circuitParser = new ANTLRCircuitParser();
         CircuitLoaderFacade circuitLoaderFacade = new CircuitLoaderFacade(circuitParser);
 
-        assertThrows(CircuitInfiniteLoopException.class, () -> {
-            circuitLoaderFacade.loadCircuit(ClassLoader.getSystemResource("Circuit4_InfiniteLoop.txt").getPath());
-        });
+        assertThrows(CircuitInfiniteLoopException.class, () -> circuitLoaderFacade.loadCircuit(ClassLoader.getSystemResource("Circuit4_InfiniteLoop.txt").getPath()));
     }
 
     @Test
@@ -90,9 +88,7 @@ public class CircuitLoaderFacadeTest
         ICircuitParser circuitParser = new ANTLRCircuitParser();
         CircuitLoaderFacade circuitLoaderFacade = new CircuitLoaderFacade(circuitParser);
 
-        assertThrows(CircuitNotConnectedException.class, () -> {
-            circuitLoaderFacade.loadCircuit(ClassLoader.getSystemResource("Circuit5_NotConnected.txt").getPath());
-        });
+        assertThrows(CircuitNotConnectedException.class, () -> circuitLoaderFacade.loadCircuit(ClassLoader.getSystemResource("Circuit5_NotConnected.txt").getPath()));
     }
 
     @Test
@@ -101,8 +97,6 @@ public class CircuitLoaderFacadeTest
         ICircuitParser circuitParser = new ANTLRCircuitParser();
         CircuitLoaderFacade circuitLoaderFacade = new CircuitLoaderFacade(circuitParser);
 
-        assertThrows(CircuitNotConnectedException.class, () -> {
-            circuitLoaderFacade.loadCircuit(ClassLoader.getSystemResource("Circuit6_NotAllProbesReachable.txt").getPath());
-        });
+        assertThrows(CircuitNotConnectedException.class, () -> circuitLoaderFacade.loadCircuit(ClassLoader.getSystemResource("Circuit6_NotAllProbesReachable.txt").getPath()));
     }
 }

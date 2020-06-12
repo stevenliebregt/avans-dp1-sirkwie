@@ -20,7 +20,7 @@ import java.util.*;
 
 public class LogView extends AbstractSimulationView implements ISimulationListener
 {
-    private TableNodeDrawingVisitor tableNodeDrawingVisitor = new TableNodeDrawingVisitor();
+    private final TableNodeDrawingVisitor tableNodeDrawingVisitor = new TableNodeDrawingVisitor();
 
     private static final int HEIGHT = 200;
     private TreeView<String> treeView;
@@ -117,9 +117,7 @@ public class LogView extends AbstractSimulationView implements ISimulationListen
     {
         super.connectViewModel();
 
-        viewModel.circuitProperty.addListener((observable, oldValue, newValue) -> {
-            newValue.addSimulationListener(this);
-        });
+        viewModel.circuitProperty.addListener((observable, oldValue, newValue) -> newValue.addSimulationListener(this));
 
         viewModel.circuitSimulateStartTriggerProperty.addListener((observable, oldValue, newValue) -> {
             rootNodes = new ArrayList<>();
