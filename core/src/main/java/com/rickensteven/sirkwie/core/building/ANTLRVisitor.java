@@ -7,6 +7,7 @@ import org.antlr.v4.runtime.tree.TerminalNode;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
 
 public class ANTLRVisitor extends DP1CircuitBaseVisitor<CircuitDefinition>
@@ -17,8 +18,8 @@ public class ANTLRVisitor extends DP1CircuitBaseVisitor<CircuitDefinition>
 
     public ANTLRVisitor()
     {
-        nodes = new HashMap<>();
-        edges = new HashMap<>();
+        nodes = new LinkedHashMap<>();
+        edges = new LinkedHashMap<>();
         circuitDefinition = new CircuitDefinition(nodes, edges);
     }
 

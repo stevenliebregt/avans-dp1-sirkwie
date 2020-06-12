@@ -49,6 +49,8 @@ public class CircuitLoaderFacade
         if (circuitInfiniteLoopValidator.circuitHasInfiniteLoops(circuit))
             throw new CircuitInfiniteLoopException("There are infinite loops in the circuit");
 
+        circuit.simulate(); // TODO: Yes or no?
+
         return circuit;
     }
 }

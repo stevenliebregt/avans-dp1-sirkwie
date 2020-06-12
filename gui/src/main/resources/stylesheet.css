@@ -1,4 +1,11 @@
-edge { shape: freeplane; }
+edge {
+    shape: freeplane;
+}
 
-node.on { fill-color: green; }
-node.off { fill-color: red; }
+node.on {
+    fill-color: green;
+}
+
+node.off {
+    fill-color: red;
+}

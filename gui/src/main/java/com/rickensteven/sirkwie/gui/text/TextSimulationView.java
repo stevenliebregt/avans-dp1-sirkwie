@@ -18,27 +18,9 @@ public class TextSimulationView extends AbstractSimulationView
         // TODO:
     }
 
-    private void draw(Circuit circuit)
+    @Override
+    protected void draw(Circuit circuit)
     {
         // TODO:
-    }
-
-    @Override
-    protected void connectViewModel()
-    {
-        mainViewModel.circuitProperty.addListener(((observable, oldValue, newValue) -> {
-            if (newValue == null) {
-                view.getChildren().forEach(child -> view.getChildren().remove(child));
-                return;
-            }
-
-            draw(newValue);
-        }));
-
-        mainViewModel.circuitSimulatedTriggerProperty.addListener((observable, oldValue, newValue) -> {
-            Circuit circuit = mainViewModel.circuitProperty.getValue();
-
-            System.err.println("Circuit was simulated");
-        });
     }
 }

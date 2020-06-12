@@ -8,7 +8,7 @@ import javafx.beans.property.SimpleObjectProperty;
 
 public class MainViewModel
 {
-    public Property<Circuit> circuitProperty = new SimpleObjectProperty<>(null);
+    public final Property<Circuit> circuitProperty = new SimpleObjectProperty<>(null);
 
-    public BooleanProperty circuitSimulatedTriggerProperty = new SimpleBooleanProperty(false);
+    public final BooleanProperty circuitSimulatedTriggerProperty = new SimpleBooleanProperty(false);
 }

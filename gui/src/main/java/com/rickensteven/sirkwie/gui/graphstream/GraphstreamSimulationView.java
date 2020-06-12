@@ -1,9 +1,12 @@
 package com.rickensteven.sirkwie.gui.graphstream;
 
-import com.rickensteven.sirkwie.core.domain.*;
+import com.rickensteven.sirkwie.core.domain.Circuit;
+import com.rickensteven.sirkwie.core.domain.Node;
+import com.rickensteven.sirkwie.core.domain.NodeComposite;
 import com.rickensteven.sirkwie.gui.AbstractSimulationView;
 import com.rickensteven.sirkwie.gui.MainViewController;
 import com.rickensteven.sirkwie.gui.MainViewModel;
+import javafx.application.Platform;
 import javafx.scene.layout.StackPane;
 import org.graphstream.graph.implementations.MultiGraph;
 import org.graphstream.ui.fx_viewer.FxViewPanel;
@@ -20,7 +23,7 @@ import java.util.stream.Collectors;
 
 public class GraphstreamSimulationView extends AbstractSimulationView
 {
-    private GraphNodeDrawingVisitor visitor = new GraphNodeDrawingVisitor();
+    private final GraphNodeDrawingVisitor visitor = new GraphNodeDrawingVisitor();
     private MultiGraph graph;
 
     public GraphstreamSimulationView(MainViewController controller, MainViewModel mainViewModel)
@@ -52,6 +55,19 @@ public class GraphstreamSimulationView extends AbstractSimulationView
         View graphView = graphViewer.addView(FxViewer.DEFAULT_VIEW_ID, new FxGraphRenderer());
 
         view.getChildren().add((FxViewPanel) graphView);
+
+        // Stop the auto-layout when it is stable, which should be reached in about 1 second, so we can freely drag
+        // nodes ourselves without problems.
+        Thread thread = new Thread(() -> {
+            try {
+                Thread.sleep(1000);
+
+                Platform.runLater(graphViewer::disableAutoLayout);
+            } catch (InterruptedException ignored) {
+
+            }
+        });
+        thread.start();
     }
 
     private void drawNodes(Circuit circuit)
@@ -83,18 +99,6 @@ public class GraphstreamSimulationView extends AbstractSimulationView
                 });
             }
         });
-    }
-
-    protected void connectViewModel()
-    {
-        mainViewModel.circuitProperty.addListener(((observable, oldValue, newValue) -> {
-            if (newValue == null) {
-                view.getChildren().forEach(child -> view.getChildren().remove(child));
-                return;
-            }
-
-            draw(newValue);
-        }));
     }
 
     private String getStyleSheet()

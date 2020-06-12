@@ -1,6 +1,6 @@
 package com.rickensteven.sirkwie.core.domain;
 
-import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.Set;
 
 public class Circuit
@@ -11,9 +11,9 @@ public class Circuit
 
     public Circuit()
     {
-        this.nodes = new HashSet<>();
-        this.inputs = new HashSet<>();
-        this.probes = new HashSet<>();
+        this.nodes = new LinkedHashSet<>();
+        this.inputs = new LinkedHashSet<>();
+        this.probes = new LinkedHashSet<>();
     }
 
     /**
@@ -63,6 +63,15 @@ public class Circuit
     public Set<Probe> getProbes()
     {
         return probes;
+    }
+
+    public Input getInput(String name)
+    {
+        return this.inputs
+                .stream()
+                .filter(node -> node.getName().equals(name))
+                .findFirst()
+                .orElse(null);
     }
 
     public void simulate()

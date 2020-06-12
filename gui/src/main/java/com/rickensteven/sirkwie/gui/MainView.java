@@ -11,8 +11,8 @@ import javafx.scene.layout.Priority;
 
 public class MainView
 {
-    private MainViewController controller;
-    private MainViewModel mainViewModel;
+    private final MainViewController controller;
+    private final MainViewModel mainViewModel;
 
     private BorderPane view;
     private Button simulateButton;
@@ -41,6 +41,14 @@ public class MainView
         view.setTop(setupUiToolbar());
         view.setCenter(new Label("Please select a circuit file first"));
 
+        // Set the input and output views
+        InputView inputView = new InputView(controller, mainViewModel);
+        view.setLeft(inputView.getView());
+
+        ProbeView probeView = new ProbeView(controller, mainViewModel);
+        view.setRight(probeView.getView());
+
+        // Set the simulation views
         TextSimulationView textSimulationView = new TextSimulationView(controller, mainViewModel);
         GraphstreamSimulationView graphstreamSimulationView = new GraphstreamSimulationView(controller, mainViewModel);
 

@@ -7,6 +7,9 @@ import javafx.stage.Stage;
 
 public class Main extends Application
 {
+    private static final int SCENE_WIDTH = 800;
+    private static final int SCENE_HEIGHT = 600;
+
     @Override
     public void start(Stage stage)
     {
@@ -14,7 +17,7 @@ public class Main extends Application
         MainViewController mainViewController = new MainViewController(mainViewModel);
         MainView mainView = new MainView(mainViewController, mainViewModel);
 
-        Scene scene = new Scene(mainView.getView(), 640, 480);
+        Scene scene = new Scene(mainView.getView(), SCENE_WIDTH, SCENE_HEIGHT);
 
         stage.setTitle("Sirkwie - Rick Berkers & Steven Liebregt");
         stage.setScene(scene);

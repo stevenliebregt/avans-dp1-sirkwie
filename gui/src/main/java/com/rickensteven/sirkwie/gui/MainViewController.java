@@ -2,6 +2,7 @@ package com.rickensteven.sirkwie.gui;
 
 import com.rickensteven.sirkwie.core.CircuitLoaderFacade;
 import com.rickensteven.sirkwie.core.domain.Circuit;
+import com.rickensteven.sirkwie.core.domain.Input;
 import com.rickensteven.sirkwie.core.exception.*;
 import com.rickensteven.sirkwie.core.parsing.ANTLRCircuitParser;
 import com.rickensteven.sirkwie.core.parsing.ICircuitParser;
@@ -16,9 +17,9 @@ import java.io.IOException;
 
 public class MainViewController
 {
-    private MainViewModel mainViewModel;
-    private FileChooser fileChooser;
-    private CircuitLoaderFacade circuitLoaderFacade;
+    private final MainViewModel mainViewModel;
+    private final FileChooser fileChooser;
+    private final CircuitLoaderFacade circuitLoaderFacade;
 
     public MainViewController(MainViewModel mainViewModel)
     {
@@ -48,7 +49,8 @@ public class MainViewController
         }
 
         circuit.simulate();
-        mainViewModel.circuitSimulatedTriggerProperty.setValue(!mainViewModel.circuitSimulatedTriggerProperty.getValue());
+        mainViewModel.circuitSimulatedTriggerProperty
+                .setValue(!mainViewModel.circuitSimulatedTriggerProperty.getValue());
     }
 
     public void quit(MouseEvent mouseEvent)
@@ -75,6 +77,21 @@ public class MainViewController
         } catch (NodeNotParentable exception) {
             alert("The selected file contains specified nodes as children that cannot be children");
         }
+    }
+
+    public void inputButtonClicked(String nodeName)
+    {
+        Circuit circuit = mainViewModel.circuitProperty.getValue();
+        Input input = circuit.getInput(nodeName);
+
+        if (input == null) {
+            return; // TODO: Error handling
+        }
+
+        input.setValue(!input.getValue());
+        circuit.simulate();
+        mainViewModel.circuitSimulatedTriggerProperty
+                .setValue(!mainViewModel.circuitSimulatedTriggerProperty.getValue());
     }
 
     private void alert(String message)
