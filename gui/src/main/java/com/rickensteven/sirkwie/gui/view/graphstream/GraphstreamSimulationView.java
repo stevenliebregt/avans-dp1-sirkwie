@@ -1,11 +1,11 @@
-package com.rickensteven.sirkwie.gui.graphstream;
+package com.rickensteven.sirkwie.gui.view.graphstream;
 
 import com.rickensteven.sirkwie.core.domain.Circuit;
 import com.rickensteven.sirkwie.core.domain.Node;
 import com.rickensteven.sirkwie.core.domain.NodeComposite;
-import com.rickensteven.sirkwie.gui.AbstractSimulationView;
-import com.rickensteven.sirkwie.gui.MainViewController;
-import com.rickensteven.sirkwie.gui.MainViewModel;
+import com.rickensteven.sirkwie.gui.view.AbstractSimulationView;
+import com.rickensteven.sirkwie.gui.Controller;
+import com.rickensteven.sirkwie.gui.ViewModel;
 import javafx.application.Platform;
 import javafx.scene.layout.StackPane;
 import org.graphstream.graph.implementations.MultiGraph;
@@ -23,12 +23,14 @@ import java.util.stream.Collectors;
 
 public class GraphstreamSimulationView extends AbstractSimulationView
 {
-    private final GraphNodeDrawingVisitor visitor = new GraphNodeDrawingVisitor();
+    private final GraphNodeDrawingVisitor visitor;
     private MultiGraph graph;
 
-    public GraphstreamSimulationView(MainViewController controller, MainViewModel mainViewModel)
+    public GraphstreamSimulationView(Controller controller, ViewModel viewModel)
     {
-        super(controller, mainViewModel);
+        super(controller, viewModel);
+
+        visitor = new GraphNodeDrawingVisitor();
     }
 
     protected void setupUi()

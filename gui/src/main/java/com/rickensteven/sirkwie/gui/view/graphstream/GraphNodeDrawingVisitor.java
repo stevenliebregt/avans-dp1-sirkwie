@@ -1,4 +1,4 @@
-package com.rickensteven.sirkwie.gui.graphstream;
+package com.rickensteven.sirkwie.gui.view.graphstream;
 
 import com.rickensteven.sirkwie.core.domain.*;
 

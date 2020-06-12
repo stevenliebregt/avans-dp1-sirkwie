@@ -1,5 +1,6 @@
 package com.rickensteven.sirkwie.gui;
 
+import com.rickensteven.sirkwie.gui.view.MainView;
 import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.scene.Scene;
@@ -13,9 +14,9 @@ public class Main extends Application
     @Override
     public void start(Stage stage)
     {
-        MainViewModel mainViewModel = new MainViewModel();
-        MainViewController mainViewController = new MainViewController(mainViewModel);
-        MainView mainView = new MainView(mainViewController, mainViewModel);
+        ViewModel viewModel = new ViewModel();
+        Controller controller = new Controller(viewModel);
+        MainView mainView = new MainView(controller, viewModel);
 
         Scene scene = new Scene(mainView.getView(), SCENE_WIDTH, SCENE_HEIGHT);
 

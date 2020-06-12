@@ -1,6 +1,8 @@
-package com.rickensteven.sirkwie.gui;
+package com.rickensteven.sirkwie.gui.view;
 
 import com.rickensteven.sirkwie.core.domain.Circuit;
+import com.rickensteven.sirkwie.gui.Controller;
+import com.rickensteven.sirkwie.gui.ViewModel;
 import javafx.scene.control.Button;
 import javafx.scene.control.ContentDisplay;
 import javafx.scene.image.ImageView;
@@ -15,9 +17,9 @@ public class InputView extends AbstractSimulationView
     private static final int WIDTH = 100;
     private Map<String, Button> inputButtons;
 
-    public InputView(MainViewController controller, MainViewModel mainViewModel)
+    public InputView(Controller controller, ViewModel viewModel)
     {
-        super(controller, mainViewModel);
+        super(controller, viewModel);
 
         inputButtons = new LinkedHashMap<>();
     }
@@ -53,7 +55,7 @@ public class InputView extends AbstractSimulationView
         });
 
         vBox.getChildren().addAll(inputButtons.values());
-        view.getChildren().add(vBox); // TODO: Check
+        view.getChildren().add(vBox);
     }
 
     @Override

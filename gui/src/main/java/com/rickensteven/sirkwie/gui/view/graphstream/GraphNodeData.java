@@ -1,4 +1,4 @@
-package com.rickensteven.sirkwie.gui.graphstream;
+package com.rickensteven.sirkwie.gui.view.graphstream;
 
 public class GraphNodeData
 {

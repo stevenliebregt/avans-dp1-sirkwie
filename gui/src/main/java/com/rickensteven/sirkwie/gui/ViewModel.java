@@ -6,7 +6,7 @@ import javafx.beans.property.Property;
 import javafx.beans.property.SimpleBooleanProperty;
 import javafx.beans.property.SimpleObjectProperty;
 
-public class MainViewModel
+public class ViewModel
 {
     public final Property<Circuit> circuitProperty = new SimpleObjectProperty<>(null);
 

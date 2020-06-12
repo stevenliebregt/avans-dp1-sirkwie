@@ -1,7 +1,9 @@
-package com.rickensteven.sirkwie.gui;
+package com.rickensteven.sirkwie.gui.view;
 
-import com.rickensteven.sirkwie.gui.graphstream.GraphstreamSimulationView;
-import com.rickensteven.sirkwie.gui.text.TextSimulationView;
+import com.rickensteven.sirkwie.gui.Controller;
+import com.rickensteven.sirkwie.gui.ViewModel;
+import com.rickensteven.sirkwie.gui.view.graphstream.GraphstreamSimulationView;
+import com.rickensteven.sirkwie.gui.view.text.TextSimulationView;
 import javafx.scene.Parent;
 import javafx.scene.control.*;
 import javafx.scene.layout.BorderPane;
@@ -11,16 +13,16 @@ import javafx.scene.layout.Priority;
 
 public class MainView
 {
-    private final MainViewController controller;
-    private final MainViewModel mainViewModel;
+    private final Controller controller;
+    private final ViewModel viewModel;
 
     private BorderPane view;
     private Button simulateButton;
 
-    public MainView(MainViewController controller, MainViewModel mainViewModel)
+    public MainView(Controller controller, ViewModel viewModel)
     {
         this.controller = controller;
-        this.mainViewModel = mainViewModel;
+        this.viewModel = viewModel;
 
         setupUi();
         connectViewModel();
@@ -42,15 +44,15 @@ public class MainView
         view.setCenter(new Label("Please select a circuit file first"));
 
         // Set the input and output views
-        InputView inputView = new InputView(controller, mainViewModel);
+        InputView inputView = new InputView(controller, viewModel);
         view.setLeft(inputView.getView());
 
-        ProbeView probeView = new ProbeView(controller, mainViewModel);
+        ProbeView probeView = new ProbeView(controller, viewModel);
         view.setRight(probeView.getView());
 
         // Set the simulation views
-        TextSimulationView textSimulationView = new TextSimulationView(controller, mainViewModel);
-        GraphstreamSimulationView graphstreamSimulationView = new GraphstreamSimulationView(controller, mainViewModel);
+        TextSimulationView textSimulationView = new TextSimulationView(controller, viewModel);
+        GraphstreamSimulationView graphstreamSimulationView = new GraphstreamSimulationView(controller, viewModel);
 
         TabPane tabPane = new TabPane();
         tabPane.setTabClosingPolicy(TabPane.TabClosingPolicy.UNAVAILABLE);
@@ -63,7 +65,7 @@ public class MainView
 
     private void connectViewModel()
     {
-        mainViewModel.circuitProperty.addListener(((observable, oldValue, newValue) -> {
+        viewModel.circuitProperty.addListener(((observable, oldValue, newValue) -> {
             if (newValue == null) {
                 simulateButton.setDisable(true);
                 return;
@@ -82,7 +84,7 @@ public class MainView
 
         simulateButton = new Button("Simulate");
         simulateButton.setDisable(true);
-        simulateButton.setOnMouseClicked((mouseEvent -> controller.simulateButtonClicked())); // TODO: Update view correctly
+        simulateButton.setOnMouseClicked((mouseEvent -> controller.simulateButtonClicked()));
 
         Pane spacer = new Pane();
         HBox.setHgrow(spacer, Priority.ALWAYS);

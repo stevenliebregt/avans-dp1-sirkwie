@@ -15,15 +15,15 @@ import javafx.stage.Window;
 import java.io.File;
 import java.io.IOException;
 
-public class MainViewController
+public class Controller
 {
-    private final MainViewModel mainViewModel;
+    private final ViewModel viewModel;
     private final FileChooser fileChooser;
     private final CircuitLoaderFacade circuitLoaderFacade;
 
-    public MainViewController(MainViewModel mainViewModel)
+    public Controller(ViewModel viewModel)
     {
-        this.mainViewModel = mainViewModel;
+        this.viewModel = viewModel;
         fileChooser = new FileChooser();
 
         // This circuitparser could be swapped out for another, for example, XMLCircuitParser
@@ -41,7 +41,7 @@ public class MainViewController
 
     public void simulateButtonClicked()
     {
-        Circuit circuit = mainViewModel.circuitProperty.getValue();
+        Circuit circuit = viewModel.circuitProperty.getValue();
 
         if (circuit == null) {
             alert("There was a problem loading the circuit");
@@ -49,8 +49,8 @@ public class MainViewController
         }
 
         circuit.simulate();
-        mainViewModel.circuitSimulatedTriggerProperty
-                .setValue(!mainViewModel.circuitSimulatedTriggerProperty.getValue());
+        viewModel.circuitSimulatedTriggerProperty
+                .setValue(!viewModel.circuitSimulatedTriggerProperty.getValue());
     }
 
     public void quit(MouseEvent mouseEvent)
@@ -63,7 +63,7 @@ public class MainViewController
     {
         try {
             Circuit circuit = circuitLoaderFacade.loadCircuit(filePath);
-            mainViewModel.circuitProperty.setValue(circuit);
+            viewModel.circuitProperty.setValue(circuit);
         } catch (IOException exception) {
             alert("The selected file could not be read");
         } catch (CircuitSyntaxException exception) {
@@ -81,7 +81,7 @@ public class MainViewController
 
     public void inputButtonClicked(String nodeName)
     {
-        Circuit circuit = mainViewModel.circuitProperty.getValue();
+        Circuit circuit = viewModel.circuitProperty.getValue();
         Input input = circuit.getInput(nodeName);
 
         if (input == null) {
@@ -90,8 +90,8 @@ public class MainViewController
 
         input.setValue(!input.getValue());
         circuit.simulate();
-        mainViewModel.circuitSimulatedTriggerProperty
-                .setValue(!mainViewModel.circuitSimulatedTriggerProperty.getValue());
+        viewModel.circuitSimulatedTriggerProperty
+                .setValue(!viewModel.circuitSimulatedTriggerProperty.getValue());
     }
 
     private void alert(String message)
