@@ -4,19 +4,21 @@ import com.rickensteven.sirkwie.core.domain.Circuit;
 import com.rickensteven.sirkwie.gui.view.AbstractSimulationView;
 import com.rickensteven.sirkwie.gui.Controller;
 import com.rickensteven.sirkwie.gui.ViewModel;
-import javafx.scene.control.Label;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
 
 public class TextSimulationView extends AbstractSimulationView
 {
-    private final TextNodeDrawingVisitor visitor;
+    private final TableNodeDrawingVisitor visitor;
 
     public TextSimulationView(Controller controller, ViewModel viewModel)
     {
         super(controller, viewModel);
 
-        visitor = new TextNodeDrawingVisitor();
+        visitor = new TableNodeDrawingVisitor();
     }
 
     @Override
@@ -28,18 +30,28 @@ public class TextSimulationView extends AbstractSimulationView
     @Override
     protected void draw(Circuit circuit)
     {
-        // TODO:
-        VBox vBox = new VBox();
+        TableView tableView = new TableView();
+
+        TableColumn<String, TableNodeData> column1 = new TableColumn<>("Name");
+        column1.setCellValueFactory(new PropertyValueFactory<>("name"));
+        TableColumn<String, TableNodeData> column2 = new TableColumn<>("Type");
+        column2.setCellValueFactory(new PropertyValueFactory<>("type"));
+        TableColumn<String, TableNodeData> column3 = new TableColumn<>("Output");
+        column3.setCellValueFactory(new PropertyValueFactory<>("output"));
+        TableColumn<String, TableNodeData> column4 = new TableColumn<>("Parents");
+        column4.setCellValueFactory(new PropertyValueFactory<>("parents"));
+
+        tableView.getColumns().add(column1);
+        tableView.getColumns().add(column2);
+        tableView.getColumns().add(column3);
+        tableView.getColumns().add(column4);
 
         circuit.getNodes().forEach(node -> {
-            String name = node.getName();
-
             node.accept(visitor);
-
-            Label label = new Label("NODE: " + name + " = " + visitor.getValue());
-            vBox.getChildren().add(label);
+            tableView.getItems().add(visitor.getValue());
         });
 
-        view.getChildren().add(vBox);
+        VBox vbox = new VBox(tableView);
+        view.getChildren().add(vbox);
     }
 }
