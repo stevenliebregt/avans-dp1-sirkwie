@@ -1,6 +1,7 @@
 package com.rickensteven.sirkwie.gui;
 
 import com.rickensteven.sirkwie.core.CircuitLoaderFacade;
+import com.rickensteven.sirkwie.core.ISimulationListener;
 import com.rickensteven.sirkwie.core.domain.Circuit;
 import com.rickensteven.sirkwie.core.domain.Input;
 import com.rickensteven.sirkwie.core.exception.*;
@@ -103,6 +104,11 @@ public class Controller
         circuit.simulate();
         viewModel.circuitSimulatedTriggerProperty
                 .setValue(!viewModel.circuitSimulatedTriggerProperty.getValue());
+    }
+
+    public void addListener(ISimulationListener simulationListener)
+    {
+        circuitLoaderFacade.addSimulationListener(simulationListener);
     }
 
     private void alert(String message)

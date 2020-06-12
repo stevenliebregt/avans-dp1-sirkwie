@@ -28,10 +28,16 @@ public class XOrGate extends NodeComposite
     @Override
     public boolean calculate()
     {
-        return value = parents
+        notifyStartCalculation();
+
+        value = parents
                 .stream()
                 .filter(Node::calculate)
                 .count() % 2 == 1;
+
+        notifyStopCalculation(value);
+
+        return value;
     }
 
     @Override

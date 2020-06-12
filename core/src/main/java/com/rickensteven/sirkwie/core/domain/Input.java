@@ -16,6 +16,9 @@ public class Input extends Node
     @Override
     public boolean calculate()
     {
+        notifyStartCalculation(); // TODO: Don't need this I think
+        notifyStopCalculation(value);
+
         return value;
     }
 

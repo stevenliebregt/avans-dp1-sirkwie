@@ -1,7 +1,8 @@
 package com.rickensteven.sirkwie.core.domain;
 
-import java.util.LinkedHashSet;
-import java.util.Set;
+import com.rickensteven.sirkwie.core.ISimulationListener;
+
+import java.util.*;
 
 public class Circuit
 {
@@ -11,9 +12,19 @@ public class Circuit
 
     public Circuit()
     {
-        this.nodes = new LinkedHashSet<>();
-        this.inputs = new LinkedHashSet<>();
-        this.probes = new LinkedHashSet<>();
+        nodes = new LinkedHashSet<>();
+        inputs = new LinkedHashSet<>();
+        probes = new LinkedHashSet<>();
+    }
+
+    public void addSimulationListener(ISimulationListener simulationListener)
+    {
+        nodes.forEach(node -> node.addSimulationListener(simulationListener));
+    }
+
+    public void addSimulationListeners(Collection<ISimulationListener> simulationListeners)
+    {
+        simulationListeners.forEach(this::addSimulationListener);
     }
 
     /**

@@ -28,9 +28,16 @@ public class OrGate extends NodeComposite
     @Override
     public boolean calculate()
     {
+        notifyStartCalculation();
+
         for (Node parent : parents) {
-            if (parent.calculate()) return value = true;
+            if (parent.calculate()) {
+                notifyStopCalculation(true);
+                return value = true;
+            }
         }
+
+        notifyStopCalculation(false);
 
         return value = false;
     }

@@ -12,6 +12,8 @@ import com.rickensteven.sirkwie.core.validation.CircuitInfiniteLoopValidator;
 import com.rickensteven.sirkwie.core.validation.CircuitNotConnectedValidator;
 
 import java.io.IOException;
+import java.util.HashSet;
+import java.util.Set;
 
 public class CircuitLoaderFacade
 {
@@ -19,6 +21,7 @@ public class CircuitLoaderFacade
     private final CircuitNotConnectedValidator circuitNotConnectedValidator;
     private final CircuitInfiniteLoopValidator circuitInfiniteLoopValidator;
     private final ICircuitParser circuitParser;
+    private final Set<ISimulationListener> simulationListeners;
 
     public CircuitLoaderFacade(ICircuitParser circuitParser)
     {
@@ -27,6 +30,7 @@ public class CircuitLoaderFacade
         circuitFileReader = new CircuitFileReader();
         circuitNotConnectedValidator = new CircuitNotConnectedValidator();
         circuitInfiniteLoopValidator = new CircuitInfiniteLoopValidator();
+        simulationListeners = new HashSet<>();
     }
 
     /**
@@ -52,6 +56,7 @@ public class CircuitLoaderFacade
         circuitBuilderDirector.construct(circuitDefinition);
 
         Circuit circuit = circuitBuilder.getCircuit();
+        circuit.addSimulationListeners(simulationListeners);
 
         // It is important that we first check for infinite loops, otherwise we
         // will get a StackOverflow exception when checking for disconnected probes
@@ -63,5 +68,10 @@ public class CircuitLoaderFacade
         circuit.simulate();
 
         return circuit;
+    }
+
+    public void addSimulationListener(ISimulationListener simulationListener)
+    {
+        simulationListeners.add(simulationListener);
     }
 }

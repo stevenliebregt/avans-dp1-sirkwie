@@ -28,9 +28,16 @@ public class AndGate extends NodeComposite
     @Override
     public boolean calculate()
     {
+        notifyStartCalculation();
+
         for (Node parent : parents) {
-            if (!parent.calculate()) return value = false;
+            if (!parent.calculate()) {
+                notifyStopCalculation(false);
+                return value = false;
+            }
         }
+
+        notifyStopCalculation(true);
 
         return value = true;
     }

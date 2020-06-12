@@ -49,6 +49,10 @@ public class MainView
         ProbeView probeView = new ProbeView(controller, viewModel);
         view.setRight(probeView.getView());
 
+        // Add the log view
+        LogView logView = new LogView(controller, viewModel);
+        view.setBottom(logView.getView());
+
         // Set the simulation views
         TextSimulationView textSimulationView = new TextSimulationView(controller, viewModel);
         GraphstreamSimulationView graphstreamSimulationView = new GraphstreamSimulationView(controller, viewModel);
