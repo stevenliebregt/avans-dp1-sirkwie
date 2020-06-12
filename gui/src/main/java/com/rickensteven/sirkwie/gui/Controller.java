@@ -63,6 +63,12 @@ public class Controller
     {
         try {
             Circuit circuit = circuitLoaderFacade.loadCircuit(filePath);
+
+            if (circuit == null) {
+                alert("There was a problem loading the circuit");
+                return;
+            }
+
             viewModel.circuitProperty.setValue(circuit);
         } catch (IOException exception) {
             alert("The selected file could not be read");

@@ -28,10 +28,9 @@ public class NAndGate extends NodeComposite
     @Override
     public boolean calculate()
     {
-        value = parents.stream()
+        return value = parents.stream()
                 .filter(Node::calculate)
                 .count() != parents.size();
-        return value;
     }
 
     @Override
