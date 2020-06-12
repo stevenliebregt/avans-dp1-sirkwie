@@ -23,6 +23,4 @@ public class DP1CircuitLexerTest
         assertEquals(DP1CircuitLexer.EOL, tokens.get(3).getType());
         assertEquals(DP1CircuitLexer.EOF, tokens.get(4).getType());
     }
-
-    // TODO: Make the rest of the tests if we are allowed to use ANTLR
 }

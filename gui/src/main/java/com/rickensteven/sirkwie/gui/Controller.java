@@ -93,13 +93,13 @@ public class Controller
         Circuit circuit = viewModel.circuitProperty.getValue();
 
         if (circuit == null) {
-            return; // TODO: Error handling
+            return;
         }
 
         Input input = circuit.getInput(nodeName);
 
         if (input == null) {
-            return; // TODO: Error handling
+            return;
         }
 
         input.setValue(!input.getValue());

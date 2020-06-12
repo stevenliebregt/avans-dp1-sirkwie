@@ -63,7 +63,7 @@ public class CircuitLoaderFacade
         if (circuitInfiniteLoopValidator.circuitHasInfiniteLoops(circuit))
             throw new CircuitInfiniteLoopException("There are infinite loops in the circuit");
         if (circuitNotConnectedValidator.hasDisconnectedProbes(circuit))
-            throw new CircuitNotConnectedException("Not all probes are connected"); // TODO: More specific, which node etc?
+            throw new CircuitNotConnectedException("Not all probes are connected");
 
         circuit.simulate();
 
