@@ -29,7 +29,6 @@ public class MainView
 
         // TODO: Maybe remove, useful for testing to load default circuit on startup
         controller.tryToLoadFile(ClassLoader.getSystemResource("Circuit1_FullAdder.txt").getPath());
-        controller.simulateButtonClicked();
     }
 
     public Parent getView()

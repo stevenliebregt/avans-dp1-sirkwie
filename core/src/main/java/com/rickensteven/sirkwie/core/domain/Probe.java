@@ -13,6 +13,7 @@ public class Probe extends NodeComposite
     public Probe(List<Node> parents, String name)
     {
         super(parents, name);
+
         if (parents.size() != 1) {
             throw new IllegalArgumentException("The probe must have exactly 1 input");
         }
