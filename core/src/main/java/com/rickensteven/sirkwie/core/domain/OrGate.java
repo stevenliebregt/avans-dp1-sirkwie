@@ -13,7 +13,7 @@ import java.util.List;
  * 1 |       0 |      1
  * 1 |       1 |      1
  */
-public class OrGate extends Gate
+public class OrGate extends NodeComposite
 {
     public OrGate(List<Node> parents, String name)
     {

@@ -1,7 +1,8 @@
-package com.rickensteven.sirkwie.core.building;
+package com.rickensteven.sirkwie.core.parsing;
 
 import com.rickensteven.sirkwie.core.antlr.DP1CircuitBaseVisitor;
 import com.rickensteven.sirkwie.core.antlr.DP1CircuitParser;
+import com.rickensteven.sirkwie.core.building.CircuitDefinition;
 import org.antlr.v4.runtime.tree.ParseTree;
 import org.antlr.v4.runtime.tree.TerminalNode;
 

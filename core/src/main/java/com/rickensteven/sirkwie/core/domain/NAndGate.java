@@ -13,7 +13,7 @@ import java.util.List;
  * 1 |       0 |      1
  * 1 |       1 |      0
  */
-public class NAndGate extends Gate
+public class NAndGate extends NodeComposite
 {
     public NAndGate(List<Node> parents, String name)
     {

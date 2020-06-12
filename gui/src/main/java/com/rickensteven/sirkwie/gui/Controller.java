@@ -82,6 +82,11 @@ public class Controller
     public void inputButtonClicked(String nodeName)
     {
         Circuit circuit = viewModel.circuitProperty.getValue();
+
+        if (circuit == null) {
+            return; // TODO: Error handling
+        }
+
         Input input = circuit.getInput(nodeName);
 
         if (input == null) {

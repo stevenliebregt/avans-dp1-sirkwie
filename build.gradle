@@ -19,13 +19,15 @@ plantuml {
     }
 
     diagrams {
-        dkd {
-            sourceFile = project.file('docs/diagrams/dkd.puml')
-        }
+        dkd { sourceFile = project.file('docs/diagrams/dkd.puml') }
 
-        sequence {
-            sourceFile = project.file('docs/diagrams/sequence.puml')
-        }
+        dkdCore { sourceFile = project.file('docs/diagrams/dkd-core.puml') }
+        dkdCoreBuilding { sourceFile = project.file('docs/diagrams/dkd-core-building.puml') }
+        dkdCoreDomain { sourceFile = project.file('docs/diagrams/dkd-core-domain.puml') }
+
+        dkdGui { sourceFile = project.file('docs/diagrams/dkd-gui.puml') }
+
+        sequence { sourceFile = project.file('docs/diagrams/sequence.puml') }
     }
 }
 

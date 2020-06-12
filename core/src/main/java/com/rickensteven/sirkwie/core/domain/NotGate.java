@@ -11,7 +11,7 @@ import java.util.List;
  * 0 |      1
  * 1 |      0
  */
-public class NotGate extends Gate
+public class NotGate extends NodeComposite
 {
     public NotGate(List<Node> parents, String name)
     {

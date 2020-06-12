@@ -1,7 +1,6 @@
 package com.rickensteven.sirkwie.core.building;
 
 import com.rickensteven.sirkwie.core.domain.Circuit;
-import com.rickensteven.sirkwie.core.domain.INodeVisitor;
 import com.rickensteven.sirkwie.core.domain.Node;
 import com.rickensteven.sirkwie.core.domain.NodeComposite;
 import com.rickensteven.sirkwie.core.exception.NodeNotParentable;
@@ -10,11 +9,10 @@ import java.util.HashMap;
 
 public class CircuitBuilder
 {
-    // TODO: Deze class, of een validator zou de CircuitInfiniteLoopException en CircuitNotConnectedException moeten gaan gooien
-
     private CircuitDefinition circuitDefinition;
     private Circuit circuit;
     private final HashMap<String, Node> nodes = new HashMap<>();
+    private final NodeParentableVisitor visitor = new NodeParentableVisitor();
 
     public Circuit getCircuit()
     {
@@ -40,13 +38,15 @@ public class CircuitBuilder
     {
         circuitDefinition.getEdges().forEach((key, value) -> {
             Node parentNode = this.nodes.get(key);
+
             value.forEach(child -> {
                 Node node = this.nodes.get(child);
-                NodeParentableVisitor parentableVisitor = new NodeParentableVisitor();
-                node.accept(parentableVisitor);
-                if (!parentableVisitor.isParentable()) {
+                node.accept(visitor);
+
+                if (!visitor.isParentable()) {
                     throw new NodeNotParentable("Specified node cannot be given a parent");
                 }
+
                 NodeComposite nodeComposite = (NodeComposite) node;
                 nodeComposite.add(parentNode);
             });

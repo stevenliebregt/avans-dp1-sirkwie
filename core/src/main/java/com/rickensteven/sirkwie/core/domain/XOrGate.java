@@ -13,7 +13,7 @@ import java.util.List;
  * 1 |       0 |      1
  * 1 |       1 |      0
  */
-public class XOrGate extends Gate
+public class XOrGate extends NodeComposite
 {
     public XOrGate(List<Node> parents, String name)
     {

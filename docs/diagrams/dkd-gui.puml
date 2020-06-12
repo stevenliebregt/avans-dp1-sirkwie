@@ -1,0 +1,9 @@
+@startuml
+
+package com.rickensteven.sirkwie.gui {
+    class Main {
+
+    }
+}
+
+@enduml

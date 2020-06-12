@@ -1,0 +1,8 @@
+@startuml
+
+package com.rickensteven.sirkwie.core {
+    !include dkd-core-building.puml
+    !include dkd-core-domain.puml
+}
+
+@enduml

@@ -1,0 +1,113 @@
+@startuml
+
+package domain {
+    abstract class Node {
+        #value: boolean
+        -name: String
+
+        +Node(name: String)
+        +getValue(): boolean
+        +getName(): String
+        +addToCircuit(circuit: Circuit)
+
+        +{abstract}calculate(): boolean
+        +{abstract}accept(nodeVisitor: INodeVisitor)
+    }
+
+    abstract class NodeComposite extends Node {
+        #parents: List<Node>
+
+        +NodeComposite(parents: List<Node>, name: String)
+        +add(parent: Node)
+        +remove(parent: Node)
+        +getParents(): List<Node>
+
+        +{abstract}calculate(): boolean
+    }
+    NodeComposite " " --> "1..*" Node : #parents
+
+    interface INodeVisitor {
+        +visit(node: Probe)
+        +visit(node: Input)
+        +visit(node: AndGate)
+        +visit(node: NAndGate)
+        +visit(node: NOrGate)
+        +visit(node: OrGate)
+        +visit(node: XOrGate)
+    }
+
+    class Circuit {
+        +Circuit()
+        +addNode(node: Node)
+        +addInput(node: Input)
+        +addProbe(node: Probe)
+        +getNodes(): Set<Node>
+        +getInputs(): Set<Input>
+        +getInput(name: String)
+        +getProbes(): Set<Probe>
+        +simulate()
+    }
+    Circuit " " --> "0..*" Node : -nodes
+    Circuit " " --> "0..*" Input : -inputs
+    Circuit " " --> "0..*" Probe : -probes
+
+    class Input extends Node {
+        +Input(value: boolean, name: String)
+        +setValue(value: boolean)
+        +calculate(): boolean
+        +accept(nodeVisitor: INodeVisitor)
+        +addToCircuit(circuit: Circuit)
+    }
+
+    class Probe extends NodeComposite {
+        +Probe(name: String)
+        +Probe(parents: List<Node>, name: String)
+        +calculate(): boolean
+        +accept(nodeVisitor: INodeVisitor)
+        +addToCircuit(circuit: Circuit)
+    }
+
+    class AndGate extends NodeComposite {
+        +AndGate(name: String)
+        +AndGate(parents: List<Node>, name: String)
+        +calculate(): boolean
+        +accept(nodeVisitor: INodeVisitor)
+    }
+
+    class NAndGate extends NodeComposite {
+        +NAndGate(name: String)
+        +NAndGate(parents: List<Node>, name: String)
+        +calculate(): boolean
+        +accept(nodeVisitor: INodeVisitor)
+    }
+
+    class NOrGate extends NodeComposite {
+        +NOrGate(name: String)
+        +NOrGate(parents: List<Node>, name: String)
+        +calculate(): boolean
+        +accept(nodeVisitor: INodeVisitor)
+    }
+
+    class NotGate extends NodeComposite {
+        +NotGate(name: String)
+        +NotGate(parents: List<Node>, name: String)
+        +calculate(): boolean
+        +accept(nodeVisitor: INodeVisitor)
+    }
+
+    class OrGate extends NodeComposite {
+        +OrGate(name: String)
+        +OrGate(parents: List<Node>, name: String)
+        +calculate(): boolean
+        +accept(nodeVisitor: INodeVisitor)
+    }
+
+    class XOrGate extends NodeComposite {
+        +XOrGate(name: String)
+        +XOrGate(parents: List<Node>, name: String)
+        +calculate(): boolean
+        +accept(nodeVisitor: INodeVisitor)
+    }
+}
+
+@enduml

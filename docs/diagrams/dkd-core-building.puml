@@ -1,0 +1,29 @@
+@startuml
+
+package building {
+    class CircuitBuilder {
+
+    }
+
+    class CircuitBuilderDirector {
+
+    }
+
+    class CircuitDefinition {
+
+    }
+
+    class NodeFactory {
+
+    }
+
+    class NodeParentableVisitor {
+
+    }
+
+    enum NodeType {
+
+    }
+}
+
+@enduml

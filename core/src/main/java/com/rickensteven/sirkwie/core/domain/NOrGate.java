@@ -13,7 +13,7 @@ import java.util.List;
  * 1 |       0 |      0
  * 1 |       1 |      0
  */
-public class NOrGate extends Gate
+public class NOrGate extends NodeComposite
 {
     public NOrGate(List<Node> parents, String name)
     {

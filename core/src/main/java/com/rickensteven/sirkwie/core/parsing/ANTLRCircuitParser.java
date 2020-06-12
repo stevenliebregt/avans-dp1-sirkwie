@@ -2,7 +2,6 @@ package com.rickensteven.sirkwie.core.parsing;
 
 import com.rickensteven.sirkwie.core.antlr.DP1CircuitLexer;
 import com.rickensteven.sirkwie.core.antlr.DP1CircuitParser;
-import com.rickensteven.sirkwie.core.building.ANTLRVisitor;
 import com.rickensteven.sirkwie.core.building.CircuitDefinition;
 import com.rickensteven.sirkwie.core.exception.CircuitSyntaxException;
 import org.antlr.v4.runtime.ANTLRInputStream;
