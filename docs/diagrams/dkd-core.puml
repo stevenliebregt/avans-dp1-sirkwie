@@ -26,6 +26,21 @@ package com.rickensteven.sirkwie.core {
     CircuitLoaderFacade --> "1" CircuitInfiniteLoopValidator : -circuitInfiniteLoopValidator
     CircuitLoaderFacade --> "1" ICircuitParser : -circuitParser
 
+    class PropagationDelayCalculator implements ISimulationListener {
+        -history: Map<String, PropagationNode>
+
+        +onStartCalculate(node: Node)
+        +onStopCalculate(node: Node, calculatedValue: boolean)
+        +calculate(): double
+        -calculateDepth(): int
+    }
+    PropagationDelayCalculator --> "0..*" PropagationNode : -root
+
+    class PropagationNode {
+        ~children: List<PropagationNode>
+    }
+    PropagationDelayCalculator +-- PropagationNode
+
     interface ISimulationListener {
         onStartCalculate(node: Node);
         onStopCalculate(node: Node, calculatedValue: boolean);

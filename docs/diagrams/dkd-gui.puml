@@ -55,6 +55,7 @@ package com.rickensteven.sirkwie.gui {
         +setParserNames(parserNames: Set<String>)
         +getParserNames(): Set<String>
     }
+    ViewModel --> "1" PropagationDelayCalculator : +propagationDelayCalculator
     note bottom of ViewModel
         Property class comes from JavaFX
     end note
