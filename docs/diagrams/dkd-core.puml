@@ -42,6 +42,8 @@ package com.rickensteven.sirkwie.core {
     PropagationDelayCalculator +-- PropagationNode
 
     interface ISimulationListener {
+        onStartSimulation();
+        onStopSimulation();
         onStartCalculate(node: Node);
         onStopCalculate(node: Node, calculatedValue: boolean);
     }

@@ -57,6 +57,7 @@ package domain {
     Circuit " " --> "0..*" Node : -nodes
     Circuit " " --> "0..*" Input : -inputs
     Circuit " " --> "0..*" Probe : -probes
+    Circuit --> "0..*" ISimulationListener : -simulationListeners
 
     class Input extends Node {
         +Input(value: boolean, name: String)

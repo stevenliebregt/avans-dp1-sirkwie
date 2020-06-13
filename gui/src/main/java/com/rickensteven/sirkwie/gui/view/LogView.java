@@ -156,17 +156,4 @@ public class LogView extends AbstractSimulationView implements ISimulationListen
         item.setExpanded(true);
         item.getChildren().forEach(this::expand);
     }
-
-    private int calculateDepth(TreeItem<String> tree)
-    {
-        if (tree.getChildren().isEmpty()) return 0;
-
-        int maxDepth = 0;
-
-        for (TreeItem<String> child : tree.getChildren()) {
-            maxDepth = Math.max(maxDepth, calculateDepth(child));
-        }
-
-        return maxDepth + 1;
-    }
 }

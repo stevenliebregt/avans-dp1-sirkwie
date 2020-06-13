@@ -12,8 +12,15 @@ import java.util.*;
  */
 public class PropagationDelayCalculator implements ISimulationListener
 {
-    private List<PropagationNode> root = new LinkedList<>();
-    private Map<String, PropagationNode> history = new LinkedHashMap<>();
+    private List<PropagationNode> root;
+    private Map<String, PropagationNode> history;
+
+    @Override
+    public void onStartSimulation()
+    {
+        root = new LinkedList<>();
+        history = new LinkedHashMap<>();
+    }
 
     @Override
     public void onStartCalculate(Node node)
