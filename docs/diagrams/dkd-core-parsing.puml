@@ -9,6 +9,15 @@ package parsing {
         -convertParseTreeToCircuitDefinition(parseTree: ParseTree): CircuitDefinition
     }
 
+    class XMLCircuitParser implements ICircuitParser {
+        -nodes: Map<String, String>
+        -edges: Map<String, List<String>>
+
+        +parse(cleanedTxtCircuit): CircuitDefinition
+        -parseNodes(document: Document)
+        -parseEdges(document: Document)
+    }
+
     class ANTLRParserErrorListener implements ANTLRErrorListener {
         -syntaxErrorsCount: int
 
@@ -26,6 +35,14 @@ package parsing {
         +visitEdgeDefinition(ctx: DP1CircuitParser.EdgeDefinitionContext): CircuitDefinition
     }
     ANTLRVisitor --> "1" CircuitDefinition : -circuitDefinition
+
+    class CircuitParserFactory {
+        +circuitParserNames: Set<String>
+
+        +CircuitParserFactory()
+        +getCircuitParser(name: String): ICircuitParser
+    }
+    CircuitParserFactory --> "0..*" ICircuitParser : -circuitParsers
 
     interface ICircuitParser {
         +parse(cleanedTxtCircuit: String): CircuitDefinition

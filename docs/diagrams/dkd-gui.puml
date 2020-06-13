@@ -38,17 +38,22 @@ package com.rickensteven.sirkwie.gui {
         +tryToLoadFile(filePath: String)
         +inputButtonClicked(nodeName: String)
         +addListener(simulationListener: ISimulationListener)
+        +setCircuitParser(name: String)
         -simulate(circuit: Circuit)
         -alert(message: String)
     }
     Controller --> "1" ViewModel : -viewModel
     Controller --> "1" FileChooser : -fileChooser
     Controller --> "1" CircuitLoaderFacade : -circuitLoaderFacade
+    Controller --> "1" CircuitParserFactory : -circuitParserFactory
 
     class ViewModel {
         +circuitProperty: Property<Circuit>
         +circuitSimulateStartTriggerProperty: BooleanProperty
         +circuitSimulatedTriggerProperty: BooleanProperty
+        -parserNames: Set<String>
+        +setParserNames(parserNames: Set<String>)
+        +getParserNames(): Set<String>
     }
     note bottom of ViewModel
         Property class comes from JavaFX

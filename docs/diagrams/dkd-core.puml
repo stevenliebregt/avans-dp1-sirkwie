@@ -14,21 +14,22 @@ package com.rickensteven.sirkwie.core {
     }
 
     class CircuitLoaderFacade {
+        +CircuitLoaderFacade()
         +CircuitLoaderFacade(circuitParser: ICircuitParser)
         +loadCircuit(filePath: String): Circuit
+        +setCircuitParser(circuitParser: ICircuitParser)
         +addSimulationListener(simulationListener: ISimulationListener)
     }
     CircuitLoaderFacade --> "0..*" ISimulationListener : -simulationListeners
+    CircuitLoaderFacade --> "1" CircuitFileReader : -circuitFileReader
+    CircuitLoaderFacade --> "1" CircuitNotConnectedValidator : -circuitNotConnectedValidator
+    CircuitLoaderFacade --> "1" CircuitInfiniteLoopValidator : -circuitInfiniteLoopValidator
+    CircuitLoaderFacade --> "1" ICircuitParser : -circuitParser
 
     interface ISimulationListener {
         onStartCalculate(node: Node);
         onStopCalculate(node: Node, calculatedValue: boolean);
     }
-
-    CircuitLoaderFacade --> "1" CircuitFileReader : -circuitFileReader
-    CircuitLoaderFacade --> "1" CircuitNotConnectedValidator : -circuitNotConnectedValidator
-    CircuitLoaderFacade --> "1" CircuitInfiniteLoopValidator : -circuitInfiniteLoopValidator
-    CircuitLoaderFacade --> "1" ICircuitParser : -circuitParser
 }
 
 @enduml

@@ -61,6 +61,7 @@ package view {
     class MainView {
         -view: BorderPane
         -simulateButton: Button
+        -parserChoice: ChoiceBox<String>
 
         +MainView(controller: Controller, viewModel: ViewModel)
         +getView(): Parent
