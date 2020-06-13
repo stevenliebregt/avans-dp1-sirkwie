@@ -31,14 +31,14 @@ public class XMLCircuitParser implements ICircuitParser
         try {
             DocumentBuilderFactory documentBuilderFactory = DocumentBuilderFactory.newInstance();
             DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();
+            documentBuilder.setErrorHandler(null);
 
             Document document = documentBuilder.parse(new InputSource(new StringReader(cleanedTxtCircuit)));
 
             parseNodes(document);
             parseEdges(document);
         } catch (ParserConfigurationException | SAXException | IOException exception) {
-            System.err.println(exception.getMessage());
-            return circuitDefinition;
+            throw new CircuitSyntaxException("The file is not a valid XML file");
         }
 
         return circuitDefinition;

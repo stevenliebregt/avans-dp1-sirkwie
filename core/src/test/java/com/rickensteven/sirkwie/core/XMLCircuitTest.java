@@ -49,6 +49,15 @@ public class XMLCircuitTest
     }
 
     @Test
+    public void createInvalidCircuit()
+    {
+        ICircuitParser circuitParser = new XMLCircuitParser();
+        CircuitLoaderFacade circuitLoaderFacade = new CircuitLoaderFacade(circuitParser);
+
+        assertThrows(CircuitSyntaxException.class, () -> circuitLoaderFacade.loadCircuit(ClassLoader.getSystemResource("CircuitValidatorNotConnected.txt").getPath()));
+    }
+
+    @Test
     public void createCircuitComplex()
     {
         ICircuitParser circuitParser = new XMLCircuitParser();

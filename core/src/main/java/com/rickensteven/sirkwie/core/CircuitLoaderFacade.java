@@ -20,8 +20,13 @@ public class CircuitLoaderFacade
     private final CircuitFileReader circuitFileReader;
     private final CircuitNotConnectedValidator circuitNotConnectedValidator;
     private final CircuitInfiniteLoopValidator circuitInfiniteLoopValidator;
-    private final ICircuitParser circuitParser;
+    private ICircuitParser circuitParser;
     private final Set<ISimulationListener> simulationListeners;
+
+    public CircuitLoaderFacade()
+    {
+        this(null);
+    }
 
     public CircuitLoaderFacade(ICircuitParser circuitParser)
     {
@@ -68,6 +73,11 @@ public class CircuitLoaderFacade
         circuit.simulate();
 
         return circuit;
+    }
+
+    public void setCircuitParser(ICircuitParser circuitParser)
+    {
+        this.circuitParser = circuitParser;
     }
 
     public void addSimulationListener(ISimulationListener simulationListener)

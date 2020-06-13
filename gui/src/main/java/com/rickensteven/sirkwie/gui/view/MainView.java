@@ -1,5 +1,8 @@
 package com.rickensteven.sirkwie.gui.view;
 
+import com.rickensteven.sirkwie.core.parsing.ANTLRCircuitParser;
+import com.rickensteven.sirkwie.core.parsing.ICircuitParser;
+import com.rickensteven.sirkwie.core.parsing.XMLCircuitParser;
 import com.rickensteven.sirkwie.gui.Controller;
 import com.rickensteven.sirkwie.gui.ViewModel;
 import com.rickensteven.sirkwie.gui.view.graphstream.GraphstreamSimulationView;
@@ -11,6 +14,9 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.Priority;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class MainView
 {
     private final Controller controller;
@@ -18,6 +24,7 @@ public class MainView
 
     private BorderPane view;
     private Button simulateButton;
+    private ChoiceBox<String> parserChoice;
 
     public MainView(Controller controller, ViewModel viewModel)
     {
@@ -90,13 +97,25 @@ public class MainView
         simulateButton.setDisable(true);
         simulateButton.setOnMouseClicked((mouseEvent -> controller.simulateButtonClicked()));
 
+        parserChoice = new ChoiceBox<>();
+        parserChoice
+                .getItems()
+                .setAll(viewModel.getParserNames());
+        parserChoice
+                .getSelectionModel()
+                .selectedItemProperty()
+                .addListener((observable, oldValue, newValue) -> controller.setCircuitParser(newValue));
+        parserChoice
+                .getSelectionModel()
+                .selectFirst();
+
         Pane spacer = new Pane();
         HBox.setHgrow(spacer, Priority.ALWAYS);
 
         Button closeButton = new Button("Close");
         closeButton.setOnMouseClicked(controller::quit);
 
-        toolBar.getItems().addAll(loadFileButton, simulateButton, spacer, closeButton);
+        toolBar.getItems().addAll(loadFileButton, parserChoice, simulateButton, spacer, closeButton);
 
         return toolBar;
     }

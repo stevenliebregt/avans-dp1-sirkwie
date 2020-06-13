@@ -5,7 +5,7 @@ import com.rickensteven.sirkwie.core.ISimulationListener;
 import com.rickensteven.sirkwie.core.domain.Circuit;
 import com.rickensteven.sirkwie.core.domain.Input;
 import com.rickensteven.sirkwie.core.exception.*;
-import com.rickensteven.sirkwie.core.parsing.ANTLRCircuitParser;
+import com.rickensteven.sirkwie.core.parsing.CircuitParserFactory;
 import com.rickensteven.sirkwie.core.parsing.ICircuitParser;
 import javafx.application.Platform;
 import javafx.scene.control.Alert;
@@ -20,16 +20,25 @@ public class Controller
 {
     private final ViewModel viewModel;
     private final FileChooser fileChooser;
+    private final CircuitParserFactory circuitParserFactory;
     private final CircuitLoaderFacade circuitLoaderFacade;
 
     public Controller(ViewModel viewModel)
     {
         this.viewModel = viewModel;
         fileChooser = new FileChooser();
+        circuitParserFactory = new CircuitParserFactory();
 
-        // This circuitparser could be swapped out for another, for example, XMLCircuitParser
-        ICircuitParser circuitParser = new ANTLRCircuitParser();
-        circuitLoaderFacade = new CircuitLoaderFacade(circuitParser);
+        circuitLoaderFacade = new CircuitLoaderFacade();
+
+        viewModel.setParserNames(circuitParserFactory.circuitParserNames);
+        setCircuitParser(
+                circuitParserFactory
+                        .circuitParserNames
+                        .stream()
+                        .findFirst()
+                        .orElse(null)
+        );
     }
 
     public void loadFileButtonClicked(Window ownerWindow)
@@ -122,5 +131,19 @@ public class Controller
     {
         Alert alert = new Alert(Alert.AlertType.ERROR, message);
         alert.showAndWait();
+    }
+
+    public void setCircuitParser(String name)
+    {
+        ICircuitParser circuitParser = circuitParserFactory.getCircuitParser(name);
+
+        System.out.println(circuitParser);
+
+        if (circuitParser == null) {
+            alert("Chosen option does not have a valid parser");
+            return;
+        }
+
+         circuitLoaderFacade.setCircuitParser(circuitParser);
     }
 }
