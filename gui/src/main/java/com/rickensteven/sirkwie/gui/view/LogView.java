@@ -24,6 +24,7 @@ public class LogView extends AbstractSimulationView implements ISimulationListen
 
     private static final int HEIGHT = 200;
     private TreeView<String> treeView;
+    private Label delayLabel;
 
     private List<TreeItem<String>> rootNodes = new LinkedList<>();
     private Map<Node, TreeItem<String>> history = new LinkedHashMap<>();
@@ -54,10 +55,17 @@ public class LogView extends AbstractSimulationView implements ISimulationListen
         treeView = new TreeView<>();
         treeView.setShowRoot(false);
 
+        HBox hBox = new HBox();
+
         Label label = new Label("Calculation Flow");
         label.setPadding(new Insets(4));
 
-        ((BorderPane) view).setTop(label);
+        delayLabel = new Label("");
+        delayLabel.setPadding(new Insets(4));
+
+        hBox.getChildren().addAll(label, delayLabel);
+
+        ((BorderPane) view).setTop(hBox);
         ((BorderPane) view).setCenter(treeView);
     }
 
@@ -70,7 +78,20 @@ public class LogView extends AbstractSimulationView implements ISimulationListen
     @Override
     protected void update(Circuit circuit)
     {
-        // Not needed.
+        double[] delays = new double[rootNodes.size()];
+
+        for (int i = 0; i < rootNodes.size(); i++) {
+            TreeItem<String> node = rootNodes.get(i);
+
+            double delay = (calculateDepth(node) - 1) * 15;
+            delays[i] = delay;
+
+            node.setValue(node.getValue() + " has a delay of " + delay + "ns");
+        }
+
+        double delay = Arrays.stream(delays).max().orElse(0);
+
+        delayLabel.setText(" : total delay = " + delay + "ns");
     }
 
     @Override
@@ -147,5 +168,18 @@ public class LogView extends AbstractSimulationView implements ISimulationListen
     {
         item.setExpanded(true);
         item.getChildren().forEach(this::expand);
+    }
+
+    private int calculateDepth(TreeItem<String> tree)
+    {
+        if (tree.getChildren().isEmpty()) return 0;
+
+        int maxDepth = 0;
+
+        for (TreeItem<String> child : tree.getChildren()) {
+            maxDepth = Math.max(maxDepth, calculateDepth(child));
+        }
+
+        return maxDepth + 1;
     }
 }
