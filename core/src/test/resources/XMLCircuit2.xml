@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<circuit>
+    <nodes>
+        <node name="A" type="INPUT_HIGH" />
+        <node name="NODE1" type="NOT" />
+        <node name="NODE2" type="NOT" />
+        <node name="NODE3" type="NOT" />
+        <node name="S" type="PROBE" />
+    </nodes>
+    <edges>
+        <edge source="A" target="NODE1" />
+        <edge source="NODE1" target="NODE2" />
+        <edge source="NODE2" target="NODE3" />
+        <edge source="NODE3" target="S" />
+    </edges>
+</circuit>

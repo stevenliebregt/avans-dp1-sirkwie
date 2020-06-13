@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<circuit>
+    <nodes>
+        <node name="A" type="INPUT_HIGH" />
+        <node name="B" type="INPUT_HIGH" />
+        <node name="Cin" type="INPUT_LOW" />
+        <node name="NODE1" type="XOR" />
+        <node name="NODE2" type="XOR" />
+        <node name="NODE3" type="AND" />
+        <node name="NODE4" type="AND" />
+        <node name="NODE5" type="OR" />
+        <node name="S" type="PROBE" />
+        <node name="Cout" type="PROBE" />
+    </nodes>
+    <edges>
+        <edge source="A" target="NODE1" />
+        <edge source="B" target="NODE1" />
+        <edge source="NODE1" target="NODE2" />
+        <edge source="Cin" target="NODE2" />
+        <edge source="NODE2" target="S" />
+        <edge source="Cin" target="NODE3" />
+        <edge source="NODE1" target="NODE3" />
+        <edge source="A" target="NODE4" />
+        <edge source="B" target="NODE4" />
+        <edge source="NODE3" target="NODE5" />
+        <edge source="NODE4" target="NODE5" />
+        <edge source="NODE5" target="Cout" />
+    </edges>
+</circuit>
