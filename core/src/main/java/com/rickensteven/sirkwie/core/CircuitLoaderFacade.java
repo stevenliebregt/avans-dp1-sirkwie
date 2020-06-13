@@ -80,8 +80,18 @@ public class CircuitLoaderFacade
         this.circuitParser = circuitParser;
     }
 
+    public ICircuitParser getCircuitParser()
+    {
+        return circuitParser;
+    }
+
     public void addSimulationListener(ISimulationListener simulationListener)
     {
         simulationListeners.add(simulationListener);
+    }
+
+    public Set<ISimulationListener> getSimulationListeners()
+    {
+        return simulationListeners;
     }
 }

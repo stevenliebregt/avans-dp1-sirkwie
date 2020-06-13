@@ -1,10 +1,12 @@
 package com.rickensteven.sirkwie.core;
 
 import com.rickensteven.sirkwie.core.domain.Circuit;
+import com.rickensteven.sirkwie.core.domain.Node;
 import com.rickensteven.sirkwie.core.exception.CircuitInfiniteLoopException;
 import com.rickensteven.sirkwie.core.exception.CircuitNotConnectedException;
 import com.rickensteven.sirkwie.core.parsing.ANTLRCircuitParser;
 import com.rickensteven.sirkwie.core.parsing.ICircuitParser;
+import com.rickensteven.sirkwie.core.parsing.XMLCircuitParser;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -98,5 +100,47 @@ public class CircuitLoaderFacadeTest
         CircuitLoaderFacade circuitLoaderFacade = new CircuitLoaderFacade(circuitParser);
 
         assertThrows(CircuitNotConnectedException.class, () -> circuitLoaderFacade.loadCircuit(ClassLoader.getSystemResource("Circuit6_NotAllProbesReachable.txt").getPath()));
+    }
+
+    @Test
+    public void setCircuitParser()
+    {
+        XMLCircuitParser xmlCircuitParser = new XMLCircuitParser();
+        ANTLRCircuitParser antlrCircuitParser = new ANTLRCircuitParser();
+
+        CircuitLoaderFacade circuitLoaderFacade = new CircuitLoaderFacade();
+
+        assertNull(circuitLoaderFacade.getCircuitParser());
+
+        circuitLoaderFacade.setCircuitParser(xmlCircuitParser);
+        assertNotNull(circuitLoaderFacade.getCircuitParser());
+        assertEquals(xmlCircuitParser, circuitLoaderFacade.getCircuitParser());
+
+        circuitLoaderFacade.setCircuitParser(antlrCircuitParser);
+        assertNotNull(circuitLoaderFacade.getCircuitParser());
+        assertEquals(antlrCircuitParser, circuitLoaderFacade.getCircuitParser());
+    }
+
+    @Test
+    public void addSimulationListener()
+    {
+        CircuitLoaderFacade circuitLoaderFacade = new CircuitLoaderFacade();
+
+        circuitLoaderFacade.addSimulationListener(new ISimulationListener()
+        {
+            @Override
+            public void onStartCalculate(Node node)
+            {
+
+            }
+
+            @Override
+            public void onStopCalculate(Node node, boolean calculatedValue)
+            {
+
+            }
+        });
+
+        assertEquals(1, circuitLoaderFacade.getSimulationListeners().size());
     }
 }
