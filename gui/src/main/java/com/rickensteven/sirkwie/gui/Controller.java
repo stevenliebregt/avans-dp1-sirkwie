@@ -81,6 +81,8 @@ public class Controller
                 return;
             }
 
+            circuit.addSimulationListener(viewModel.propagationDelayCalculator);
+
             viewModel.circuitProperty.setValue(circuit);
         } catch (IOException exception) {
             alert("The selected file could not be read");
@@ -136,8 +138,6 @@ public class Controller
     public void setCircuitParser(String name)
     {
         ICircuitParser circuitParser = circuitParserFactory.getCircuitParser(name);
-
-        System.out.println(circuitParser);
 
         if (circuitParser == null) {
             alert("Chosen option does not have a valid parser");

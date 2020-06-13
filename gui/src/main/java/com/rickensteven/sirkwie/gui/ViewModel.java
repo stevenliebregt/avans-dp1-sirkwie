@@ -1,5 +1,6 @@
 package com.rickensteven.sirkwie.gui;
 
+import com.rickensteven.sirkwie.core.PropagationDelayCalculator;
 import com.rickensteven.sirkwie.core.domain.Circuit;
 import javafx.beans.property.*;
 
@@ -12,6 +13,8 @@ public class ViewModel
 
     public final BooleanProperty circuitSimulateStartTriggerProperty = new SimpleBooleanProperty(false);
     public final BooleanProperty circuitSimulatedTriggerProperty = new SimpleBooleanProperty(false);
+
+    public final PropagationDelayCalculator propagationDelayCalculator = new PropagationDelayCalculator();
 
     private Set<String> parserNames = new HashSet<>();
 

@@ -78,20 +78,7 @@ public class LogView extends AbstractSimulationView implements ISimulationListen
     @Override
     protected void update(Circuit circuit)
     {
-        double[] delays = new double[rootNodes.size()];
-
-        for (int i = 0; i < rootNodes.size(); i++) {
-            TreeItem<String> node = rootNodes.get(i);
-
-            double delay = (calculateDepth(node) - 1) * 15;
-            delays[i] = delay;
-
-            node.setValue(node.getValue() + " has a delay of " + delay + "ns");
-        }
-
-        double delay = Arrays.stream(delays).max().orElse(0);
-
-        delayLabel.setText(" : total delay = " + delay + "ns");
+        delayLabel.setText(" : total delay = " + viewModel.propagationDelayCalculator.calculate() + "ns");
     }
 
     @Override
